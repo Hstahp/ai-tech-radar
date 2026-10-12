@@ -135,6 +135,24 @@ Pipeline tuân thủ kiến trúc phân lớp sạch (Clean Architecture):
 
 ---
 
+### 2.8. Giai đoạn 2 — Bước A: Nền tảng Cloudflare Worker & Chatbox RAG chặt
+* **Nâng cấp Pipeline (`apps/pipeline`):**
+  * Migration Content DB `001_add_key_to_digest_feed.sql`: bổ sung `url_hash AS key` vào view `v_digest_feed`.
+  * Xuất thêm `data/export/search-index.json` gồm các mục đang hiển thị trên web kèm thẻ tag, điểm sao và nội dung tóm tắt để phục vụ retrieval.
+  * Bổ sung trường `key` vào `latest.json` và các file ngày để liên kết giữa Content DB và App DB.
+* **App DB Migration 001 (`db/app-migrations/001_core.sql`):**
+  * Khởi tạo các bảng SQLite tương thích Cloudflare D1: `app_settings`, `usage_daily`, `chat_events`, `chat_cache`, `explanations`.
+* **Khởi tạo và xây dựng Cloudflare Worker (`apps/worker`):**
+  * Tích hợp router **Hono** siêu nhẹ (<15KB) chuẩn Cloudflare Worker runtime.
+  * **Retrieval Engine (`retrieval.ts`):** Tìm kiếm và tính điểm từ khóa trên `search-index.json`, chuẩn hóa tiếng Việt không dấu (`normalizeVietnamese`).
+  * **Out-of-Domain Guard (`guard.ts`):** Chặn đứng các câu hỏi ngoài phạm vi (thời tiết, nấu ăn, code không liên quan) ngay trước khi gọi LLM $\rightarrow$ **Tiết kiệm 100% token (0 token)**.
+  * **Citation Validator (`validator.ts`):** Kiểm tra nghiêm ngặt trích dẫn (chống hallucination); mọi trích dẫn bắt buộc phải nằm trong tập các mục đã retrieval, tự động gắn link nguồn và tiêu đề từ dữ liệu thực tế.
+  * **Bộ đệm & Bảo mật:** Cache câu trả lời đã validate (`chat_cache`), rate limit theo IP hash với Web Crypto (`sha256(salt + IP)`), ghi log sự kiện đầy đủ vào `chat_events`.
+* **Bộ kiểm thử tự động:**
+  * Thêm 5 unit tests toàn diện trong `apps/worker/tests/chat.test.ts` và 3 tests trong `packages/core/tests/text.test.ts` (Tổng: 21/21 tests pass 100%).
+
+---
+
 ## 3. BẢNG TỔNG KẾT TIẾN ĐỘ DỰ ÁN
 
 | Hạng mục | Trạng thái | Ghi chú |
@@ -151,5 +169,7 @@ Pipeline tuân thủ kiến trúc phân lớp sạch (Clean Architecture):
 | GitHub CI Workflow (Test, Typecheck, Build) | ✅ Hoàn thành | `.github/workflows/ci.yml` |
 | Husky Git Hooks (`pre-push`, `pre-commit`) | ✅ Hoàn thành | Phòng thủ 2 lớp, cấm push trực tiếp |
 | Tích hợp CodeRabbit AI Review | ✅ Hoàn thành | Tự động review mọi PR trên GitHub |
-| Bộ kiểm thử tự động (Unit Tests) | ✅ Hoàn thành | 100% tests pass (`@radar/core`, pipeline, web) |
+| **Phase 2 - Bước A: Chatbox RAG chặt** | ✅ Hoàn thành | Worker Hono, 0-token rejection, citation guard |
+| Bộ kiểm thử tự động (Unit Tests) | ✅ Hoàn thành | 21/21 tests pass (`@radar/core`, pipeline, web, worker) |
+
 

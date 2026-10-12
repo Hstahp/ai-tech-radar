@@ -128,7 +128,7 @@ pnpm typecheck
   * [x] Tự động hóa CI/CD GitHub Actions hàng ngày lúc 07:00 AM VN.
   * [x] Hệ thống kiểm thử CI tự động, Husky Git hooks bảo vệ nhánh cục bộ và tích hợp CodeRabbit AI.
 * [ ] **Giai đoạn 2 (Cloudflare Worker & RAG Chatbox - theo [DESIGN_PHASE2_AUTH_ADMIN_CHAT.md](DESIGN_PHASE2_AUTH_ADMIN_CHAT.md)):**
-  * [ ] **Bước A:** Nền tảng + Chatbox RAG chặt (zero-token rejection, trích dẫn chuẩn, Turnstile).
+  * [x] **Bước A:** Nền tảng + Chatbox RAG chặt (zero-token rejection, trích dẫn chuẩn, Turnstile).
   * [ ] **Bước B:** Cơ chế giải thích sâu (Deep explain) có cache theo bài viết.
   * [ ] **Bước C:** Đăng nhập GitHub OAuth, lưu phiên và lọc thẻ (tags) cá nhân hóa.
   * [ ] **Bước D:** Trang quản trị Admin cơ bản và nhật ký kiểm toán (`audit_log`).

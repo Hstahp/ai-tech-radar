@@ -52,6 +52,27 @@ export function publishAndExportDigest(
   const rssPath = path.join(exportDir, "feed.xml");
   fs.writeFileSync(rssPath, rssXml, "utf-8");
 
-  logger.info(`Exported digest to ${datedFilePath}, ${latestFilePath}, and ${rssPath} (${feedItems.length} items).`);
+  // Export search index JSON for Chatbox RAG
+  const searchIndexPayload = {
+    generated_at: new Date().toISOString(),
+    items: feedItems.map((item) => ({
+      key: item.key ?? String(item.item_id),
+      title: item.title,
+      category: item.category,
+      url: item.url,
+      tags: item.tags ? item.tags.split(",").map((t) => t.trim()).filter(Boolean) : [],
+      purpose: item.purpose,
+      highlight: item.highlight,
+      action: item.action,
+      verdict: item.verdict,
+      stars: item.stars,
+    })),
+  };
+  const searchIndexPath = path.join(exportDir, "search-index.json");
+  fs.writeFileSync(searchIndexPath, JSON.stringify(searchIndexPayload, null, 2), "utf-8");
+
+  logger.info(
+    `Exported digest to ${datedFilePath}, ${latestFilePath}, ${rssPath}, and ${searchIndexPath} (${feedItems.length} items).`
+  );
   return feedItems;
 }

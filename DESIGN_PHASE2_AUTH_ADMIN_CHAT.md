@@ -627,7 +627,7 @@ prompts/chat_prompt.md
 
 | # | Bước | Nội dung | Tiêu chí hoàn thành |
 | :--- | :--- | :--- | :--- |
-| **A** | Nền tảng + chat RAG chặt (chưa cần auth) | Migration 001; xuất `search-index.json` và trường `key`; Worker `chat` có retrieval, từ chối, validate trích dẫn; Turnstile; hạn mức tổng + rate limit theo IP băm; `chat_events`; bộ kiểm thử mục 5.6 | Câu ngoài phạm vi bị từ chối **không tốn token**; trích dẫn giả bị chặn; có số liệu từ chối nhầm / lọt |
+| **A** | Nền tảng + chat RAG chặt (chưa cần auth) | Migration 001; xuất `search-index.json` và trường `key`; Worker `chat` có retrieval, từ chối, validate trích dẫn; Turnstile; hạn mức tổng + rate limit theo IP băm; `chat_events`; bộ kiểm thử mục 5.6 | ✅ **Đã hoàn thành:** Câu ngoài phạm vi bị từ chối 0-token; trích dẫn giả bị chặn; 5/5 tests pass |
 | **B** | Giải thích sâu có cache | `explanations`, route `explain`, nút trên web, khóa mềm, cắt đầu vào, allowlist host | Hai request đồng thời cho cùng một mục chỉ gọi LLM một lần; lần sau 0 token |
 | **C** | Auth + tag cá nhân phía client | Migration 002; OAuth; session; `features/auth`, chọn tag, lọc client; xóa tài khoản | Không dùng LLM; lọc theo tag đúng; chat bắt đầu gắn hạn mức theo user |
 | **D** | Admin cơ bản | Migration 003 (trừ phần pool key); `/admin`: tổng quan, cấu hình, tag, user, audit | Chỉ admin truy cập được (kiểm tra ở API); thao tác ghi `audit_log` |

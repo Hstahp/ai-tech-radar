@@ -51,6 +51,7 @@ export const DigestFeedItemSchema = z.object({
   rank: z.number().int(),
   score: z.number().optional(),
   item_id: z.number().int(),
+  key: z.string().optional(),
   category: CategorySchema,
   title: z.string(),
   url: z.string(),
@@ -65,6 +66,27 @@ export const DigestFeedItemSchema = z.object({
 });
 
 export type DigestFeedItem = z.infer<typeof DigestFeedItemSchema>;
+
+export const SearchIndexItemSchema = z.object({
+  key: z.string(),
+  title: z.string(),
+  category: CategorySchema,
+  url: z.string(),
+  tags: z.array(z.string()),
+  purpose: z.string().nullable().optional(),
+  highlight: z.string().nullable().optional(),
+  action: z.string().nullable().optional(),
+  verdict: VerdictSchema.nullable().optional(),
+  stars: z.number().nullable().optional(),
+});
+
+export const SearchIndexSchema = z.object({
+  generated_at: z.string(),
+  items: z.array(SearchIndexItemSchema),
+});
+
+export type SearchIndexItem = z.infer<typeof SearchIndexItemSchema>;
+export type SearchIndex = z.infer<typeof SearchIndexSchema>;
 
 export interface ParseSummariesResult {
   items: SummaryItem[];
@@ -92,3 +114,12 @@ export function parseSummaries(raw: string, expectedIds: number[]): ParseSummari
     unexpected,
   };
 }
+
+export const ChatAnswerSchema = z.object({
+  answerable: z.boolean(),
+  answer: z.string().max(1200),
+  citations: z.array(z.string()).max(8),
+});
+
+export type ChatAnswer = z.infer<typeof ChatAnswerSchema>;
+
