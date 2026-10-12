@@ -134,4 +134,25 @@ export const DeepExplainSchema = z.object({
 
 export type DeepExplain = z.infer<typeof DeepExplainSchema>;
 
+export const UserRoleSchema = z.enum(["user", "admin"]);
+export type UserRole = z.infer<typeof UserRoleSchema>;
+
+export const UserProfileSchema = z.object({
+  id: z.string(),
+  email: z.string().email(),
+  displayName: z.string().nullable().optional(),
+  avatarUrl: z.string().url().nullable().optional(),
+  role: UserRoleSchema,
+  tags: z.array(z.string()).default([]),
+  createdAt: z.string().optional(),
+  lastLoginAt: z.string().nullable().optional(),
+});
+export type UserProfile = z.infer<typeof UserProfileSchema>;
+
+export const UpdateUserTagsSchema = z.object({
+  tags: z.array(TagSchema).max(10),
+});
+export type UpdateUserTags = z.infer<typeof UpdateUserTagsSchema>;
+
+
 

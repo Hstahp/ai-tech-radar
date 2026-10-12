@@ -1,4 +1,4 @@
-import { Search, Zap, Eye, Layers } from "lucide-react";
+import { Search, Zap, Eye, Layers, Sparkles } from "lucide-react";
 import { Button } from "../../../components/ui/Button";
 import type { CategoryFilter, VerdictFilter } from "../../../types";
 
@@ -15,6 +15,7 @@ interface FilterBarProps {
 
 const CATEGORIES: { id: CategoryFilter; label: string }[] = [
   { id: "all", label: "Tất cả" },
+  { id: "my_feed", label: "Dành cho bạn" },
   { id: "repo", label: "Repositories" },
   { id: "extension", label: "Extensions" },
   { id: "news", label: "Tin tức" },
@@ -62,7 +63,15 @@ export function FilterBar({
               variant={selectedCategory === cat.id ? "primary" : "ghost"}
               size="sm"
               onClick={() => onCategoryChange(cat.id)}
+              className={
+                cat.id === "my_feed" && selectedCategory === "my_feed"
+                  ? "bg-gradient-to-r from-indigo-600 to-violet-600 border-indigo-500 text-white"
+                  : cat.id === "my_feed"
+                  ? "text-indigo-300 hover:text-indigo-200"
+                  : ""
+              }
             >
+              {cat.id === "my_feed" && <Sparkles className="h-3 w-3 mr-1.5 inline text-amber-300" />}
               {cat.label}
             </Button>
           ))}

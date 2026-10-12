@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { loadLatestDigest } from "../api/load-digest";
 import type { CategoryFilter, DigestFeedItem, DigestFeedPayload, VerdictFilter } from "../../../types";
 
-export function useDigest() {
+export function useDigest(userTags?: string[]) {
   const [data, setData] = useState<DigestFeedPayload | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -45,7 +45,19 @@ export function useDigest() {
 
     return data.items.filter((item) => {
       // 1. Category filter
-      if (selectedCategory !== "all" && item.category !== selectedCategory) {
+      if (selectedCategory === "my_feed") {
+        if (!userTags || userTags.length === 0) {
+          return false;
+        }
+        const itemTags = (item.tags ?? "")
+          .toLowerCase()
+          .split(",")
+          .map((t) => t.trim().replace(/^#/, ""));
+        const hasMatchingTag = userTags.some((ut) => itemTags.includes(ut.toLowerCase()));
+        if (!hasMatchingTag) {
+          return false;
+        }
+      } else if (selectedCategory !== "all" && item.category !== selectedCategory) {
         return false;
       }
 

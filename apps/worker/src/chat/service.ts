@@ -5,7 +5,7 @@ import { buildRefusalResponse, type RefusalResponse } from "./guard.js";
 import { CHAT_SYSTEM_PROMPT, buildChatUserPrompt } from "./prompt.js";
 import { validateAndEnrichChatAnswer, type ValidatedChatResult } from "./validator.js";
 import type { AppDbRepository } from "../repositories/app-db.js";
-import { RateLimitError } from "../lib/errors.js";
+import { RateLimitError, QuotaExceededError } from "../lib/errors.js";
 
 export interface ChatServiceOptions {
   appDb: AppDbRepository;
@@ -58,6 +58,30 @@ export class ChatService {
         questionHash: await sha256(cleanQuestion),
       });
       throw new RateLimitError();
+    }
+
+    // 2.1. Kiểm tra hạn mức theo user (nếu đã đăng nhập)
+    if (payload.userId) {
+      const userLimit = parseInt(
+        await this.options.appDb.getSetting("chat.user_daily_limit", "10"),
+        10
+      );
+      const userQuota = await this.options.appDb.getUserDailyQuota(
+        payload.userId,
+        this.options.digestDate
+      );
+      if (userQuota.chatRequests >= userLimit) {
+        await this.options.appDb.logChatEvent({
+          userId: payload.userId,
+          anonHash: payload.anonHash,
+          digestDate: this.options.digestDate,
+          status: "quota_exceeded",
+          questionHash: await sha256(cleanQuestion),
+        });
+        throw new QuotaExceededError(
+          `Bạn đã dùng hết hạn mức chat trong ngày (${userLimit} câu). Hẹn bạn ngày mai nhé!`
+        );
+      }
     }
 
     const questionHash = await sha256(cleanQuestion.toLowerCase());
@@ -191,6 +215,13 @@ export class ChatService {
       topScore: retrieval.topScore,
       latencyMs: Date.now() - startTime,
     });
+
+    if (payload.userId) {
+      await this.options.appDb.incrementUserChatQuota(
+        payload.userId,
+        this.options.digestDate
+      );
+    }
 
     return {
       status: "answered",
