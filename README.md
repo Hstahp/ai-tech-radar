@@ -129,7 +129,7 @@ pnpm typecheck
   * [x] Hệ thống kiểm thử CI tự động, Husky Git hooks bảo vệ nhánh cục bộ và tích hợp CodeRabbit AI.
 * [ ] **Giai đoạn 2 (Cloudflare Worker & RAG Chatbox - theo [DESIGN_PHASE2_AUTH_ADMIN_CHAT.md](DESIGN_PHASE2_AUTH_ADMIN_CHAT.md)):**
   * [x] **Bước A:** Nền tảng + Chatbox RAG chặt (zero-token rejection, trích dẫn chuẩn, Turnstile).
-  * [ ] **Bước B:** Cơ chế giải thích sâu (Deep explain) có cache theo bài viết.
+  * [x] **Bước B:** Cơ chế giải thích sâu (Deep explain) có cache theo bài viết và modal hiển thị trên web.
   * [ ] **Bước C:** Đăng nhập GitHub OAuth, lưu phiên và lọc thẻ (tags) cá nhân hóa.
   * [ ] **Bước D:** Trang quản trị Admin cơ bản và nhật ký kiểm toán (`audit_log`).
   * [ ] **Bước E:** Thu thập theo tag hoạt động (`/internal/active-tags`).

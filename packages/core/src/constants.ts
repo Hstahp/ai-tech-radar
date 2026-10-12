@@ -1,5 +1,6 @@
 export const PROMPT_VERSION = "v1.0.0";
 export const CHAT_PROMPT_VERSION = 1;
+export const EXPLAIN_PROMPT_VERSION = 1;
 
 export const CATEGORIES = ["repo", "extension", "news", "paper", "model"] as const;
 export type Category = (typeof CATEGORIES)[number];

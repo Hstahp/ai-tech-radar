@@ -123,3 +123,15 @@ export const ChatAnswerSchema = z.object({
 
 export type ChatAnswer = z.infer<typeof ChatAnswerSchema>;
 
+export const DeepExplainSchema = z.object({
+  what_it_is: z.string().min(1).max(600),
+  how_it_works: z.string().min(1).max(1000),
+  use_cases: z.array(z.string().min(1)).min(1).max(5),
+  limitations: z.array(z.string().min(1)).min(1).max(5),
+  getting_started: z.string().max(800),
+  confidence: ConfidenceSchema,
+});
+
+export type DeepExplain = z.infer<typeof DeepExplainSchema>;
+
+

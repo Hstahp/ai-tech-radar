@@ -83,4 +83,60 @@ app.post("/api/chat", async (c) => {
   }
 });
 
+app.post("/api/items/:key/explain", async (c) => {
+  try {
+    const key = c.req.param("key");
+    const appDb = new InMemoryAppDbRepository();
+
+    const llmProvider: LLMProvider = {
+      providerName: "worker-llm",
+      modelName: "mock-model",
+      generateText: async () => {
+        return {
+          content: JSON.stringify({
+            what_it_is: "Bản chất dự án mẫu",
+            how_it_works: "Cơ chế hoạt động chi tiết",
+            use_cases: ["Trường hợp 1", "Trường hợp 2"],
+            limitations: ["Hạn chế 1"],
+            getting_started: "npm install demo",
+            confidence: "high",
+          }),
+          provider: "worker-llm",
+          model: "mock-model",
+        };
+      },
+    };
+
+    const mockItems: SearchIndexItem[] = [
+      {
+        key,
+        title: "Demo AI Project",
+        category: "repo",
+        url: "https://github.com/demo/project",
+        tags: ["agent", "devtools"],
+        purpose: "Dự án thử nghiệm AI",
+        highlight: "Tính năng nổi bật",
+      },
+    ];
+
+    const { ExplainService } = await import("./explain/service.js");
+    const explainService = new ExplainService({
+      appDb,
+      llmProvider,
+      searchIndexItems: mockItems,
+    });
+
+    const result = await explainService.explainItem(key);
+    if (result.status === "pending") {
+      return c.json(result, 202);
+    }
+    return c.json(result);
+  } catch (err: any) {
+    if (err.statusCode) {
+      return c.json({ error: { code: err.code, message: err.message } }, err.statusCode);
+    }
+    return c.json({ error: { code: "INTERNAL_ERROR", message: "Đã xảy ra lỗi hệ thống." } }, 500);
+  }
+});
+
 export default app;
