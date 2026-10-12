@@ -629,7 +629,7 @@ prompts/chat_prompt.md
 | :--- | :--- | :--- | :--- |
 | **A** | Nền tảng + chat RAG chặt (chưa cần auth) | Migration 001; xuất `search-index.json` và trường `key`; Worker `chat` có retrieval, từ chối, validate trích dẫn; Turnstile; hạn mức tổng + rate limit theo IP băm; `chat_events`; bộ kiểm thử mục 5.6 | [Đã hoàn thành]: Câu ngoài phạm vi bị từ chối 0-token; trích dẫn giả bị chặn; 5/5 tests pass |
 | **B** | Giải thích sâu có cache | `explanations`, route `explain`, nút trên web, khóa mềm, cắt đầu vào, allowlist host | [Đã hoàn thành]: Khóa mềm 2 request đồng thời chỉ gọi LLM 1 lần; cache 0-token; chống SSRF; DeepExplainModal trên web; 3/3 tests pass |
-| **C** | Auth + tag cá nhân phía client | Migration 002; OAuth; session; `features/auth`, chọn tag, lọc client; xóa tài khoản | Không dùng LLM; lọc theo tag đúng; chat bắt đầu gắn hạn mức theo user |
+| **C** | Auth + tag cá nhân phía client | Migration 002; OAuth (Google/GitHub); session; features/auth, chọn tag, lọc client; xóa tài khoản | [Đã hoàn thành]: Không dùng LLM; lọc theo tag đúng; chat và explain kiểm soát hạn mức theo user; 6/6 tests pass |
 | **D** | Admin cơ bản | Migration 003 (trừ phần pool key); `/admin`: tổng quan, cấu hình, tag, user, audit | Chỉ admin truy cập được (kiểm tra ở API); thao tác ghi `audit_log` |
 | **E** | Thu thập theo tag hoạt động | `/internal/active-tags`; pipeline gọi có fallback; áp dụng M/K | Pipeline vẫn chạy khi endpoint lỗi; số tag và số tin không vượt giới hạn |
 | **F** | Pool key (tùy chọn) + BYOK | `api_keys`, mã hóa, `select-key`, màn hình admin; BYOK `browser` (hoặc `server` + migration 004) | Test cô lập key giữa user; key không lộ trong API/log; mất một key không sập hệ thống |

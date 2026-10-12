@@ -6,7 +6,7 @@ import {
   type SearchIndexItem,
 } from "@radar/core";
 import type { AppDbRepository } from "../repositories/app-db.js";
-import { AppError } from "../lib/errors.js";
+import { AppError, QuotaExceededError } from "../lib/errors.js";
 import { fetchSafeContent } from "./fetcher.js";
 
 export const EXPLAIN_SYSTEM_PROMPT = `Bạn là chuyên gia phân tích công nghệ AI của AI Tech Radar. Nhiệm vụ của bạn là giải thích chuyên sâu một dự án/công cụ AI dựa trên thông tin được cung cấp.
@@ -38,7 +38,7 @@ export type ExplainResult =
 export class ExplainService {
   constructor(private readonly options: ExplainServiceOptions) {}
 
-  async explainItem(itemKey: string): Promise<ExplainResult> {
+  async explainItem(itemKey: string, userId?: string | null): Promise<ExplainResult> {
     // 1. Tìm mục trong search index
     const item = this.options.searchIndexItems.find((i) => i.key === itemKey);
     if (!item) {
@@ -63,6 +63,21 @@ export class ExplainService {
             message: "Hệ thống đang phân tích chi tiết, vui lòng thử lại sau vài giây.",
           };
         }
+      }
+    }
+
+    // 2.1. Kiểm tra hạn mức theo user (nếu cần tạo mới bằng LLM)
+    const today = new Date().toISOString().split("T")[0];
+    if (userId) {
+      const userLimit = parseInt(
+        await this.options.appDb.getSetting("explain.user_daily_limit", "5"),
+        10
+      );
+      const userQuota = await this.options.appDb.getUserDailyQuota(userId, today);
+      if (userQuota.explainRequests >= userLimit) {
+        throw new QuotaExceededError(
+          `Bạn đã dùng hết hạn mức giải thích sâu trong ngày (${userLimit} lượt). Hẹn bạn ngày mai nhé!`
+        );
       }
     }
 
@@ -127,6 +142,10 @@ ${fetchedContent || "Không có thêm README, hãy phân tích dựa trên thôn
         this.options.llmProvider.providerName,
         this.options.llmProvider.modelName
       );
+
+      if (userId) {
+        await this.options.appDb.incrementUserExplainQuota(userId, today);
+      }
 
       return { status: "ready", data: validated };
     } catch (err) {

@@ -4,9 +4,10 @@ import { formatDigestDate } from "../../../lib/date-format";
 interface HeaderNavProps {
   digestDate?: string;
   itemsCount?: number;
+  rightSlot?: React.ReactNode;
 }
 
-export function HeaderNav({ digestDate, itemsCount }: HeaderNavProps) {
+export function HeaderNav({ digestDate, itemsCount, rightSlot }: HeaderNavProps) {
   return (
     <header className="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -60,6 +61,8 @@ export function HeaderNav({ digestDate, itemsCount }: HeaderNavProps) {
               <GitFork className="h-3.5 w-3.5" />
               <span>GitHub</span>
             </a>
+
+            {rightSlot}
           </div>
         </div>
       </div>

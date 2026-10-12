@@ -191,4 +191,6 @@ Pipeline tuân thủ kiến trúc phân lớp sạch (Clean Architecture):
 | Tích hợp CodeRabbit AI Review | [Hoàn thành] | Tự động review mọi PR trên GitHub |
 | Phase 2 - Bước A: Chatbox RAG chặt | [Hoàn thành] | Worker Hono, 0-token rejection, citation guard |
 | Phase 2 - Bước B: Giải thích sâu (Deep Explain) | [Hoàn thành] | Khóa mềm, cache 0-token, chống SSRF, Modal UI |
-| Bộ kiểm thử tự động (Unit Tests) | [Hoàn thành] | 24/24 tests pass (`@radar/core`, pipeline, web, worker) |
+| Phase 2 - Bước C: Auth & Tag cá nhân phía client | [Hoàn thành] | Migration 002, Google OAuth, Session SHA-256, Tag cá nhân, Tab My Feed, Quota theo User |
+| Bộ kiểm thử tự động (Unit Tests) | [Hoàn thành] | 30/30 tests pass (@radar/core, pipeline, web, worker) |
+

@@ -1,8 +1,22 @@
-import { Loader2, AlertCircle } from "lucide-react";
+import { Loader2, AlertCircle, Sparkles, Tag as TagIcon, LogIn } from "lucide-react";
 import { MainLayout } from "../layouts/MainLayout";
 import { FilterBar, DigestSection, useDigest } from "../features/digest";
+import { useAuth, UserMenu, UserTagModal } from "../features/auth";
+import { Button } from "../components/ui/Button";
 
 export function HomePage() {
+  const {
+    user,
+    isLoading: isAuthLoading,
+    isTagModalOpen,
+    openTagModal,
+    closeTagModal,
+    loginWithGoogle,
+    logout,
+    deleteAccount,
+    updateTags,
+  } = useAuth();
+
   const {
     data,
     isLoading,
@@ -16,10 +30,23 @@ export function HomePage() {
     filteredItems,
     totalCount,
     filteredCount,
-  } = useDigest();
+  } = useDigest(user?.tags);
 
   return (
-    <MainLayout digestDate={data?.digest_date} itemsCount={data?.items_count}>
+    <MainLayout
+      digestDate={data?.digest_date}
+      itemsCount={data?.items_count}
+      rightSlot={
+        <UserMenu
+          user={user}
+          isLoading={isAuthLoading}
+          onLogin={loginWithGoogle}
+          onLogout={logout}
+          onDeleteAccount={deleteAccount}
+          onOpenTagModal={openTagModal}
+        />
+      }
+    >
       {/* Loading state */}
       {isLoading && (
         <div className="flex flex-col items-center justify-center py-24 text-center">
@@ -51,9 +78,73 @@ export function HomePage() {
             filteredCount={filteredCount}
           />
 
-          <DigestSection items={filteredItems} />
+          {/* Xu ly cac trang thai cua tab "Danh cho ban" */}
+          {selectedCategory === "my_feed" && !user && (
+            <div className="p-10 rounded-2xl bg-slate-900/60 border border-slate-800 text-center max-w-lg mx-auto my-10 space-y-4">
+              <div className="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mx-auto">
+                <LogIn className="h-6 w-6" />
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-base font-bold text-white">Cá nhân hóa bản tin AI của bạn</h3>
+                <p className="text-xs text-slate-400 max-w-sm mx-auto">
+                  Đăng nhập bằng tài khoản Google để chọn các chủ đề công nghệ yêu thích và lọc bản tin dành riêng cho bạn.
+                </p>
+              </div>
+              <Button variant="primary" size="md" onClick={loginWithGoogle}>
+                Đăng nhập ngay
+              </Button>
+            </div>
+          )}
+
+          {selectedCategory === "my_feed" && user && user.tags.length === 0 && (
+            <div className="p-10 rounded-2xl bg-slate-900/60 border border-slate-800 text-center max-w-lg mx-auto my-10 space-y-4">
+              <div className="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mx-auto">
+                <TagIcon className="h-6 w-6" />
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-base font-bold text-white">Bạn chưa chọn chủ đề quan tâm</h3>
+                <p className="text-xs text-slate-400 max-w-sm mx-auto">
+                  Hãy chọn tối đa 10 thẻ (ví dụ #agent, #devtools, #mcp...) để hệ thống tự động lọc các mục bạn muốn xem.
+                </p>
+              </div>
+              <Button variant="primary" size="md" onClick={openTagModal}>
+                Chọn chủ đề ngay
+              </Button>
+            </div>
+          )}
+
+          {selectedCategory === "my_feed" && user && user.tags.length > 0 && filteredItems.length === 0 && (
+            <div className="p-10 rounded-2xl bg-slate-900/60 border border-slate-800 text-center max-w-lg mx-auto my-10 space-y-4">
+              <div className="h-12 w-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mx-auto">
+                <Sparkles className="h-6 w-6" />
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-base font-bold text-white">Không có mục phù hợp hôm nay</h3>
+                <p className="text-xs text-slate-400 max-w-sm mx-auto">
+                  Bản tin hôm nay chưa có bài viết nào thuộc các chủ đề bạn đã chọn. Bạn có thể mở rộng danh sách chủ đề hoặc xem mục "Tất cả".
+                </p>
+              </div>
+              <Button variant="secondary" size="sm" onClick={openTagModal}>
+                Điều chỉnh chủ đề
+              </Button>
+            </div>
+          )}
+
+          {(selectedCategory !== "my_feed" || (user && user.tags.length > 0 && filteredItems.length > 0)) && (
+            <DigestSection items={filteredItems} />
+          )}
         </>
+      )}
+
+      {user && (
+        <UserTagModal
+          isOpen={isTagModalOpen}
+          onClose={closeTagModal}
+          currentTags={user.tags}
+          onSave={updateTags}
+        />
       )}
     </MainLayout>
   );
 }
+

@@ -10,5 +10,5 @@ export interface DigestFeedPayload {
   items: DigestFeedItem[];
 }
 
-export type CategoryFilter = Category | "all";
+export type CategoryFilter = Category | "all" | "my_feed";
 export type VerdictFilter = Verdict | "all";
