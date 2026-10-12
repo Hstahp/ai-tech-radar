@@ -16,6 +16,7 @@
 # Secrets (Settings → Secrets and variables → Actions):
 #   GEMINI_API_KEY        (bắt buộc nếu dùng Gemini)
 #   GROQ_API_KEY          (tùy chọn, dùng làm fallback)
+#   DISCORD_WEBHOOK_URL   (tùy chọn, gửi điểm tin lên Discord)
 #   TELEGRAM_BOT_TOKEN    (tùy chọn, để nhận cảnh báo lỗi)
 #   TELEGRAM_CHAT_ID      (tùy chọn)
 # Variables (tùy chọn):
@@ -122,6 +123,7 @@ jobs:
           GITHUB_API_TOKEN: ${{ github.token }}        # tăng giới hạn GitHub API
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           LLM_PRIMARY_MODEL: ${{ vars.LLM_PRIMARY_MODEL }}
           LLM_FALLBACK_MODEL: ${{ vars.LLM_FALLBACK_MODEL }}
           RUN_TRIGGER: ${{ github.event_name == 'schedule' && 'schedule' || 'manual' }}
