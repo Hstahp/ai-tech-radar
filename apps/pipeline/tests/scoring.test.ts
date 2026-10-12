@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { calculateItemScore } from "./scoring.js";
+import { calculateItemScore } from "../src/domain/scoring.js";
 
 describe("calculateItemScore", () => {
   it("tính điểm chuẩn xác theo công thức trọng số", () => {

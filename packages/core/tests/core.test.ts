@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { normalizeUrl, sha256Hex, computeContentHash } from "./url.js";
-import { parseSummaries } from "./schemas.js";
+import { normalizeUrl, sha256Hex, computeContentHash } from "../src/url.js";
+import { parseSummaries } from "../src/schemas.js";
 
 describe("URL normalization and hashing", () => {
   it("chuẩn hóa URL bỏ slash cuối và tracking query params", () => {
