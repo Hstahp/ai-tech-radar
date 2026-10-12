@@ -1,0 +1,21 @@
+#!/bin/sh
+
+current_branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+
+if [ "$current_branch" = "main" ] || [ "$current_branch" = "develop" ]; then
+  echo ""
+  echo "==============================================================="
+  echo " DIRECT PUSH TO '$current_branch' IS PROHIBITED!"
+  echo "Theo quy định GIT_WORKFLOW.md:"
+  echo "- Tuyệt đối không push code trực tiếp lên 'main' hoặc 'develop'."
+  echo "- Vui lòng tạo nhánh mới: feature/<ten-nhanh> hoặc defect/<ten-nhanh>."
+  echo "- Sau đó tạo Pull Request vào 'develop'."
+  echo "==============================================================="
+  echo ""
+  exit 1
+fi
+
+echo "Đang chạy kiểm tra Typecheck & Unit Tests trước khi push..."
+pnpm typecheck || exit 1
+pnpm test || exit 1
+echo " Kiểm tra hoàn tất! Đang tiến hành push..."
