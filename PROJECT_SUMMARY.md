@@ -153,6 +153,23 @@ Pipeline tuân thủ kiến trúc phân lớp sạch (Clean Architecture):
 
 ---
 
+### 2.9. Giai đoạn 2 — Bước B: Cơ chế Giải thích sâu (Deep Explain) có cache
+* **Schema & Prompt chuyên sâu (`packages/core` & `prompts/`):**
+  * Định nghĩa `DeepExplainSchema` gồm 5 trường có cấu trúc chặt chẽ: `what_it_is`, `how_it_works`, `use_cases`, `limitations`, `getting_started` và `confidence`.
+  * Soạn thảo system prompt [prompts/explain_prompt.md](file:///d:/IdealProject/prompts/explain_prompt.md) nghiêm ngặt, cấm bịa đặt lệnh cài đặt không có thật.
+* **Worker Deep Explain Service (`apps/worker/src/explain/`):**
+  * **Khóa mềm (Soft Lock):** Đặt khóa thời hạn 60s trên bảng `explanations` khi có request khởi tạo, ngăn chặn hoàn toàn tình trạng 2 request đồng thời cùng gọi LLM $\rightarrow$ tiết kiệm tối đa quota API.
+  * **Cơ chế Cache 100%:** Khi một mục đã được giải thích `ready`, toàn bộ các request sau của bất kỳ user nào đều trả kết quả ngay từ cơ sở dữ liệu (**0 token LLM**).
+  * **Bảo mật chống SSRF (`fetcher.ts`):** Chỉ cho phép nạp tài liệu README từ các host an toàn trong danh sách allowlist (`api.github.com`, `raw.githubusercontent.com`, `github.com`, `open-vsx.org`), cắt tối đa 6.000 ký tự (~1.500 token).
+  * Endpoint `POST /api/items/:key/explain` hỗ trợ trả mã `202 Accepted` khi đang xử lý.
+* **Tích hợp Web Dashboard (`apps/web`):**
+  * Bổ sung nút **"Giải thích AI"** trực tiếp trên mỗi thẻ [DigestCard.tsx](file:///d:/IdealProject/apps/web/src/features/digest/components/DigestCard.tsx).
+  * Xây dựng Modal trực quan [DeepExplainModal.tsx](file:///d:/IdealProject/apps/web/src/features/explain/components/DeepExplainModal.tsx) với giao diện Bento Dark Mode, phân chia rõ ràng bản chất, cách hoạt động, bảng so sánh ưu/nhược điểm và hướng dẫn bắt đầu nhanh kèm code block.
+* **Bộ kiểm thử tự động:**
+  * Thêm 3 unit tests toàn diện trong `apps/worker/tests/explain.test.ts` kiểm thử khóa mềm, cache và chống SSRF (Tổng: **24/24 tests pass 100%**).
+
+---
+
 ## 3. BẢNG TỔNG KẾT TIẾN ĐỘ DỰ ÁN
 
 | Hạng mục | Trạng thái | Ghi chú |
@@ -170,6 +187,8 @@ Pipeline tuân thủ kiến trúc phân lớp sạch (Clean Architecture):
 | Husky Git Hooks (`pre-push`, `pre-commit`) | ✅ Hoàn thành | Phòng thủ 2 lớp, cấm push trực tiếp |
 | Tích hợp CodeRabbit AI Review | ✅ Hoàn thành | Tự động review mọi PR trên GitHub |
 | **Phase 2 - Bước A: Chatbox RAG chặt** | ✅ Hoàn thành | Worker Hono, 0-token rejection, citation guard |
-| Bộ kiểm thử tự động (Unit Tests) | ✅ Hoàn thành | 21/21 tests pass (`@radar/core`, pipeline, web, worker) |
+| **Phase 2 - Bước B: Giải thích sâu (Deep Explain)** | ✅ Hoàn thành | Khóa mềm, cache 0-token, chống SSRF, Modal UI |
+| Bộ kiểm thử tự động (Unit Tests) | ✅ Hoàn thành | 24/24 tests pass (`@radar/core`, pipeline, web, worker) |
+
 
 
