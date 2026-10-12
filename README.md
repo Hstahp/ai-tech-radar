@@ -110,11 +110,15 @@ pnpm test
 pnpm typecheck
 ```
 
+### 🛡️ Hệ thống phòng thủ 2 lớp (Two-Layer Defense)
+* **Lớp 1 (GitHub Server):** CI Workflow (`.github/workflows/ci.yml`) tự động kiểm tra code trên PR; Branch Protection cấm push thẳng vào `main`/`develop`; bot CodeRabbit AI tự động review từng dòng code.
+* **Lớp 2 (Local Machine):** Husky Git Hooks (`.husky/pre-push`, `.husky/pre-commit`) tự động chặn push đè vào `main`/`develop` ngay tại terminal và chạy kiểm thử trước khi gửi code.
+
 ---
 
 ## 🗺️ Lộ trình phát triển (Roadmap)
 
-* [x] **Mốc 1 (MVP):**
+* [x] **Mốc 1 (MVP) & Hạ tầng bảo vệ:**
   * [x] Kiến trúc Monorepo & Core Package với Zod validation.
   * [x] Database SQLite, Views phân tích và tìm kiếm tiếng Việt FTS5.
   * [x] Backend Pipeline (GitHub, Hacker News, Open VSX).
@@ -122,6 +126,7 @@ pnpm typecheck
   * [x] Xuất JSON, RSS Feed XML và gửi Webhook thông báo Discord.
   * [x] Web Dashboard Bento Grid (React 19 + Tailwind v4 + Dark mode + Lucide icons).
   * [x] Tự động hóa CI/CD GitHub Actions hàng ngày lúc 07:00 AM VN.
+  * [x] Hệ thống kiểm thử CI tự động, Husky Git hooks bảo vệ nhánh cục bộ và tích hợp CodeRabbit AI.
 * [ ] **Giai đoạn 2 (Cloudflare Worker & RAG Chatbox - theo [DESIGN_PHASE2_AUTH_ADMIN_CHAT.md](DESIGN_PHASE2_AUTH_ADMIN_CHAT.md)):**
   * [ ] **Bước A:** Nền tảng + Chatbox RAG chặt (zero-token rejection, trích dẫn chuẩn, Turnstile).
   * [ ] **Bước B:** Cơ chế giải thích sâu (Deep explain) có cache theo bài viết.
