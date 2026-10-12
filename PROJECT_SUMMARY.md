@@ -120,10 +120,22 @@ Pipeline tuân thủ kiến trúc phân lớp sạch (Clean Architecture):
   * PR #1 (`feature/mvp-discord-and-web`): Triển khai RSS Feed, Discord Webhook, Web Bento Grid.
   * PR #2 (`defect/fix-dark-mode-and-discord-workflow`): Sửa cấu hình Dark mode cho Tailwind v4 và tích hợp secret Discord vào GitHub Workflow.
   * PR #3 (`defect/fix-pnpm-action-setup`): Khắc phục lỗi xung đột phiên bản pnpm trên GitHub Actions runner.
+  * PR #5 (`feature/documentation-and-readme`): Bổ sung `README.md`, tài liệu thiết kế Giai đoạn 2 và báo cáo tổng kết dự án.
 
 ---
 
-## 3. BẢNG TỔNG KẾT MỐC 1 (MVP)
+### 2.7. Tự động hóa CI/CD & Hệ thống bảo vệ 2 lớp (Two-Layer Defense)
+* **Lớp 1: GitHub CI Workflow (`.github/workflows/ci.yml`) & Branch Protection:**
+  * Thiết lập CI tự động kiểm tra `typecheck`, `lint`, `test`, `build` cho mọi Push và Pull Request vào `main` và `develop`.
+  * Cấu hình Branch Protection Rules trên GitHub chặn trực tiếp push đè lên `main` và `develop`, bắt buộc thông qua Pull Request.
+  * Tích hợp bot **CodeRabbit AI** tự động tóm tắt, kiểm tra lỗi và review từng dòng code trên PR (100% miễn phí).
+* **Lớp 2: Kiểm soát cục bộ bằng Husky Git Hooks (`.husky/`):**
+  * `pre-push`: Tự động chặn ngay tại terminal máy lập trình viên nếu có hành vi push thẳng vào `main` hoặc `develop`, đồng thời tự động chạy `pnpm typecheck` và `pnpm test` trước khi gửi code lên remote để tiết kiệm quota CI GitHub Actions.
+  * `pre-commit`: Tự động kiểm tra cú pháp TypeScript (`pnpm typecheck`) trước khi cho phép tạo commit.
+
+---
+
+## 3. BẢNG TỔNG KẾT TIẾN ĐỘ DỰ ÁN
 
 | Hạng mục | Trạng thái | Ghi chú |
 | :--- | :---: | :--- |
@@ -136,4 +148,8 @@ Pipeline tuân thủ kiến trúc phân lớp sạch (Clean Architecture):
 | Điểm tin Discord qua Webhook | ✅ Hoàn thành | Tự động phân loại màu sắc và đánh giá |
 | Web Dashboard Bento Grid | ✅ Hoàn thành | Vite + React 19 + Tailwind v4 + Dark Mode |
 | GitHub Actions Pipeline 07:00 AM | ✅ Hoàn thành | Đã chạy thử nghiệm thành công |
+| GitHub CI Workflow (Test, Typecheck, Build) | ✅ Hoàn thành | `.github/workflows/ci.yml` |
+| Husky Git Hooks (`pre-push`, `pre-commit`) | ✅ Hoàn thành | Phòng thủ 2 lớp, cấm push trực tiếp |
+| Tích hợp CodeRabbit AI Review | ✅ Hoàn thành | Tự động review mọi PR trên GitHub |
 | Bộ kiểm thử tự động (Unit Tests) | ✅ Hoàn thành | 100% tests pass (`@radar/core`, pipeline, web) |
+
