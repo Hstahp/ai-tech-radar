@@ -1,4 +1,4 @@
-# 📡 AI Tech Radar (DevPulse AI)
+# AI Tech Radar (DevPulse AI)
 
 > **Hệ thống tự động theo dõi, chắt lọc và tóm tắt công nghệ AI hàng ngày dành cho lập trình viên — vận hành 100% bằng tài nguyên miễn phí (Free Tier).**
 
@@ -9,20 +9,20 @@
 
 ---
 
-## 🌟 Điểm nổi bật
+## Điểm nổi bật
 
-* 🔄 **Thu thập tự động đa nguồn:** Quét liên tục GitHub Trending/Topics, Hacker News AI discussions, và Open VSX AI extensions.
-* 🧠 **Tóm tắt & Đánh giá bằng LLM:** Tự động phân tích mục đích, điểm nổi bật, hành động gợi ý và gán nhãn khuyến nghị (`🚀 Thử ngay`, `👀 Theo dõi`, `⏭️ Bỏ qua`) bằng Google Gemini / Groq / Ollama.
-* ⚡ **Zero-cost & Fallback thông minh:** Tự động chuyển đổi giữa Gemini và Groq khi chạm giới hạn quota; cache nội dung chống gọi trùng lặp; tự động chuyển đổi SQLite driver trên Windows.
-* 📰 **Phân phối đa kênh:**
+* **Thu thập tự động đa nguồn:** Quét liên tục GitHub Trending/Topics, Hacker News AI discussions, và Open VSX AI extensions.
+* **Tóm tắt & Đánh giá bằng LLM:** Tự động phân tích mục đích, điểm nổi bật, hành động gợi ý và gán nhãn khuyến nghị (Thử ngay, Theo dõi, Bỏ qua) bằng Google Gemini / Groq / Ollama.
+* **Zero-cost & Fallback thông minh:** Tự động chuyển đổi giữa Gemini và Groq khi chạm giới hạn quota; cache nội dung chống gọi trùng lặp; tự động chuyển đổi SQLite driver trên Windows.
+* **Phân phối đa kênh:**
   * **Web Dashboard:** Giao diện Bento Grid hiện đại (Vite + React 19 + Tailwind CSS v4) hỗ trợ Light/Dark mode.
   * **RSS Feed:** Cung cấp chuẩn `feed.xml` cho mọi ứng dụng đọc tin (Feedly, Inoreader...).
   * **Discord Webhook:** Tự động gửi card điểm tin trực quan vào kênh Discord mỗi buổi sáng.
-* 🤖 **Tự động hóa hoàn toàn với GitHub Actions:** Lên lịch chạy lúc **07:00 AM (giờ Việt Nam)** mỗi ngày, tự động sao lưu SQLite Database vào GitHub Release.
+* **Tự động hóa hoàn toàn với GitHub Actions:** Lên lịch chạy lúc **07:00 AM (giờ Việt Nam)** mỗi ngày, tự động sao lưu SQLite Database vào GitHub Release.
 
 ---
 
-## 🏗️ Kiến trúc hệ thống (Monorepo)
+## Kiến trúc hệ thống (Monorepo)
 
 Dự án được tổ chức theo mô hình **pnpm workspaces**:
 
@@ -36,16 +36,17 @@ ai-tech-radar/
 │   └── worker/               # API endpoint (Cloudflare Worker - Chat RAG, Deep Explain, Auth)
 ├── db/
 │   ├── schema.sql            # Schema Content SQLite, Views, Triggers và FTS5
-│   └── migrations/           # Các bản migration cơ sở dữ liệu
+│   ├── migrations/           # Các bản migration Content DB
+│   └── app-migrations/       # Các bản migration App DB (D1 / SQLite)
 ├── prompts/                  # Quản lý prompt hệ thống cho LLM theo phiên bản
 ├── data/
-│   └── export/               # Dữ liệu xuất bản tĩnh (latest.json, YYYY-MM-DD.json, feed.xml)
-└── .github/workflows/        # Workflow GitHub Actions tự động hóa hàng ngày
+│   └── export/               # Dữ liệu xuất bản tĩnh (latest.json, search-index.json, feed.xml)
+└── .github/workflows/        # Workflow GitHub Actions tự động hóa hàng ngày và CI
 ```
 
 ---
 
-## 🚀 Hướng dẫn cài đặt & Chạy cục bộ
+## Hướng dẫn cài đặt & Chạy cục bộ
 
 ### 1. Yêu cầu môi trường
 * **Node.js:** phiên bản `22.x` trở lên.
@@ -98,7 +99,7 @@ Truy cập giao diện tại: `http://localhost:5173`.
 
 ---
 
-## 🧪 Kiểm thử & Kiểm tra chất lượng mã nguồn
+## Kiểm thử & Kiểm tra chất lượng mã nguồn
 
 Dự án tuân thủ tiêu chuẩn chất lượng nghiêm ngặt theo [AGENTS.md](AGENTS.md):
 
@@ -110,13 +111,13 @@ pnpm test
 pnpm typecheck
 ```
 
-### 🛡️ Hệ thống phòng thủ 2 lớp (Two-Layer Defense)
+### Hệ thống phòng thủ 2 lớp (Two-Layer Defense)
 * **Lớp 1 (GitHub Server):** CI Workflow (`.github/workflows/ci.yml`) tự động kiểm tra code trên PR; Branch Protection cấm push thẳng vào `main`/`develop`; bot CodeRabbit AI tự động review từng dòng code.
 * **Lớp 2 (Local Machine):** Husky Git Hooks (`.husky/pre-push`, `.husky/pre-commit`) tự động chặn push đè vào `main`/`develop` ngay tại terminal và chạy kiểm thử trước khi gửi code.
 
 ---
 
-## 🗺️ Lộ trình phát triển (Roadmap)
+## Lộ trình phát triển (Roadmap)
 
 * [x] **Mốc 1 (MVP) & Hạ tầng bảo vệ:**
   * [x] Kiến trúc Monorepo & Core Package với Zod validation.
@@ -140,7 +141,7 @@ Chi tiết tiến độ thực hiện được cập nhật liên tục tại [P
 
 ---
 
-## 🤝 Quy chuẩn đóng góp (Git Flow)
+## Quy chuẩn đóng góp (Git Flow)
 
 Vui lòng đọc kỹ hướng dẫn trước khi đóng góp:
 * [AGENTS.md](AGENTS.md): Quy tắc clean code, kiến trúc phân lớp và quy chuẩn đặt tên.
@@ -148,6 +149,6 @@ Vui lòng đọc kỹ hướng dẫn trước khi đóng góp:
 
 ---
 
-## 📄 Bản quyền
+## Bản quyền
 
 Phát hành dưới giấy phép [MIT License](LICENSE).
