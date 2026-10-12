@@ -81,9 +81,10 @@ Mọi commit bắt buộc phải áp dụng định dạng:
 
 ### 2.3. Nguyên tắc khi viết commit message:
 1. **Một commit một ý:** Nội dung mô tả rõ ràng, nguyên tử (atomic commit). Không gom quá nhiều thay đổi không liên quan vào cùng 1 commit.
-2. **Không dùng commit mơ hồ:** Tuyệt đối tránh các commit như `update`, `fix bug`, `temp`, `wip`, `test1`.
-3. **Chữ thường cho type:** Viết đúng `feat:`, `fix:`, ... có dấu hai chấm và một khoảng trắng phía sau.
-4. **Không commit file nhạy cảm và rác:** Không bao giờ commit file `.env`, khóa API, file database local (`data/*.db*`), file build `dist/`, thư mục tạm.
+2. **Tách riêng commit `test:` và `feat:`:** Các file test (`tests/*.test.ts`) bắt buộc phải commit riêng biệt với type `test:`. Tuyệt đối không commit chung file test vào cùng commit với code tính năng (`feat:`). Ví dụ: commit `test: add unit tests for discord webhook` riêng, sau đó mới commit `feat: implement discord webhook notifier`.
+3. **Không dùng commit mơ hồ:** Tuyệt đối tránh các commit như `update`, `fix bug`, `temp`, `wip`, `test1`.
+4. **Chữ thường cho type và toàn bộ bằng tiếng Anh:** Viết đúng `feat:`, `fix:`, `test:`, ... có dấu hai chấm và một khoảng trắng phía sau. Nội dung commit message bắt buộc viết bằng tiếng Anh.
+5. **Không commit file nhạy cảm và rác:** Không bao giờ commit file `.env`, khóa API, file database local (`data/*.db*`), file build `dist/`, thư mục tạm.
 
 ---
 
@@ -130,7 +131,8 @@ Sau khi nhánh `develop` được kiểm thử tích hợp đầy đủ và sẵ
 ---
 
 ## 4. QUY ĐỊNH DÀNH RIÊNG CHO AI AGENT
-
+ 
 Khi AI nhận lệnh thực hiện công việc:
 1. **Kiểm tra nhánh hiện tại:** Xác định rõ đang ở nhánh nào. Nếu đang ở `main` hoặc `develop`, hãy tạo nhánh `feature/*` hoặc `defect/*` phù hợp trước khi chỉnh sửa.
-2. **Viết commit message:** Luôn đối chiếu danh sách `type` ở Mục 2.1 và đảm bảo thông điệp commit tuân thủ đúng định dạng `<type>: <short description>`.
+2. **Viết commit message:** Luôn đối chiếu danh sách `type` ở Mục 2.1 và đảm bảo thông điệp commit tuân thủ đúng định dạng `<type>: <short description>` bằng tiếng Anh.
+3. **Bắt buộc tách riêng commit test:** Khi viết test hoặc sửa test, phải commit riêng với type `test:`. Không bao giờ gộp file test chung vào commit `feat:` hay `refactor:`. Luôn chia nhỏ thành các commit nguyên tử (atomic commits).
