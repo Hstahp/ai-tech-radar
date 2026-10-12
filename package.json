@@ -8,7 +8,9 @@
     "typecheck": "pnpm -r --parallel run typecheck",
     "lint": "pnpm -r --parallel run lint",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "dev:web": "pnpm --filter @radar/web run dev",
+    "build:web": "pnpm --filter @radar/web run build"
   },
   "devDependencies": {
     "typescript": "^5.7.3",
