@@ -1,0 +1,17 @@
+{
+  "name": "ai-tech-radar",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AI Tech Radar - Radar công nghệ & điểm tin AI dành cho lập trình viên",
+  "packageManager": "pnpm@10.34.6",
+  "scripts": {
+    "typecheck": "pnpm -r --parallel run typecheck",
+    "lint": "pnpm -r --parallel run lint",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.7"
+  }
+}
