@@ -29,6 +29,7 @@ const EnvSchema = z.object({
   LLM_PRIMARY_MODEL: z.string().default("gemini-2.5-flash"),
   LLM_FALLBACK_MODEL: z.string().default("llama-3.3-70b-versatile"),
   LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
+  DISCORD_WEBHOOK_URL: z.string().url().optional(),
   DRY_RUN: BooleanOrString,
   SKIP_LLM: BooleanOrString,
 });
@@ -46,6 +47,7 @@ export function loadConfig(overrides?: Partial<Record<string, unknown>>): Pipeli
     LLM_PRIMARY_MODEL: process.env.LLM_PRIMARY_MODEL,
     LLM_FALLBACK_MODEL: process.env.LLM_FALLBACK_MODEL,
     LOG_LEVEL: process.env.LOG_LEVEL,
+    DISCORD_WEBHOOK_URL: process.env.DISCORD_WEBHOOK_URL,
     DRY_RUN: process.env.DRY_RUN,
     SKIP_LLM: process.env.SKIP_LLM,
     ...overrides,
