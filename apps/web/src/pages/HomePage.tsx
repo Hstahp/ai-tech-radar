@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { Loader2, AlertCircle, Sparkles, Tag as TagIcon, LogIn } from "lucide-react";
 import { MainLayout } from "../layouts/MainLayout";
 import { FilterBar, DigestSection, useDigest } from "../features/digest";
 import { useAuth, UserMenu, UserTagModal } from "../features/auth";
+import { AdminModal } from "../features/admin";
 import { Button } from "../components/ui/Button";
 
 export function HomePage() {
+  const [isAdminOpen, setIsAdminOpen] = useState(false);
+
   const {
     user,
     isLoading: isAuthLoading,
@@ -44,6 +48,7 @@ export function HomePage() {
           onLogout={logout}
           onDeleteAccount={deleteAccount}
           onOpenTagModal={openTagModal}
+          onOpenAdmin={() => setIsAdminOpen(true)}
         />
       }
     >
@@ -142,6 +147,13 @@ export function HomePage() {
           onClose={closeTagModal}
           currentTags={user.tags}
           onSave={updateTags}
+        />
+      )}
+
+      {user && user.role === "admin" && (
+        <AdminModal
+          isOpen={isAdminOpen}
+          onClose={() => setIsAdminOpen(false)}
         />
       )}
     </MainLayout>

@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { LogOut, Tag as TagIcon, Trash2 } from 'lucide-react';
+import { LogOut, Tag as TagIcon, Trash2, ShieldCheck } from 'lucide-react';
 import type { UserProfile } from '@radar/core';
 import { Button } from '../../../components/ui/Button';
 
@@ -10,9 +10,18 @@ interface UserMenuProps {
     onLogout: () => void;
     onDeleteAccount: () => void;
     onOpenTagModal: () => void;
+    onOpenAdmin?: () => void;
 }
 
-export function UserMenu({ user, isLoading, onLogin, onLogout, onDeleteAccount, onOpenTagModal }: UserMenuProps) {
+export function UserMenu({
+    user,
+    isLoading,
+    onLogin,
+    onLogout,
+    onDeleteAccount,
+    onOpenTagModal,
+    onOpenAdmin,
+}: UserMenuProps) {
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
 
@@ -97,6 +106,20 @@ export function UserMenu({ user, isLoading, onLogin, onLogout, onDeleteAccount, 
                         <p className="text-xs font-semibold text-white truncate">{user.displayName ?? 'Người dùng'}</p>
                         <p className="text-[11px] text-slate-400 truncate">{user.email}</p>
                     </div>
+
+                    {user.role === 'admin' && onOpenAdmin && (
+                        <button
+                            type="button"
+                            onClick={() => {
+                                setIsOpen(false);
+                                onOpenAdmin();
+                            }}
+                            className="w-full flex items-center gap-2 px-3 py-2 text-xs text-amber-300 hover:bg-amber-950/30 rounded-xl transition-colors font-medium mb-1"
+                        >
+                            <ShieldCheck className="h-3.5 w-3.5 text-amber-400" />
+                            <span>Bảng điều khiển Quản trị</span>
+                        </button>
+                    )}
 
                     <button
                         type="button"

@@ -115,4 +115,8 @@ export class AuthService {
         const tokenHash = await hashSessionToken(rawToken);
         await this.options.appDb.deleteSession(tokenHash);
     }
+
+    async requestTag(userId: string, slugProposed: string, label: string, reason?: string) {
+        return this.options.appDb.createTagRequest(userId, slugProposed, label, reason);
+    }
 }
