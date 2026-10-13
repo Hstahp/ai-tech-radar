@@ -142,7 +142,7 @@ pnpm typecheck
     - [x] **Bước A:** Nền tảng + Chatbox RAG chặt (zero-token rejection, trích dẫn chuẩn, Turnstile).
     - [x] **Bước B:** Cơ chế giải thích sâu (Deep explain) có cache theo bài viết và modal hiển thị trên web.
     - [x] **Bước C:** Đăng nhập Google/GitHub OAuth, lưu phiên session và lọc thẻ (tags) cá nhân hóa.
-    - [ ] **Bước D:** Trang quản trị Admin cơ bản và nhật ký kiểm toán (`audit_log`).
+    - [x] **Bước D:** Trang quản trị Admin cơ bản và nhật ký kiểm toán (`audit_log`).
     - [ ] **Bước E:** Thu thập theo tag hoạt động (`/internal/active-tags`).
     - [ ] **Bước F:** Quản lý Pool key an toàn & Hỗ trợ BYOK (Bring Your Own Key).
 - [ ] **Mốc 3:** Browser Extension (WXT, Manifest V3).

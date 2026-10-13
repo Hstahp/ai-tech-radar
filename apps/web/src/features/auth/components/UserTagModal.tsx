@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { X, Check, Tag as TagIcon, Loader2 } from 'lucide-react';
 import { TAGS, type Tag } from '@radar/core';
 import { Button } from '../../../components/ui/Button';
+import { submitTagRequest } from '../../admin/api/admin-client';
 
 interface UserTagModalProps {
     isOpen: boolean;
@@ -15,7 +16,33 @@ export function UserTagModal({ isOpen, onClose, currentTags, onSave }: UserTagMo
     const [isSaving, setIsSaving] = useState(false);
     const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
+    // Propose tag state
+    const [showPropose, setShowPropose] = useState(false);
+    const [propSlug, setPropSlug] = useState('');
+    const [propLabel, setPropLabel] = useState('');
+    const [isProposing, setIsProposing] = useState(false);
+
     if (!isOpen) return null;
+
+    const handlePropose = async () => {
+        if (!propSlug.trim() || !propLabel.trim()) {
+            setErrorMsg('Vui lòng điền đầy đủ slug và tên thẻ đề xuất.');
+            return;
+        }
+        setIsProposing(true);
+        setErrorMsg(null);
+        try {
+            await submitTagRequest(propSlug.trim().toLowerCase(), propLabel.trim());
+            setShowPropose(false);
+            setPropSlug('');
+            setPropLabel('');
+            alert('Đề xuất thẻ đã được gửi thành công tới quản trị viên!');
+        } catch (err: unknown) {
+            setErrorMsg(err instanceof Error ? err.message : 'Gửi đề xuất thất bại.');
+        } finally {
+            setIsProposing(false);
+        }
+    };
 
     const toggleTag = (tag: string) => {
         setErrorMsg(null);
@@ -96,7 +123,7 @@ export function UserTagModal({ isOpen, onClose, currentTags, onSave }: UserTagMo
                 )}
 
                 {/* Tags Selection Grid */}
-                <div className="flex flex-wrap gap-2 max-h-60 overflow-y-auto py-1">
+                <div className="flex flex-wrap gap-2 max-h-56 overflow-y-auto py-1">
                     {TAGS.map((tag: Tag) => {
                         const isSelected = selectedTags.includes(tag);
                         return (
@@ -115,6 +142,56 @@ export function UserTagModal({ isOpen, onClose, currentTags, onSave }: UserTagMo
                             </button>
                         );
                     })}
+                </div>
+
+                {/* Propose Tag Section */}
+                <div className="pt-2 border-t border-slate-800/60">
+                    {!showPropose ? (
+                        <button
+                            type="button"
+                            onClick={() => setShowPropose(true)}
+                            className="text-[11px] text-indigo-400 hover:text-indigo-300 transition-colors"
+                        >
+                            + Chưa thấy thẻ bạn muốn? Đề xuất chủ đề mới
+                        </button>
+                    ) : (
+                        <div className="p-3 rounded-xl bg-slate-950/80 border border-slate-800 space-y-2">
+                            <div className="flex items-center justify-between text-xs text-slate-300 font-medium">
+                                <span>Đề xuất chủ đề mới</span>
+                                <button
+                                    type="button"
+                                    onClick={() => setShowPropose(false)}
+                                    className="text-slate-500 hover:text-slate-300"
+                                >
+                                    <X className="h-3.5 w-3.5" />
+                                </button>
+                            </div>
+                            <div className="grid grid-cols-2 gap-2">
+                                <input
+                                    type="text"
+                                    placeholder="Slug (vd: cursor)"
+                                    value={propSlug}
+                                    onChange={(e) => setPropSlug(e.target.value)}
+                                    className="px-2.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500 font-mono"
+                                />
+                                <input
+                                    type="text"
+                                    placeholder="Tên thẻ (vd: Cursor IDE)"
+                                    value={propLabel}
+                                    onChange={(e) => setPropLabel(e.target.value)}
+                                    className="px-2.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-white placeholder-slate-500"
+                                />
+                            </div>
+                            <button
+                                type="button"
+                                onClick={handlePropose}
+                                disabled={isProposing}
+                                className="w-full py-1.5 rounded-lg bg-indigo-600/30 hover:bg-indigo-600/40 border border-indigo-500/30 text-indigo-300 text-xs font-medium transition-colors"
+                            >
+                                {isProposing ? 'Đang gửi...' : 'Gửi đề xuất tới Admin'}
+                            </button>
+                        </div>
+                    )}
                 </div>
 
                 {/* Footer actions */}

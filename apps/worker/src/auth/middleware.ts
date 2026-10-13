@@ -1,6 +1,6 @@
 import type { MiddlewareHandler } from 'hono';
 import type { AuthService } from './service.js';
-import { AuthError } from '../lib/errors.js';
+import { AuthError, ForbiddenError } from '../lib/errors.js';
 import type { UserRecord } from '../repositories/app-db.js';
 
 declare module 'hono' {
@@ -53,6 +53,17 @@ export const requireAuth: MiddlewareHandler = async (c, next) => {
     const user = c.get('user');
     if (!user) {
         throw new AuthError('Ban can dang nhap de thuc hien thao tac nay.');
+    }
+    await next();
+};
+
+export const requireAdmin: MiddlewareHandler = async (c, next) => {
+    const user = c.get('user');
+    if (!user) {
+        throw new AuthError('Yêu cầu đăng nhập để truy cập trang quản trị.');
+    }
+    if (user.role !== 'admin') {
+        throw new ForbiddenError('Chỉ quản trị viên mới có quyền truy cập khu vực này.');
     }
     await next();
 };

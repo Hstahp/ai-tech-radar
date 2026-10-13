@@ -6,6 +6,7 @@ import { createAuthMiddleware } from './auth/middleware.js';
 import { createAuthRouter } from './auth/routes.js';
 import { createChatRouter } from './chat/routes.js';
 import { createExplainRouter } from './explain/routes.js';
+import { createAdminRouter } from './admin/routes.js';
 import { appErrorHandler } from './lib/errors.js';
 
 export interface Env {
@@ -42,5 +43,6 @@ app.get('/health', (c) => {
 app.route('/', createAuthRouter(authService));
 app.route('/', createChatRouter({ appDb }));
 app.route('/', createExplainRouter({ appDb }));
+app.route('/api/admin', createAdminRouter({ appDb }));
 
 export default app;
