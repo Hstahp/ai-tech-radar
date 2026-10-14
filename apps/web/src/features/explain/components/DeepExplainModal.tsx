@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { X, Sparkles, AlertCircle, CheckCircle2, ChevronRight, Terminal, RefreshCw } from "lucide-react";
 import type { DigestFeedItem, DeepExplain } from "@radar/core";
+import { API_BASE, getAuthHeaders } from "../../../lib/api-config";
 
 interface DeepExplainModalProps {
   item: DigestFeedItem;
@@ -27,8 +28,12 @@ export function DeepExplainModal({ item, isOpen, onClose }: DeepExplainModalProp
     setError(null);
     try {
       const itemKey = item.key ?? String(item.item_id);
-      const res = await fetch(`/api/items/${encodeURIComponent(itemKey)}/explain`, {
+      const res = await fetch(`${API_BASE}/api/items/${encodeURIComponent(itemKey)}/explain`, {
         method: "POST",
+        headers: {
+          ...getAuthHeaders(),
+        },
+        credentials: "include",
       });
 
       if (res.status === 202) {

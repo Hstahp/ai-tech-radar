@@ -124,6 +124,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SITE_URL: "https://ai-tech-radar-fe.phatle219.workers.dev"
           LLM_PRIMARY_MODEL: ${{ vars.LLM_PRIMARY_MODEL }}
           LLM_FALLBACK_MODEL: ${{ vars.LLM_FALLBACK_MODEL }}
           RUN_TRIGGER: ${{ github.event_name == 'schedule' && 'schedule' || 'manual' }}

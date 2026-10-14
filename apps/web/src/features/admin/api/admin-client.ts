@@ -1,6 +1,5 @@
 import type { AdminTagUpdate, AdminTagCreate, AdminUserUpdate } from '@radar/core';
-
-const API_BASE = '';
+import { API_BASE, getAuthHeaders } from '../../../lib/api-config';
 
 export interface AdminOverviewMetrics {
     today: string;
@@ -60,14 +59,20 @@ export interface AdminAuditLogItem {
 }
 
 export async function fetchAdminOverview(): Promise<AdminOverviewMetrics> {
-    const res = await fetch(`${API_BASE}/api/admin/overview`, { credentials: 'include' });
+    const res = await fetch(`${API_BASE}/api/admin/overview`, {
+        headers: { ...getAuthHeaders() },
+        credentials: 'include',
+    });
     if (!res.ok) throw new Error('Không thể tải dữ liệu tổng quan quản trị.');
     const data = await res.json();
     return data.overview;
 }
 
 export async function fetchAdminSettings(): Promise<Record<string, string>> {
-    const res = await fetch(`${API_BASE}/api/admin/settings`, { credentials: 'include' });
+    const res = await fetch(`${API_BASE}/api/admin/settings`, {
+        headers: { ...getAuthHeaders() },
+        credentials: 'include',
+    });
     if (!res.ok) throw new Error('Không thể tải danh sách cấu hình hệ thống.');
     const data = await res.json();
     return data.settings;
@@ -76,7 +81,10 @@ export async function fetchAdminSettings(): Promise<Record<string, string>> {
 export async function updateAdminSettings(settings: Record<string, string>): Promise<Record<string, string>> {
     const res = await fetch(`${API_BASE}/api/admin/settings`, {
         method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+            'Content-Type': 'application/json',
+            ...getAuthHeaders(),
+        },
         credentials: 'include',
         body: JSON.stringify({ settings }),
     });
@@ -86,7 +94,10 @@ export async function updateAdminSettings(settings: Record<string, string>): Pro
 }
 
 export async function fetchAdminTags(): Promise<AdminTagItem[]> {
-    const res = await fetch(`${API_BASE}/api/admin/tags`, { credentials: 'include' });
+    const res = await fetch(`${API_BASE}/api/admin/tags`, {
+        headers: { ...getAuthHeaders() },
+        credentials: 'include',
+    });
     if (!res.ok) throw new Error('Không thể tải danh sách thẻ hệ thống.');
     const data = await res.json();
     return data.tags;
@@ -95,7 +106,10 @@ export async function fetchAdminTags(): Promise<AdminTagItem[]> {
 export async function updateAdminTag(slug: string, updates: AdminTagUpdate): Promise<void> {
     const res = await fetch(`${API_BASE}/api/admin/tags/${slug}`, {
         method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+            'Content-Type': 'application/json',
+            ...getAuthHeaders(),
+        },
         credentials: 'include',
         body: JSON.stringify(updates),
     });
@@ -105,7 +119,10 @@ export async function updateAdminTag(slug: string, updates: AdminTagUpdate): Pro
 export async function createAdminTag(tag: AdminTagCreate): Promise<void> {
     const res = await fetch(`${API_BASE}/api/admin/tags`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+            'Content-Type': 'application/json',
+            ...getAuthHeaders(),
+        },
         credentials: 'include',
         body: JSON.stringify(tag),
     });
@@ -116,7 +133,10 @@ export async function fetchAdminTagRequests(status?: string): Promise<AdminTagRe
     const url = status
         ? `${API_BASE}/api/admin/tag-requests?status=${encodeURIComponent(status)}`
         : `${API_BASE}/api/admin/tag-requests`;
-    const res = await fetch(url, { credentials: 'include' });
+    const res = await fetch(url, {
+        headers: { ...getAuthHeaders() },
+        credentials: 'include',
+    });
     if (!res.ok) throw new Error('Không thể tải danh sách đề xuất thẻ.');
     const data = await res.json();
     return data.requests;
@@ -125,7 +145,10 @@ export async function fetchAdminTagRequests(status?: string): Promise<AdminTagRe
 export async function reviewTagRequest(id: number, status: 'approved' | 'rejected'): Promise<void> {
     const res = await fetch(`${API_BASE}/api/admin/tag-requests/${id}/review`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+            'Content-Type': 'application/json',
+            ...getAuthHeaders(),
+        },
         credentials: 'include',
         body: JSON.stringify({ status }),
     });
@@ -136,7 +159,10 @@ export async function fetchAdminUsers(search?: string): Promise<AdminUserItem[]>
     const url = search
         ? `${API_BASE}/api/admin/users?search=${encodeURIComponent(search)}`
         : `${API_BASE}/api/admin/users`;
-    const res = await fetch(url, { credentials: 'include' });
+    const res = await fetch(url, {
+        headers: { ...getAuthHeaders() },
+        credentials: 'include',
+    });
     if (!res.ok) throw new Error('Không thể tải danh sách người dùng.');
     const data = await res.json();
     return data.users;
@@ -145,7 +171,10 @@ export async function fetchAdminUsers(search?: string): Promise<AdminUserItem[]>
 export async function updateAdminUser(id: string, updates: AdminUserUpdate): Promise<void> {
     const res = await fetch(`${API_BASE}/api/admin/users/${id}`, {
         method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+            'Content-Type': 'application/json',
+            ...getAuthHeaders(),
+        },
         credentials: 'include',
         body: JSON.stringify(updates),
     });
@@ -154,6 +183,7 @@ export async function updateAdminUser(id: string, updates: AdminUserUpdate): Pro
 
 export async function fetchAdminAuditLogs(limit: number = 50, offset: number = 0): Promise<AdminAuditLogItem[]> {
     const res = await fetch(`${API_BASE}/api/admin/audit?limit=${limit}&offset=${offset}`, {
+        headers: { ...getAuthHeaders() },
         credentials: 'include',
     });
     if (!res.ok) throw new Error('Không thể tải nhật ký kiểm toán.');
@@ -164,7 +194,10 @@ export async function fetchAdminAuditLogs(limit: number = 50, offset: number = 0
 export async function submitTagRequest(slugProposed: string, label: string, reason?: string): Promise<void> {
     const res = await fetch(`${API_BASE}/api/tag-requests`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+            'Content-Type': 'application/json',
+            ...getAuthHeaders(),
+        },
         credentials: 'include',
         body: JSON.stringify({ slugProposed, label, reason }),
     });
