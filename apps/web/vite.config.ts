@@ -32,6 +32,14 @@ export default defineConfig({
           next();
         });
       },
+      closeBundle() {
+        const srcDir = path.resolve(__dirname, "../../data/export");
+        const destDir = path.resolve(__dirname, "dist/data/export");
+        if (fs.existsSync(srcDir)) {
+          fs.mkdirSync(destDir, { recursive: true });
+          fs.cpSync(srcDir, destDir, { recursive: true });
+        }
+      },
     },
   ],
   resolve: {

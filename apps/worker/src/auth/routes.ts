@@ -67,7 +67,8 @@ export function createAuthRouter(authService: AuthService) {
             const { token } = await authService.createSessionForUser(user.id, userAgent);
 
             const isSecure = c.req.url.startsWith('https://');
-            const cookieVal = `radar_session=${token}; Path=/; HttpOnly; SameSite=Lax; Max-Age=2592000${isSecure ? '; Secure' : ''}`;
+            const sameSite = isSecure ? 'None' : 'Lax';
+            const cookieVal = `radar_session=${token}; Path=/; HttpOnly; SameSite=${sameSite}; Max-Age=2592000${isSecure ? '; Secure' : ''}`;
 
             const acceptHeader = c.req.header('Accept') || '';
             if (acceptHeader.includes('application/json')) {
@@ -75,9 +76,18 @@ export function createAuthRouter(authService: AuthService) {
                 return c.json({ token, user });
             }
 
-            const redirectTarget = c.env?.FRONTEND_URL || '/';
+            const redirectTarget = c.env?.FRONTEND_URL || 'https://ai-tech-radar-fe.phatle219.workers.dev';
+            let targetUrlString = redirectTarget;
+            try {
+                const targetUrl = new URL(redirectTarget, c.req.url);
+                targetUrl.searchParams.set('token', token);
+                targetUrlString = targetUrl.toString();
+            } catch {
+                targetUrlString = `${redirectTarget}${redirectTarget.includes('?') ? '&' : '?'}token=${token}`;
+            }
+
             c.header('Set-Cookie', cookieVal);
-            return c.redirect(redirectTarget);
+            return c.redirect(targetUrlString);
         } catch (err: any) {
             return c.json(
                 { error: { code: 'OAUTH_FAILED', message: err.message || 'Dang nhap Google that bai.' } },
@@ -130,7 +140,8 @@ export function createAuthRouter(authService: AuthService) {
             const { token } = await authService.createSessionForUser(user.id, userAgent);
 
             const isSecure = c.req.url.startsWith('https://');
-            const cookieVal = `radar_session=${token}; Path=/; HttpOnly; SameSite=Lax; Max-Age=2592000${isSecure ? '; Secure' : ''}`;
+            const sameSite = isSecure ? 'None' : 'Lax';
+            const cookieVal = `radar_session=${token}; Path=/; HttpOnly; SameSite=${sameSite}; Max-Age=2592000${isSecure ? '; Secure' : ''}`;
 
             const acceptHeader = c.req.header('Accept') || '';
             if (acceptHeader.includes('application/json')) {
@@ -138,9 +149,18 @@ export function createAuthRouter(authService: AuthService) {
                 return c.json({ token, user });
             }
 
-            const redirectTarget = c.env?.FRONTEND_URL || '/';
+            const redirectTarget = c.env?.FRONTEND_URL || 'https://ai-tech-radar-fe.phatle219.workers.dev';
+            let targetUrlString = redirectTarget;
+            try {
+                const targetUrl = new URL(redirectTarget, c.req.url);
+                targetUrl.searchParams.set('token', token);
+                targetUrlString = targetUrl.toString();
+            } catch {
+                targetUrlString = `${redirectTarget}${redirectTarget.includes('?') ? '&' : '?'}token=${token}`;
+            }
+
             c.header('Set-Cookie', cookieVal);
-            return c.redirect(redirectTarget);
+            return c.redirect(targetUrlString);
         } catch (err: any) {
             return c.json({ error: { code: 'OAUTH_FAILED', message: err.message || 'Dang nhap that bai.' } }, 400);
         }

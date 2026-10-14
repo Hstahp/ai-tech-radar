@@ -7,6 +7,7 @@ import {
   deleteUserAccount,
   saveUserTags,
 } from "../api/auth-client";
+import { setStoredToken } from "../../../lib/api-config";
 
 export function useAuth() {
   const [user, setUser] = useState<UserProfile | null>(null);
@@ -28,6 +29,20 @@ export function useAuth() {
   }, []);
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const urlToken = params.get("token");
+      if (urlToken) {
+        setStoredToken(urlToken);
+        params.delete("token");
+        const newSearch = params.toString();
+        const cleanUrl =
+          window.location.pathname +
+          (newSearch ? `?${newSearch}` : "") +
+          window.location.hash;
+        window.history.replaceState({}, document.title, cleanUrl);
+      }
+    }
     refreshUser();
   }, [refreshUser]);
 
