@@ -39,7 +39,7 @@ describe("buildDiscordEmbeds", () => {
   ];
 
   it("builds teaser batch with web link and top highlights", () => {
-    const batches = buildDiscordEmbeds(mockItems, "2026-10-12", "https://ai-tech-radar.pages.dev");
+    const batches = buildDiscordEmbeds(mockItems, "2026-10-12", "https://ai-tech-radar-fe.phatle219.workers.dev");
     expect(batches.length).toBe(1);
 
     const firstBatch = batches[0];
@@ -48,7 +48,7 @@ describe("buildDiscordEmbeds", () => {
 
     const embed = firstBatch.embeds[0];
     expect(embed.title).toContain("BẢN TIN AI TECH RADAR — 2026-10-12");
-    expect(embed.url).toBe("https://ai-tech-radar.pages.dev");
+    expect(embed.url).toBe("https://ai-tech-radar-fe.phatle219.workers.dev");
     expect(embed.fields?.length).toBeGreaterThan(1);
     expect(embed.fields?.some((f) => f.name.includes("langchain-next"))).toBe(true);
   });
