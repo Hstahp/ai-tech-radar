@@ -71,6 +71,8 @@ jobs:
 
       - name: Cài pnpm
         uses: pnpm/action-setup@v4
+        with:
+          run_install: false
 
       - name: Cài Node.js
         uses: actions/setup-node@v4

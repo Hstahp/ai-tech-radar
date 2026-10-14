@@ -25,6 +25,8 @@ jobs:
 
       - name: Cài đặt pnpm
         uses: pnpm/action-setup@v4
+        with:
+          run_install: false
 
       - name: Cài đặt Node.js 22
         uses: actions/setup-node@v4
