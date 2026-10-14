@@ -28,3 +28,8 @@ Thumbs.db
 
 apps/worker/.dev.vars
 apps/web/.dev.vars
+
+# Data exports (managed on orphan 'data' branch)
+data/export/*
+!data/export/.gitkeep
+apps/web/public/data/export/
