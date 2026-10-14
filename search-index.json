@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-10-14T10:59:01.373Z",
+  "items": [
+    {
+      "key": "47",
+      "title": "Gemini 4 Argon",
+      "category": "news",
+      "url": "https://deepmind.google/models/gemini",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": null
+    },
+    {
+      "key": "50",
+      "title": "OpenAI engineer arrested in bugging of executive conference room",
+      "category": "news",
+      "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": null
+    },
+    {
+      "key": "52",
+      "title": "AI is a tool and using it well takes skill",
+      "category": "news",
+      "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": null
+    },
+    {
+      "key": "49",
+      "title": "Apple's new 'Switch to Safari' campaign details why you should ditch Chrome",
+      "category": "news",
+      "url": "https://9to5mac.com/2026/10/12/apples-new-switch-to-safari-campaign-details-why-you-should-ditch-chrome",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": null
+    },
+    {
+      "key": "51",
+      "title": "Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine",
+      "category": "news",
+      "url": "https://pulseos.finance/",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": null
+    },
+    {
+      "key": "35",
+      "title": "zhuyansen/new-term-radar",
+      "category": "repo",
+      "url": "https://github.com/zhuyansen/new-term-radar",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 903
+    },
+    {
+      "key": "33",
+      "title": "onehumanbeing/esp32-iphone-agent",
+      "category": "repo",
+      "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1890
+    },
+    {
+      "key": "34",
+      "title": "trhhubsd/ARTEXX",
+      "category": "repo",
+      "url": "https://github.com/trhhubsd/ARTEXX",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1207
+    },
+    {
+      "key": "1",
+      "title": "wheresryan22/anatomy",
+      "category": "repo",
+      "url": "https://github.com/wheresryan22/anatomy",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 8960
+    },
+    {
+      "key": "2",
+      "title": "mhtsec/ARTEX",
+      "category": "repo",
+      "url": "https://github.com/mhtsec/ARTEX",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 4013
+    }
+  ]
+}

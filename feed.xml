@@ -1,59 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-10-12</title>
+    <title>AI Tech Radar - 2026-10-14</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Mon, 12 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] The gap in shared understanding of LLM capability is widening</title>
-      <link>https://twitter.com/karpathy/status/2109361546505966046</link>
-      <guid isPermaLink="false">https://twitter.com/karpathy/status/2109361546505966046#2026-10-12</guid>
-      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Gemini 4 Argon</title>
+      <link>https://deepmind.google/models/gemini</link>
+      <guid isPermaLink="false">https://deepmind.google/models/gemini#2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] 500B tokens later: Letting AI agents decompile a first-person shooter</title>
-      <link>https://momo5502.com/posts/2026-10-09-game-decompilation</link>
-      <guid isPermaLink="false">https://momo5502.com/posts/2026-10-09-game-decompilation#2026-10-12</guid>
-      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] OpenAI engineer arrested in bugging of executive conference room</title>
+      <link>https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room</link>
+      <guid isPermaLink="false">https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room#2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>[NEWS] AI is a tool and using it well takes skill</title>
+      <link>https://yyhh.org/blog/2026/10/ai-is-a-tool</link>
+      <guid isPermaLink="false">https://yyhh.org/blog/2026/10/ai-is-a-tool#2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>[NEWS] Apple&apos;s new &apos;Switch to Safari&apos; campaign details why you should ditch Chrome</title>
+      <link>https://9to5mac.com/2026/10/12/apples-new-switch-to-safari-campaign-details-why-you-should-ditch-chrome</link>
+      <guid isPermaLink="false">https://9to5mac.com/2026/10/12/apples-new-switch-to-safari-campaign-details-why-you-should-ditch-chrome#2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>[NEWS] Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine</title>
+      <link>https://pulseos.finance/</link>
+      <guid isPermaLink="false">https://pulseos.finance/#2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>[REPO] zhuyansen/new-term-radar</title>
+      <link>https://github.com/zhuyansen/new-term-radar</link>
+      <guid isPermaLink="false">https://github.com/zhuyansen/new-term-radar#2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>[REPO] onehumanbeing/esp32-iphone-agent</title>
+      <link>https://github.com/onehumanbeing/esp32-iphone-agent</link>
+      <guid isPermaLink="false">https://github.com/onehumanbeing/esp32-iphone-agent#2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>[REPO] trhhubsd/ARTEXX</title>
+      <link>https://github.com/trhhubsd/ARTEXX</link>
+      <guid isPermaLink="false">https://github.com/trhhubsd/ARTEXX#2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>[REPO] wheresryan22/anatomy</title>
       <link>https://github.com/wheresryan22/anatomy</link>
-      <guid isPermaLink="false">https://github.com/wheresryan22/anatomy#2026-10-12</guid>
-      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/wheresryan22/anatomy#2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>[REPO] mhtsec/ARTEX</title>
       <link>https://github.com/mhtsec/ARTEX</link>
-      <guid isPermaLink="false">https://github.com/mhtsec/ARTEX#2026-10-12</guid>
-      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>[REPO] LosaLosSantos/aurelio-finance</title>
-      <link>https://github.com/LosaLosSantos/aurelio-finance</link>
-      <guid isPermaLink="false">https://github.com/LosaLosSantos/aurelio-finance#2026-10-12</guid>
-      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>[REPO] rociiu/talorys</title>
-      <link>https://github.com/rociiu/talorys</link>
-      <guid isPermaLink="false">https://github.com/rociiu/talorys#2026-10-12</guid>
-      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>[REPO] ThariqS/ai-newtab</title>
-      <link>https://github.com/ThariqS/ai-newtab</link>
-      <guid isPermaLink="false">https://github.com/ThariqS/ai-newtab#2026-10-12</guid>
-      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/mhtsec/ARTEX#2026-10-14</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
