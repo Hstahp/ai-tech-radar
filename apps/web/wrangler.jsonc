@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "ai-tech-radar-fe",
+  "name": "ai-tech-radar",
   "compatibility_date": "2026-10-12",
   "observability": {
     "enabled": true
