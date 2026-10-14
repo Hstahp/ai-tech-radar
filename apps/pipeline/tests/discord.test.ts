@@ -51,5 +51,6 @@ describe("buildDiscordEmbeds", () => {
     expect(embed.url).toBe("https://ai-tech-radar-fe.phatle219.workers.dev");
     expect(embed.fields?.length).toBeGreaterThan(1);
     expect(embed.fields?.some((f) => f.name.includes("langchain-next"))).toBe(true);
+    expect(embed.fields?.[0].value).toContain("/item/langchain-next");
   });
 });

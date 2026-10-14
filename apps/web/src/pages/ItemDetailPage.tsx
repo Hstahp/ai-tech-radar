@@ -15,7 +15,7 @@ import { CategoryBadge } from '../features/digest/components/CategoryBadge';
 import { VerdictBadge } from '../features/digest/components/VerdictBadge';
 import { copy } from '../lib/copy';
 import { Button } from '../components/ui/Button';
-import type { DigestFeedItem, DeepExplain } from '@radar/core';
+import { slugify, type DigestFeedItem, type DeepExplain } from '@radar/core';
 import { API_BASE, getAuthHeaders } from '../lib/api-config';
 
 interface ItemDetailPageProps {
@@ -35,7 +35,9 @@ export function ItemDetailPage({
   onLogin,
   rightSlot,
 }: ItemDetailPageProps) {
-  const item = items.find((i) => (i.key ?? String(i.item_id)) === itemKey);
+  const item = items.find(
+    (i) => slugify(i.title) === itemKey || (i.key ?? String(i.item_id)) === itemKey
+  );
 
   const [explainData, setExplainData] = useState<DeepExplain | null>(null);
   const [explainStatus, setExplainStatus] = useState<

@@ -26,3 +26,16 @@ export function tokenizeQuery(query: string): string[] {
     .split(/\s+/)
     .filter((token) => token.length >= 2);
 }
+
+/**
+ * Chuyển đổi tiêu đề thành URL slug thân thiện và an toàn (không lộ database id)
+ * Ví dụ: "Gemini 4 Argon" -> "gemini-4-argon"
+ */
+export function slugify(text: string): string {
+  if (!text) return "";
+  const normalized = normalizeVietnamese(text);
+  return normalized
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
