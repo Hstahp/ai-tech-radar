@@ -15,6 +15,7 @@ Hệ thống nhánh tuân theo mô hình Git Flow rút gọn bao gồm các nhá
 | `develop`     | Nhánh phát triển chính, tích hợp & test  | `main`          | `main`    | ❌ **KHÔNG** (thông qua PR) |
 | `feature/xxx` | Phát triển tính năng mới                 | `develop`       | `develop` | ✅ (trên nhánh này)         |
 | `defect/xxx`  | Sửa lỗi (bug / defect)                   | `develop`       | `develop` | ✅ (trên nhánh này)         |
+| `data`        | Lưu trữ dữ liệu xuất bản (orphan)        | -               | -         | 🤖 Chỉ bot GitHub Actions   |
 
 ---
 
@@ -52,6 +53,17 @@ Hệ thống nhánh tuân theo mô hình Git Flow rút gọn bao gồm các nhá
 - **Quy trình:**
   - Tạo nhánh từ `develop`.
   - Sau khi sửa lỗi và viết test hồi quy → tạo **Pull Request** vào `develop`.
+
+#### 5. `data` (Nhánh dữ liệu Orphan)
+
+- **Mục đích:** Lưu trữ độc lập toàn bộ dữ liệu xuất bản (`latest.json`, `YYYY-MM-DD.json`, `feed.xml`, `search-index.json`).
+- **Quy tắc:**
+  - Là nhánh độc lập (orphan), không chứa mã nguồn ứng dụng, không merge vào `develop` hay `main`.
+  - **Tuyệt đối không sửa tay:** Chỉ workflow GitHub Actions (`daily-pipeline.yml`) tự động cập nhật với tiền tố `chore(data):`.
+  - **Khôi phục dữ liệu:** Nếu nhánh `data` gặp sự cố, có thể tạo lại từ file SQLite trong GitHub Release `data-latest`:
+    ```bash
+    pnpm --filter @radar/pipeline run run -- --db data/radar.db --export data/export --skip-llm
+    ```
 
 ---
 

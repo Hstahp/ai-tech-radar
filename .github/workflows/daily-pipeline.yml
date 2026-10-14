@@ -47,7 +47,8 @@ on:
         default: false
 
 permissions:
-  contents: write            # commit export + tạo/ghi Release asset
+  contents: write            # commit export lên nhánh data + tạo/ghi Release asset
+  actions: write             # kích hoạt workflow deploy qua workflow_dispatch nếu có
 
 concurrency:
   group: radar-pipeline      # không cho hai lần chạy đè nhau (tránh ghi đè DB)
@@ -156,18 +157,80 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh release upload "$DB_RELEASE_TAG" "$DB_FILE" --clobber
 
-      - name: Commit bản export (JSON/RSS)
+      - name: Đẩy dữ liệu export lên nhánh data
         if: ${{ !inputs.dry_run }}
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$EXPORT_DIR"
+          DATA_DIR="/tmp/data-repo"
+          rm -rf "$DATA_DIR"
+
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+
+          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+            echo "Nhánh data đã tồn tại trên remote. Đang fetch..."
+            git clone --branch data --single-branch "$REPO_URL" "$DATA_DIR"
+          else
+            echo "Nhánh data chưa tồn tại. Đang khởi tạo orphan data branch..."
+            mkdir -p "$DATA_DIR"
+            cd "$DATA_DIR"
+            git init -b data
+            git remote add origin "$REPO_URL"
+            git commit --allow-empty -m "chore: initialize orphan data branch"
+            git push -u origin data --no-verify
+            cd - >/dev/null
+          fi
+
+          echo "Chép dữ liệu từ $EXPORT_DIR sang thư mục nhánh data..."
+          cp -r "$EXPORT_DIR"/* "$DATA_DIR"/
+
+          cd "$DATA_DIR"
+          git add .
+
           if git diff --cached --quiet; then
-            echo "Không có thay đổi để commit."
+            echo "Không có thay đổi dữ liệu trên nhánh data để commit."
           else
             git commit --no-verify -m "chore(data): digest $(date +%F)"
-            git pull --rebase origin "${GITHUB_REF_NAME}"
-            git push --no-verify origin "HEAD:${GITHUB_REF_NAME}"
+            
+            MAX_RETRIES=3
+            COUNT=0
+            SUCCESS=false
+            while [ $COUNT -lt $MAX_RETRIES ]; do
+              if git push --no-verify origin data; then
+                SUCCESS=true
+                break
+              fi
+              echo "Push gặp xung đột, thử rebase lại (lần $((COUNT + 1)))..."
+              git pull --rebase origin data || true
+              COUNT=$((COUNT + 1))
+              sleep 2
+            done
+
+            if [ "$SUCCESS" != "true" ]; then
+              echo "Lỗi: Không thể push lên nhánh data sau $MAX_RETRIES lần thử."
+              exit 1
+            fi
+            echo "Đã đẩy dữ liệu thành công lên nhánh data."
+          fi
+          cd - >/dev/null
+          rm -rf "$DATA_DIR"
+
+      - name: Kích hoạt Deploy Web (nếu có cấu hình)
+        if: ${{ !inputs.dry_run }}
+        env:
+          CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$CLOUDFLARE_DEPLOY_HOOK" ]; then
+            echo "Đang kích hoạt Cloudflare Deploy Hook..."
+            curl -sS -X POST "$CLOUDFLARE_DEPLOY_HOOK" >/dev/null && echo "Kích hoạt Cloudflare deploy thành công."
+          fi
+          if gh workflow list 2>/dev/null | grep -q "deploy.yml"; then
+            echo "Kích hoạt workflow deploy.yml..."
+            gh workflow run deploy.yml || true
           fi
 
       # ---------------------------------------------------------------------
