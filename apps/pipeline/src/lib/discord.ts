@@ -35,66 +35,54 @@ const VERDICT_EMOJIS: Record<Verdict, string> = {
   skip: "⏭️ Bỏ qua",
 };
 
-export function buildDiscordEmbeds(items: DigestFeedItem[], digestDate: string): DiscordWebhookPayload[] {
-  const maxEmbedsPerBatch = 10;
-  const batches: DiscordWebhookPayload[] = [];
+export function buildDiscordEmbeds(
+  items: DigestFeedItem[],
+  digestDate: string,
+  siteUrl = process.env.SITE_URL || "https://ai-tech-radar.pages.dev"
+): DiscordWebhookPayload[] {
+  if (items.length === 0) return [];
 
-  for (let i = 0; i < items.length; i += maxEmbedsPerBatch) {
-    const chunk = items.slice(i, i + maxEmbedsPerBatch);
-    const isFirstBatch = i === 0;
+  // Lấy top 3-5 mục nổi bật nhất để làm teaser
+  const topItems = items.slice(0, 4);
 
-    const embeds: DiscordEmbed[] = chunk.map((item) => {
-      const color = item.verdict ? VERDICT_COLORS[item.verdict] : 0x3b82f6;
-      const verdictLabel = item.verdict ? VERDICT_EMOJIS[item.verdict] : "Chưa đánh giá";
+  const fields: DiscordEmbedField[] = topItems.map((item) => {
+    const verdictEmoji = item.verdict ? VERDICT_EMOJIS[item.verdict] : "⚡";
+    const tagList = item.tags
+      ? item.tags.split(",").map((t) => `#${t.trim()}`).slice(0, 3).join(" ")
+      : "";
+    const detailUrl = `${siteUrl.replace(/\/$/, "")}/item/${encodeURIComponent(item.key ?? String(item.item_id))}`;
 
-      const fields: DiscordEmbedField[] = [];
+    return {
+      name: `${verdictEmoji} [${item.section.toUpperCase()}] ${item.title}`,
+      value: `${item.purpose || item.highlight || "Công nghệ AI mới"}\n👉 [Xem phân tích chi tiết](${detailUrl}) ${tagList ? `• \`${tagList}\`` : ""}`,
+      inline: false,
+    };
+  });
 
-      if (item.action) {
-        fields.push({
-          name: "🔗 Hành động",
-          value: item.action,
-          inline: false,
-        });
-      }
+  const mainEmbed: DiscordEmbed = {
+    title: `🛰️ BẢN TIN AI TECH RADAR — ${digestDate}`,
+    url: siteUrl,
+    color: 0x6366f1, // Indigo theme color
+    description: `Hôm nay radar đã tự động thu thập và tóm tắt **${items.length}** công nghệ AI, repo trending và extension mới nhất dành cho lập trình viên!\n\n🔥 **Các điểm tin nổi bật hôm nay:**`,
+    fields: [
+      ...fields,
+      {
+        name: "🌐 Trải nghiệm đầy đủ trên Web Radar",
+        value: `👉 **[Truy cập Website để xem toàn bộ ${items.length} tin & Chat AI](${siteUrl})**\n*(Đầy đủ phân tích kiến trúc, hướng dẫn bắt đầu nhanh và hỏi đáp trực tiếp với Chatbot)*`,
+        inline: false,
+      },
+    ],
+    footer: {
+      text: `AI Tech Radar • Cập nhật tự động 100% bằng Free Tier`,
+    },
+  };
 
-      const tagList = item.tags ? item.tags.split(",").map((t) => t.trim()).filter(Boolean) : [];
-      if (tagList.length > 0) {
-        fields.push({
-          name: "🏷️ Tags",
-          value: tagList.map((t) => `\`#${t}\``).join(" "),
-          inline: true,
-        });
-      }
-
-      fields.push({
-        name: "🧭 Đánh giá",
-        value: verdictLabel,
-        inline: true,
-      });
-
-      const descLines: string[] = [];
-      if (item.purpose) descLines.push(`🎯 **Mục đích:** ${item.purpose}`);
-      if (item.highlight) descLines.push(`⭐ **Điểm nổi bật:** ${item.highlight}`);
-
-      return {
-        title: `[${item.section.toUpperCase()}] ${item.title}`,
-        url: item.url,
-        color,
-        description: descLines.join("\n\n"),
-        fields,
-        footer: {
-          text: `AI Tech Radar • Rank #${item.rank} (${digestDate})`,
-        },
-      };
-    });
-
-    batches.push({
-      content: isFirstBatch ? `🛰️ **AI TECH RADAR — Bản tin ngày ${digestDate}**` : undefined,
-      embeds,
-    });
-  }
-
-  return batches;
+  return [
+    {
+      content: `📢 **Bản tin AI Tech Radar mới nhất đã sẵn sàng!** (${digestDate})`,
+      embeds: [mainEmbed],
+    },
+  ];
 }
 
 export async function sendDiscordNotification(webhookUrl: string, payload: DiscordWebhookPayload): Promise<boolean> {
