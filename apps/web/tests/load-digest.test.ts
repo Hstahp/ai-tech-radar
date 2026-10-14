@@ -117,7 +117,67 @@ describe("loadLatestDigest", () => {
     }
   });
 
-  it("throws error when response status is 500", async () => {
+  it("falls back to raw GitHub data branch when local endpoint returns empty items", async () => {
+    const originalFetch = globalThis.fetch;
+    const mockData = {
+      digest_date: "2026-10-14",
+      generated_at: "2026-10-14T07:00:00Z",
+      version: "v1.0.0",
+      items_count: 1,
+      items: [
+        {
+          digest_date: "2026-10-14",
+          section: "repo",
+          rank: 1,
+          score: 90,
+          item_id: 47,
+          category: "repo",
+          title: "cool-agent",
+          url: "https://github.com/cool/agent",
+          purpose: "AI tool",
+          highlight: "Very fast",
+          action: "Try it",
+          verdict: "try_now",
+          confidence: "high",
+          tags: "ai",
+        },
+      ],
+    };
+
+    try {
+      globalThis.fetch = async (input: RequestInfo | URL) => {
+        const urlStr = String(input);
+        if (urlStr.includes("raw.githubusercontent.com")) {
+          return new Response(JSON.stringify(mockData), {
+            status: 200,
+            headers: { "Content-Type": "application/json" },
+          });
+        }
+        // Local returns empty items
+        return new Response(
+          JSON.stringify({
+            digest_date: "2026-10-14",
+            generated_at: "2026-10-14T00:00:00Z",
+            version: "v1.0.0",
+            items_count: 0,
+            items: [],
+          }),
+          {
+            status: 200,
+            headers: { "Content-Type": "application/json" },
+          }
+        );
+      };
+
+      const result = await loadLatestDigest("/data/export/latest.json");
+      expect(result.items_count).toBe(1);
+      expect(result.items[0].item_id).toBe(47);
+    } finally {
+      globalThis.fetch = originalFetch;
+    }
+  });
+
+  it("returns empty digest payload when both local and fallback fail", async () => {
     const originalFetch = globalThis.fetch;
     try {
       globalThis.fetch = async () =>
@@ -126,7 +186,9 @@ describe("loadLatestDigest", () => {
           statusText: "Internal Server Error",
         });
 
-      await expect(loadLatestDigest("/data/export/latest.json")).rejects.toThrow("Failed to load digest feed: 500");
+      const result = await loadLatestDigest("/data/export/latest.json");
+      expect(result.items_count).toBe(0);
+      expect(result.items).toEqual([]);
     } finally {
       globalThis.fetch = originalFetch;
     }
