@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { normalizeVietnamese, tokenizeQuery } from "../src/text.js";
+import { normalizeVietnamese, tokenizeQuery, slugify } from "../src/text.js";
 
 describe("normalizeVietnamese", () => {
   it("bỏ dấu tiếng Việt và chuyển đ thành d", () => {
@@ -19,5 +19,13 @@ describe("tokenizeQuery", () => {
     const query = "tìm repo về AI agent và MCP";
     const tokens = tokenizeQuery(query);
     expect(tokens).toEqual(["tim", "repo", "ve", "ai", "agent", "va", "mcp"]);
+  });
+});
+
+describe("slugify", () => {
+  it("tạo slug thân thiện không chứa id và loại bỏ ký tự lạ", () => {
+    expect(slugify("Gemini 4 Argon")).toBe("gemini-4-argon");
+    expect(slugify("Mô hình AI Đột Phá 2026!")).toBe("mo-hinh-ai-dot-pha-2026");
+    expect(slugify("cool/agent @v1.0")).toBe("cool-agent-v1-0");
   });
 });

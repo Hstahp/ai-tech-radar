@@ -65,7 +65,35 @@ function syncDataExportToDir(destDir: string) {
     }
   }
 
-  // 3. Fallback dữ liệu rỗng để build không bao giờ fail
+  // 3. Fallback tải trực tiếp từ GitHub raw nếu git fetch bị chặn (môi trường Cloudflare Build)
+  if (!synced) {
+    try {
+      const rawLatest = execSync(
+        "curl -sS https://raw.githubusercontent.com/Hstahp/ai-tech-radar/data/latest.json",
+        { encoding: "utf8" }
+      );
+      const parsed = JSON.parse(rawLatest);
+      if (parsed.items && parsed.items.length > 0) {
+        fs.writeFileSync(path.join(destDir, "latest.json"), rawLatest);
+        try {
+          const rawFeed = execSync(
+            "curl -sS https://raw.githubusercontent.com/Hstahp/ai-tech-radar/data/feed.xml",
+            { encoding: "utf8" }
+          );
+          if (rawFeed.includes("<rss")) {
+            fs.writeFileSync(path.join(destDir, "feed.xml"), rawFeed);
+          }
+        } catch {
+          // Bỏ qua lỗi feed
+        }
+        synced = true;
+      }
+    } catch {
+      // Bỏ qua nếu môi trường không có curl hoặc không có mạng
+    }
+  }
+
+  // 4. Fallback dữ liệu rỗng để build không bao giờ fail
   const latestJsonPath = path.join(destDir, "latest.json");
   if (!fs.existsSync(latestJsonPath)) {
     const today = new Date().toISOString().slice(0, 10);

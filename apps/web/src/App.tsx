@@ -66,6 +66,30 @@ export function App() {
   // 2. Phân luồng ROUTE ITEM DETAIL (/item/:key)
   if (currentPath.startsWith("/item/")) {
     const itemKey = decodeURIComponent(currentPath.replace("/item/", ""));
+
+    if (isLoading) {
+      return (
+        <UserLayout
+          rightSlot={
+            <UserMenu
+              user={user}
+              isLoading={isAuthLoading}
+              onLogin={loginWithGoogle}
+              onLogout={logout}
+              onDeleteAccount={deleteAccount}
+              onOpenTagModal={openTagModal}
+              onOpenAdmin={() => navigate("/admin")}
+            />
+          }
+        >
+          <div className="flex flex-col items-center justify-center py-24 text-center">
+            <Loader2 className="h-8 w-8 text-indigo-500 animate-spin mb-4" />
+            <p className="text-sm text-slate-400">Đang nạp dữ liệu chi tiết...</p>
+          </div>
+        </UserLayout>
+      );
+    }
+
     return (
       <ItemDetailPage
         itemKey={itemKey}

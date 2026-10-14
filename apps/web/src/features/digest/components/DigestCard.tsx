@@ -4,6 +4,7 @@ import { BentoCard } from '../../../components/ui/BentoCard';
 import { VerdictBadge } from './VerdictBadge';
 import { CategoryBadge } from './CategoryBadge';
 import { DeepExplainModal } from '../../explain/components/DeepExplainModal';
+import { slugify } from '@radar/core';
 import type { DigestFeedItem } from '../../../types';
 
 interface DigestCardProps {
@@ -23,7 +24,7 @@ export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: Dig
         : [];
 
     const scoreDisplay = item.score ? Math.round(item.score * 100) : null;
-    const itemKey = item.key ?? String(item.item_id);
+    const itemKey = slugify(item.title) || (item.key ?? String(item.item_id));
 
     return (
         <BentoCard isFeatured={isFeatured}>

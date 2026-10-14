@@ -1,4 +1,4 @@
-import type { DigestFeedItem, Verdict } from '@radar/core';
+import { slugify, type DigestFeedItem, type Verdict } from '@radar/core';
 import { logger } from './logger.js';
 
 export interface DiscordEmbedField {
@@ -54,7 +54,8 @@ export function buildDiscordEmbeds(
                   .slice(0, 3)
                   .join(' ')
             : '';
-        const detailUrl = `${siteUrl.replace(/\/$/, '')}/item/${encodeURIComponent(item.key ?? String(item.item_id))}`;
+        const itemSlug = slugify(item.title) || (item.key ?? String(item.item_id));
+        const detailUrl = `${siteUrl.replace(/\/$/, '')}/item/${encodeURIComponent(itemSlug)}`;
 
         return {
             name: `${verdictEmoji} [${item.section.toUpperCase()}] ${item.title}`,

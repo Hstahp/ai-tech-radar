@@ -22,16 +22,37 @@ export function createEmptyDigestPayload(
   };
 }
 
+export const RAW_GITHUB_LATEST_URL =
+  "https://raw.githubusercontent.com/Hstahp/ai-tech-radar/data/latest.json";
+
 export async function loadLatestDigest(apiUrl = "/data/export/latest.json"): Promise<DigestFeedPayload> {
-  const response = await fetch(apiUrl);
-  if (!response.ok) {
-    if (response.status === 404) {
-      return createEmptyDigestPayload();
+  // 1. Thử tải từ static endpoint local (/data/export/latest.json)
+  try {
+    const response = await fetch(apiUrl);
+    if (response.ok) {
+      const rawJson: unknown = await response.json();
+      const parsed = DigestFeedPayloadSchema.parse(rawJson);
+      if (parsed.items.length > 0) {
+        return parsed as DigestFeedPayload;
+      }
     }
-    throw new Error(`Failed to load digest feed: ${response.status} ${response.statusText}`);
+  } catch {
+    // Tiếp tục fallback bên dưới
   }
 
-  const rawJson: unknown = await response.json();
-  const parsed = DigestFeedPayloadSchema.parse(rawJson);
-  return parsed as DigestFeedPayload;
+  // 2. Fallback sang nhánh orphan data trên GitHub (nếu file local build rỗng hoặc chưa sync)
+  try {
+    const response = await fetch(RAW_GITHUB_LATEST_URL);
+    if (response.ok) {
+      const rawJson: unknown = await response.json();
+      const parsed = DigestFeedPayloadSchema.parse(rawJson);
+      if (parsed.items.length > 0) {
+        return parsed as DigestFeedPayload;
+      }
+    }
+  } catch {
+    // Không có kết nối mạng hoặc lỗi
+  }
+
+  return createEmptyDigestPayload();
 }
