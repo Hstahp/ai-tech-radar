@@ -106,6 +106,16 @@ pnpm --filter @radar/web run dev
 
 Truy cập giao diện tại: `http://localhost:5173`.
 
+### 7. Dữ liệu bản tin xuất bản (Nhánh `data`)
+
+Dữ liệu bản tin tĩnh (`latest.json`, `YYYY-MM-DD.json`, `feed.xml`) được tự động quản lý trên nhánh độc lập **`data`** (orphan branch):
+- **Ở môi trường dev:** Vite dev server tự động phục vụ dữ liệu từ thư mục `data/export/` cục bộ (hoặc fallback rỗng nếu chưa có dữ liệu).
+- **Khi Build Web:** Quá trình build tự động lấy dữ liệu từ nhánh `data` (hoặc thư mục cục bộ) đưa vào `dist/data/export` để deploy đồng bộ.
+- **Khôi phục khi gặp sự cố:** Toàn bộ DB gốc SQLite được lưu tại GitHub Release `data-latest`. Có thể tạo lại toàn bộ file export bất cứ lúc nào:
+  ```bash
+  pnpm --filter @radar/pipeline run run -- --db data/radar.db --export data/export --skip-llm
+  ```
+
 ---
 
 ## Kiểm thử & Kiểm tra chất lượng mã nguồn
