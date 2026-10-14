@@ -44,5 +44,15 @@ export default defineConfig({
     fs: {
       allow: [".."],
     },
+    proxy: {
+      "/api": {
+        target: "http://localhost:8787",
+        changeOrigin: true,
+      },
+      "/auth": {
+        target: "http://localhost:8787",
+        changeOrigin: true,
+      },
+    },
   },
 });

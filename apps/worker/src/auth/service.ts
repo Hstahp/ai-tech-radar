@@ -15,6 +15,10 @@ export class AuthService {
         this.adminEmails = new Set((options.adminEmails ?? []).map((e) => e.toLowerCase()));
     }
 
+    setAdminEmails(emails: string[]): void {
+        this.adminEmails = new Set(emails.map((e) => e.trim().toLowerCase()));
+    }
+
     async createSessionForUser(
         userId: string,
         userAgent?: string | null,
@@ -59,6 +63,10 @@ export class AuthService {
             user = await this.options.appDb.findUserByEmail(cleanEmail);
             if (user) {
                 await this.options.appDb.linkOAuthAccount(params.provider, params.providerUserId, user.id);
+                if (this.adminEmails.has(cleanEmail) && user.role !== 'admin') {
+                    await this.options.appDb.updateUserRole(user.id, 'admin');
+                    user = { ...user, role: 'admin' };
+                }
             } else {
                 const role = this.adminEmails.has(cleanEmail) ? 'admin' : 'user';
                 user = await this.options.appDb.createUser({
@@ -70,6 +78,9 @@ export class AuthService {
                 });
                 await this.options.appDb.linkOAuthAccount(params.provider, params.providerUserId, user.id);
             }
+        } else if (this.adminEmails.has(cleanEmail) && user.role !== 'admin') {
+            await this.options.appDb.updateUserRole(user.id, 'admin');
+            user = { ...user, role: 'admin' };
         }
 
         await this.options.appDb.updateUserLastLogin(user.id);
