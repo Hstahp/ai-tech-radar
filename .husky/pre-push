@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Bỏ qua kiểm tra trên môi trường CI / GitHub Actions
+if [ "$CI" = "true" ] || [ "$GITHUB_ACTIONS" = "true" ]; then
+  exit 0
+fi
+
 current_branch=$(git symbolic-ref --short HEAD 2>/dev/null)
 
 if [ "$current_branch" = "main" ] || [ "$current_branch" = "develop" ]; then
