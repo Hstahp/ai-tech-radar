@@ -31,6 +31,13 @@ const authService = new AuthService({ appDb });
 
 // 2. Dang ky Middleware toan cuc
 app.use('*', cors());
+app.use('*', async (c, next) => {
+    if (c.env?.ADMIN_EMAILS) {
+        const emails = c.env.ADMIN_EMAILS.split(',').map((e) => e.trim()).filter(Boolean);
+        authService.setAdminEmails(emails);
+    }
+    await next();
+});
 app.use('*', createAuthMiddleware(authService));
 app.onError(appErrorHandler);
 

@@ -25,3 +25,6 @@ data/logs/
 Thumbs.db
 .vscode/
 .idea/
+
+apps/worker/.dev.vars
+apps/web/.dev.vars
