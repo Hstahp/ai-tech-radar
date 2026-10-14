@@ -1,5 +1,5 @@
 {
-  "name": "ai-tech-radar-worker",
+  "name": "ai-tech-radar",
   "main": "src/index.ts",
   "compatibility_date": "2025-07-18",
   "compatibility_flags": [
