@@ -59,6 +59,7 @@ env:
   DB_RELEASE_TAG: data-latest
   EXPORT_DIR: data/export
   NODE_VERSION: "22"
+  HUSKY: "0"
 
 jobs:
   run-pipeline:
@@ -164,9 +165,9 @@ jobs:
           if git diff --cached --quiet; then
             echo "Không có thay đổi để commit."
           else
-            git commit -m "chore(data): digest $(date +%F)"
+            git commit --no-verify -m "chore(data): digest $(date +%F)"
             git pull --rebase origin "${GITHUB_REF_NAME}"
-            git push origin "HEAD:${GITHUB_REF_NAME}"
+            git push --no-verify origin "HEAD:${GITHUB_REF_NAME}"
           fi
 
       # ---------------------------------------------------------------------
