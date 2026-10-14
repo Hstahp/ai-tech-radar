@@ -38,29 +38,18 @@ describe("buildDiscordEmbeds", () => {
     },
   ];
 
-  it("builds batches of max 10 embeds per payload", () => {
-    const batches = buildDiscordEmbeds(mockItems, "2026-10-12");
-    expect(batches.length).toBeGreaterThanOrEqual(1);
+  it("builds teaser batch with web link and top highlights", () => {
+    const batches = buildDiscordEmbeds(mockItems, "2026-10-12", "https://ai-tech-radar.pages.dev");
+    expect(batches.length).toBe(1);
 
     const firstBatch = batches[0];
-    expect(firstBatch.embeds.length).toBe(2);
-    expect(firstBatch.embeds[0].title).toContain("langchain-next");
-    expect(firstBatch.embeds[0].url).toBe("https://github.com/test/langchain-next");
-    expect(firstBatch.embeds[0].color).toBe(0x22c55e);
-    expect(firstBatch.embeds[1].color).toBe(0xf59e0b);
-  });
+    expect(firstBatch.content).toContain("Bản tin AI Tech Radar mới nhất đã sẵn sàng");
+    expect(firstBatch.embeds.length).toBe(1);
 
-  it("splits items across batches if more than 10 items", () => {
-    const manyItems: DigestFeedItem[] = Array.from({ length: 15 }, (_, i) => ({
-      ...mockItems[0],
-      item_id: i + 1,
-      rank: i + 1,
-      title: `Repo #${i + 1}`,
-    }));
-
-    const batches = buildDiscordEmbeds(manyItems, "2026-10-12");
-    expect(batches.length).toBe(2);
-    expect(batches[0].embeds.length).toBe(10);
-    expect(batches[1].embeds.length).toBe(5);
+    const embed = firstBatch.embeds[0];
+    expect(embed.title).toContain("BẢN TIN AI TECH RADAR — 2026-10-12");
+    expect(embed.url).toBe("https://ai-tech-radar.pages.dev");
+    expect(embed.fields?.length).toBeGreaterThan(1);
+    expect(embed.fields?.some((f) => f.name.includes("langchain-next"))).toBe(true);
   });
 });
