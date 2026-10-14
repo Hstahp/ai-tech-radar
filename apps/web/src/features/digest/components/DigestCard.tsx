@@ -9,9 +9,10 @@ import type { DigestFeedItem } from '../../../types';
 interface DigestCardProps {
     item: DigestFeedItem;
     isFeatured?: boolean;
+    onNavigateToDetail?: (key: string) => void;
 }
 
-export function DigestCard({ item, isFeatured = false }: DigestCardProps) {
+export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: DigestCardProps) {
     const [isExplainOpen, setIsExplainOpen] = useState(false);
 
     const tagsList = item.tags
@@ -22,6 +23,7 @@ export function DigestCard({ item, isFeatured = false }: DigestCardProps) {
         : [];
 
     const scoreDisplay = item.score ? Math.round(item.score * 100) : null;
+    const itemKey = item.key ?? String(item.item_id);
 
     return (
         <BentoCard isFeatured={isFeatured}>
@@ -42,14 +44,24 @@ export function DigestCard({ item, isFeatured = false }: DigestCardProps) {
 
                 {/* Title & Link */}
                 <h3 className="text-lg font-bold text-slate-100 group-hover:text-indigo-300 transition-colors line-clamp-2">
-                    <a
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded inline-flex items-center gap-1.5"
-                    >
-                        <span>{item.title}</span>
-                    </a>
+                    {onNavigateToDetail ? (
+                        <button
+                            type="button"
+                            onClick={() => onNavigateToDetail(itemKey)}
+                            className="text-left hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded inline-flex items-center gap-1.5 cursor-pointer"
+                        >
+                            <span>{item.title}</span>
+                        </button>
+                    ) : (
+                        <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded inline-flex items-center gap-1.5"
+                        >
+                            <span>{item.title}</span>
+                        </a>
+                    )}
                 </h3>
 
                 {/* Language / stars if available */}
@@ -110,28 +122,53 @@ export function DigestCard({ item, isFeatured = false }: DigestCardProps) {
                     </div>
 
                     <div className="flex items-center gap-3">
-                        <button
-                            onClick={() => setIsExplainOpen(true)}
-                            className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-indigo-950/70 hover:bg-indigo-900/90 text-indigo-300 border border-indigo-500/30 flex items-center gap-1.5 transition-all shadow-sm hover:shadow-indigo-500/10 cursor-pointer"
-                        >
-                            <Sparkles className="h-3.5 w-3.5 text-indigo-400" />
-                            <span>Giải thích AI</span>
-                        </button>
+                        {onNavigateToDetail ? (
+                            <button
+                                type="button"
+                                onClick={() => onNavigateToDetail(itemKey)}
+                                className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-indigo-950/70 hover:bg-indigo-900/90 text-indigo-300 border border-indigo-500/30 flex items-center gap-1.5 transition-all shadow-sm hover:shadow-indigo-500/10 cursor-pointer"
+                            >
+                                <Sparkles className="h-3.5 w-3.5 text-indigo-400" />
+                                <span>Giải thích AI</span>
+                            </button>
+                        ) : (
+                            <button
+                                type="button"
+                                onClick={() => setIsExplainOpen(true)}
+                                className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-indigo-950/70 hover:bg-indigo-900/90 text-indigo-300 border border-indigo-500/30 flex items-center gap-1.5 transition-all shadow-sm hover:shadow-indigo-500/10 cursor-pointer"
+                            >
+                                <Sparkles className="h-3.5 w-3.5 text-indigo-400" />
+                                <span>Giải thích AI</span>
+                            </button>
+                        )}
 
-                        <a
-                            href={item.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xs font-medium text-slate-400 hover:text-indigo-300 flex items-center gap-1 transition-colors"
-                        >
-                            <span>Chi tiết</span>
-                            <ExternalLink className="h-3 w-3" />
-                        </a>
+                        {onNavigateToDetail ? (
+                            <button
+                                type="button"
+                                onClick={() => onNavigateToDetail(itemKey)}
+                                className="text-xs font-medium text-slate-400 hover:text-indigo-300 flex items-center gap-1 transition-colors cursor-pointer"
+                            >
+                                <span>Chi tiết</span>
+                                <ExternalLink className="h-3 w-3" />
+                            </button>
+                        ) : (
+                            <a
+                                href={item.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-xs font-medium text-slate-400 hover:text-indigo-300 flex items-center gap-1 transition-colors"
+                            >
+                                <span>Chi tiết</span>
+                                <ExternalLink className="h-3 w-3" />
+                            </a>
+                        )}
                     </div>
                 </div>
             </div>
 
-            <DeepExplainModal item={item} isOpen={isExplainOpen} onClose={() => setIsExplainOpen(false)} />
+            {!onNavigateToDetail && (
+                <DeepExplainModal item={item} isOpen={isExplainOpen} onClose={() => setIsExplainOpen(false)} />
+            )}
         </BentoCard>
     );
 }

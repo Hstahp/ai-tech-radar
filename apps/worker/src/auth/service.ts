@@ -64,7 +64,7 @@ export class AuthService {
             if (user) {
                 await this.options.appDb.linkOAuthAccount(params.provider, params.providerUserId, user.id);
                 if (this.adminEmails.has(cleanEmail) && user.role !== 'admin') {
-                    await this.options.appDb.updateUserRole(user.id, 'admin');
+                    await this.options.appDb.updateUserRoleAndStatus(user.id, { role: 'admin' });
                     user = { ...user, role: 'admin' };
                 }
             } else {
@@ -79,7 +79,7 @@ export class AuthService {
                 await this.options.appDb.linkOAuthAccount(params.provider, params.providerUserId, user.id);
             }
         } else if (this.adminEmails.has(cleanEmail) && user.role !== 'admin') {
-            await this.options.appDb.updateUserRole(user.id, 'admin');
+            await this.options.appDb.updateUserRoleAndStatus(user.id, { role: 'admin' });
             user = { ...user, role: 'admin' };
         }
 

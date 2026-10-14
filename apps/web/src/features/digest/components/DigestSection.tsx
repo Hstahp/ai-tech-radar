@@ -4,9 +4,10 @@ import type { DigestFeedItem } from "../../../types";
 
 interface DigestSectionProps {
   items: DigestFeedItem[];
+  onNavigateToDetail?: (key: string) => void;
 }
 
-export function DigestSection({ items }: DigestSectionProps) {
+export function DigestSection({ items, onNavigateToDetail }: DigestSectionProps) {
   if (items.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-20 px-4 text-center rounded-2xl border border-dashed border-slate-800 bg-slate-900/30">
@@ -26,6 +27,7 @@ export function DigestSection({ items }: DigestSectionProps) {
           key={`${item.item_id}-${item.digest_date}`}
           item={item}
           isFeatured={index === 0}
+          onNavigateToDetail={onNavigateToDetail}
         />
       ))}
     </section>
