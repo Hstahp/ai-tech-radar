@@ -11,7 +11,9 @@
     "test:watch": "vitest",
     "dev:web": "pnpm --filter @radar/web run dev",
     "dev:worker": "pnpm --filter @radar/worker run dev",
+    "build": "pnpm --filter @radar/web run build",
     "build:web": "pnpm --filter @radar/web run build",
+    "build:worker": "pnpm --filter @radar/worker run typecheck",
     "prepare": "husky"
   },
   "devDependencies": {
