@@ -16,6 +16,7 @@ import { fetchAllSources } from "./steps/fetch-items.js";
 import { publishAndExportDigest } from "./steps/export-digest.js";
 import { scoreAndSelectCandidates } from "./steps/score-items.js";
 import { summarizeCandidates } from "./steps/summarize-items.js";
+import { buildDiscordEmbeds, sendDiscordNotification } from "../lib/discord.js";
 
 export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<void> {
   const config = loadConfig(overrides);
@@ -73,7 +74,7 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
     // 6. Export step
     if (!config.DRY_RUN) {
       logger.info("--- Step 4: Exporting digest feed ---");
-      publishAndExportDigest(
+      const feedItems = publishAndExportDigest(
         digestsRepo,
         todayStr,
         candidates,
@@ -81,6 +82,15 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
         fallbackLlm.providerName,
         fallbackLlm.modelName
       );
+
+      // 7. Discord notification (if configured)
+      if (config.DISCORD_WEBHOOK_URL) {
+        logger.info("--- Step 5: Sending Discord notification ---");
+        const batches = buildDiscordEmbeds(feedItems, todayStr);
+        for (const batch of batches) {
+          await sendDiscordNotification(config.DISCORD_WEBHOOK_URL, batch);
+        }
+      }
     } else {
       logger.info("DRY_RUN mode active. Skipping digest publication and JSON export.");
     }

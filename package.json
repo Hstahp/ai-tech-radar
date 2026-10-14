@@ -8,9 +8,14 @@
     "typecheck": "pnpm -r --parallel run typecheck",
     "lint": "pnpm -r --parallel run lint",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "dev:web": "pnpm --filter @radar/web run dev",
+    "dev:worker": "pnpm --filter @radar/worker run dev",
+    "build:web": "pnpm --filter @radar/web run build",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "typescript": "^5.7.3",
     "vitest": "^3.0.7"
   }

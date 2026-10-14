@@ -21,7 +21,7 @@ AI Tech Radar: mỗi ngày tự động thu thập, chấm điểm, tóm tắt b
 | Web (FE) | Astro / Vite + React, Tailwind | `apps/web` |
 | Extension (FE, sau này) | WXT, Manifest V3 | `apps/extension` |
 | Database | SQLite, schema ở `db/schema.sql` | `db/` |
-| Test | Vitest | cạnh code (`*.test.ts`) |
+| Test | Vitest | Thư mục `tests/` riêng (`tests/*.test.ts`) |
 
 **Ràng buộc quan trọng:** dự án chạy 100% bằng free tier. Không thêm dịch vụ trả phí, không thêm dependency nặng khi không cần.
 
@@ -301,7 +301,7 @@ export function DigestPage() { /* fetch + lọc + sắp xếp + 300 dòng JSX */
   - `develop`: Nhánh phát triển chính, test tích hợp trước khi lên `main`.
   - `feature/xxx`: Nhánh tính năng mới (vd: `feature/authentication`), tạo PR vào `develop`.
   - `defect/xxx`: Nhánh sửa lỗi (vd: `defect/login-bug`), tạo PR vào `develop`.
-- **Commit theo Conventional Commits:** áp dụng cú pháp `<type>: <short description>` (`feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`); nội dung mô tả rõ, một commit một ý.
+- **Commit theo Conventional Commits:** áp dụng cú pháp `<type>: <short description>` (`feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`) bằng tiếng Anh; **bắt buộc tách riêng commit `test:` khỏi commit `feat:`**; một commit một ý.
 - **Nhánh nhỏ, PR nhỏ.** Một PR một mục đích; tránh trộn refactor với tính năng.
 - Không commit: `.env`, `data/radar.db*`, file build, khóa API.
 - Thư mục `data/export/` được commit tự động bởi workflow; **không sửa tay**.

@@ -58,6 +58,7 @@ export class DigestsRepository {
       rank: r.rank as number,
       score: (r.score as number) ?? undefined,
       item_id: Number(r.item_id),
+      key: (r.key as string) ?? undefined,
       category: r.category as Category,
       title: r.title as string,
       url: r.url as string,
