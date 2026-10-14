@@ -16,6 +16,7 @@ import { VerdictBadge } from '../features/digest/components/VerdictBadge';
 import { copy } from '../lib/copy';
 import { Button } from '../components/ui/Button';
 import type { DigestFeedItem, DeepExplain } from '@radar/core';
+import { API_BASE, getAuthHeaders } from '../lib/api-config';
 
 interface ItemDetailPageProps {
   itemKey: string;
@@ -58,8 +59,12 @@ export function ItemDetailPage({
       if (!item) return;
       try {
         const key = item.key ?? String(item.item_id);
-        const res = await fetch(`/api/items/${encodeURIComponent(key)}/explain`, {
+        const res = await fetch(`${API_BASE}/api/items/${encodeURIComponent(key)}/explain`, {
           signal: controller.signal,
+          headers: {
+            ...getAuthHeaders(),
+          },
+          credentials: 'include',
         });
         if (res.ok) {
           const json = await res.json();
@@ -92,8 +97,12 @@ export function ItemDetailPage({
 
     try {
       const key = item.key ?? String(item.item_id);
-      const res = await fetch(`/api/items/${encodeURIComponent(key)}/explain`, {
+      const res = await fetch(`${API_BASE}/api/items/${encodeURIComponent(key)}/explain`, {
         method: 'POST',
+        headers: {
+          ...getAuthHeaders(),
+        },
+        credentials: 'include',
       });
 
       if (res.status === 429) {

@@ -1,10 +1,12 @@
 import { UserProfileSchema, type UserProfile } from '@radar/core';
-
-const API_BASE = '';
+import { API_BASE, getAuthHeaders, setStoredToken } from '../../../lib/api-config';
 
 export async function fetchCurrentUser(): Promise<UserProfile | null> {
     try {
         const res = await fetch(`${API_BASE}/api/me`, {
+            headers: {
+                ...getAuthHeaders(),
+            },
             credentials: 'include',
         });
         if (res.status === 401 || res.status === 403) {
@@ -29,10 +31,15 @@ export async function logoutUser(): Promise<boolean> {
     try {
         const res = await fetch(`${API_BASE}/auth/logout`, {
             method: 'POST',
+            headers: {
+                ...getAuthHeaders(),
+            },
             credentials: 'include',
         });
+        setStoredToken(null);
         return res.ok;
     } catch {
+        setStoredToken(null);
         return false;
     }
 }
@@ -41,10 +48,15 @@ export async function deleteUserAccount(): Promise<boolean> {
     try {
         const res = await fetch(`${API_BASE}/api/me`, {
             method: 'DELETE',
+            headers: {
+                ...getAuthHeaders(),
+            },
             credentials: 'include',
         });
+        setStoredToken(null);
         return res.ok;
     } catch {
+        setStoredToken(null);
         return false;
     }
 }
@@ -54,6 +66,7 @@ export async function saveUserTags(tags: string[]): Promise<string[]> {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
+            ...getAuthHeaders(),
         },
         credentials: 'include',
         body: JSON.stringify({ tags }),

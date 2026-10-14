@@ -30,7 +30,26 @@ const appDb = new InMemoryAppDbRepository();
 const authService = new AuthService({ appDb });
 
 // 2. Dang ky Middleware toan cuc
-app.use('*', cors());
+app.use(
+    '*',
+    cors({
+        origin: (origin) => {
+            if (!origin) return 'https://ai-tech-radar-fe.phatle219.workers.dev';
+            if (
+                origin.includes('localhost') ||
+                origin.includes('127.0.0.1') ||
+                origin.endsWith('.workers.dev') ||
+                origin.endsWith('.pages.dev')
+            ) {
+                return origin;
+            }
+            return 'https://ai-tech-radar-fe.phatle219.workers.dev';
+        },
+        credentials: true,
+        allowMethods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+        allowHeaders: ['Content-Type', 'Authorization'],
+    }),
+);
 app.use('*', async (c, next) => {
     if (c.env?.ADMIN_EMAILS) {
         const emails = c.env.ADMIN_EMAILS.split(',').map((e) => e.trim()).filter(Boolean);
