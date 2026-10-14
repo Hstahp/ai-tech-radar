@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Search, Loader2, ShieldCheck, User as UserIcon, Lock, Unlock, RefreshCw } from 'lucide-react';
 import { fetchAdminUsers, updateAdminUser, type AdminUserItem } from '../api/admin-client';
+import { notify } from '../../../lib/toast';
 
 export function AdminUsersTab() {
     const [users, setUsers] = useState<AdminUserItem[]>([]);
@@ -32,7 +33,7 @@ export function AdminUsersTab() {
             await updateAdminUser(user.id, { role: nextRole });
             setUsers((prev) => prev.map((u) => (u.id === user.id ? { ...u, role: nextRole } : u)));
         } catch {
-            alert('Cập nhật vai trò người dùng thất bại.');
+            notify.error('Cập nhật vai trò người dùng thất bại.');
         }
     };
 
@@ -42,7 +43,7 @@ export function AdminUsersTab() {
             await updateAdminUser(user.id, { status: nextStatus });
             setUsers((prev) => prev.map((u) => (u.id === user.id ? { ...u, status: nextStatus } : u)));
         } catch {
-            alert('Cập nhật trạng thái người dùng thất bại.');
+            notify.error('Cập nhật trạng thái người dùng thất bại.');
         }
     };
 

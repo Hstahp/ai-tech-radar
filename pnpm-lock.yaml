@@ -57,6 +57,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.3.0(react@19.3.0)
+      react-hot-toast:
+        specifier: ^2.6.1
+        version: 2.6.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       zod:
         specifier: ^3.24.2
         version: 3.25.76
@@ -1230,6 +1233,11 @@ packages:
   github-from-package@0.0.0:
     resolution: {integrity: sha512-SyHy3T1v2NUXn29OsWdxmK6RwHD+vkj3v8en8AOBZ1wBQ/hCAQ5bAQTD02kW4W9tUp/3Qh6J8r9EvntiyCmOOw==}
 
+  goober@2.1.19:
+    resolution: {integrity: sha512-U7veizMqxyKlM58+Z5j2ngJBH/r9siDmxpvNxSw0PylF6WQvrASJEZrxh1hidRBJc2jqoBVSyOban5u8m+6Rxg==}
+    peerDependencies:
+      csstype: ^3.0.10
+
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
@@ -1441,6 +1449,20 @@ packages:
     resolution: {integrity: sha512-JDk8dgif51OjFoDE70+OT9ICyYr+69HlmihNwp1+Nsfbna3t5sIiCa9ZJktDmQ4/1b/rn26hIAR2uYXDMr5r0Q==}
     peerDependencies:
       react: ^19.3.0
+
+  react-hot-toast@2.6.1:
+    resolution: {integrity: sha512-gjFsf05dxcku0FkyMtFH+XmYFdA2odXfBVknEr/IZ+XpUjwsgvtY2616sOpUynK+l9ykQDRNpaJ1hYfuximUiA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: '>=16'
+      react-dom: '>=16'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
 
   react-refresh@0.17.0:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
@@ -2615,6 +2637,10 @@ snapshots:
 
   github-from-package@0.0.0: {}
 
+  goober@2.1.19(csstype@3.2.3):
+    dependencies:
+      csstype: 3.2.3
+
   graceful-fs@4.2.11: {}
 
   hono@4.13.13: {}
@@ -2786,6 +2812,16 @@ snapshots:
     dependencies:
       react: 19.3.0
       scheduler: 0.28.0
+
+  react-hot-toast@2.6.1(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
+    dependencies:
+      csstype: 3.2.3
+      goober: 2.1.19(csstype@3.2.3)
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
+    optionalDependencies:
+      '@types/react': 19.3.0
+      '@types/react-dom': 19.3.0(@types/react@19.3.0)
 
   react-refresh@0.17.0: {}
 
