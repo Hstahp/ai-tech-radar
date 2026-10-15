@@ -31,20 +31,21 @@
 
 name: Daily AI Tech Radar
 
+# on: schedule bi vo hieu hoa vi duoc kich hoat chu dong boi Cloudflare Worker Cron Trigger (apps/worker)
+# on:
+#   schedule:
+#     - cron: "30 2 * * *"
 on:
-    schedule:
-        - cron: '30 2 * * *' # 01:30 UTC = 09:30 giờ Việt Nam
-        # - cron: "0 12 * * *"   # bỏ comment nếu muốn chạy lần 2 lúc 19:00 giờ VN
-    workflow_dispatch:
-        inputs:
-            dry_run:
-                description: 'Chạy thử: không upload DB, không commit'
-                type: boolean
-                default: false
-            skip_llm:
-                description: 'Bỏ qua bước gọi LLM (chỉ fetch + lọc + chấm điểm)'
-                type: boolean
-                default: false
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Chạy thử: không upload DB, không commit'
+        type: boolean
+        default: false
+      skip_llm:
+        description: 'Bỏ qua bước gọi LLM (chỉ fetch + lọc + chấm điểm)'
+        type: boolean
+        default: false
 
 permissions:
     contents: write # commit export lên nhánh data + tạo/ghi Release asset
