@@ -3,6 +3,7 @@ import { X, Check, Tag as TagIcon, Loader2 } from 'lucide-react';
 import { TAGS, type Tag } from '@radar/core';
 import { Button } from '../../../components/ui/Button';
 import { submitTagRequest } from '../../admin/api/admin-client';
+import { notify } from '../../../lib/toast';
 
 interface UserTagModalProps {
     isOpen: boolean;
@@ -36,7 +37,7 @@ export function UserTagModal({ isOpen, onClose, currentTags, onSave }: UserTagMo
             setShowPropose(false);
             setPropSlug('');
             setPropLabel('');
-            alert('Đề xuất thẻ đã được gửi thành công tới quản trị viên!');
+            notify.success('Đề xuất thẻ đã được gửi thành công tới quản trị viên!');
         } catch (err: unknown) {
             setErrorMsg(err instanceof Error ? err.message : 'Gửi đề xuất thất bại.');
         } finally {

@@ -9,6 +9,7 @@ import {
     type AdminTagItem,
     type AdminTagRequestItem,
 } from '../api/admin-client';
+import { notify } from '../../../lib/toast';
 
 export function AdminTagsTab() {
     const [tags, setTags] = useState<AdminTagItem[]>([]);
@@ -46,7 +47,7 @@ export function AdminTagsTab() {
             await updateAdminTag(tag.slug, { enabled: nextEnabled });
             setTags((prev) => prev.map((t) => (t.slug === tag.slug ? { ...t, enabled: nextEnabled } : t)));
         } catch {
-            alert('Cập nhật trạng thái thẻ thất bại.');
+            notify.error('Cập nhật trạng thái thẻ thất bại.');
         }
     };
 
@@ -56,7 +57,7 @@ export function AdminTagsTab() {
             await updateAdminTag(tag.slug, { isSystem: nextSystem });
             setTags((prev) => prev.map((t) => (t.slug === tag.slug ? { ...t, isSystem: nextSystem } : t)));
         } catch {
-            alert('Cập nhật ghim hệ thống thất bại.');
+            notify.error('Cập nhật ghim hệ thống thất bại.');
         }
     };
 
@@ -65,7 +66,7 @@ export function AdminTagsTab() {
             await reviewTagRequest(id, status);
             await loadData();
         } catch {
-            alert('Xét duyệt đề xuất thất bại.');
+            notify.error('Xét duyệt đề xuất thất bại.');
         }
     };
 
@@ -86,7 +87,7 @@ export function AdminTagsTab() {
             setNewIsSystem(false);
             await loadData();
         } catch (err: unknown) {
-            alert(err instanceof Error ? err.message : 'Thêm thẻ thất bại.');
+            notify.error(err instanceof Error ? err.message : 'Thêm thẻ thất bại.');
         } finally {
             setIsSubmitting(false);
         }
