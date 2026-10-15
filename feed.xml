@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-10-14</title>
+    <title>AI Tech Radar - 2026-10-15</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Gemini 4 Argon</title>
-      <link>https://deepmind.google/models/gemini</link>
-      <guid isPermaLink="false">https://deepmind.google/models/gemini#2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Containment and monitoring failures are to blame for AI hacking reports: experts</title>
+      <link>https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html</link>
+      <guid isPermaLink="false">https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html#2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] OpenAI engineer arrested in bugging of executive conference room</title>
-      <link>https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room</link>
-      <guid isPermaLink="false">https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room#2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Banks are now trying to offload the AI data center debt they just underwrote</title>
+      <link>https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote</link>
+      <guid isPermaLink="false">https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote#2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] AI is a tool and using it well takes skill</title>
-      <link>https://yyhh.org/blog/2026/10/ai-is-a-tool</link>
-      <guid isPermaLink="false">https://yyhh.org/blog/2026/10/ai-is-a-tool#2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Show HN: I wrote an email app that accepts only one sender per inbox</title>
+      <link>https://clova.email/</link>
+      <guid isPermaLink="false">https://clova.email/#2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] Apple&apos;s new &apos;Switch to Safari&apos; campaign details why you should ditch Chrome</title>
-      <link>https://9to5mac.com/2026/10/12/apples-new-switch-to-safari-campaign-details-why-you-should-ditch-chrome</link>
-      <guid isPermaLink="false">https://9to5mac.com/2026/10/12/apples-new-switch-to-safari-campaign-details-why-you-should-ditch-chrome#2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] LFM2.5-24B-A2B: Built for fast on-device agents</title>
+      <link>https://www.liquid.ai/blog/lfm2-5-24b-a2b</link>
+      <guid isPermaLink="false">https://www.liquid.ai/blog/lfm2-5-24b-a2b#2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine</title>
-      <link>https://pulseos.finance/</link>
-      <guid isPermaLink="false">https://pulseos.finance/#2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Ask HN: CAD for wood working with LLM support?</title>
+      <link>https://news.ycombinator.com/item?id=50067325</link>
+      <guid isPermaLink="false">https://news.ycombinator.com/item?id=50067325#2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[REPO] zhuyansen/new-term-radar</title>
-      <link>https://github.com/zhuyansen/new-term-radar</link>
-      <guid isPermaLink="false">https://github.com/zhuyansen/new-term-radar#2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[REPO] marclou/mailcheap</title>
+      <link>https://github.com/marclou/mailcheap</link>
+      <guid isPermaLink="false">https://github.com/marclou/mailcheap#2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>[REPO] onehumanbeing/esp32-iphone-agent</title>
       <link>https://github.com/onehumanbeing/esp32-iphone-agent</link>
-      <guid isPermaLink="false">https://github.com/onehumanbeing/esp32-iphone-agent#2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/onehumanbeing/esp32-iphone-agent#2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[REPO] trhhubsd/ARTEXX</title>
-      <link>https://github.com/trhhubsd/ARTEXX</link>
-      <guid isPermaLink="false">https://github.com/trhhubsd/ARTEXX#2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[REPO] rociiu/talorys</title>
+      <link>https://github.com/rociiu/talorys</link>
+      <guid isPermaLink="false">https://github.com/rociiu/talorys#2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[REPO] wheresryan22/anatomy</title>
-      <link>https://github.com/wheresryan22/anatomy</link>
-      <guid isPermaLink="false">https://github.com/wheresryan22/anatomy#2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[REPO] zhuyansen/new-term-radar</title>
+      <link>https://github.com/zhuyansen/new-term-radar</link>
+      <guid isPermaLink="false">https://github.com/zhuyansen/new-term-radar#2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[REPO] mhtsec/ARTEX</title>
-      <link>https://github.com/mhtsec/ARTEX</link>
-      <guid isPermaLink="false">https://github.com/mhtsec/ARTEX#2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[REPO] deeplethe/solid-glass</title>
+      <link>https://github.com/deeplethe/solid-glass</link>
+      <guid isPermaLink="false">https://github.com/deeplethe/solid-glass#2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>

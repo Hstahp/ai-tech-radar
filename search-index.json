@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-14T10:59:01.373Z",
+  "generated_at": "2026-10-15T02:31:06.988Z",
   "items": [
     {
-      "key": "47",
-      "title": "Gemini 4 Argon",
+      "key": "69",
+      "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
       "category": "news",
-      "url": "https://deepmind.google/models/gemini",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -14,10 +14,10 @@
       "stars": null
     },
     {
-      "key": "50",
-      "title": "OpenAI engineer arrested in bugging of executive conference room",
+      "key": "71",
+      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
       "category": "news",
-      "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room",
+      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -26,10 +26,10 @@
       "stars": null
     },
     {
-      "key": "52",
-      "title": "AI is a tool and using it well takes skill",
+      "key": "74",
+      "title": "Show HN: I wrote an email app that accepts only one sender per inbox",
       "category": "news",
-      "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool",
+      "url": "https://clova.email/",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -38,10 +38,10 @@
       "stars": null
     },
     {
-      "key": "49",
-      "title": "Apple's new 'Switch to Safari' campaign details why you should ditch Chrome",
+      "key": "68",
+      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
       "category": "news",
-      "url": "https://9to5mac.com/2026/10/12/apples-new-switch-to-safari-campaign-details-why-you-should-ditch-chrome",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -50,10 +50,10 @@
       "stars": null
     },
     {
-      "key": "51",
-      "title": "Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine",
+      "key": "70",
+      "title": "Ask HN: CAD for wood working with LLM support?",
       "category": "news",
-      "url": "https://pulseos.finance/",
+      "url": "https://news.ycombinator.com/item?id=50067325",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -62,16 +62,16 @@
       "stars": null
     },
     {
-      "key": "35",
-      "title": "zhuyansen/new-term-radar",
+      "key": "60",
+      "title": "marclou/mailcheap",
       "category": "repo",
-      "url": "https://github.com/zhuyansen/new-term-radar",
+      "url": "https://github.com/marclou/mailcheap",
       "tags": [],
       "purpose": null,
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 903
+      "stars": 933
     },
     {
       "key": "33",
@@ -83,43 +83,43 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1890
+      "stars": 2114
     },
     {
-      "key": "34",
-      "title": "trhhubsd/ARTEXX",
+      "key": "4",
+      "title": "rociiu/talorys",
       "category": "repo",
-      "url": "https://github.com/trhhubsd/ARTEXX",
+      "url": "https://github.com/rociiu/talorys",
       "tags": [],
       "purpose": null,
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1207
+      "stars": 1003
     },
     {
-      "key": "1",
-      "title": "wheresryan22/anatomy",
+      "key": "35",
+      "title": "zhuyansen/new-term-radar",
       "category": "repo",
-      "url": "https://github.com/wheresryan22/anatomy",
+      "url": "https://github.com/zhuyansen/new-term-radar",
       "tags": [],
       "purpose": null,
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 8960
+      "stars": 965
     },
     {
-      "key": "2",
-      "title": "mhtsec/ARTEX",
+      "key": "36",
+      "title": "deeplethe/solid-glass",
       "category": "repo",
-      "url": "https://github.com/mhtsec/ARTEX",
+      "url": "https://github.com/deeplethe/solid-glass",
       "tags": [],
       "purpose": null,
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 4013
+      "stars": 670
     }
   ]
 }
