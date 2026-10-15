@@ -21,6 +21,7 @@ export interface Env {
     GOOGLE_REDIRECT_URI?: string;
     FRONTEND_URL?: string;
     ADMIN_EMAILS?: string;
+    GH_TRIGGER_TOKEN?: string;
 }
 
 const app = new Hono<{ Bindings: Env }>();
@@ -71,4 +72,46 @@ app.route('/', createChatRouter({ appDb }));
 app.route('/', createExplainRouter({ appDb }));
 app.route('/api/admin', createAdminRouter({ appDb }));
 
-export default app;
+export { app };
+
+export default {
+    fetch: app.fetch,
+
+    async scheduled(event: ScheduledEvent, env: Env, ctx: ExecutionContext): Promise<void> {
+        if (!env.GH_TRIGGER_TOKEN) {
+            console.error('[CRON] GH_TRIGGER_TOKEN chua duoc cau hinh tren Cloudflare Worker.');
+            return;
+        }
+
+        console.log(
+            `[CRON] Dang kich hoat daily-pipeline.yml tren GitHub Actions (thoi gian: ${new Date(event.scheduledTime).toISOString()})...`,
+        );
+
+        try {
+            const response = await fetch(
+                'https://api.github.com/repos/Hstahp/ai-tech-radar/actions/workflows/daily-pipeline.yml/dispatches',
+                {
+                    method: 'POST',
+                    headers: {
+                        Accept: 'application/vnd.github+json',
+                        Authorization: `Bearer ${env.GH_TRIGGER_TOKEN}`,
+                        'User-Agent': 'ai-tech-radar-worker-cron',
+                        'X-GitHub-Api-Version': '2022-11-28',
+                    },
+                    body: JSON.stringify({ ref: 'main' }),
+                },
+            );
+
+            if (response.ok) {
+                console.log('[CRON] Kich hoat daily-pipeline.yml thanh cong (HTTP 204).');
+            } else {
+                const errorBody = await response.text();
+                console.error(
+                    `[CRON] Kich hoat daily-pipeline.yml that bai! Status: ${response.status} ${response.statusText}. Chi tiet: ${errorBody}`,
+                );
+            }
+        } catch (error: unknown) {
+            console.error('[CRON] Loi bat ngo khi goi GitHub API dispatch:', error);
+        }
+    },
+};
