@@ -32,233 +32,233 @@
 name: Daily AI Tech Radar
 
 on:
-  schedule:
-    - cron: "30 1 * * *"     # 01:30 UTC = 08:30 giờ Việt Nam
-    # - cron: "0 12 * * *"   # bỏ comment nếu muốn chạy lần 2 lúc 19:00 giờ VN
-  workflow_dispatch:
-    inputs:
-      dry_run:
-        description: "Chạy thử: không upload DB, không commit"
-        type: boolean
-        default: false
-      skip_llm:
-        description: "Bỏ qua bước gọi LLM (chỉ fetch + lọc + chấm điểm)"
-        type: boolean
-        default: false
+    schedule:
+        - cron: '30 2 * * *' # 01:30 UTC = 09:30 giờ Việt Nam
+        # - cron: "0 12 * * *"   # bỏ comment nếu muốn chạy lần 2 lúc 19:00 giờ VN
+    workflow_dispatch:
+        inputs:
+            dry_run:
+                description: 'Chạy thử: không upload DB, không commit'
+                type: boolean
+                default: false
+            skip_llm:
+                description: 'Bỏ qua bước gọi LLM (chỉ fetch + lọc + chấm điểm)'
+                type: boolean
+                default: false
 
 permissions:
-  contents: write            # commit export lên nhánh data + tạo/ghi Release asset
-  actions: write             # kích hoạt workflow deploy qua workflow_dispatch nếu có
+    contents: write # commit export lên nhánh data + tạo/ghi Release asset
+    actions: write # kích hoạt workflow deploy qua workflow_dispatch nếu có
 
 concurrency:
-  group: radar-pipeline      # không cho hai lần chạy đè nhau (tránh ghi đè DB)
-  cancel-in-progress: false
+    group: radar-pipeline # không cho hai lần chạy đè nhau (tránh ghi đè DB)
+    cancel-in-progress: false
 
 env:
-  TZ: Asia/Ho_Chi_Minh
-  DB_FILE: data/radar.db
-  DB_RELEASE_TAG: data-latest
-  EXPORT_DIR: data/export
-  NODE_VERSION: "22"
-  HUSKY: "0"
+    TZ: Asia/Ho_Chi_Minh
+    DB_FILE: data/radar.db
+    DB_RELEASE_TAG: data-latest
+    EXPORT_DIR: data/export
+    NODE_VERSION: '22'
+    HUSKY: '0'
 
 jobs:
-  run-pipeline:
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
+    run-pipeline:
+        runs-on: ubuntu-latest
+        timeout-minutes: 20
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
 
-      - name: Cài pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
+            - name: Cài pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  run_install: false
 
-      - name: Cài Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: pnpm
+            - name: Cài Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: ${{ env.NODE_VERSION }}
+                  cache: pnpm
 
-      - name: Cài dependencies
-        run: pnpm install --frozen-lockfile
+            - name: Cài dependencies
+              run: pnpm install --frozen-lockfile
 
-      # ---------------------------------------------------------------------
-      # 1) Lấy DB từ GitHub Release (tạo release rỗng nếu là lần chạy đầu)
-      # ---------------------------------------------------------------------
-      - name: Đảm bảo Release chứa DB tồn tại
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          if ! gh release view "$DB_RELEASE_TAG" >/dev/null 2>&1; then
-            gh release create "$DB_RELEASE_TAG" \
-              --title "Radar database (auto-updated)" \
-              --notes "File radar.db được pipeline tự động cập nhật. Không chỉnh tay."
-          fi
+            # ---------------------------------------------------------------------
+            # 1) Lấy DB từ GitHub Release (tạo release rỗng nếu là lần chạy đầu)
+            # ---------------------------------------------------------------------
+            - name: Đảm bảo Release chứa DB tồn tại
+              env:
+                  GH_TOKEN: ${{ github.token }}
+              run: |
+                  if ! gh release view "$DB_RELEASE_TAG" >/dev/null 2>&1; then
+                    gh release create "$DB_RELEASE_TAG" \
+                      --title "Radar database (auto-updated)" \
+                      --notes "File radar.db được pipeline tự động cập nhật. Không chỉnh tay."
+                  fi
 
-      - name: Tải DB
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          mkdir -p data "$EXPORT_DIR"
-          gh release download "$DB_RELEASE_TAG" --pattern "radar.db" --dir data --clobber || \
-            echo "Chưa có radar.db trong release, sẽ tạo mới."
+            - name: Tải DB
+              env:
+                  GH_TOKEN: ${{ github.token }}
+              run: |
+                  mkdir -p data "$EXPORT_DIR"
+                  gh release download "$DB_RELEASE_TAG" --pattern "radar.db" --dir data --clobber || \
+                    echo "Chưa có radar.db trong release, sẽ tạo mới."
 
-      - name: Khởi tạo / migrate DB
-        run: pnpm --filter @radar/pipeline run db:migrate -- --db "$DB_FILE"
+            - name: Khởi tạo / migrate DB
+              run: pnpm --filter @radar/pipeline run db:migrate -- --db "$DB_FILE"
 
-      - name: Sao lưu DB trước khi chạy (rollback 1 ngày)
-        if: ${{ !inputs.dry_run }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          cp "$DB_FILE" data/radar-prev.db
-          gh release upload "$DB_RELEASE_TAG" data/radar-prev.db --clobber
+            - name: Sao lưu DB trước khi chạy (rollback 1 ngày)
+              if: ${{ !inputs.dry_run }}
+              env:
+                  GH_TOKEN: ${{ github.token }}
+              run: |
+                  cp "$DB_FILE" data/radar-prev.db
+                  gh release upload "$DB_RELEASE_TAG" data/radar-prev.db --clobber
 
-      # ---------------------------------------------------------------------
-      # 2) Chạy pipeline
-      # ---------------------------------------------------------------------
-      - name: Chạy pipeline
-        env:
-          GITHUB_API_TOKEN: ${{ github.token }}        # tăng giới hạn GitHub API
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          SITE_URL: "https://ai-tech-radar-fe.phatle219.workers.dev"
-          LLM_PRIMARY_MODEL: ${{ vars.LLM_PRIMARY_MODEL }}
-          LLM_FALLBACK_MODEL: ${{ vars.LLM_FALLBACK_MODEL }}
-          RUN_TRIGGER: ${{ github.event_name == 'schedule' && 'schedule' || 'manual' }}
-          DRY_RUN: ${{ inputs.dry_run && 'true' || 'false' }}
-          SKIP_LLM: ${{ inputs.skip_llm && 'true' || 'false' }}
-        run: |
-          ARGS="--db $DB_FILE --export $EXPORT_DIR"
-          if [ "$DRY_RUN" = "true" ]; then ARGS="$ARGS --dry-run"; fi
-          if [ "$SKIP_LLM" = "true" ]; then ARGS="$ARGS --skip-llm"; fi
-          pnpm --filter @radar/pipeline run run -- $ARGS
+            # ---------------------------------------------------------------------
+            # 2) Chạy pipeline
+            # ---------------------------------------------------------------------
+            - name: Chạy pipeline
+              env:
+                  GITHUB_API_TOKEN: ${{ github.token }} # tăng giới hạn GitHub API
+                  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+                  GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+                  DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+                  SITE_URL: 'https://ai-tech-radar-fe.phatle219.workers.dev'
+                  LLM_PRIMARY_MODEL: ${{ vars.LLM_PRIMARY_MODEL }}
+                  LLM_FALLBACK_MODEL: ${{ vars.LLM_FALLBACK_MODEL }}
+                  RUN_TRIGGER: ${{ github.event_name == 'schedule' && 'schedule' || 'manual' }}
+                  DRY_RUN: ${{ inputs.dry_run && 'true' || 'false' }}
+                  SKIP_LLM: ${{ inputs.skip_llm && 'true' || 'false' }}
+              run: |
+                  ARGS="--db $DB_FILE --export $EXPORT_DIR"
+                  if [ "$DRY_RUN" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+                  if [ "$SKIP_LLM" = "true" ]; then ARGS="$ARGS --skip-llm"; fi
+                  pnpm --filter @radar/pipeline run run -- $ARGS
 
-      - name: Dọn dữ liệu cũ (chỉ chủ nhật)
-        if: ${{ !inputs.dry_run }}
-        run: |
-          if [ "$(date +%u)" = "7" ]; then
-            pnpm --filter @radar/pipeline run db:maintain -- --db "$DB_FILE"
-          fi
+            - name: Dọn dữ liệu cũ (chỉ chủ nhật)
+              if: ${{ !inputs.dry_run }}
+              run: |
+                  if [ "$(date +%u)" = "7" ]; then
+                    pnpm --filter @radar/pipeline run db:maintain -- --db "$DB_FILE"
+                  fi
 
-      - name: Kiểm tra toàn vẹn DB
-        run: pnpm --filter @radar/pipeline run db:check -- --db "$DB_FILE"
+            - name: Kiểm tra toàn vẹn DB
+              run: pnpm --filter @radar/pipeline run db:check -- --db "$DB_FILE"
 
-      # ---------------------------------------------------------------------
-      # 3) Lưu kết quả (bỏ qua khi dry-run)
-      # ---------------------------------------------------------------------
-      - name: Upload DB lên Release
-        if: ${{ !inputs.dry_run }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh release upload "$DB_RELEASE_TAG" "$DB_FILE" --clobber
+            # ---------------------------------------------------------------------
+            # 3) Lưu kết quả (bỏ qua khi dry-run)
+            # ---------------------------------------------------------------------
+            - name: Upload DB lên Release
+              if: ${{ !inputs.dry_run }}
+              env:
+                  GH_TOKEN: ${{ github.token }}
+              run: gh release upload "$DB_RELEASE_TAG" "$DB_FILE" --clobber
 
-      - name: Đẩy dữ liệu export lên nhánh data
-        if: ${{ !inputs.dry_run }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          DATA_DIR="/tmp/data-repo"
-          rm -rf "$DATA_DIR"
+            - name: Đẩy dữ liệu export lên nhánh data
+              if: ${{ !inputs.dry_run }}
+              env:
+                  GH_TOKEN: ${{ github.token }}
+              run: |
+                  DATA_DIR="/tmp/data-repo"
+                  rm -rf "$DATA_DIR"
 
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+                  REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
 
-          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
-            echo "Nhánh data đã tồn tại trên remote. Đang fetch..."
-            git clone --branch data --single-branch "$REPO_URL" "$DATA_DIR"
-          else
-            echo "Nhánh data chưa tồn tại. Đang khởi tạo orphan data branch..."
-            mkdir -p "$DATA_DIR"
-            cd "$DATA_DIR"
-            git init -b data
-            git remote add origin "$REPO_URL"
-            git commit --allow-empty -m "chore: initialize orphan data branch"
-            git push -u origin data --no-verify
-            cd - >/dev/null
-          fi
+                  if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+                    echo "Nhánh data đã tồn tại trên remote. Đang fetch..."
+                    git clone --branch data --single-branch "$REPO_URL" "$DATA_DIR"
+                  else
+                    echo "Nhánh data chưa tồn tại. Đang khởi tạo orphan data branch..."
+                    mkdir -p "$DATA_DIR"
+                    cd "$DATA_DIR"
+                    git init -b data
+                    git remote add origin "$REPO_URL"
+                    git commit --allow-empty -m "chore: initialize orphan data branch"
+                    git push -u origin data --no-verify
+                    cd - >/dev/null
+                  fi
 
-          echo "Chép dữ liệu từ $EXPORT_DIR sang thư mục nhánh data..."
-          cp -r "$EXPORT_DIR"/* "$DATA_DIR"/
+                  echo "Chép dữ liệu từ $EXPORT_DIR sang thư mục nhánh data..."
+                  cp -r "$EXPORT_DIR"/* "$DATA_DIR"/
 
-          cd "$DATA_DIR"
-          git add .
+                  cd "$DATA_DIR"
+                  git add .
 
-          if git diff --cached --quiet; then
-            echo "Không có thay đổi dữ liệu trên nhánh data để commit."
-          else
-            git commit --no-verify -m "chore(data): digest $(date +%F)"
-            
-            MAX_RETRIES=3
-            COUNT=0
-            SUCCESS=false
-            while [ $COUNT -lt $MAX_RETRIES ]; do
-              if git push --no-verify origin data; then
-                SUCCESS=true
-                break
-              fi
-              echo "Push gặp xung đột, thử rebase lại (lần $((COUNT + 1)))..."
-              git pull --rebase origin data || true
-              COUNT=$((COUNT + 1))
-              sleep 2
-            done
+                  if git diff --cached --quiet; then
+                    echo "Không có thay đổi dữ liệu trên nhánh data để commit."
+                  else
+                    git commit --no-verify -m "chore(data): digest $(date +%F)"
+                    
+                    MAX_RETRIES=3
+                    COUNT=0
+                    SUCCESS=false
+                    while [ $COUNT -lt $MAX_RETRIES ]; do
+                      if git push --no-verify origin data; then
+                        SUCCESS=true
+                        break
+                      fi
+                      echo "Push gặp xung đột, thử rebase lại (lần $((COUNT + 1)))..."
+                      git pull --rebase origin data || true
+                      COUNT=$((COUNT + 1))
+                      sleep 2
+                    done
 
-            if [ "$SUCCESS" != "true" ]; then
-              echo "Lỗi: Không thể push lên nhánh data sau $MAX_RETRIES lần thử."
-              exit 1
-            fi
-            echo "Đã đẩy dữ liệu thành công lên nhánh data."
-          fi
-          cd - >/dev/null
-          rm -rf "$DATA_DIR"
+                    if [ "$SUCCESS" != "true" ]; then
+                      echo "Lỗi: Không thể push lên nhánh data sau $MAX_RETRIES lần thử."
+                      exit 1
+                    fi
+                    echo "Đã đẩy dữ liệu thành công lên nhánh data."
+                  fi
+                  cd - >/dev/null
+                  rm -rf "$DATA_DIR"
 
-      - name: Kích hoạt Deploy Web (nếu có cấu hình)
-        if: ${{ !inputs.dry_run }}
-        env:
-          CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          if [ -n "$CLOUDFLARE_DEPLOY_HOOK" ]; then
-            echo "Đang kích hoạt Cloudflare Deploy Hook..."
-            curl -sS -X POST "$CLOUDFLARE_DEPLOY_HOOK" >/dev/null && echo "Kích hoạt Cloudflare deploy thành công."
-          fi
-          if gh workflow list 2>/dev/null | grep -q "deploy.yml"; then
-            echo "Kích hoạt workflow deploy.yml..."
-            gh workflow run deploy.yml || true
-          fi
+            - name: Kích hoạt Deploy Web (nếu có cấu hình)
+              if: ${{ !inputs.dry_run }}
+              env:
+                  CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+                  GH_TOKEN: ${{ github.token }}
+              run: |
+                  if [ -n "$CLOUDFLARE_DEPLOY_HOOK" ]; then
+                    echo "Đang kích hoạt Cloudflare Deploy Hook..."
+                    curl -sS -X POST "$CLOUDFLARE_DEPLOY_HOOK" >/dev/null && echo "Kích hoạt Cloudflare deploy thành công."
+                  fi
+                  if gh workflow list 2>/dev/null | grep -q "deploy.yml"; then
+                    echo "Kích hoạt workflow deploy.yml..."
+                    gh workflow run deploy.yml || true
+                  fi
 
-      # ---------------------------------------------------------------------
-      # 4) Khi lỗi: lưu log + báo Telegram
-      # ---------------------------------------------------------------------
-      - name: Lưu log khi lỗi
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: pipeline-logs
-          path: |
-            data/logs/
-            data/export/
-          retention-days: 7
-          if-no-files-found: ignore
+            # ---------------------------------------------------------------------
+            # 4) Khi lỗi: lưu log + báo Telegram
+            # ---------------------------------------------------------------------
+            - name: Lưu log khi lỗi
+              if: failure()
+              uses: actions/upload-artifact@v4
+              with:
+                  name: pipeline-logs
+                  path: |
+                      data/logs/
+                      data/export/
+                  retention-days: 7
+                  if-no-files-found: ignore
 
-      - name: Báo lỗi qua Telegram
-        if: failure()
-        env:
-          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
-          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: |
-          if [ -n "$TG_TOKEN" ] && [ -n "$TG_CHAT" ]; then
-            curl -sS -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
-              --data-urlencode "chat_id=${TG_CHAT}" \
-              --data-urlencode "text=⚠️ AI Tech Radar: pipeline lỗi ngày $(date +%F). Xem log: ${RUN_URL}" \
-              >/dev/null
-          else
-            echo "Chưa cấu hình Telegram, bỏ qua."
-          fi
+            - name: Báo lỗi qua Telegram
+              if: failure()
+              env:
+                  TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+                  TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+                  RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+              run: |
+                  if [ -n "$TG_TOKEN" ] && [ -n "$TG_CHAT" ]; then
+                    curl -sS -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+                      --data-urlencode "chat_id=${TG_CHAT}" \
+                      --data-urlencode "text=⚠️ AI Tech Radar: pipeline lỗi ngày $(date +%F). Xem log: ${RUN_URL}" \
+                      >/dev/null
+                  else
+                    echo "Chưa cấu hình Telegram, bỏ qua."
+                  fi
