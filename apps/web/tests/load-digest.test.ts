@@ -177,6 +177,69 @@ describe("loadLatestDigest", () => {
     }
   });
 
+  it("prefers remote GitHub data when it has a newer digest_date than local data", async () => {
+    const originalFetch = globalThis.fetch;
+    const oldLocalData = {
+      digest_date: "2026-10-14",
+      generated_at: "2026-10-14T07:00:00Z",
+      version: "v1.0.0",
+      items_count: 1,
+      items: [
+        {
+          digest_date: "2026-10-14",
+          section: "repo",
+          rank: 1,
+          score: 80,
+          item_id: 1,
+          category: "repo",
+          title: "old-tool",
+          url: "https://github.com/old/tool",
+        },
+      ],
+    };
+
+    const newRemoteData = {
+      digest_date: "2026-10-16",
+      generated_at: "2026-10-16T07:00:00Z",
+      version: "v1.0.0",
+      items_count: 1,
+      items: [
+        {
+          digest_date: "2026-10-16",
+          section: "news",
+          rank: 1,
+          score: 95,
+          item_id: 2,
+          category: "news",
+          title: "fresh-news",
+          url: "https://fresh.news/ai",
+        },
+      ],
+    };
+
+    try {
+      globalThis.fetch = async (input: RequestInfo | URL) => {
+        const urlStr = String(input);
+        if (urlStr.includes("raw.githubusercontent.com")) {
+          return new Response(JSON.stringify(newRemoteData), {
+            status: 200,
+            headers: { "Content-Type": "application/json" },
+          });
+        }
+        return new Response(JSON.stringify(oldLocalData), {
+          status: 200,
+          headers: { "Content-Type": "application/json" },
+        });
+      };
+
+      const result = await loadLatestDigest("/data/export/latest.json");
+      expect(result.digest_date).toBe("2026-10-16");
+      expect(result.items[0].title).toBe("fresh-news");
+    } finally {
+      globalThis.fetch = originalFetch;
+    }
+  });
+
   it("returns empty digest payload when both local and fallback fail", async () => {
     const originalFetch = globalThis.fetch;
     try {
