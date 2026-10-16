@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-15T02:31:06.988Z",
+  "generated_at": "2026-10-16T02:31:01.680Z",
   "items": [
     {
-      "key": "69",
-      "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+      "key": "84",
+      "title": "Neural networks are clean",
       "category": "news",
-      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "url": "https://already-clean.goodfire.com/",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -14,10 +14,10 @@
       "stars": null
     },
     {
-      "key": "71",
-      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
+      "key": "86",
+      "title": "Using AI to reverse engineer hardware",
       "category": "news",
-      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote",
+      "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -26,10 +26,10 @@
       "stars": null
     },
     {
-      "key": "74",
-      "title": "Show HN: I wrote an email app that accepts only one sender per inbox",
+      "key": "87",
+      "title": "The 8-mile hole in a Hawaii national park that no one can explain",
       "category": "news",
-      "url": "https://clova.email/",
+      "url": "https://www.sfgate.com/national-parks/article/hawaii-volcanoes-park-great-crack-22358849.php",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -38,10 +38,10 @@
       "stars": null
     },
     {
-      "key": "68",
-      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+      "key": "85",
+      "title": "BeBox is a Haiku application that emulates Be Inc.'s BeBox",
       "category": "news",
-      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "url": "https://github.com/johnrash/bebox",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -50,16 +50,28 @@
       "stars": null
     },
     {
-      "key": "70",
-      "title": "Ask HN: CAD for wood working with LLM support?",
+      "key": "72",
+      "title": "Capsem – a Rust hypervisor sandboxing AI agents in air-gapped Linux VMs",
       "category": "news",
-      "url": "https://news.ycombinator.com/item?id=50067325",
+      "url": "https://capsem.org/",
       "tags": [],
       "purpose": null,
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
+    },
+    {
+      "key": "54",
+      "title": "outcrawlai/scout",
+      "category": "repo",
+      "url": "https://github.com/outcrawlai/scout",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 834
     },
     {
       "key": "60",
@@ -71,7 +83,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 933
+      "stars": 1057
     },
     {
       "key": "33",
@@ -83,19 +95,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 2114
-    },
-    {
-      "key": "4",
-      "title": "rociiu/talorys",
-      "category": "repo",
-      "url": "https://github.com/rociiu/talorys",
-      "tags": [],
-      "purpose": null,
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 1003
+      "stars": 2518
     },
     {
       "key": "35",
@@ -107,7 +107,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 965
+      "stars": 1027
     },
     {
       "key": "36",
@@ -119,7 +119,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 670
+      "stars": 1033
     }
   ]
 }

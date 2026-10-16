@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-10-15</title>
+    <title>AI Tech Radar - 2026-10-16</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Containment and monitoring failures are to blame for AI hacking reports: experts</title>
-      <link>https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html</link>
-      <guid isPermaLink="false">https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html#2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Neural networks are clean</title>
+      <link>https://already-clean.goodfire.com/</link>
+      <guid isPermaLink="false">https://already-clean.goodfire.com/#2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] Banks are now trying to offload the AI data center debt they just underwrote</title>
-      <link>https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote</link>
-      <guid isPermaLink="false">https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote#2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Using AI to reverse engineer hardware</title>
+      <link>https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware</link>
+      <guid isPermaLink="false">https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware#2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] Show HN: I wrote an email app that accepts only one sender per inbox</title>
-      <link>https://clova.email/</link>
-      <guid isPermaLink="false">https://clova.email/#2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] The 8-mile hole in a Hawaii national park that no one can explain</title>
+      <link>https://www.sfgate.com/national-parks/article/hawaii-volcanoes-park-great-crack-22358849.php</link>
+      <guid isPermaLink="false">https://www.sfgate.com/national-parks/article/hawaii-volcanoes-park-great-crack-22358849.php#2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] LFM2.5-24B-A2B: Built for fast on-device agents</title>
-      <link>https://www.liquid.ai/blog/lfm2-5-24b-a2b</link>
-      <guid isPermaLink="false">https://www.liquid.ai/blog/lfm2-5-24b-a2b#2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] BeBox is a Haiku application that emulates Be Inc.&apos;s BeBox</title>
+      <link>https://github.com/johnrash/bebox</link>
+      <guid isPermaLink="false">https://github.com/johnrash/bebox#2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] Ask HN: CAD for wood working with LLM support?</title>
-      <link>https://news.ycombinator.com/item?id=50067325</link>
-      <guid isPermaLink="false">https://news.ycombinator.com/item?id=50067325#2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Capsem – a Rust hypervisor sandboxing AI agents in air-gapped Linux VMs</title>
+      <link>https://capsem.org/</link>
+      <guid isPermaLink="false">https://capsem.org/#2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>[REPO] outcrawlai/scout</title>
+      <link>https://github.com/outcrawlai/scout</link>
+      <guid isPermaLink="false">https://github.com/outcrawlai/scout#2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>[REPO] marclou/mailcheap</title>
       <link>https://github.com/marclou/mailcheap</link>
-      <guid isPermaLink="false">https://github.com/marclou/mailcheap#2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/marclou/mailcheap#2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>[REPO] onehumanbeing/esp32-iphone-agent</title>
       <link>https://github.com/onehumanbeing/esp32-iphone-agent</link>
-      <guid isPermaLink="false">https://github.com/onehumanbeing/esp32-iphone-agent#2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>[REPO] rociiu/talorys</title>
-      <link>https://github.com/rociiu/talorys</link>
-      <guid isPermaLink="false">https://github.com/rociiu/talorys#2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/onehumanbeing/esp32-iphone-agent#2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>[REPO] zhuyansen/new-term-radar</title>
       <link>https://github.com/zhuyansen/new-term-radar</link>
-      <guid isPermaLink="false">https://github.com/zhuyansen/new-term-radar#2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/zhuyansen/new-term-radar#2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>[REPO] deeplethe/solid-glass</title>
       <link>https://github.com/deeplethe/solid-glass</link>
-      <guid isPermaLink="false">https://github.com/deeplethe/solid-glass#2026-10-15</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/deeplethe/solid-glass#2026-10-16</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
