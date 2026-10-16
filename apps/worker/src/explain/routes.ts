@@ -7,6 +7,7 @@ export interface ExplainRoutesOptions {
     appDb: AppDbRepository;
     searchIndexItems?: SearchIndexItem[];
     llmProvider?: LLMProvider;
+    getSearchIndex?: (env?: unknown) => Promise<SearchIndexItem[]>;
 }
 
 export function createExplainRouter(options: ExplainRoutesOptions) {
@@ -34,7 +35,7 @@ export function createExplainRouter(options: ExplainRoutesOptions) {
             const key = c.req.param('key');
             const user = c.get('user');
 
-            const items: SearchIndexItem[] = options.searchIndexItems ?? [
+            const defaultFallbackItems: SearchIndexItem[] = options.searchIndexItems ?? [
                 {
                     key,
                     title: 'Demo AI Project',
@@ -45,6 +46,11 @@ export function createExplainRouter(options: ExplainRoutesOptions) {
                     highlight: 'Tính năng nổi bật',
                 },
             ];
+
+            const dynamicItems = options.getSearchIndex
+                ? await options.getSearchIndex(c.env)
+                : defaultFallbackItems;
+            const items = dynamicItems.length > 0 ? dynamicItems : defaultFallbackItems;
 
             const explainService = new ExplainService({
                 appDb: options.appDb,

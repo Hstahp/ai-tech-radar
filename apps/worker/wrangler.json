@@ -1,12 +1,10 @@
 {
-  "name": "ai-tech-radar",
-  "main": "src/index.ts",
-  "compatibility_date": "2025-07-18",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
-  "triggers": {
-    "crons": ["30 2 * * *"]
-  },
-  "previews": {}
+    "name": "ai-tech-radar",
+    "main": "src/index.ts",
+    "compatibility_date": "2025-07-18",
+    "compatibility_flags": ["nodejs_compat"],
+    "triggers": {
+        "crons": ["0 0 * * *"]
+    },
+    "previews": {}
 }

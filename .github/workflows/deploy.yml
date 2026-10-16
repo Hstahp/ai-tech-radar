@@ -1,0 +1,74 @@
+name: Deploy Web App
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "apps/web/**"
+      - "packages/core/**"
+      - ".github/workflows/deploy.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-web
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: "22"
+
+jobs:
+  deploy-web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cài pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+
+      - name: Cài dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Đồng bộ dữ liệu export mới nhất từ nhánh data
+        run: |
+          mkdir -p apps/web/public/data/export data/export
+          curl -sSf "https://raw.githubusercontent.com/${{ github.repository }}/data/latest.json" -o data/export/latest.json || true
+          curl -sSf "https://raw.githubusercontent.com/${{ github.repository }}/data/feed.xml" -o data/export/feed.xml || true
+          curl -sSf "https://raw.githubusercontent.com/${{ github.repository }}/data/search-index.json" -o data/export/search-index.json || true
+          cp -r data/export/* apps/web/public/data/export/ || true
+
+      - name: Build Web
+        run: pnpm --filter @radar/web run build
+
+      - name: Deploy lên Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+        run: |
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "Đang deploy apps/web lên Cloudflare Worker (ai-tech-radar-fe)..."
+            pnpm --filter @radar/web exec wrangler deploy
+            echo "Deploy thành công!"
+          elif [ -n "$CLOUDFLARE_DEPLOY_HOOK" ]; then
+            echo "Đang kích hoạt Cloudflare Deploy Hook..."
+            curl -sSf -X POST "$CLOUDFLARE_DEPLOY_HOOK"
+            echo "Kích hoạt Deploy Hook thành công!"
+          else
+            echo "Thông báo: Chưa cấu hình CLOUDFLARE_API_TOKEN hoặc CLOUDFLARE_DEPLOY_HOOK trong GitHub Secrets."
+            echo "Quá trình build thành công nhưng chưa deploy tự động lên Cloudflare."
+          fi
