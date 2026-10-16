@@ -26,6 +26,9 @@ export const RAW_GITHUB_LATEST_URL =
   "https://raw.githubusercontent.com/Hstahp/ai-tech-radar/data/latest.json";
 
 export async function loadLatestDigest(apiUrl = "/data/export/latest.json"): Promise<DigestFeedPayload> {
+  let localPayload: DigestFeedPayload | null = null;
+  let remotePayload: DigestFeedPayload | null = null;
+
   // 1. Thử tải từ static endpoint local (/data/export/latest.json)
   try {
     const response = await fetch(apiUrl);
@@ -33,26 +36,37 @@ export async function loadLatestDigest(apiUrl = "/data/export/latest.json"): Pro
       const rawJson: unknown = await response.json();
       const parsed = DigestFeedPayloadSchema.parse(rawJson);
       if (parsed.items.length > 0) {
-        return parsed as DigestFeedPayload;
+        localPayload = parsed as DigestFeedPayload;
       }
     }
   } catch {
-    // Tiếp tục fallback bên dưới
+    // Tiếp tục kiểm tra remote
   }
 
-  // 2. Fallback sang nhánh orphan data trên GitHub (nếu file local build rỗng hoặc chưa sync)
+  // 2. Thử tải từ nhánh orphan data trên GitHub (runtime live data) với cache-buster
   try {
-    const response = await fetch(RAW_GITHUB_LATEST_URL);
+    const cacheBuster = `?_t=${Math.floor(Date.now() / 60000)}`;
+    const response = await fetch(`${RAW_GITHUB_LATEST_URL}${cacheBuster}`, {
+      cache: "no-cache",
+    });
     if (response.ok) {
       const rawJson: unknown = await response.json();
       const parsed = DigestFeedPayloadSchema.parse(rawJson);
       if (parsed.items.length > 0) {
-        return parsed as DigestFeedPayload;
+        remotePayload = parsed as DigestFeedPayload;
       }
     }
   } catch {
-    // Không có kết nối mạng hoặc lỗi
+    // Bỏ qua nếu GitHub offline hoặc lỗi mạng
   }
+
+  // Ưu tiên bản tin có digest_date mới nhất (giúp web luôn cập nhật ngay khi pipeline commit lên nhánh data)
+  if (localPayload && remotePayload) {
+    return remotePayload.digest_date >= localPayload.digest_date ? remotePayload : localPayload;
+  }
+
+  if (remotePayload) return remotePayload;
+  if (localPayload) return localPayload;
 
   return createEmptyDigestPayload();
 }

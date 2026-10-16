@@ -8,6 +8,7 @@ import { createChatRouter } from './chat/routes.js';
 import { createExplainRouter } from './explain/routes.js';
 import { createAdminRouter } from './admin/routes.js';
 import { appErrorHandler } from './lib/errors.js';
+import type { SearchIndexItem } from '@radar/core';
 
 export interface Env {
     GEMINI_API_KEY?: string;
@@ -66,10 +67,42 @@ app.get('/health', (c) => {
     return c.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
+const RAW_SEARCH_INDEX_URL =
+    'https://raw.githubusercontent.com/Hstahp/ai-tech-radar/data/search-index.json';
+
+let cachedIndexItems: SearchIndexItem[] | null = null;
+let lastIndexFetchTime = 0;
+const INDEX_CACHE_TTL_MS = 5 * 60 * 1000; // 5 phút cache trong memory
+
+export async function getSearchIndexItems(env?: unknown): Promise<SearchIndexItem[]> {
+    const now = Date.now();
+    if (cachedIndexItems && now - lastIndexFetchTime < INDEX_CACHE_TTL_MS) {
+        return cachedIndexItems;
+    }
+
+    const typedEnv = env as Env | undefined;
+    const url = typedEnv?.SEARCH_INDEX_URL || RAW_SEARCH_INDEX_URL;
+    try {
+        const res = await fetch(url);
+        if (res.ok) {
+            const data = (await res.json()) as { items?: SearchIndexItem[] };
+            if (Array.isArray(data.items) && data.items.length > 0) {
+                cachedIndexItems = data.items;
+                lastIndexFetchTime = now;
+                return cachedIndexItems;
+            }
+        }
+    } catch (err: unknown) {
+        console.warn('[SEARCH_INDEX] Khong the tai search index tu:', url, err);
+    }
+
+    return cachedIndexItems ?? [];
+}
+
 // 4. Gan cac Router theo tung tinh nang
 app.route('/', createAuthRouter(authService));
-app.route('/', createChatRouter({ appDb }));
-app.route('/', createExplainRouter({ appDb }));
+app.route('/', createChatRouter({ appDb, getSearchIndex: getSearchIndexItems }));
+app.route('/', createExplainRouter({ appDb, getSearchIndex: getSearchIndexItems }));
 app.route('/api/admin', createAdminRouter({ appDb }));
 
 export { app };

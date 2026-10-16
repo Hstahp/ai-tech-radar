@@ -8,6 +8,7 @@ export interface ChatRoutesOptions {
     appDb: AppDbRepository;
     searchIndexItems?: SearchIndexItem[];
     llmProvider?: LLMProvider;
+    getSearchIndex?: (env?: unknown) => Promise<SearchIndexItem[]>;
 }
 
 export function createChatRouter(options: ChatRoutesOptions) {
@@ -51,10 +52,15 @@ export function createChatRouter(options: ChatRoutesOptions) {
             const anonHash = await hashIp(clientIp);
             const user = c.get('user');
 
+            const dynamicItems = options.getSearchIndex
+                ? await options.getSearchIndex(c.env)
+                : (options.searchIndexItems ?? defaultItems);
+            const activeItems = dynamicItems.length > 0 ? dynamicItems : defaultItems;
+
             const chatService = new ChatService({
                 appDb: options.appDb,
                 llmProvider: defaultLlmProvider,
-                searchIndexItems: defaultItems,
+                searchIndexItems: activeItems,
                 digestDate: new Date().toISOString().split('T')[0],
             });
 
