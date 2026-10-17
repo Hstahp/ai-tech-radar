@@ -36,15 +36,15 @@ export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: Dig
                         <VerdictBadge verdict={item.verdict} />
                     </div>
                     {scoreDisplay !== null && (
-                        <div className="flex items-center gap-1.5 text-xs font-mono font-semibold px-2 py-0.5 rounded bg-indigo-950/60 text-indigo-300 border border-indigo-500/30">
-                            <span className="text-slate-400">Score:</span>
-                            <span className="text-indigo-400">{scoreDisplay}</span>
+                        <div className="flex items-center gap-1.5 text-xs font-mono font-semibold px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30">
+                            <span className="text-slate-500 dark:text-slate-400">Score:</span>
+                            <span className="text-indigo-600 dark:text-indigo-400">{scoreDisplay}</span>
                         </div>
                     )}
                 </div>
 
                 {/* Title & Link */}
-                <h3 className="text-lg font-bold text-slate-100 group-hover:text-indigo-300 transition-colors line-clamp-2">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-300 transition-colors line-clamp-2">
                     {onNavigateToDetail ? (
                         <button
                             type="button"
@@ -67,7 +67,7 @@ export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: Dig
 
                 {/* Language / stars if available */}
                 {(item.language || item.stars) && (
-                    <div className="flex items-center gap-3 mt-2 text-xs text-slate-400 font-mono">
+                    <div className="flex items-center gap-3 mt-2 text-xs text-slate-500 dark:text-slate-400 font-mono">
                         {item.language && (
                             <span className="inline-flex items-center gap-1">
                                 <Code2 className="h-3 w-3 text-slate-400" />
@@ -76,7 +76,7 @@ export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: Dig
                         )}
                         {item.stars && (
                             <span className="inline-flex items-center gap-1">
-                                <Star className="h-3 w-3 text-amber-400 fill-amber-400/20" />
+                                <Star className="h-3 w-3 text-amber-500 fill-amber-400/20" />
                                 <span>{item.stars.toLocaleString()}</span>
                             </span>
                         )}
@@ -84,28 +84,28 @@ export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: Dig
                 )}
 
                 {/* Content points */}
-                <div className="mt-4 space-y-3 text-sm text-slate-300">
+                <div className="mt-4 space-y-3 text-sm text-slate-600 dark:text-slate-300">
                     {item.purpose && (
                         <div className="flex items-start gap-2.5">
-                            <Target className="h-4 w-4 text-indigo-400 shrink-0 mt-0.5" />
-                            <p className="line-clamp-2 leading-relaxed text-slate-200">{item.purpose}</p>
+                            <Target className="h-4 w-4 text-indigo-500 dark:text-indigo-400 shrink-0 mt-0.5" />
+                            <p className="line-clamp-2 leading-relaxed text-slate-700 dark:text-slate-200">{item.purpose}</p>
                         </div>
                     )}
 
                     {item.highlight && (
                         <div className="flex items-start gap-2.5">
-                            <Sparkles className="h-4 w-4 text-amber-400 shrink-0 mt-0.5" />
-                            <p className="line-clamp-2 leading-relaxed text-slate-300/90">{item.highlight}</p>
+                            <Sparkles className="h-4 w-4 text-amber-500 dark:text-amber-400 shrink-0 mt-0.5" />
+                            <p className="line-clamp-2 leading-relaxed text-slate-600 dark:text-slate-300/90">{item.highlight}</p>
                         </div>
                     )}
                 </div>
             </div>
 
             {/* Footer: action & tags */}
-            <div className="mt-5 pt-4 border-t border-slate-800/80 flex flex-col gap-3">
+            <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800/80 flex flex-col gap-3">
                 {item.action && (
-                    <div className="text-xs text-indigo-300/90 flex items-center gap-1.5">
-                        <Compass className="h-3.5 w-3.5 text-indigo-400 shrink-0" />
+                    <div className="text-xs text-indigo-600 dark:text-indigo-300/90 flex items-center gap-1.5">
+                        <Compass className="h-3.5 w-3.5 text-indigo-500 dark:text-indigo-400 shrink-0" />
                         <span className="font-medium truncate">{item.action}</span>
                     </div>
                 )}
