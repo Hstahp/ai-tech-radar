@@ -8,11 +8,6 @@ export interface ChatMessage {
     isError?: boolean;
 }
 
-interface ChatResponse {
-    answerable: boolean;
-    answer: string;
-    citations?: string[];
-}
 
 const WELCOME_MSG: ChatMessage = {
     role: 'assistant',
@@ -55,13 +50,31 @@ export function useChat() {
                 throw new Error(errData?.error?.message ?? `Lỗi ${res.status}`);
             }
 
-            const data = (await res.json()) as ChatResponse;
+            const rawJson = (await res.json()) as any;
+            const payload = rawJson.data ?? rawJson;
+            const answer =
+                payload.answer ||
+                rawJson.answer ||
+                (payload.answerable === false
+                    ? 'Mình chỉ trả lời được các câu hỏi dựa trên tin trong bản tin hiện có. Câu hỏi này nằm ngoài phạm vi đó.'
+                    : 'Không tìm thấy câu trả lời phù hợp trong bản tin hôm nay.');
+
+            const rawCitations = payload.citations ?? rawJson.citations ?? [];
+            const citations: string[] = Array.isArray(rawCitations)
+                ? rawCitations.map((c: any) => (typeof c === 'string' ? c : c.title || c.key))
+                : [];
+
+            let displayContent = answer;
+            if (payload.suggestions && Array.isArray(payload.suggestions) && payload.suggestions.length > 0) {
+                displayContent += '\n\n💡 Gợi ý bạn có thể hỏi:\n' + payload.suggestions.map((s: string) => `• ${s}`).join('\n');
+            }
+
             setMessages((prev) => [
                 ...prev,
                 {
                     role: 'assistant',
-                    content: data.answer,
-                    citations: data.citations,
+                    content: displayContent,
+                    citations: citations.length > 0 ? citations : undefined,
                 },
             ]);
         } catch (err: unknown) {

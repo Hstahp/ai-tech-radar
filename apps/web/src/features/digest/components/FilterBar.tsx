@@ -67,11 +67,11 @@ export function FilterBar({
                 cat.id === "my_feed" && selectedCategory === "my_feed"
                   ? "bg-gradient-to-r from-indigo-600 to-violet-600 border-indigo-500 text-white"
                   : cat.id === "my_feed"
-                  ? "text-indigo-300 hover:text-indigo-200"
+                  ? "text-indigo-600 hover:text-indigo-700 dark:text-indigo-300 dark:hover:text-indigo-200 font-medium"
                   : ""
               }
             >
-              {cat.id === "my_feed" && <Sparkles className="h-3 w-3 mr-1.5 inline text-amber-300" />}
+              {cat.id === "my_feed" && <Sparkles className="h-3 w-3 mr-1.5 inline text-amber-500 dark:text-amber-300" />}
               {cat.label}
             </Button>
           ))}
@@ -93,9 +93,9 @@ export function FilterBar({
             variant={selectedVerdict === "try_now" ? "secondary" : "ghost"}
             size="sm"
             onClick={() => onVerdictChange("try_now")}
-            className={selectedVerdict === "try_now" ? "border-emerald-500/40 text-emerald-300" : "flex items-center gap-1.5"}
+            className={selectedVerdict === "try_now" ? "border-emerald-300 dark:border-emerald-500/40 text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40" : "flex items-center gap-1.5"}
           >
-            <Zap className="h-3 w-3 text-emerald-400" />
+            <Zap className="h-3 w-3 text-emerald-600 dark:text-emerald-400" />
             <span>Thử ngay</span>
           </Button>
 
@@ -103,9 +103,9 @@ export function FilterBar({
             variant={selectedVerdict === "watch" ? "secondary" : "ghost"}
             size="sm"
             onClick={() => onVerdictChange("watch")}
-            className={selectedVerdict === "watch" ? "border-amber-500/40 text-amber-300" : "flex items-center gap-1.5"}
+            className={selectedVerdict === "watch" ? "border-amber-300 dark:border-amber-500/40 text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40" : "flex items-center gap-1.5"}
           >
-            <Eye className="h-3 w-3 text-amber-400" />
+            <Eye className="h-3 w-3 text-amber-600 dark:text-amber-400" />
             <span>Theo dõi</span>
           </Button>
         </div>

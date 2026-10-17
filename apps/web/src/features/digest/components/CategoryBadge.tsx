@@ -11,17 +11,17 @@ export function CategoryBadge({ category, className }: CategoryBadgeProps) {
   const renderIcon = () => {
     switch (category) {
       case "repo":
-        return <FolderGit2 className="h-3 w-3 text-indigo-400" />;
+        return <FolderGit2 className="h-3 w-3 text-indigo-600 dark:text-indigo-400" />;
       case "extension":
-        return <Puzzle className="h-3 w-3 text-indigo-400" />;
+        return <Puzzle className="h-3 w-3 text-indigo-600 dark:text-indigo-400" />;
       case "news":
-        return <Newspaper className="h-3 w-3 text-indigo-400" />;
+        return <Newspaper className="h-3 w-3 text-indigo-600 dark:text-indigo-400" />;
       case "model":
-        return <Cpu className="h-3 w-3 text-indigo-400" />;
+        return <Cpu className="h-3 w-3 text-indigo-600 dark:text-indigo-400" />;
       case "paper":
-        return <FileText className="h-3 w-3 text-indigo-400" />;
+        return <FileText className="h-3 w-3 text-indigo-600 dark:text-indigo-400" />;
       default:
-        return <Bookmark className="h-3 w-3 text-indigo-400" />;
+        return <Bookmark className="h-3 w-3 text-indigo-600 dark:text-indigo-400" />;
     }
   };
 
