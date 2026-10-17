@@ -30,9 +30,9 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
     ];
 
     return (
-        <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col lg:flex-row">
+        <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col lg:flex-row transition-colors duration-200">
             {/* 1. Header trên Mobile (< 1024px) */}
-            <header className="lg:hidden flex items-center justify-between px-4 py-3 bg-slate-900 border-b border-slate-800 sticky top-0 z-40">
+            <header className="lg:hidden flex items-center justify-between px-4 py-3 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-40">
                 <div className="flex items-center gap-2.5">
                     <div className="h-8 w-8 rounded-lg bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center justify-center">
                         <ShieldCheck className="h-4 w-4" />

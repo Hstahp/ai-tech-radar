@@ -34,7 +34,7 @@ export function FilterBar({
   filteredCount,
 }: FilterBarProps) {
   return (
-    <div className="bg-slate-900/50 backdrop-blur-md border border-slate-800/80 rounded-2xl p-4 sm:p-5 mb-8 space-y-4">
+    <div className="bg-white/80 dark:bg-slate-900/50 backdrop-blur-md border border-slate-200/90 dark:border-slate-800/80 shadow-sm dark:shadow-none rounded-2xl p-4 sm:p-5 mb-8 space-y-4 transition-colors">
       {/* Search Input & stats */}
       <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
         <div className="relative flex-1">
@@ -44,17 +44,17 @@ export function FilterBar({
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
             placeholder="Tìm kiếm theo tên repo, mô tả, từ khóa hoặc tag (#mcp, #agent)..."
-            className="w-full pl-10 pr-4 py-2.5 bg-slate-950/70 border border-slate-800 rounded-xl text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
+            className="w-full pl-10 pr-4 py-2.5 bg-slate-50 dark:bg-slate-950/70 border border-slate-200 dark:border-slate-800 rounded-xl text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
           />
         </div>
 
-        <div className="text-xs text-slate-400 whitespace-nowrap self-center sm:self-auto font-mono">
-          Hiển thị <span className="text-indigo-400 font-semibold">{filteredCount}</span> / {totalCount} mục
+        <div className="text-xs text-slate-500 dark:text-slate-400 whitespace-nowrap self-center sm:self-auto font-mono">
+          Hiển thị <span className="text-indigo-600 dark:text-indigo-400 font-semibold">{filteredCount}</span> / {totalCount} mục
         </div>
       </div>
 
       {/* Filter Buttons */}
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 pt-3 border-t border-slate-800/60">
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 pt-3 border-t border-slate-200 dark:border-slate-800/60">
         {/* Category filters */}
         <div className="flex flex-wrap items-center gap-1.5">
           {CATEGORIES.map((cat) => (

@@ -15,9 +15,9 @@ export function Button({
 }: ButtonProps) {
   const variantStyles = {
     primary: "bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg shadow-indigo-600/20 border-transparent",
-    secondary: "bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 border-slate-700/60",
-    outline: "bg-transparent hover:bg-slate-800/50 text-slate-300 border-slate-700",
-    ghost: "bg-transparent hover:bg-slate-800/40 text-slate-400 hover:text-slate-200 border-transparent",
+    secondary: "bg-slate-100 hover:bg-slate-200 dark:bg-slate-800/80 dark:hover:bg-slate-700/80 text-slate-800 dark:text-slate-200 border-slate-200 dark:border-slate-700/60 shadow-sm dark:shadow-none",
+    outline: "bg-transparent hover:bg-slate-100 dark:hover:bg-slate-800/50 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700",
+    ghost: "bg-transparent hover:bg-slate-100 dark:hover:bg-slate-800/40 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 border-transparent",
   };
 
   const sizeStyles = {
