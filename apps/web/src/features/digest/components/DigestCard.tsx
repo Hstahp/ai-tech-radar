@@ -115,7 +115,7 @@ export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: Dig
                         {tagsList.map((tag) => (
                             <span
                                 key={tag}
-                                className="text-[11px] font-mono text-slate-400 bg-slate-800/60 px-2 py-0.5 rounded border border-slate-700/50"
+                                className="text-[11px] font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/60 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700/50"
                             >
                                 #{tag}
                             </span>
@@ -127,18 +127,18 @@ export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: Dig
                             <button
                                 type="button"
                                 onClick={() => onNavigateToDetail(itemKey)}
-                                className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-indigo-950/70 hover:bg-indigo-900/90 text-indigo-300 border border-indigo-500/30 flex items-center gap-1.5 transition-all shadow-sm hover:shadow-indigo-500/10 cursor-pointer"
+                                className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 dark:bg-indigo-950/70 dark:hover:bg-indigo-900/90 dark:text-indigo-300 dark:border-indigo-500/30 flex items-center gap-1.5 transition-all shadow-xs dark:shadow-none cursor-pointer"
                             >
-                                <Sparkles className="h-3.5 w-3.5 text-indigo-400" />
+                                <Sparkles className="h-3.5 w-3.5 text-indigo-600 dark:text-indigo-400" />
                                 <span>Giải thích AI</span>
                             </button>
                         ) : (
                             <button
                                 type="button"
                                 onClick={() => setIsExplainOpen(true)}
-                                className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-indigo-950/70 hover:bg-indigo-900/90 text-indigo-300 border border-indigo-500/30 flex items-center gap-1.5 transition-all shadow-sm hover:shadow-indigo-500/10 cursor-pointer"
+                                className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 dark:bg-indigo-950/70 dark:hover:bg-indigo-900/90 dark:text-indigo-300 dark:border-indigo-500/30 flex items-center gap-1.5 transition-all shadow-xs dark:shadow-none cursor-pointer"
                             >
-                                <Sparkles className="h-3.5 w-3.5 text-indigo-400" />
+                                <Sparkles className="h-3.5 w-3.5 text-indigo-600 dark:text-indigo-400" />
                                 <span>Giải thích AI</span>
                             </button>
                         )}
@@ -147,7 +147,7 @@ export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: Dig
                             <button
                                 type="button"
                                 onClick={() => onNavigateToDetail(itemKey)}
-                                className="text-xs font-medium text-slate-400 hover:text-indigo-300 flex items-center gap-1 transition-colors cursor-pointer"
+                                className="text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-300 flex items-center gap-1 transition-colors cursor-pointer"
                             >
                                 <span>Chi tiết</span>
                                 <ExternalLink className="h-3 w-3" />
@@ -157,7 +157,7 @@ export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: Dig
                                 href={item.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-xs font-medium text-slate-400 hover:text-indigo-300 flex items-center gap-1 transition-colors"
+                                className="text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-300 flex items-center gap-1 transition-colors"
                             >
                                 <span>Chi tiết</span>
                                 <ExternalLink className="h-3 w-3" />
