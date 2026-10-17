@@ -4,6 +4,8 @@ import { ChatService } from './service.js';
 import type { AppDbRepository } from '../repositories/app-db.js';
 import type { LLMProvider, SearchIndexItem } from '@radar/core';
 
+import { WorkerGeminiProvider } from '../lib/gemini.js';
+
 export interface ChatRoutesOptions {
     appDb: AppDbRepository;
     searchIndexItems?: SearchIndexItem[];
@@ -57,9 +59,16 @@ export function createChatRouter(options: ChatRoutesOptions) {
                 : (options.searchIndexItems ?? defaultItems);
             const activeItems = dynamicItems.length > 0 ? dynamicItems : defaultItems;
 
+            const env = c.env as { GEMINI_API_KEY?: string } | undefined;
+            const activeLlm = options.llmProvider ?? (
+                env?.GEMINI_API_KEY
+                    ? new WorkerGeminiProvider('gemini-2.5-flash', env.GEMINI_API_KEY)
+                    : defaultLlmProvider
+            );
+
             const chatService = new ChatService({
                 appDb: options.appDb,
-                llmProvider: defaultLlmProvider,
+                llmProvider: activeLlm,
                 searchIndexItems: activeItems,
                 digestDate: new Date().toISOString().split('T')[0],
             });
@@ -72,10 +81,11 @@ export function createChatRouter(options: ChatRoutesOptions) {
 
             return c.json(result);
         } catch (err: any) {
+            console.error('[CHAT_ERROR]', err);
             if (err.statusCode) {
                 return c.json({ error: { code: err.code, message: err.message } }, err.statusCode);
             }
-            return c.json({ error: { code: 'INTERNAL_ERROR', message: 'Đã xảy ra lỗi hệ thống.' } }, 500);
+            return c.json({ error: { code: 'INTERNAL_ERROR', message: err?.message ?? 'Đã xảy ra lỗi hệ thống.' } }, 500);
         }
     });
 

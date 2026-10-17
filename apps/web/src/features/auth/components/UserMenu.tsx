@@ -46,7 +46,7 @@ export function UserMenu({
                 variant="secondary"
                 size="sm"
                 onClick={onLogin}
-                className="flex items-center gap-2 border-slate-700 hover:border-slate-600 bg-slate-900/90 text-slate-200"
+                className="flex items-center gap-2 border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 bg-white dark:bg-slate-900/90 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 shadow-xs dark:shadow-none transition-colors"
             >
                 <svg className="h-3.5 w-3.5" viewBox="0 0 24 24">
                     <path
@@ -77,7 +77,7 @@ export function UserMenu({
             <button
                 type="button"
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-2 p-1.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors"
+                className="flex items-center gap-2 p-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-colors"
             >
                 {user.avatarUrl ? (
                     <img
@@ -86,25 +86,25 @@ export function UserMenu({
                         className="h-6 w-6 rounded-lg object-cover"
                     />
                 ) : (
-                    <div className="h-6 w-6 rounded-lg bg-indigo-600/30 text-indigo-300 flex items-center justify-center text-xs font-bold">
+                    <div className="h-6 w-6 rounded-lg bg-indigo-100 dark:bg-indigo-600/30 text-indigo-700 dark:text-indigo-300 flex items-center justify-center text-xs font-bold">
                         {user.displayName?.[0]?.toUpperCase() ?? 'U'}
                     </div>
                 )}
-                <span className="text-xs font-medium text-slate-200 max-w-[120px] truncate hidden sm:inline">
+                <span className="text-xs font-medium text-slate-800 dark:text-slate-200 max-w-[120px] truncate hidden sm:inline">
                     {user.displayName ?? user.email.split('@')[0]}
                 </span>
                 {user.role === 'admin' && (
-                    <span className="px-1.5 py-0.5 rounded text-[9px] font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                    <span className="px-1.5 py-0.5 rounded text-[9px] font-bold uppercase bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/30">
                         Admin
                     </span>
                 )}
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 mt-2 w-56 rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95 duration-100">
-                    <div className="px-3 py-2 border-b border-slate-800/80 mb-1">
-                        <p className="text-xs font-semibold text-white truncate">{user.displayName ?? 'Người dùng'}</p>
-                        <p className="text-[11px] text-slate-400 truncate">{user.email}</p>
+                <div className="absolute right-0 mt-2 w-56 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95 duration-100">
+                    <div className="px-3 py-2 border-b border-slate-100 dark:border-slate-800/80 mb-1">
+                        <p className="text-xs font-semibold text-slate-900 dark:text-white truncate">{user.displayName ?? 'Người dùng'}</p>
+                        <p className="text-[11px] text-slate-500 dark:text-slate-400 truncate">{user.email}</p>
                     </div>
 
                     {user.role === 'admin' && onOpenAdmin && (
@@ -114,9 +114,9 @@ export function UserMenu({
                                 setIsOpen(false);
                                 onOpenAdmin();
                             }}
-                            className="w-full flex items-center gap-2 px-3 py-2 text-xs text-amber-300 hover:bg-amber-950/30 rounded-xl transition-colors font-medium mb-1"
+                            className="w-full flex items-center gap-2 px-3 py-2 text-xs text-amber-700 dark:text-amber-300 hover:bg-amber-50 dark:hover:bg-amber-950/30 rounded-xl transition-colors font-medium mb-1"
                         >
-                            <ShieldCheck className="h-3.5 w-3.5 text-amber-400" />
+                            <ShieldCheck className="h-3.5 w-3.5 text-amber-500 dark:text-amber-400" />
                             <span>Bảng điều khiển Quản trị</span>
                         </button>
                     )}
@@ -127,13 +127,13 @@ export function UserMenu({
                             setIsOpen(false);
                             onOpenTagModal();
                         }}
-                        className="w-full flex items-center justify-between px-3 py-2 text-xs text-slate-200 hover:bg-slate-800/80 rounded-xl transition-colors"
+                        className="w-full flex items-center justify-between px-3 py-2 text-xs text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/80 rounded-xl transition-colors"
                     >
                         <div className="flex items-center gap-2">
-                            <TagIcon className="h-3.5 w-3.5 text-indigo-400" />
+                            <TagIcon className="h-3.5 w-3.5 text-indigo-500 dark:text-indigo-400" />
                             <span>Chủ đề quan tâm</span>
                         </div>
-                        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-slate-800 text-slate-400">
+                        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
                             {user.tags.length}/10
                         </span>
                     </button>
@@ -144,13 +144,13 @@ export function UserMenu({
                             setIsOpen(false);
                             onLogout();
                         }}
-                        className="w-full flex items-center gap-2 px-3 py-2 text-xs text-slate-300 hover:bg-slate-800/80 rounded-xl transition-colors"
+                        className="w-full flex items-center gap-2 px-3 py-2 text-xs text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/80 rounded-xl transition-colors"
                     >
-                        <LogOut className="h-3.5 w-3.5 text-slate-400" />
+                        <LogOut className="h-3.5 w-3.5 text-slate-500 dark:text-slate-400" />
                         <span>Đăng xuất</span>
                     </button>
 
-                    <div className="border-t border-slate-800/80 my-1" />
+                    <div className="border-t border-slate-100 dark:border-slate-800/80 my-1" />
 
                     <button
                         type="button"
@@ -158,7 +158,7 @@ export function UserMenu({
                             setIsOpen(false);
                             onDeleteAccount();
                         }}
-                        className="w-full flex items-center gap-2 px-3 py-2 text-xs text-rose-400 hover:bg-rose-950/30 rounded-xl transition-colors"
+                        className="w-full flex items-center gap-2 px-3 py-2 text-xs text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/30 rounded-xl transition-colors"
                     >
                         <Trash2 className="h-3.5 w-3.5" />
                         <span>Xóa tài khoản</span>
