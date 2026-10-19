@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-18T00:01:02.848Z",
+  "generated_at": "2026-10-19T00:01:03.471Z",
   "items": [
     {
-      "key": "115",
-      "title": "DeepSeek-v4.1-Flash-1017",
+      "key": "133",
+      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
       "category": "news",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://api-docs.deepseek.com/guides/search",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -14,10 +14,10 @@
       "stars": null
     },
     {
-      "key": "100",
-      "title": "You could have invented transformers from memory",
+      "key": "135",
+      "title": "Namecheap just seized and disabled all my domains",
       "category": "news",
-      "url": "https://alexwang.ai/posts/associative-memory",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -26,10 +26,10 @@
       "stars": null
     },
     {
-      "key": "118",
-      "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+      "key": "136",
+      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
       "category": "news",
-      "url": "https://llmspeed.dev/",
+      "url": "https://sphinx-six-theta.vercel.app/",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -38,10 +38,10 @@
       "stars": null
     },
     {
-      "key": "116",
-      "title": "Pele – Mermaid diagrams as themeable SVG",
+      "key": "131",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
       "category": "news",
-      "url": "https://pele.run/",
+      "url": "https://arxiv.org/abs/2610.18861",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -50,10 +50,10 @@
       "stars": null
     },
     {
-      "key": "117",
-      "title": "Microsoft and CMU team up to train early career software engineers",
+      "key": "134",
+      "title": "I built a programming language that LLMs can't use",
       "category": "news",
-      "url": "https://www.cs.cmu.edu/news/2026/microsoft-cmu-praise",
+      "url": "https://blog.picheta.me/post/killswitch-lang",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -71,31 +71,31 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1135
+      "stars": 2294
     },
     {
-      "key": "35",
-      "title": "zhuyansen/new-term-radar",
+      "key": "119",
+      "title": "LiCinCan/blender-ai-mcp-addon",
       "category": "repo",
-      "url": "https://github.com/zhuyansen/new-term-radar",
+      "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "tags": [],
       "purpose": null,
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1080
+      "stars": 785
     },
     {
-      "key": "36",
-      "title": "deeplethe/solid-glass",
+      "key": "76",
+      "title": "Zfinix/eleven",
       "category": "repo",
-      "url": "https://github.com/deeplethe/solid-glass",
+      "url": "https://github.com/Zfinix/eleven",
       "tags": [],
       "purpose": null,
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1688
+      "stars": 753
     },
     {
       "key": "54",
@@ -107,19 +107,19 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 936
+      "stars": 945
     },
     {
-      "key": "89",
-      "title": "Leonxlnx/earshot",
+      "key": "108",
+      "title": "aicodeking/leanrea",
       "category": "repo",
-      "url": "https://github.com/Leonxlnx/earshot",
+      "url": "https://github.com/aicodeking/leanrea",
       "tags": [],
       "purpose": null,
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 679
+      "stars": 638
     }
   ]
 }

@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-10-18</title>
+    <title>AI Tech Radar - 2026-10-19</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Sun, 18 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] DeepSeek-v4.1-Flash-1017</title>
-      <link>https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017</link>
-      <guid isPermaLink="false">https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017#2026-10-18</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] DeepSeek search and fetch – $0.75 per 1000 successful requests</title>
+      <link>https://api-docs.deepseek.com/guides/search</link>
+      <guid isPermaLink="false">https://api-docs.deepseek.com/guides/search#2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] You could have invented transformers from memory</title>
-      <link>https://alexwang.ai/posts/associative-memory</link>
-      <guid isPermaLink="false">https://alexwang.ai/posts/associative-memory#2026-10-18</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Namecheap just seized and disabled all my domains</title>
+      <link>https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains#2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware</title>
-      <link>https://llmspeed.dev/</link>
-      <guid isPermaLink="false">https://llmspeed.dev/#2026-10-18</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Show HN: Sphinx – A hook that quizzes you on your AI&apos;s code before shipping</title>
+      <link>https://sphinx-six-theta.vercel.app/</link>
+      <guid isPermaLink="false">https://sphinx-six-theta.vercel.app/#2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] Pele – Mermaid diagrams as themeable SVG</title>
-      <link>https://pele.run/</link>
-      <guid isPermaLink="false">https://pele.run/#2026-10-18</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Hybrid Reasoning Agents: LLM agents that think in latent space, act through text</title>
+      <link>https://arxiv.org/abs/2610.18861</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.18861#2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] Microsoft and CMU team up to train early career software engineers</title>
-      <link>https://www.cs.cmu.edu/news/2026/microsoft-cmu-praise</link>
-      <guid isPermaLink="false">https://www.cs.cmu.edu/news/2026/microsoft-cmu-praise#2026-10-18</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] I built a programming language that LLMs can&apos;t use</title>
+      <link>https://blog.picheta.me/post/killswitch-lang</link>
+      <guid isPermaLink="false">https://blog.picheta.me/post/killswitch-lang#2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>[REPO] feder-cr/git-ai</title>
       <link>https://github.com/feder-cr/git-ai</link>
-      <guid isPermaLink="false">https://github.com/feder-cr/git-ai#2026-10-18</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/feder-cr/git-ai#2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[REPO] zhuyansen/new-term-radar</title>
-      <link>https://github.com/zhuyansen/new-term-radar</link>
-      <guid isPermaLink="false">https://github.com/zhuyansen/new-term-radar#2026-10-18</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[REPO] LiCinCan/blender-ai-mcp-addon</title>
+      <link>https://github.com/LiCinCan/blender-ai-mcp-addon</link>
+      <guid isPermaLink="false">https://github.com/LiCinCan/blender-ai-mcp-addon#2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[REPO] deeplethe/solid-glass</title>
-      <link>https://github.com/deeplethe/solid-glass</link>
-      <guid isPermaLink="false">https://github.com/deeplethe/solid-glass#2026-10-18</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[REPO] Zfinix/eleven</title>
+      <link>https://github.com/Zfinix/eleven</link>
+      <guid isPermaLink="false">https://github.com/Zfinix/eleven#2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>[REPO] outcrawlai/scout</title>
       <link>https://github.com/outcrawlai/scout</link>
-      <guid isPermaLink="false">https://github.com/outcrawlai/scout#2026-10-18</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/outcrawlai/scout#2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[REPO] Leonxlnx/earshot</title>
-      <link>https://github.com/Leonxlnx/earshot</link>
-      <guid isPermaLink="false">https://github.com/Leonxlnx/earshot#2026-10-18</guid>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[REPO] aicodeking/leanrea</title>
+      <link>https://github.com/aicodeking/leanrea</link>
+      <guid isPermaLink="false">https://github.com/aicodeking/leanrea#2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
