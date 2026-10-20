@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-19T00:01:03.471Z",
+  "generated_at": "2026-10-20T00:01:00.718Z",
   "items": [
     {
-      "key": "133",
-      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+      "key": "154",
+      "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
       "category": "news",
-      "url": "https://api-docs.deepseek.com/guides/search",
+      "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -14,10 +14,10 @@
       "stars": null
     },
     {
-      "key": "135",
-      "title": "Namecheap just seized and disabled all my domains",
+      "key": "150",
+      "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
       "category": "news",
-      "url": "https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains",
+      "url": "https://news.ycombinator.com/item?id=50151036",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -26,10 +26,22 @@
       "stars": null
     },
     {
-      "key": "136",
-      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "key": "132",
+      "title": "finereli/whatsapp-mcp",
       "category": "news",
-      "url": "https://sphinx-six-theta.vercel.app/",
+      "url": "https://github.com/finereli/whatsapp-mcp",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 285
+    },
+    {
+      "key": "148",
+      "title": "RuneScape Bench: MMOs for Agents [video]",
+      "category": "news",
+      "url": "https://www.youtube.com/watch?v=cNm4zyUtWj0",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -38,10 +50,10 @@
       "stars": null
     },
     {
-      "key": "131",
-      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "key": "149",
+      "title": "The fire retardant in the seafood chain",
       "category": "news",
-      "url": "https://arxiv.org/abs/2610.18861",
+      "url": "https://insideclimatenews.org/news/14102026/ethoxyquin-fire-retardant-in-seafood-chain",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -50,16 +62,16 @@
       "stars": null
     },
     {
-      "key": "134",
-      "title": "I built a programming language that LLMs can't use",
-      "category": "news",
-      "url": "https://blog.picheta.me/post/killswitch-lang",
+      "key": "121",
+      "title": "alchaincyf/huashu-motion",
+      "category": "repo",
+      "url": "https://github.com/alchaincyf/huashu-motion",
       "tags": [],
       "purpose": null,
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": null
+      "stars": 905
     },
     {
       "key": "88",
@@ -71,43 +83,19 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 2294
+      "stars": 2452
     },
     {
-      "key": "119",
-      "title": "LiCinCan/blender-ai-mcp-addon",
+      "key": "89",
+      "title": "Leonxlnx/earshot",
       "category": "repo",
-      "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
+      "url": "https://github.com/Leonxlnx/earshot",
       "tags": [],
       "purpose": null,
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 785
-    },
-    {
-      "key": "76",
-      "title": "Zfinix/eleven",
-      "category": "repo",
-      "url": "https://github.com/Zfinix/eleven",
-      "tags": [],
-      "purpose": null,
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 753
-    },
-    {
-      "key": "54",
-      "title": "outcrawlai/scout",
-      "category": "repo",
-      "url": "https://github.com/outcrawlai/scout",
-      "tags": [],
-      "purpose": null,
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 945
+      "stars": 1513
     },
     {
       "key": "108",
@@ -119,7 +107,19 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 638
+      "stars": 991
+    },
+    {
+      "key": "119",
+      "title": "LiCinCan/blender-ai-mcp-addon",
+      "category": "repo",
+      "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 949
     }
   ]
 }

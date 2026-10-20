@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-10-19</title>
+    <title>AI Tech Radar - 2026-10-20</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] DeepSeek search and fetch – $0.75 per 1000 successful requests</title>
-      <link>https://api-docs.deepseek.com/guides/search</link>
-      <guid isPermaLink="false">https://api-docs.deepseek.com/guides/search#2026-10-19</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Let&apos;s Encrypt is adding two additional remote perspectives for domain validation</title>
+      <link>https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166</link>
+      <guid isPermaLink="false">https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166#2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] Namecheap just seized and disabled all my domains</title>
-      <link>https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains#2026-10-19</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] Ask HN: How to deal with shipping AI-written code you don&apos;t understand?</title>
+      <link>https://news.ycombinator.com/item?id=50151036</link>
+      <guid isPermaLink="false">https://news.ycombinator.com/item?id=50151036#2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] Show HN: Sphinx – A hook that quizzes you on your AI&apos;s code before shipping</title>
-      <link>https://sphinx-six-theta.vercel.app/</link>
-      <guid isPermaLink="false">https://sphinx-six-theta.vercel.app/#2026-10-19</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] finereli/whatsapp-mcp</title>
+      <link>https://github.com/finereli/whatsapp-mcp</link>
+      <guid isPermaLink="false">https://github.com/finereli/whatsapp-mcp#2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] Hybrid Reasoning Agents: LLM agents that think in latent space, act through text</title>
-      <link>https://arxiv.org/abs/2610.18861</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.18861#2026-10-19</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] RuneScape Bench: MMOs for Agents [video]</title>
+      <link>https://www.youtube.com/watch?v=cNm4zyUtWj0</link>
+      <guid isPermaLink="false">https://www.youtube.com/watch?v=cNm4zyUtWj0#2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[NEWS] I built a programming language that LLMs can&apos;t use</title>
-      <link>https://blog.picheta.me/post/killswitch-lang</link>
-      <guid isPermaLink="false">https://blog.picheta.me/post/killswitch-lang#2026-10-19</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[NEWS] The fire retardant in the seafood chain</title>
+      <link>https://insideclimatenews.org/news/14102026/ethoxyquin-fire-retardant-in-seafood-chain</link>
+      <guid isPermaLink="false">https://insideclimatenews.org/news/14102026/ethoxyquin-fire-retardant-in-seafood-chain#2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>[REPO] alchaincyf/huashu-motion</title>
+      <link>https://github.com/alchaincyf/huashu-motion</link>
+      <guid isPermaLink="false">https://github.com/alchaincyf/huashu-motion#2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>[REPO] feder-cr/git-ai</title>
       <link>https://github.com/feder-cr/git-ai</link>
-      <guid isPermaLink="false">https://github.com/feder-cr/git-ai#2026-10-19</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/feder-cr/git-ai#2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>[REPO] LiCinCan/blender-ai-mcp-addon</title>
-      <link>https://github.com/LiCinCan/blender-ai-mcp-addon</link>
-      <guid isPermaLink="false">https://github.com/LiCinCan/blender-ai-mcp-addon#2026-10-19</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>[REPO] Zfinix/eleven</title>
-      <link>https://github.com/Zfinix/eleven</link>
-      <guid isPermaLink="false">https://github.com/Zfinix/eleven#2026-10-19</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>[REPO] outcrawlai/scout</title>
-      <link>https://github.com/outcrawlai/scout</link>
-      <guid isPermaLink="false">https://github.com/outcrawlai/scout#2026-10-19</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <title>[REPO] Leonxlnx/earshot</title>
+      <link>https://github.com/Leonxlnx/earshot</link>
+      <guid isPermaLink="false">https://github.com/Leonxlnx/earshot#2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>[REPO] aicodeking/leanrea</title>
       <link>https://github.com/aicodeking/leanrea</link>
-      <guid isPermaLink="false">https://github.com/aicodeking/leanrea#2026-10-19</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/aicodeking/leanrea#2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>[REPO] LiCinCan/blender-ai-mcp-addon</title>
+      <link>https://github.com/LiCinCan/blender-ai-mcp-addon</link>
+      <guid isPermaLink="false">https://github.com/LiCinCan/blender-ai-mcp-addon#2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
