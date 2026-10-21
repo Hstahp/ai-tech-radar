@@ -30,7 +30,7 @@ interface ItemDetailPageProps {
 /**
  * Trích xuất tác giả / tổ chức phát triển
  */
-function extractAuthor(item: DigestFeedItem): string | null {
+export function extractAuthor(item: DigestFeedItem): string | null {
   if (item.author && item.author.trim()) {
     return item.author.trim();
   }
@@ -56,7 +56,7 @@ function extractAuthor(item: DigestFeedItem): string | null {
 /**
  * Định dạng ngày đăng theo chuẩn tiếng Việt thân thiện
  */
-function formatPublishedDate(dateStr?: string | null): string | null {
+export function formatPublishedDate(dateStr?: string | null): string | null {
   if (!dateStr) return null;
   try {
     const d = new Date(dateStr);
