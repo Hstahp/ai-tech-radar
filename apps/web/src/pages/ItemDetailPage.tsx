@@ -118,10 +118,10 @@ export function ItemDetailPage({
           <button
             type="button"
             onClick={onNavigateHome}
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-300 bg-white/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-indigo-600 dark:hover:text-indigo-400 shadow-xs transition-all cursor-pointer"
+            className="group inline-flex items-center gap-2.5 px-4 py-2 rounded-2xl text-xs font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-xs hover:shadow-md hover:border-indigo-400 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 cursor-pointer"
           >
-            <ArrowLeft className="h-4 w-4" />
-            <span>{copy.common.backToDigest}</span>
+            <ArrowLeft className="h-4 w-4 text-slate-400 group-hover:text-indigo-500 transition-transform duration-200 group-hover:-translate-x-1" />
+            <span>Quay lại bản tin</span>
           </button>
         </div>
 
@@ -218,63 +218,88 @@ export function ItemDetailPage({
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 gap-4">
-            {item.purpose && (
-              <div className="p-5 rounded-2xl bg-indigo-50/70 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/40 space-y-1.5">
-                <div className="flex items-center gap-2">
-                  <Target className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-                  <span className="text-xs font-bold uppercase tracking-wider text-indigo-900 dark:text-indigo-300">
-                    Mục đích giải quyết
-                  </span>
-                </div>
-                <p className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed pl-6">
-                  {item.purpose}
+          {!item.purpose && !item.highlight && !item.action && (!item.description || item.description === item.purpose) ? (
+            <div className="p-8 rounded-2xl bg-slate-50 dark:bg-slate-850/50 border border-slate-200/80 dark:border-slate-800 text-center space-y-4">
+              <div className="h-10 w-10 rounded-2xl bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800/60 flex items-center justify-center text-indigo-600 dark:text-indigo-400 mx-auto">
+                <FileText className="h-5 w-5" />
+              </div>
+              <div className="space-y-1">
+                <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">
+                  Chưa có bản tóm tắt phân tích từ AI cho mục tin tức này
+                </p>
+                <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md mx-auto leading-relaxed">
+                  Mục tin tức này được tổng hợp từ nguồn thảo luận cộng đồng. Bạn có thể mở liên kết gốc để xem toàn bộ nội dung và thảo luận chi tiết.
                 </p>
               </div>
-            )}
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/20 transition-all cursor-pointer"
+              >
+                <span>Đọc bài viết gốc trên nguồn</span>
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 gap-4">
+              {item.purpose && (
+                <div className="p-5 rounded-2xl bg-indigo-50/70 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/40 space-y-1.5">
+                  <div className="flex items-center gap-2">
+                    <Target className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+                    <span className="text-xs font-bold uppercase tracking-wider text-indigo-900 dark:text-indigo-300">
+                      Mục đích giải quyết
+                    </span>
+                  </div>
+                  <p className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed pl-6">
+                    {item.purpose}
+                  </p>
+                </div>
+              )}
 
-            {item.highlight && (
-              <div className="p-5 rounded-2xl bg-amber-50/70 dark:bg-amber-950/20 border border-amber-100 dark:border-amber-900/40 space-y-1.5">
-                <div className="flex items-center gap-2">
-                  <Sparkles className="h-4 w-4 text-amber-600 dark:text-amber-400" />
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-900 dark:text-amber-300">
-                    Điểm nổi bật kỹ thuật
-                  </span>
+              {item.highlight && (
+                <div className="p-5 rounded-2xl bg-amber-50/70 dark:bg-amber-950/20 border border-amber-100 dark:border-amber-900/40 space-y-1.5">
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="h-4 w-4 text-amber-600 dark:text-amber-400" />
+                    <span className="text-xs font-bold uppercase tracking-wider text-amber-900 dark:text-amber-300">
+                      Điểm nổi bật kỹ thuật
+                    </span>
+                  </div>
+                  <p className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed pl-6">
+                    {item.highlight}
+                  </p>
                 </div>
-                <p className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed pl-6">
-                  {item.highlight}
-                </p>
-              </div>
-            )}
+              )}
 
-            {item.action && (
-              <div className="p-5 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40 space-y-1.5">
-                <div className="flex items-center gap-2">
-                  <Compass className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-900 dark:text-emerald-300">
-                    Gợi ý thực thi & Hành động
-                  </span>
+              {item.action && (
+                <div className="p-5 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40 space-y-1.5">
+                  <div className="flex items-center gap-2">
+                    <Compass className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+                    <span className="text-xs font-bold uppercase tracking-wider text-emerald-900 dark:text-emerald-300">
+                      Gợi ý thực thi & Hành động
+                    </span>
+                  </div>
+                  <p className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed pl-6">
+                    {item.action}
+                  </p>
                 </div>
-                <p className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed pl-6">
-                  {item.action}
-                </p>
-              </div>
-            )}
+              )}
 
-            {item.description && item.description !== item.purpose && (
-              <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-850/60 border border-slate-200/80 dark:border-slate-800 space-y-1.5">
-                <div className="flex items-center gap-2">
-                  <FileText className="h-4 w-4 text-slate-500 dark:text-slate-400" />
-                  <span className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
-                    Mô tả từ tác giả
-                  </span>
+              {item.description && item.description !== item.purpose && (
+                <div className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-850/60 border border-slate-200/80 dark:border-slate-800 space-y-1.5">
+                  <div className="flex items-center gap-2">
+                    <FileText className="h-4 w-4 text-slate-500 dark:text-slate-400" />
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
+                      Mô tả từ tác giả
+                    </span>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed pl-6 italic">
+                    {item.description}
+                  </p>
                 </div>
-                <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed pl-6 italic">
-                  {item.description}
-                </p>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
+          )}
 
           {/* Footer Card dẫn link trực tiếp */}
           <div className="pt-4 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">

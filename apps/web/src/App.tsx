@@ -75,6 +75,7 @@ export function App() {
       return (
         <>
           <UserLayout
+            onNavigateHome={() => navigate("/")}
             rightSlot={
               <UserMenu
                 user={user}
@@ -126,6 +127,7 @@ export function App() {
   return (
     <>
       <UserLayout
+        onNavigateHome={() => navigate("/")}
         digestDate={data?.digest_date}
         itemsCount={data?.items_count}
         rightSlot={
