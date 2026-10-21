@@ -292,7 +292,7 @@ SELECT d.digest_date,
        i.title,
        i.url,
        i.programming_language AS language,
-       s.purpose,
+       COALESCE(s.purpose, i.description) AS purpose,
        s.highlight,
        s.action,
        s.verdict,
@@ -302,7 +302,10 @@ SELECT d.digest_date,
          WHERE it.item_id = i.id)                                      AS tags,
        (SELECT m.stars FROM metrics m
          WHERE m.item_id = i.id AND m.date <= d.digest_date
-         ORDER BY m.date DESC LIMIT 1)                                 AS stars
+         ORDER BY m.date DESC LIMIT 1)                                 AS stars,
+       i.author,
+       COALESCE(i.published_at, i.first_seen_at)                      AS published_at,
+       i.description
   FROM digests d
   JOIN digest_items di ON di.digest_id = d.id
   JOIN items i         ON i.id = di.item_id

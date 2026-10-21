@@ -5,6 +5,7 @@ import type { AppDbRepository } from '../repositories/app-db.js';
 import type { LLMProvider, SearchIndexItem } from '@radar/core';
 
 import { WorkerGeminiProvider } from '../lib/gemini.js';
+import { requireAuth } from '../auth/middleware.js';
 
 export interface ChatRoutesOptions {
     appDb: AppDbRepository;
@@ -43,7 +44,7 @@ export function createChatRouter(options: ChatRoutesOptions) {
         },
     ];
 
-    router.post('/api/chat', async (c) => {
+    router.post('/api/chat', requireAuth, async (c) => {
         try {
             const body = await c.req.json<{ question?: string }>();
             if (!body || !body.question) {

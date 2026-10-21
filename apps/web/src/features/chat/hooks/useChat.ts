@@ -46,6 +46,9 @@ export function useChat() {
             });
 
             if (!res.ok) {
+                if (res.status === 401) {
+                    throw new Error('Bạn cần đăng nhập để sử dụng tính năng Chat RAG.');
+                }
                 const errData = (await res.json()) as { error?: { message?: string } };
                 throw new Error(errData?.error?.message ?? `Lỗi ${res.status}`);
             }

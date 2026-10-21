@@ -97,6 +97,72 @@ describe("ChatService - Strict RAG Chat", () => {
     expect((result.data as any).citations[0].title).toBe("AgentForge");
   });
 
+  it("xử lý tốt câu hỏi tự nhiên tiếng Việt dài có từ nối (không bị pha loãng điểm)", async () => {
+    const appDb = new InMemoryAppDbRepository();
+    const mockLlm: LLMProvider = {
+      providerName: "mock-llm",
+      modelName: "mock-model",
+      generateText: async () => ({
+        content: JSON.stringify({
+          answerable: true,
+          answer: "AgentForge là framework tự động tối ưu hóa MCP Server.",
+          citations: ["hash_agent_forge"],
+        }),
+        provider: "mock-llm",
+        model: "mock-model",
+      }),
+    };
+
+    const service = new ChatService({
+      appDb,
+      llmProvider: mockLlm,
+      searchIndexItems: mockSearchIndex,
+      digestDate: "2026-10-13",
+    });
+
+    // Câu hỏi tự nhiên dài nhiều từ nối
+    const result = await service.processQuestion({
+      question: "Bạn có thể cho mình biết AgentForge là gì và có điểm gì nổi bật không?",
+      anonHash: "anon_user_natural",
+    });
+
+    expect(result.status).toBe("answered");
+    expect(result.data.answerable).toBe(true);
+    expect(result.data.answer).toContain("AgentForge");
+  });
+
+  it("hỗ trợ câu hỏi tổng quan hôm nay có gì mới", async () => {
+    const appDb = new InMemoryAppDbRepository();
+    const mockLlm: LLMProvider = {
+      providerName: "mock-llm",
+      modelName: "mock-model",
+      generateText: async () => ({
+        content: JSON.stringify({
+          answerable: true,
+          answer: "Bản tin hôm nay có AgentForge và Cursor Tools Extension.",
+          citations: ["hash_agent_forge", "hash_cursor_copilot"],
+        }),
+        provider: "mock-llm",
+        model: "mock-model",
+      }),
+    };
+
+    const service = new ChatService({
+      appDb,
+      llmProvider: mockLlm,
+      searchIndexItems: mockSearchIndex,
+      digestDate: "2026-10-13",
+    });
+
+    const result = await service.processQuestion({
+      question: "Hôm nay có gì mới vậy bạn?",
+      anonHash: "anon_user_overview",
+    });
+
+    expect(result.status).toBe("answered");
+    expect(result.data.answerable).toBe(true);
+  });
+
   it("chặn câu trả lời có trích dẫn giả mạo (key không nằm trong ngữ cảnh)", async () => {
     const appDb = new InMemoryAppDbRepository();
     const mockLlm: LLMProvider = {

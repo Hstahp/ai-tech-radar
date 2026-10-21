@@ -62,7 +62,7 @@ export function App() {
             {currentPath === "/admin/audit" && <AdminAuditPage />}
           </AdminLayout>
         </RequireAdmin>
-        <ChatPanel />
+        <ChatPanel user={user} isAuthLoading={isAuthLoading} onLogin={loginWithGoogle} />
       </>
     );
   }
@@ -75,6 +75,7 @@ export function App() {
       return (
         <>
           <UserLayout
+            onNavigateHome={() => navigate("/")}
             rightSlot={
               <UserMenu
                 user={user}
@@ -92,7 +93,7 @@ export function App() {
               <p className="text-sm text-slate-400">Đang nạp dữ liệu chi tiết...</p>
             </div>
           </UserLayout>
-          <ChatPanel />
+          <ChatPanel user={user} isAuthLoading={isAuthLoading} onLogin={loginWithGoogle} />
         </>
       );
     }
@@ -117,7 +118,7 @@ export function App() {
             />
           }
         />
-        <ChatPanel />
+        <ChatPanel user={user} isAuthLoading={isAuthLoading} onLogin={loginWithGoogle} />
       </>
     );
   }
@@ -126,6 +127,7 @@ export function App() {
   return (
     <>
       <UserLayout
+        onNavigateHome={() => navigate("/")}
         digestDate={data?.digest_date}
         itemsCount={data?.items_count}
         rightSlot={
@@ -186,7 +188,7 @@ export function App() {
           onSave={updateTags}
         />
       </UserLayout>
-      <ChatPanel />
+      <ChatPanel user={user} isAuthLoading={isAuthLoading} onLogin={loginWithGoogle} />
     </>
   );
 }
