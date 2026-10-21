@@ -63,6 +63,9 @@ export const DigestFeedItemSchema = z.object({
     confidence: ConfidenceSchema.nullable().optional(),
     tags: z.string().nullable().optional(),
     stars: z.number().nullable().optional(),
+    author: z.string().nullable().optional(),
+    published_at: z.string().nullable().optional(),
+    description: z.string().nullable().optional(),
 });
 
 export type DigestFeedItem = z.infer<typeof DigestFeedItemSchema>;

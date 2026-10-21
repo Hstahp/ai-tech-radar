@@ -70,6 +70,9 @@ export class DigestsRepository {
       confidence: (r.confidence as any) ?? null,
       tags: (r.tags as string) ?? null,
       stars: (r.stars as number) ?? null,
+      author: (r.author as string) ?? null,
+      published_at: (r.published_at as string) ?? null,
+      description: (r.description as string) ?? null,
     }));
   }
 
