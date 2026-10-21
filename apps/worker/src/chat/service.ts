@@ -149,7 +149,8 @@ export class ChatService {
         jsonMode: true,
       });
       rawResponse = res.content;
-    } catch {
+    } catch (err: unknown) {
+      console.warn('[CHAT_LLM_ERROR]', err);
       // LLM Provider lỗi
       const refusalData = buildRefusalResponse(retrieval.items);
       await this.options.appDb.logChatEvent({
