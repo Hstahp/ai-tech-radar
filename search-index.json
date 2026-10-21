@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T00:01:00.718Z",
+  "generated_at": "2026-10-21T00:01:22.910Z",
   "items": [
     {
-      "key": "154",
-      "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
+      "key": "165",
+      "title": "DeepInfer: High-performance inference framework for DeepSeek models",
       "category": "news",
-      "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -14,10 +14,22 @@
       "stars": null
     },
     {
-      "key": "150",
-      "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+      "key": "169",
+      "title": "Facebook Pages require paid subscription to post more than two links per month",
       "category": "news",
-      "url": "https://news.ycombinator.com/item?id=50151036",
+      "url": "https://mastodon.gamedev.place/@AshleyGullen/117473851565913919",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": null
+    },
+    {
+      "key": "168",
+      "title": "Claude designed protein binders against scorpion neurotoxins",
+      "category": "news",
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -35,25 +47,13 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 285
+      "stars": 311
     },
     {
-      "key": "148",
-      "title": "RuneScape Bench: MMOs for Agents [video]",
+      "key": "167",
+      "title": "Launch HN: Respan (YC W24) – Open-source Rust AI gateway built around plugins",
       "category": "news",
-      "url": "https://www.youtube.com/watch?v=cNm4zyUtWj0",
-      "tags": [],
-      "purpose": null,
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": null
-    },
-    {
-      "key": "149",
-      "title": "The fire retardant in the seafood chain",
-      "category": "news",
-      "url": "https://insideclimatenews.org/news/14102026/ethoxyquin-fire-retardant-in-seafood-chain",
+      "url": "https://news.ycombinator.com/item?id=50167583",
       "tags": [],
       "purpose": null,
       "highlight": null,
@@ -71,31 +71,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 905
-    },
-    {
-      "key": "88",
-      "title": "feder-cr/git-ai",
-      "category": "repo",
-      "url": "https://github.com/feder-cr/git-ai",
-      "tags": [],
-      "purpose": null,
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 2452
-    },
-    {
-      "key": "89",
-      "title": "Leonxlnx/earshot",
-      "category": "repo",
-      "url": "https://github.com/Leonxlnx/earshot",
-      "tags": [],
-      "purpose": null,
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 1513
+      "stars": 1147
     },
     {
       "key": "108",
@@ -107,7 +83,31 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 991
+      "stars": 1174
+    },
+    {
+      "key": "88",
+      "title": "feder-cr/git-ai",
+      "category": "repo",
+      "url": "https://github.com/feder-cr/git-ai",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1267
+    },
+    {
+      "key": "89",
+      "title": "Leonxlnx/earshot",
+      "category": "repo",
+      "url": "https://github.com/Leonxlnx/earshot",
+      "tags": [],
+      "purpose": null,
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1944
     },
     {
       "key": "119",
@@ -119,7 +119,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 949
+      "stars": 936
     }
   ]
 }
