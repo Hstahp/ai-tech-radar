@@ -6,23 +6,37 @@ interface HeaderNavProps {
   digestDate?: string;
   itemsCount?: number;
   rightSlot?: React.ReactNode;
+  onNavigateHome?: () => void;
 }
 
-export function HeaderNav({ digestDate, itemsCount, rightSlot }: HeaderNavProps) {
+export function HeaderNav({ digestDate, itemsCount, rightSlot, onNavigateHome }: HeaderNavProps) {
   const { theme, toggleTheme } = useTheme();
 
   return (
     <header className="border-b border-slate-200 dark:border-slate-800/80 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md sticky top-0 z-40 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          {/* Logo & Tagline */}
-          <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/20 text-white">
+          {/* Logo & Tagline (Clickable to Home) */}
+          <a
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+              if (onNavigateHome) {
+                onNavigateHome();
+              } else {
+                window.history.pushState({}, '', '/');
+                window.dispatchEvent(new PopStateEvent('popstate'));
+              }
+            }}
+            className="flex items-center gap-3 group cursor-pointer select-none transition-transform active:scale-98"
+            title="Quay về trang chủ AI Tech Radar"
+          >
+            <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/20 text-white group-hover:scale-105 group-hover:shadow-indigo-500/30 transition-all duration-200">
               <Radar className="h-5 w-5" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                <h1 className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
                   AI TECH RADAR
                 </h1>
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
@@ -33,7 +47,7 @@ export function HeaderNav({ digestDate, itemsCount, rightSlot }: HeaderNavProps)
                 Chắt lọc &amp; phân tích hệ sinh thái AI cho lập trình viên
               </p>
             </div>
-          </div>
+          </a>
 
           {/* Links, Date & Actions */}
           <div className="flex flex-wrap items-center gap-2.5">
