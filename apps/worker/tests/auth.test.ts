@@ -236,4 +236,42 @@ describe('Phase 2 - Step C: Auth and Personal Tags', () => {
         });
         expect(afterLogout.status).toBe(401);
     });
+
+    it('endpoint /api/chat bat buoc phai dang nhap moi cho phep truy van (HTTP 401)', async () => {
+        const { createChatRouter } = await import('../src/chat/routes.js');
+        const testApp = new Hono();
+        testApp.use('*', createAuthMiddleware(authService));
+        testApp.onError(appErrorHandler);
+        testApp.route('/', createChatRouter({ appDb }));
+
+        // 1. Chua dang nhap -> 401 Unauthorized
+        const unauthRes = await testApp.request('/api/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ question: 'Hôm nay có gì mới?' }),
+        });
+        expect(unauthRes.status).toBe(401);
+        const unauthBody = (await unauthRes.json()) as any;
+        expect(unauthBody.error.code).toBe('UNAUTHORIZED');
+
+        // 2. Dang nhap hop le -> 200 OK
+        const user = await authService.handleOAuthUser({
+            provider: 'google',
+            providerUserId: 'sub_chat_user',
+            email: 'chat_user@example.com',
+        });
+        const { token } = await authService.createSessionForUser(user.id);
+
+        const authRes = await testApp.request('/api/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`,
+            },
+            body: JSON.stringify({ question: 'Demo AI Project là gì?' }),
+        });
+        expect(authRes.status).toBe(200);
+    });
 });
