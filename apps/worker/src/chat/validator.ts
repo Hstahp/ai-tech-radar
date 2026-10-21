@@ -40,8 +40,9 @@ export function validateAndEnrichChatAnswer(
 
   const answer = parseResult.data;
 
-  // 1. Nếu LLM báo không trả lời được
-  if (!answer.answerable) {
+  // 1. Nếu LLM báo không trả lời được và không có nội dung trả lời thực tế
+  const hasHelpfulAnswer = Boolean(answer.answer && answer.answer.trim().length > 10);
+  if (!answer.answerable && !hasHelpfulAnswer) {
     return {
       isValid: false,
       data: buildRefusalResponse(retrievedItems),
