@@ -1,4 +1,4 @@
-name: Deploy Web App
+name: Deploy Web & Worker
 
 on:
   workflow_dispatch:
@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "apps/web/**"
+      - "apps/worker/**"
       - "packages/core/**"
       - ".github/workflows/deploy.yml"
 
@@ -14,7 +15,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: deploy-web
+  group: deploy-cf
   cancel-in-progress: false
 
 env:
@@ -54,7 +55,7 @@ jobs:
       - name: Build Web
         run: pnpm --filter @radar/web run build
 
-      - name: Deploy lên Cloudflare
+      - name: Deploy Web lên Cloudflare
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -63,7 +64,7 @@ jobs:
           if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
             echo "Đang deploy apps/web lên Cloudflare Worker (ai-tech-radar-fe)..."
             pnpm --filter @radar/web exec wrangler deploy
-            echo "Deploy thành công!"
+            echo "Deploy Web thành công!"
           elif [ -n "$CLOUDFLARE_DEPLOY_HOOK" ]; then
             echo "Đang kích hoạt Cloudflare Deploy Hook..."
             curl -sSf -X POST "$CLOUDFLARE_DEPLOY_HOOK"
@@ -71,4 +72,40 @@ jobs:
           else
             echo "Thông báo: Chưa cấu hình CLOUDFLARE_API_TOKEN hoặc CLOUDFLARE_DEPLOY_HOOK trong GitHub Secrets."
             echo "Quá trình build thành công nhưng chưa deploy tự động lên Cloudflare."
+          fi
+
+  deploy-worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cài pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Cài Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+
+      - name: Cài dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Deploy Worker lên Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "Đang deploy apps/worker lên Cloudflare Worker (ai-tech-radar)..."
+            pnpm --filter @radar/worker exec wrangler deploy
+            echo "Deploy Worker thành công!"
+          else
+            echo "Thông báo: Chưa cấu hình CLOUDFLARE_API_TOKEN trong GitHub Secrets."
+            echo "Bỏ qua bước deploy apps/worker."
           fi
