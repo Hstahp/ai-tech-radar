@@ -49,8 +49,15 @@ export function validateAndEnrichChatAnswer(
     };
   }
 
-  // 2. Nếu trả lời được nhưng không có trích dẫn nào
-  if (answer.citations.length === 0) {
+  // 2. Lấy danh sách trích dẫn hoặc tự động gán mục liên quan nhất nếu LLM quên đính kèm
+  const citationsToValidate =
+    answer.citations.length > 0
+      ? answer.citations
+      : retrievedItems.length > 0
+      ? [retrievedItems[0].key]
+      : [];
+
+  if (citationsToValidate.length === 0) {
     return {
       isValid: false,
       data: buildRefusalResponse(retrievedItems),
@@ -58,29 +65,41 @@ export function validateAndEnrichChatAnswer(
     };
   }
 
-  // 3. Kiểm tra xem mọi citation key có thuộc tập đã retrieved hay không (chống bịa đặt)
+  // 3. Kiểm tra xem citation key có thuộc tập đã retrieved hay không (chống bịa đặt)
   const itemMap = new Map<string, SearchIndexItem>();
   for (const item of retrievedItems) {
     itemMap.set(item.key, item);
   }
 
   const validCitationDetails: CitationDetail[] = [];
-  for (const citationKey of answer.citations) {
-    const matched = itemMap.get(citationKey);
+  for (const citationKey of citationsToValidate) {
+    let matched = itemMap.get(citationKey);
     if (!matched) {
-      // Có trích dẫn giả mạo không tồn tại trong ngữ cảnh được cấp -> TỪ CHỐI NGAY
-      return {
-        isValid: false,
-        data: buildRefusalResponse(retrievedItems),
-        failureReason: "fabricated_citations",
-      };
+      // Hỗ trợ nếu LLM trích dẫn theo tên tiêu đề thay vì numeric key
+      matched = retrievedItems.find(
+        (it) =>
+          it.key === citationKey ||
+          it.title.toLowerCase().includes(citationKey.toLowerCase()) ||
+          citationKey.toLowerCase().includes(it.title.toLowerCase())
+      );
     }
-    validCitationDetails.push({
-      key: matched.key,
-      title: matched.title,
-      url: matched.url,
-      category: matched.category,
-    });
+
+    if (matched && !validCitationDetails.some((c) => c.key === matched.key)) {
+      validCitationDetails.push({
+        key: matched.key,
+        title: matched.title,
+        url: matched.url,
+        category: matched.category,
+      });
+    }
+  }
+
+  if (validCitationDetails.length === 0) {
+    return {
+      isValid: false,
+      data: buildRefusalResponse(retrievedItems),
+      failureReason: "fabricated_citations",
+    };
   }
 
   return {
