@@ -1,77 +1,65 @@
 {
-  "generated_at": "2026-10-22T00:01:03.208Z",
+  "generated_at": "2026-10-23T00:01:02.406Z",
   "items": [
     {
-      "key": "19cf17baf631c887d2193469f0307aa2f9b7b26b1ae2844989de1575b0c6f0a2",
-      "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+      "key": "efa8e61e39756e223c8c6fb8c4752d3feed7996c1ff3f30ecadd41156abb5853",
+      "title": "Jailbreaking the Switch 2",
       "category": "news",
-      "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor",
+      "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb",
       "tags": [],
-      "purpose": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+      "purpose": "Jailbreaking the Switch 2",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "0915eb386a43b980e398121ed2d5601642352196cb9018c01385b9690f59ed0a",
-      "title": "Railway Security Disclosure",
+      "key": "6eb73169f84ce43f98c75fcf0a5b59a0b6373d3829a3919151941cd320d6c61f",
+      "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
       "category": "news",
-      "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+      "url": "https://github.com/NVIDIA/OpenShell",
       "tags": [],
-      "purpose": "Railway Security Disclosure",
+      "purpose": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "de9db6f384cbc788775550a92a01be7699e7a41c8058849be39721a76c544e4d",
-      "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+      "key": "c4ef979d44385fe4aefb53eb4baf66a9fe0af7d53f5967f2d5f7f71fd6461e6a",
+      "title": "Every AI model has the same \"controversial\" take on humans",
       "category": "news",
-      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
       "tags": [],
-      "purpose": "<a href=\"https:&#x2F;&#x2F;patchtheplanet.org&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;patchtheplanet.org&#x2F;</a>",
+      "purpose": "Every AI model has the same \"controversial\" take on humans",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "95dedf578de78f3ec264f66e37a7c309d1f2cf3d8987fe8b4de9182187d1ff7b",
-      "title": "OpenAI models are coming to Google Cloud",
+      "key": "39f0af155c70bc46b74f91c0f6775ac02659d50ce7d6c59f7ab11abc992f13ba",
+      "title": "AI and the Enclosure of the Scientific Commons",
       "category": "news",
-      "url": "https://openai.com/index/openai-models-google-cloud",
+      "url": "https://arxiv.org/abs/2610.27251",
       "tags": [],
-      "purpose": "OpenAI models are coming to Google Cloud",
+      "purpose": "AI and the Enclosure of the Scientific Commons",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "0336c2290ec14333b03da2f9b9a3f3f2fdf36b8e9ed008232db03a7c052959d3",
-      "title": "Claude Duet",
+      "key": "cb508f9355dec287fc5a7fb310b59d11fd856755b548a4147f90e6152260ae79",
+      "title": "AI analysis of CT scans finds 42.9% of patients have coronary inflammation",
       "category": "news",
-      "url": "https://claude.com/product/claude-duet",
+      "url": "https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients",
       "tags": [],
-      "purpose": "Claude Duet",
+      "purpose": "AI analysis of CT scans finds 42.9% of patients have coronary inflammation",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
-    },
-    {
-      "key": "b868c0a4c342680f7d9824c1b346f72278ad5e6379e70f77291f8978e5cf2353",
-      "title": "reason-machines/reason-network",
-      "category": "repo",
-      "url": "https://github.com/reason-machines/reason-network",
-      "tags": [],
-      "purpose": "Reason Network: your team's coding agents, talking to each other. The engine behind `reason network`.",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 912
     },
     {
       "key": "227b3b23af3c095ce2007c0d78cadfa8a62fe084c430e2c6f32d046d8045dae6",
@@ -83,7 +71,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1265
+      "stars": 1437
     },
     {
       "key": "25d3bd14aaa7a2c61804f4a419f5602cd9a2cb18dcd9c063db12504b9838bfac",
@@ -95,31 +83,43 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1285
+      "stars": 1365
     },
     {
-      "key": "e21fa443b28c18f3078fb368ac0171c1e67c091f3f486f63ac61211fa173c1bf",
-      "title": "cranebeaker/coop-anything",
+      "key": "6f606045fc12b852e5534fb329ebb525cf53a3b90d36c1e78e594235df87ab64",
+      "title": "dominikmartn/harp",
       "category": "repo",
-      "url": "https://github.com/cranebeaker/coop-anything",
+      "url": "https://github.com/dominikmartn/harp",
       "tags": [],
-      "purpose": "Co-op Anything: point your AI agent at any single-player game and play it with friends (online and/or splitscreen!). MCP server and playbook to let you reverse engineer, fix, test, ship and share what it learns.",
+      "purpose": "Run many Claude Code and Codex agents side by side, in one sidebar that tells you which one needs you. An unofficial fork of Warp.",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 789
+      "stars": 582
     },
     {
-      "key": "37c527c9a5de7eca0b2890f482cfbd555e8b36b3471ed716ae2ec4a85d46a282",
-      "title": "VITASID57/bluntcore-intimacy-lab",
+      "key": "17122c715caf0aa46fc1fdc0bb3f4c80741bd463feb96a9a5b76af7b91a90ec6",
+      "title": "aicodeking/pandacode",
       "category": "repo",
-      "url": "https://github.com/VITASID57/bluntcore-intimacy-lab",
+      "url": "https://github.com/aicodeking/pandacode",
       "tags": [],
-      "purpose": "🧬 钝核｜人机亲密实验室 · Bluntcore Intimacy Lab｜人机恋、成人 AI、Prompt、Memory、Agent、模型床测与实验记录。",
+      "purpose": "PandaCode: a calm desktop workspace for coding agents",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 558
+      "stars": 501
+    },
+    {
+      "key": "cc6661f8c134de9b880d620117cf5818b0f480aaa841ce019c0d71b8eef4818b",
+      "title": "realskyrin/ns-game-apple-arm-port",
+      "category": "repo",
+      "url": "https://github.com/realskyrin/ns-game-apple-arm-port",
+      "tags": [],
+      "purpose": "Agent skill for native Nintendo Switch game porting to Apple Silicon macOS, iPadOS and iOS with Rust and Metal",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 466
     }
   ]
 }
