@@ -17,6 +17,7 @@ import { publishAndExportDigest } from "./steps/export-digest.js";
 import { scoreAndSelectCandidates } from "./steps/score-items.js";
 import { summarizeCandidates } from "./steps/summarize-items.js";
 import { buildDiscordEmbeds, sendDiscordNotification } from "../lib/discord.js";
+import { fetchActiveTags } from "../lib/active-tags.js";
 
 export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<void> {
   const config = loadConfig(overrides);
@@ -38,6 +39,15 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
   const todayStr = new Date().toISOString().split("T")[0];
 
   try {
+    // 0. Synchronize active tags from Worker API
+    const activeTagsResult = await fetchActiveTags({
+      workerUrl: config.WORKER_API_URL,
+      pipelineToken: config.PIPELINE_TOKEN,
+    });
+    logger.info(
+      `Active tags synchronized: ${activeTagsResult.tags.length} tags (source: ${activeTagsResult.source}).`
+    );
+
     // 1. Prepare sources
     const sources: SourceAdapter[] = [
       new GitHubSearchAdapter(config.GITHUB_API_TOKEN),
@@ -52,7 +62,11 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
     // 3. Score step
     logger.info("--- Step 2: Scoring and selecting top candidates ---");
     const candidates = scoreAndSelectCandidates(db, todayStr, 5);
-    logger.info(`Selection complete: ${candidates.length} candidate items selected.`);
+    const validCandidates =
+      activeTagsResult.hiddenKeys.size > 0
+        ? candidates.filter((c) => !activeTagsResult.hiddenKeys.has(c.urlHash ?? ""))
+        : candidates;
+    logger.info(`Selection complete: ${validCandidates.length} candidate items selected.`);
 
     // 4. LLM Providers setup
     const llmProviders = [];
@@ -68,7 +82,7 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
 
     // 5. Summarize step
     logger.info("--- Step 3: Summarizing candidates with LLM ---");
-    const { llmRequests } = await summarizeCandidates(candidates, summariesRepo, fallbackLlm, config.SKIP_LLM);
+    const { llmRequests } = await summarizeCandidates(validCandidates, summariesRepo, fallbackLlm, config.SKIP_LLM);
     logger.info(`Summarization complete: ${llmRequests} LLM API requests made.`);
 
     // 6. Export step
