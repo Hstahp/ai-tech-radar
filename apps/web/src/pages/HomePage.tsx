@@ -85,13 +85,13 @@ export function HomePage() {
 
           {/* Xu ly cac trang thai cua tab "Danh cho ban" */}
           {selectedCategory === "my_feed" && !user && (
-            <div className="p-10 rounded-2xl bg-slate-900/60 border border-slate-800 text-center max-w-lg mx-auto my-10 space-y-4">
-              <div className="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mx-auto">
+            <div className="p-10 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none text-center max-w-lg mx-auto my-10 space-y-4 transition-colors">
+              <div className="h-12 w-12 rounded-2xl bg-indigo-50 dark:bg-indigo-500/10 border border-indigo-200 dark:border-indigo-500/20 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mx-auto">
                 <LogIn className="h-6 w-6" />
               </div>
               <div className="space-y-1">
-                <h3 className="text-base font-bold text-white">Cá nhân hóa bản tin AI của bạn</h3>
-                <p className="text-xs text-slate-400 max-w-sm mx-auto">
+                <h3 className="text-base font-bold text-slate-900 dark:text-white">Cá nhân hóa bản tin AI của bạn</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
                   Đăng nhập bằng tài khoản Google để chọn các chủ đề công nghệ yêu thích và lọc bản tin dành riêng cho bạn.
                 </p>
               </div>
@@ -102,13 +102,13 @@ export function HomePage() {
           )}
 
           {selectedCategory === "my_feed" && user && user.tags.length === 0 && (
-            <div className="p-10 rounded-2xl bg-slate-900/60 border border-slate-800 text-center max-w-lg mx-auto my-10 space-y-4">
-              <div className="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mx-auto">
+            <div className="p-10 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none text-center max-w-lg mx-auto my-10 space-y-4 transition-colors">
+              <div className="h-12 w-12 rounded-2xl bg-indigo-50 dark:bg-indigo-500/10 border border-indigo-200 dark:border-indigo-500/20 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mx-auto">
                 <TagIcon className="h-6 w-6" />
               </div>
               <div className="space-y-1">
-                <h3 className="text-base font-bold text-white">Bạn chưa chọn chủ đề quan tâm</h3>
-                <p className="text-xs text-slate-400 max-w-sm mx-auto">
+                <h3 className="text-base font-bold text-slate-900 dark:text-white">Bạn chưa chọn chủ đề quan tâm</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
                   Hãy chọn tối đa 10 thẻ (ví dụ #agent, #devtools, #mcp...) để hệ thống tự động lọc các mục bạn muốn xem.
                 </p>
               </div>
@@ -119,13 +119,13 @@ export function HomePage() {
           )}
 
           {selectedCategory === "my_feed" && user && user.tags.length > 0 && filteredItems.length === 0 && (
-            <div className="p-10 rounded-2xl bg-slate-900/60 border border-slate-800 text-center max-w-lg mx-auto my-10 space-y-4">
-              <div className="h-12 w-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mx-auto">
+            <div className="p-10 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none text-center max-w-lg mx-auto my-10 space-y-4 transition-colors">
+              <div className="h-12 w-12 rounded-2xl bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center mx-auto">
                 <Sparkles className="h-6 w-6" />
               </div>
               <div className="space-y-1">
-                <h3 className="text-base font-bold text-white">Không có mục phù hợp hôm nay</h3>
-                <p className="text-xs text-slate-400 max-w-sm mx-auto">
+                <h3 className="text-base font-bold text-slate-900 dark:text-white">Không có mục phù hợp hôm nay</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
                   Bản tin hôm nay chưa có bài viết nào thuộc các chủ đề bạn đã chọn. Bạn có thể mở rộng danh sách chủ đề hoặc xem mục "Tất cả".
                 </p>
               </div>
