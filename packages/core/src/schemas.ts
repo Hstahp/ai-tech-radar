@@ -204,3 +204,18 @@ export const AdminUserUpdateSchema = z.object({
     status: z.enum(['active', 'suspended']).optional(),
 });
 export type AdminUserUpdate = z.infer<typeof AdminUserUpdateSchema>;
+
+// Active Tags Internal Endpoint Schema (Bước E)
+export const ActiveTagItemSchema = z.object({
+    slug: z.string().min(1),
+    maxItems: z.number().int().positive(),
+});
+export type ActiveTagItem = z.infer<typeof ActiveTagItemSchema>;
+
+export const ActiveTagsResponseSchema = z.object({
+    tags: z.array(ActiveTagItemSchema),
+    hiddenKeys: z.array(z.string()).optional(),
+    generatedAt: z.string(),
+});
+export type ActiveTagsResponse = z.infer<typeof ActiveTagsResponseSchema>;
+
