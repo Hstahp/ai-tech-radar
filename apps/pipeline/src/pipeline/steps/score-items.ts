@@ -8,6 +8,7 @@ export interface ScoredCandidate {
   category: Category;
   title: string;
   url: string;
+  urlHash?: string;
   description: string;
   contentHash: string;
   publishedAt?: string;
@@ -27,7 +28,7 @@ export function scoreAndSelectCandidates(
   // Fetch active items with metrics
   const rows = db
     .prepare(
-      `SELECT i.id, i.category, i.title, i.url, i.description, i.content_hash, i.published_at,
+      `SELECT i.id, i.category, i.title, i.url, i.url_hash, i.description, i.content_hash, i.published_at,
               s.weight AS source_weight,
               m.stars, m.points, m.installs,
               (SELECT COUNT(*) FROM digest_items di WHERE di.item_id = i.id) AS digest_appearances
@@ -68,6 +69,7 @@ export function scoreAndSelectCandidates(
       category,
       title: row.title,
       url: row.url,
+      urlHash: row.url_hash,
       description: row.description || "",
       contentHash: row.content_hash,
       publishedAt: row.published_at,

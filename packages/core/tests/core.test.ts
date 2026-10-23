@@ -62,3 +62,37 @@ describe("Summaries parsing and validation", () => {
     expect(result.missing).toEqual([2]);
   });
 });
+
+describe("ActiveTagsResponseSchema validation", () => {
+  it("xác thực cấu trúc phản hồi active tags hợp lệ", async () => {
+    const { ActiveTagsResponseSchema } = await import("../src/schemas.js");
+    const validData = {
+      tags: [
+        { slug: "mcp", maxItems: 10 },
+        { slug: "agent", maxItems: 5 },
+      ],
+      hiddenKeys: ["hash_123"],
+      generatedAt: new Date().toISOString(),
+    };
+
+    const parsed = ActiveTagsResponseSchema.safeParse(validData);
+    expect(parsed.success).toBe(true);
+    if (parsed.success) {
+      expect(parsed.data.tags.length).toBe(2);
+      expect(parsed.data.tags[0].slug).toBe("mcp");
+      expect(parsed.data.tags[0].maxItems).toBe(10);
+      expect(parsed.data.hiddenKeys).toEqual(["hash_123"]);
+    }
+  });
+
+  it("từ chối nếu maxItems <= 0 hoặc thiếu generatedAt", async () => {
+    const { ActiveTagsResponseSchema } = await import("../src/schemas.js");
+    const invalidData = {
+      tags: [{ slug: "mcp", maxItems: 0 }],
+    };
+
+    const parsed = ActiveTagsResponseSchema.safeParse(invalidData);
+    expect(parsed.success).toBe(false);
+  });
+});
+

@@ -115,6 +115,7 @@ export interface AppDbRepository {
 
     // Tag Settings & Active Tags
     getTagSettings(): Promise<TagSettingRecord[]>;
+    getActiveTags(): Promise<Array<{ slug: string; maxItems: number }>>;
     updateTagSetting(
         slug: string,
         updates: Partial<{ enabled: number; isSystem: number; maxItems: number | null }>,
@@ -547,6 +548,30 @@ export class InMemoryAppDbRepository implements AppDbRepository {
         return Array.from(this.tagSettings.values()).map((tag) => ({
             ...tag,
             followers: followersMap.get(tag.slug) ?? 0,
+        }));
+    }
+
+    async getActiveTags(): Promise<Array<{ slug: string; maxItems: number }>> {
+        const maxActive = Number(await this.getSetting('tags.max_active', '30'));
+        const defaultMaxItems = Number(await this.getSetting('tags.max_items_per_tag', '10'));
+
+        const allTags = await this.getTagSettings();
+        // Tag hoạt động = enabled && (isSystem = 1 hoặc followers > 0)
+        const active = allTags.filter((t) => t.enabled === 1 && (t.isSystem === 1 || (t.followers ?? 0) > 0));
+
+        // Sắp xếp: follower giảm dần, sau đó isSystem giảm dần, sau đó slug tăng dần
+        active.sort((a, b) => {
+            const followersDiff = (b.followers ?? 0) - (a.followers ?? 0);
+            if (followersDiff !== 0) return followersDiff;
+            const systemDiff = (b.isSystem ?? 0) - (a.isSystem ?? 0);
+            if (systemDiff !== 0) return systemDiff;
+            return a.slug.localeCompare(b.slug);
+        });
+
+        const sliced = active.slice(0, maxActive);
+        return sliced.map((t) => ({
+            slug: t.slug,
+            maxItems: t.maxItems ?? defaultMaxItems,
         }));
     }
 

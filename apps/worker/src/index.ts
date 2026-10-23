@@ -7,6 +7,7 @@ import { createAuthRouter } from './auth/routes.js';
 import { createChatRouter } from './chat/routes.js';
 import { createExplainRouter } from './explain/routes.js';
 import { createAdminRouter } from './admin/routes.js';
+import { createInternalRouter } from './internal/routes.js';
 import { appErrorHandler } from './lib/errors.js';
 import type { SearchIndexItem } from '@radar/core';
 
@@ -23,6 +24,7 @@ export interface Env {
     FRONTEND_URL?: string;
     ADMIN_EMAILS?: string;
     GH_TRIGGER_TOKEN?: string;
+    PIPELINE_TOKEN?: string;
 }
 
 const app = new Hono<{ Bindings: Env }>();
@@ -104,6 +106,7 @@ app.route('/', createAuthRouter(authService));
 app.route('/', createChatRouter({ appDb, getSearchIndex: getSearchIndexItems }));
 app.route('/', createExplainRouter({ appDb, getSearchIndex: getSearchIndexItems }));
 app.route('/api/admin', createAdminRouter({ appDb }));
+app.route('/internal', createInternalRouter({ appDb }));
 
 export { app };
 

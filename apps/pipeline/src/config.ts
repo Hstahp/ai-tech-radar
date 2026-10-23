@@ -27,6 +27,8 @@ const EnvSchema = z.object({
     LLM_FALLBACK_MODEL: z.string().default('llama-3.3-70b-versatile'),
     LOG_LEVEL: z.enum(['debug', 'info', 'warn', 'error']).default('info'),
     DISCORD_WEBHOOK_URL: z.string().url().optional(),
+    WORKER_API_URL: z.string().url().optional(),
+    PIPELINE_TOKEN: z.string().optional(),
     DRY_RUN: BooleanOrString,
     SKIP_LLM: BooleanOrString,
 });
@@ -45,6 +47,8 @@ export function loadConfig(overrides?: Partial<Record<string, unknown>>): Pipeli
         LLM_FALLBACK_MODEL: process.env.LLM_FALLBACK_MODEL,
         LOG_LEVEL: process.env.LOG_LEVEL,
         DISCORD_WEBHOOK_URL: process.env.DISCORD_WEBHOOK_URL,
+        WORKER_API_URL: process.env.WORKER_API_URL,
+        PIPELINE_TOKEN: process.env.PIPELINE_TOKEN,
         DRY_RUN: process.env.DRY_RUN,
         SKIP_LLM: process.env.SKIP_LLM,
         ...overrides,
