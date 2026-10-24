@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-10-23</title>
+    <title>AI Tech Radar - 2026-10-24</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Fri, 23 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Jailbreaking the Switch 2</title>
-      <link>https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb</link>
-      <guid isPermaLink="false">https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb#2026-10-23</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Jailbreaking the Switch 2]]></description>
+      <title>[NEWS] Now Google says it might use your Gmail and Google Photos data to target ads</title>
+      <link>https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update</link>
+      <guid isPermaLink="false">https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update#2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Now Google says it might use your Gmail and Google Photos data to target ads]]></description>
     </item>
     <item>
-      <title>[NEWS] OpenShell – A safe, private runtime for fleets of autonomous AI agents</title>
-      <link>https://github.com/NVIDIA/OpenShell</link>
-      <guid isPermaLink="false">https://github.com/NVIDIA/OpenShell#2026-10-23</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 OpenShell – A safe, private runtime for fleets of autonomous AI agents]]></description>
+      <title>[NEWS] finereli/whatsapp-mcp</title>
+      <link>https://github.com/finereli/whatsapp-mcp</link>
+      <guid isPermaLink="false">https://github.com/finereli/whatsapp-mcp#2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 A read-only MCP server that lets your AI agent search and read your own WhatsApp messages. Runs on Cloudflare Workers.]]></description>
     </item>
     <item>
-      <title>[NEWS] Every AI model has the same &quot;controversial&quot; take on humans</title>
-      <link>https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans</link>
-      <guid isPermaLink="false">https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans#2026-10-23</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Every AI model has the same &quot;controversial&quot; take on humans]]></description>
+      <title>[NEWS] Securing our frontier model training environment</title>
+      <link>https://openai.com/index/securing-our-frontier-model-training-environment</link>
+      <guid isPermaLink="false">https://openai.com/index/securing-our-frontier-model-training-environment#2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Securing our frontier model training environment]]></description>
     </item>
     <item>
-      <title>[NEWS] AI and the Enclosure of the Scientific Commons</title>
-      <link>https://arxiv.org/abs/2610.27251</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2610.27251#2026-10-23</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 AI and the Enclosure of the Scientific Commons]]></description>
+      <title>[NEWS] Air Purifiers as White Noise Machines</title>
+      <link>https://www.jefftk.com/p/air-purifiers-as-white-noise-machines</link>
+      <guid isPermaLink="false">https://www.jefftk.com/p/air-purifiers-as-white-noise-machines#2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Air Purifiers as White Noise Machines]]></description>
     </item>
     <item>
-      <title>[NEWS] AI analysis of CT scans finds 42.9% of patients have coronary inflammation</title>
-      <link>https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients</link>
-      <guid isPermaLink="false">https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients#2026-10-23</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 AI analysis of CT scans finds 42.9% of patients have coronary inflammation]]></description>
+      <title>[NEWS] A whirlwind tour of systemd-nspawn containers</title>
+      <link>https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers</link>
+      <guid isPermaLink="false">https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers#2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 A whirlwind tour of systemd-nspawn containers]]></description>
     </item>
     <item>
       <title>[REPO] alchaincyf/huashu-motion</title>
       <link>https://github.com/alchaincyf/huashu-motion</link>
-      <guid isPermaLink="false">https://github.com/alchaincyf/huashu-motion#2026-10-23</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/alchaincyf/huashu-motion#2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.]]></description>
     </item>
     <item>
-      <title>[REPO] aicodeking/leanrea</title>
-      <link>https://github.com/aicodeking/leanrea</link>
-      <guid isPermaLink="false">https://github.com/aicodeking/leanrea#2026-10-23</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 One 8 KB skill that replaces REA (Reverse Engineer Anything): plain CLI tools, no MCP. Benchmarked: 38% faster, 35% cheaper.]]></description>
+      <title>[REPO] Alejandros17487/ai-jailbreaks</title>
+      <link>https://github.com/Alejandros17487/ai-jailbreaks</link>
+      <guid isPermaLink="false">https://github.com/Alejandros17487/ai-jailbreaks#2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI jailbreaks: 35 paste-ready AI jailbreak prompts for 25+ frontier and open-weight models - system prompts, AGENTS.md specs, and Ollama Modelfiles. Built for AI security research and red-team testing.]]></description>
     </item>
     <item>
-      <title>[REPO] dominikmartn/harp</title>
-      <link>https://github.com/dominikmartn/harp</link>
-      <guid isPermaLink="false">https://github.com/dominikmartn/harp#2026-10-23</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Run many Claude Code and Codex agents side by side, in one sidebar that tells you which one needs you. An unofficial fork of Warp.]]></description>
+      <title>[REPO] kanaworksai-hue/audio-studio-mcp</title>
+      <link>https://github.com/kanaworksai-hue/audio-studio-mcp</link>
+      <guid isPermaLink="false">https://github.com/kanaworksai-hue/audio-studio-mcp#2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Local AI BGM and sound effects for Claude Code and any MCP client. Stable Audio 3 on Apple Silicon (MLX) and Windows NVIDIA GPUs (PyTorch). No cloud, no API key.]]></description>
     </item>
     <item>
-      <title>[REPO] aicodeking/pandacode</title>
-      <link>https://github.com/aicodeking/pandacode</link>
-      <guid isPermaLink="false">https://github.com/aicodeking/pandacode#2026-10-23</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 PandaCode: a calm desktop workspace for coding agents]]></description>
+      <title>[REPO] lesnolie/Tigris</title>
+      <link>https://github.com/lesnolie/Tigris</link>
+      <guid isPermaLink="false">https://github.com/lesnolie/Tigris#2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Tigris — tvOS 26 style launcher for Android TV: Liquid Glass dock, Top Shelf, glass Control Center, photo screensaver. Agent-installable.]]></description>
     </item>
     <item>
-      <title>[REPO] realskyrin/ns-game-apple-arm-port</title>
-      <link>https://github.com/realskyrin/ns-game-apple-arm-port</link>
-      <guid isPermaLink="false">https://github.com/realskyrin/ns-game-apple-arm-port#2026-10-23</guid>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Agent skill for native Nintendo Switch game porting to Apple Silicon macOS, iPadOS and iOS with Rust and Metal]]></description>
+      <title>[REPO] vercel-labs/fx0</title>
+      <link>https://github.com/vercel-labs/fx0</link>
+      <guid isPermaLink="false">https://github.com/vercel-labs/fx0#2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 A lightweight design agent built with libfx. Describe a page and an agent writes it as one HTML file.]]></description>
     </item>
   </channel>
 </rss>
