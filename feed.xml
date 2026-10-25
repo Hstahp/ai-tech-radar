@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-10-24</title>
+    <title>AI Tech Radar - 2026-10-25</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Now Google says it might use your Gmail and Google Photos data to target ads</title>
-      <link>https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update</link>
-      <guid isPermaLink="false">https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update#2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Now Google says it might use your Gmail and Google Photos data to target ads]]></description>
+      <title>[NEWS] No signs of AI payoff outside the tech sector</title>
+      <link>https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector</link>
+      <guid isPermaLink="false">https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector#2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 No signs of AI payoff outside the tech sector]]></description>
     </item>
     <item>
-      <title>[NEWS] finereli/whatsapp-mcp</title>
-      <link>https://github.com/finereli/whatsapp-mcp</link>
-      <guid isPermaLink="false">https://github.com/finereli/whatsapp-mcp#2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 A read-only MCP server that lets your AI agent search and read your own WhatsApp messages. Runs on Cloudflare Workers.]]></description>
+      <title>[NEWS] Neural chip decodes interactions between brain regions</title>
+      <link>https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2</link>
+      <guid isPermaLink="false">https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2#2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Neural chip decodes interactions between brain regions]]></description>
     </item>
     <item>
-      <title>[NEWS] Securing our frontier model training environment</title>
-      <link>https://openai.com/index/securing-our-frontier-model-training-environment</link>
-      <guid isPermaLink="false">https://openai.com/index/securing-our-frontier-model-training-environment#2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Securing our frontier model training environment]]></description>
+      <title>[NEWS] Oai-math-revised: a community hub for revising OpenAI&apos;s math write-ups</title>
+      <link>https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups</link>
+      <guid isPermaLink="false">https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups#2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Oai-math-revised: a community hub for revising OpenAI&apos;s math write-ups]]></description>
     </item>
     <item>
-      <title>[NEWS] Air Purifiers as White Noise Machines</title>
-      <link>https://www.jefftk.com/p/air-purifiers-as-white-noise-machines</link>
-      <guid isPermaLink="false">https://www.jefftk.com/p/air-purifiers-as-white-noise-machines#2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Air Purifiers as White Noise Machines]]></description>
+      <title>[NEWS] Argus – a free, open-source agentic security operations platform – MIT</title>
+      <link>https://thomasunise.com/argus</link>
+      <guid isPermaLink="false">https://thomasunise.com/argus#2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Argus – a free, open-source agentic security operations platform – MIT]]></description>
     </item>
     <item>
-      <title>[NEWS] A whirlwind tour of systemd-nspawn containers</title>
-      <link>https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers</link>
-      <guid isPermaLink="false">https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers#2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 A whirlwind tour of systemd-nspawn containers]]></description>
+      <title>[NEWS] America Has Lost 200k of Jobs in Media, Film and the Arts. How Much Is AI?</title>
+      <link>https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class</link>
+      <guid isPermaLink="false">https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class#2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 America Has Lost 200k of Jobs in Media, Film and the Arts. How Much Is AI?]]></description>
     </item>
     <item>
-      <title>[REPO] alchaincyf/huashu-motion</title>
-      <link>https://github.com/alchaincyf/huashu-motion</link>
-      <guid isPermaLink="false">https://github.com/alchaincyf/huashu-motion#2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.]]></description>
+      <title>[REPO] dominikmartn/harp</title>
+      <link>https://github.com/dominikmartn/harp</link>
+      <guid isPermaLink="false">https://github.com/dominikmartn/harp#2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Run many Claude Code and Codex agents side by side, in one sidebar that tells you which one needs you. An unofficial fork of Warp.]]></description>
+    </item>
+    <item>
+      <title>[REPO] MemTensor/MemT-1.0</title>
+      <link>https://github.com/MemTensor/MemT-1.0</link>
+      <guid isPermaLink="false">https://github.com/MemTensor/MemT-1.0#2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Official repository for MemT-1.0]]></description>
+    </item>
+    <item>
+      <title>[REPO] garycaogan/ai-live-avatar</title>
+      <link>https://github.com/garycaogan/ai-live-avatar</link>
+      <guid isPermaLink="false">https://github.com/garycaogan/ai-live-avatar#2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI 实时直播间：Vidu S2 实时数字人 + 弹幕过滤调度 + 衣柜换装 + OBS 叠层（角色资产不含）]]></description>
     </item>
     <item>
       <title>[REPO] Alejandros17487/ai-jailbreaks</title>
       <link>https://github.com/Alejandros17487/ai-jailbreaks</link>
-      <guid isPermaLink="false">https://github.com/Alejandros17487/ai-jailbreaks#2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/Alejandros17487/ai-jailbreaks#2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 AI jailbreaks: 35 paste-ready AI jailbreak prompts for 25+ frontier and open-weight models - system prompts, AGENTS.md specs, and Ollama Modelfiles. Built for AI security research and red-team testing.]]></description>
     </item>
     <item>
-      <title>[REPO] kanaworksai-hue/audio-studio-mcp</title>
-      <link>https://github.com/kanaworksai-hue/audio-studio-mcp</link>
-      <guid isPermaLink="false">https://github.com/kanaworksai-hue/audio-studio-mcp#2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Local AI BGM and sound effects for Claude Code and any MCP client. Stable Audio 3 on Apple Silicon (MLX) and Windows NVIDIA GPUs (PyTorch). No cloud, no API key.]]></description>
-    </item>
-    <item>
-      <title>[REPO] lesnolie/Tigris</title>
-      <link>https://github.com/lesnolie/Tigris</link>
-      <guid isPermaLink="false">https://github.com/lesnolie/Tigris#2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Tigris — tvOS 26 style launcher for Android TV: Liquid Glass dock, Top Shelf, glass Control Center, photo screensaver. Agent-installable.]]></description>
-    </item>
-    <item>
-      <title>[REPO] vercel-labs/fx0</title>
-      <link>https://github.com/vercel-labs/fx0</link>
-      <guid isPermaLink="false">https://github.com/vercel-labs/fx0#2026-10-24</guid>
-      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 A lightweight design agent built with libfx. Describe a page and an agent writes it as one HTML file.]]></description>
+      <title>[REPO] actionow-ai/vvv</title>
+      <link>https://github.com/actionow-ai/vvv</link>
+      <guid isPermaLink="false">https://github.com/actionow-ai/vvv#2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Build a video template once, reuse it across coding agents. Editable Remotion templates and an Agent Skill for Claude Code, Codex and 25+ agents.]]></description>
     </item>
   </channel>
 </rss>
