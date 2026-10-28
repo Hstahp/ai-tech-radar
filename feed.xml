@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-10-27</title>
+    <title>AI Tech Radar - 2026-10-28</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Tue, 27 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Birdwatching rewires the brain and slows cognitive decline</title>
-      <link>https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline</link>
-      <guid isPermaLink="false">https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline#2026-10-27</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Birdwatching rewires the brain and slows cognitive decline]]></description>
+      <title>[NEWS] Wikipedia&apos;s Cleanup of AI-Generated Content</title>
+      <link>https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup</link>
+      <guid isPermaLink="false">https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup#2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Wikipedia&apos;s Cleanup of AI-Generated Content]]></description>
     </item>
     <item>
-      <title>[NEWS] GPT-6.1 Terra</title>
-      <link>https://openai.com/index/introducing-gpt-6-1-terra</link>
-      <guid isPermaLink="false">https://openai.com/index/introducing-gpt-6-1-terra#2026-10-27</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 GPT-6.1 Terra]]></description>
+      <title>[NEWS] Anthropic trained Claude on illegally obtained Stanford professors&apos; books</title>
+      <link>https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude</link>
+      <guid isPermaLink="false">https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude#2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Anthropic trained Claude on illegally obtained Stanford professors&apos; books]]></description>
     </item>
     <item>
-      <title>[NEWS] Blaise Pascal invented fixed route public transport (2024)</title>
-      <link>https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html</link>
-      <guid isPermaLink="false">https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html#2026-10-27</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Blaise Pascal invented fixed route public transport (2024)]]></description>
+      <title>[NEWS] Amazon Is Gutting Its AI Division After Sustained Failure</title>
+      <link>https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova</link>
+      <guid isPermaLink="false">https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova#2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Amazon Is Gutting Its AI Division After Sustained Failure]]></description>
     </item>
     <item>
-      <title>[NEWS] Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT</title>
-      <link>https://github.com/FrigadeHQ/hob</link>
-      <guid isPermaLink="false">https://github.com/FrigadeHQ/hob#2026-10-27</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Hey HN, I&amp;#x27;m Christian and this is a new OSS project I&amp;#x27;ve been noodling on for the last couple of weeks. Hob is a free, MIT-licensed desktop app for Mac, Windows and Linux that works on your files the way the Claude and ChatGPT desktop apps do, except the model runs on your own computer. It]]></description>
+      <title>[NEWS] Tailscale SSH: Investigation and remediation update</title>
+      <link>https://tailscale.com/ssh-investigation-update</link>
+      <guid isPermaLink="false">https://tailscale.com/ssh-investigation-update#2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Tailscale SSH: Investigation and remediation update]]></description>
     </item>
     <item>
-      <title>[NEWS] Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)</title>
-      <link>https://blog.cloudflare.com/kv-cache-exposure-remediation</link>
-      <guid isPermaLink="false">https://blog.cloudflare.com/kv-cache-exposure-remediation#2026-10-27</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)]]></description>
+      <title>[NEWS] Here be monsters: What do you still need to know when agents do the work?</title>
+      <link>https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work</link>
+      <guid isPermaLink="false">https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work#2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Here be monsters: What do you still need to know when agents do the work?]]></description>
     </item>
     <item>
       <title>[REPO] t3dotgg/tstack</title>
       <link>https://github.com/t3dotgg/tstack</link>
-      <guid isPermaLink="false">https://github.com/t3dotgg/tstack#2026-10-27</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/t3dotgg/tstack#2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 The agent skills I use every day. Works with Claude Code and Codex.]]></description>
     </item>
     <item>
       <title>[REPO] morganlinton/BeautifulRust</title>
       <link>https://github.com/morganlinton/BeautifulRust</link>
-      <guid isPermaLink="false">https://github.com/morganlinton/BeautifulRust#2026-10-27</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/morganlinton/BeautifulRust#2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Agent Skills that teach coding agents to write, review, and port idiomatic Rust, plus a tested clippy config. Works with Claude Code, Codex, Copilot, Cursor, and Gemini CLI.]]></description>
-    </item>
-    <item>
-      <title>[REPO] rddmwmddr/android-ad-cleaner</title>
-      <link>https://github.com/rddmwmddr/android-ad-cleaner</link>
-      <guid isPermaLink="false">https://github.com/rddmwmddr/android-ad-cleaner#2026-10-27</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。]]></description>
     </item>
     <item>
       <title>[REPO] andyhuo520/digital-human-koubo</title>
       <link>https://github.com/andyhuo520/digital-human-koubo</link>
-      <guid isPermaLink="false">https://github.com/andyhuo520/digital-human-koubo#2026-10-27</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/andyhuo520/digital-human-koubo#2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing styles + 48 creator-grade packaging components. Agent skill for Claude Code / Codex / OpenClaw / WorkBuddy …]]></description>
     </item>
     <item>
       <title>[REPO] DenisSergeevitch/ex-ussr-kinship-research</title>
       <link>https://github.com/DenisSergeevitch/ex-ussr-kinship-research</link>
-      <guid isPermaLink="false">https://github.com/DenisSergeevitch/ex-ussr-kinship-research#2026-10-27</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/DenisSergeevitch/ex-ussr-kinship-research#2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.]]></description>
+    </item>
+    <item>
+      <title>[REPO] rddmwmddr/android-ad-cleaner</title>
+      <link>https://github.com/rddmwmddr/android-ad-cleaner</link>
+      <guid isPermaLink="false">https://github.com/rddmwmddr/android-ad-cleaner#2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。]]></description>
     </item>
   </channel>
 </rss>

@@ -1,61 +1,61 @@
 {
-  "generated_at": "2026-10-27T00:01:05.213Z",
+  "generated_at": "2026-10-28T00:01:02.863Z",
   "items": [
     {
-      "key": "17f7d1b64ced91e54932b6402f0c2741a1bb015feff5050e0675282a209af229",
-      "title": "Birdwatching rewires the brain and slows cognitive decline",
+      "key": "0fa71fcc03f57574cda39d60a01139b39b32ce35d43d5913fe0a018bbc4eec24",
+      "title": "Wikipedia's Cleanup of AI-Generated Content",
       "category": "news",
-      "url": "https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline",
+      "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
       "tags": [],
-      "purpose": "Birdwatching rewires the brain and slows cognitive decline",
+      "purpose": "Wikipedia's Cleanup of AI-Generated Content",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "35e334c198740f7416638922d137b34400b1d3f32a340ea04060840443b03b8a",
-      "title": "GPT-6.1 Terra",
+      "key": "f3e020b4efe873953ef4d59b5bba9bbd11c21015eba4479497455088f02b00e6",
+      "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
       "category": "news",
-      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude",
       "tags": [],
-      "purpose": "GPT-6.1 Terra",
+      "purpose": "Anthropic trained Claude on illegally obtained Stanford professors' books",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "8a1dadb23cddbb40ec76ebc79e4e8eaae0a12cd79ae83d1287ca1db369271e8f",
-      "title": "Blaise Pascal invented fixed route public transport (2024)",
+      "key": "a17083d6bd141e2d3bbdd22b4880993a88608dd7ad12ca9854ad264c7a13dd5c",
+      "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
       "category": "news",
-      "url": "https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html",
+      "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
       "tags": [],
-      "purpose": "Blaise Pascal invented fixed route public transport (2024)",
+      "purpose": "Amazon Is Gutting Its AI Division After Sustained Failure",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "f93d4d5cf699810a3933e0086637d437df2b19512152d8cb569690a646e4e45e",
-      "title": "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
+      "key": "ebfe71ec9852c66d306e05a10c79e54a53f7cea64390fbbdf2cd86e996669b2a",
+      "title": "Tailscale SSH: Investigation and remediation update",
       "category": "news",
-      "url": "https://github.com/FrigadeHQ/hob",
+      "url": "https://tailscale.com/ssh-investigation-update",
       "tags": [],
-      "purpose": "Hey HN, I&#x27;m Christian and this is a new OSS project I&#x27;ve been noodling on for the last couple of weeks. Hob is a free, MIT-licensed desktop app for Mac, Windows and Linux that works on your files the way the Claude and ChatGPT desktop apps do, except the model runs on your own computer. It",
+      "purpose": "Tailscale SSH: Investigation and remediation update",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "89893d5f73c7751563c810d00d2e6db7b97bb2811c1511935d7aabf7a49af3b5",
-      "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
+      "key": "a330a8194716c61c54c2fca0d9267cfd511f3ecc4332bd7464040c3494f9c41c",
+      "title": "Here be monsters: What do you still need to know when agents do the work?",
       "category": "news",
-      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation",
+      "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
       "tags": [],
-      "purpose": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
+      "purpose": "Here be monsters: What do you still need to know when agents do the work?",
       "highlight": null,
       "action": null,
       "verdict": null,
@@ -71,7 +71,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1542
+      "stars": 1994
     },
     {
       "key": "574e9fcc474d5a2363c2aa806562cc18391c9ba2315dcda46de3f9400f8c29c0",
@@ -83,19 +83,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1211
-    },
-    {
-      "key": "9c28da14f984c0d922aaafd9d360d03c50119912f14292bc0d264f8fe84d5fe3",
-      "title": "rddmwmddr/android-ad-cleaner",
-      "category": "repo",
-      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
-      "tags": [],
-      "purpose": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 1860
+      "stars": 1308
     },
     {
       "key": "413b56795fe49c36b52c96fda5508a8bb16c88b082e088af4c248ae4ee504644",
@@ -107,7 +95,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 672
+      "stars": 1067
     },
     {
       "key": "7836bad8e3afc7ed28762c5609e81c8189c9702076342569d5d6d35a7190b692",
@@ -119,7 +107,19 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 793
+      "stars": 1053
+    },
+    {
+      "key": "9c28da14f984c0d922aaafd9d360d03c50119912f14292bc0d264f8fe84d5fe3",
+      "title": "rddmwmddr/android-ad-cleaner",
+      "category": "repo",
+      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "tags": [],
+      "purpose": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 3240
     }
   ]
 }
