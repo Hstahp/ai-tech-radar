@@ -1,65 +1,77 @@
 {
-  "generated_at": "2026-10-28T00:01:02.863Z",
+  "generated_at": "2026-10-29T00:01:11.715Z",
   "items": [
     {
-      "key": "0fa71fcc03f57574cda39d60a01139b39b32ce35d43d5913fe0a018bbc4eec24",
-      "title": "Wikipedia's Cleanup of AI-Generated Content",
+      "key": "9fb777e852af10466944da40f586da2cf593e7569545c432ffc6bf31f4a353af",
+      "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
       "category": "news",
-      "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+      "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai",
       "tags": [],
-      "purpose": "Wikipedia's Cleanup of AI-Generated Content",
+      "purpose": "Kentucky man becomes the first humanist granted religious exemption from AI",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "f3e020b4efe873953ef4d59b5bba9bbd11c21015eba4479497455088f02b00e6",
-      "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+      "key": "a92d7b7ef0e2da4d5922c4312bd7f7df8d2b093b922e0a6553e761255b0eac7a",
+      "title": "Gemini 4 Carbon",
       "category": "news",
-      "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon",
       "tags": [],
-      "purpose": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+      "purpose": "Gemini 4 Carbon",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "a17083d6bd141e2d3bbdd22b4880993a88608dd7ad12ca9854ad264c7a13dd5c",
-      "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
+      "key": "17a75de37df03bf69cc8cd6f945d43030c6c3e3ce93699d18b7dc09af34e59c0",
+      "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
       "category": "news",
-      "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+      "url": "https://surgehq.ai/blog/dayjob-tax",
       "tags": [],
-      "purpose": "Amazon Is Gutting Its AI Division After Sustained Failure",
+      "purpose": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "ebfe71ec9852c66d306e05a10c79e54a53f7cea64390fbbdf2cd86e996669b2a",
-      "title": "Tailscale SSH: Investigation and remediation update",
+      "key": "dcad83d827337ce853e769bf19b79a79ad8c761d88eacae14de27814d19f0b1d",
+      "title": "Early progress on accelerating drug development with Claude",
       "category": "news",
-      "url": "https://tailscale.com/ssh-investigation-update",
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
       "tags": [],
-      "purpose": "Tailscale SSH: Investigation and remediation update",
+      "purpose": "Early progress on accelerating drug development with Claude",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "a330a8194716c61c54c2fca0d9267cfd511f3ecc4332bd7464040c3494f9c41c",
-      "title": "Here be monsters: What do you still need to know when agents do the work?",
+      "key": "b9b5de18e9156d548c9e56f000e9ba90e1a7218d2ec27abca07022b7bcdfd71e",
+      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
       "category": "news",
-      "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work",
+      "url": "https://www.brangus.io/survival-llm",
       "tags": [],
-      "purpose": "Here be monsters: What do you still need to know when agents do the work?",
+      "purpose": "Survival LLM: AI assistant and emergency library that runs on your own computer",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
+    },
+    {
+      "key": "eea6fa6e160f5eae94af990d3bdb29c098c1f610c62220d598ce37b87226ffcd",
+      "title": "anhao/ai-pose-gallery-zh",
+      "category": "repo",
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "tags": [],
+      "purpose": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1860
     },
     {
       "key": "dd9400311fbaa81628b715293de179e48134843d00ac5b1be49bc2355cbd7c47",
@@ -71,7 +83,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1994
+      "stars": 2256
     },
     {
       "key": "574e9fcc474d5a2363c2aa806562cc18391c9ba2315dcda46de3f9400f8c29c0",
@@ -83,7 +95,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1308
+      "stars": 1365
     },
     {
       "key": "413b56795fe49c36b52c96fda5508a8bb16c88b082e088af4c248ae4ee504644",
@@ -95,7 +107,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1067
+      "stars": 1302
     },
     {
       "key": "7836bad8e3afc7ed28762c5609e81c8189c9702076342569d5d6d35a7190b692",
@@ -107,19 +119,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1053
-    },
-    {
-      "key": "9c28da14f984c0d922aaafd9d360d03c50119912f14292bc0d264f8fe84d5fe3",
-      "title": "rddmwmddr/android-ad-cleaner",
-      "category": "repo",
-      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
-      "tags": [],
-      "purpose": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 3240
+      "stars": 1181
     }
   ]
 }

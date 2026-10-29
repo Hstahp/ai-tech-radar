@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-10-28</title>
+    <title>AI Tech Radar - 2026-10-29</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Wikipedia&apos;s Cleanup of AI-Generated Content</title>
-      <link>https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup</link>
-      <guid isPermaLink="false">https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup#2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Wikipedia&apos;s Cleanup of AI-Generated Content]]></description>
+      <title>[NEWS] Kentucky man becomes the first humanist granted religious exemption from AI</title>
+      <link>https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai</link>
+      <guid isPermaLink="false">https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai#2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Kentucky man becomes the first humanist granted religious exemption from AI]]></description>
     </item>
     <item>
-      <title>[NEWS] Anthropic trained Claude on illegally obtained Stanford professors&apos; books</title>
-      <link>https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude</link>
-      <guid isPermaLink="false">https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude#2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Anthropic trained Claude on illegally obtained Stanford professors&apos; books]]></description>
+      <title>[NEWS] Gemini 4 Carbon</title>
+      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon</link>
+      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon#2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Gemini 4 Carbon]]></description>
     </item>
     <item>
-      <title>[NEWS] Amazon Is Gutting Its AI Division After Sustained Failure</title>
-      <link>https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova</link>
-      <guid isPermaLink="false">https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova#2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Amazon Is Gutting Its AI Division After Sustained Failure]]></description>
+      <title>[NEWS] Dayjob: Tax – evaluating AI agents on 50 professional tax assignments</title>
+      <link>https://surgehq.ai/blog/dayjob-tax</link>
+      <guid isPermaLink="false">https://surgehq.ai/blog/dayjob-tax#2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Dayjob: Tax – evaluating AI agents on 50 professional tax assignments]]></description>
     </item>
     <item>
-      <title>[NEWS] Tailscale SSH: Investigation and remediation update</title>
-      <link>https://tailscale.com/ssh-investigation-update</link>
-      <guid isPermaLink="false">https://tailscale.com/ssh-investigation-update#2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Tailscale SSH: Investigation and remediation update]]></description>
+      <title>[NEWS] Early progress on accelerating drug development with Claude</title>
+      <link>https://www.anthropic.com/research/early-progress-drug-development</link>
+      <guid isPermaLink="false">https://www.anthropic.com/research/early-progress-drug-development#2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Early progress on accelerating drug development with Claude]]></description>
     </item>
     <item>
-      <title>[NEWS] Here be monsters: What do you still need to know when agents do the work?</title>
-      <link>https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work</link>
-      <guid isPermaLink="false">https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work#2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Here be monsters: What do you still need to know when agents do the work?]]></description>
+      <title>[NEWS] Survival LLM: AI assistant and emergency library that runs on your own computer</title>
+      <link>https://www.brangus.io/survival-llm</link>
+      <guid isPermaLink="false">https://www.brangus.io/survival-llm#2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Survival LLM: AI assistant and emergency library that runs on your own computer]]></description>
+    </item>
+    <item>
+      <title>[REPO] anhao/ai-pose-gallery-zh</title>
+      <link>https://github.com/anhao/ai-pose-gallery-zh</link>
+      <guid isPermaLink="false">https://github.com/anhao/ai-pose-gallery-zh#2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊]]></description>
     </item>
     <item>
       <title>[REPO] t3dotgg/tstack</title>
       <link>https://github.com/t3dotgg/tstack</link>
-      <guid isPermaLink="false">https://github.com/t3dotgg/tstack#2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/t3dotgg/tstack#2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 The agent skills I use every day. Works with Claude Code and Codex.]]></description>
     </item>
     <item>
       <title>[REPO] morganlinton/BeautifulRust</title>
       <link>https://github.com/morganlinton/BeautifulRust</link>
-      <guid isPermaLink="false">https://github.com/morganlinton/BeautifulRust#2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/morganlinton/BeautifulRust#2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Agent Skills that teach coding agents to write, review, and port idiomatic Rust, plus a tested clippy config. Works with Claude Code, Codex, Copilot, Cursor, and Gemini CLI.]]></description>
     </item>
     <item>
       <title>[REPO] andyhuo520/digital-human-koubo</title>
       <link>https://github.com/andyhuo520/digital-human-koubo</link>
-      <guid isPermaLink="false">https://github.com/andyhuo520/digital-human-koubo#2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/andyhuo520/digital-human-koubo#2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing styles + 48 creator-grade packaging components. Agent skill for Claude Code / Codex / OpenClaw / WorkBuddy …]]></description>
     </item>
     <item>
       <title>[REPO] DenisSergeevitch/ex-ussr-kinship-research</title>
       <link>https://github.com/DenisSergeevitch/ex-ussr-kinship-research</link>
-      <guid isPermaLink="false">https://github.com/DenisSergeevitch/ex-ussr-kinship-research#2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/DenisSergeevitch/ex-ussr-kinship-research#2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.]]></description>
-    </item>
-    <item>
-      <title>[REPO] rddmwmddr/android-ad-cleaner</title>
-      <link>https://github.com/rddmwmddr/android-ad-cleaner</link>
-      <guid isPermaLink="false">https://github.com/rddmwmddr/android-ad-cleaner#2026-10-28</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。]]></description>
     </item>
   </channel>
 </rss>
