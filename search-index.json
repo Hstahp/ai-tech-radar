@@ -1,65 +1,77 @@
 {
-  "generated_at": "2026-10-29T00:01:11.715Z",
+  "generated_at": "2026-10-30T00:01:01.668Z",
   "items": [
     {
-      "key": "9fb777e852af10466944da40f586da2cf593e7569545c432ffc6bf31f4a353af",
-      "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
+      "key": "ff1ebca6f559787f35b4f41fc8c6c0fdbffee3c2f5e975856bdc2ce732778173",
+      "title": "Chained PHP2Shell exploit roots 25 servers, including US Government servers",
       "category": "news",
-      "url": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai",
+      "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
       "tags": [],
-      "purpose": "Kentucky man becomes the first humanist granted religious exemption from AI",
+      "purpose": "Chained PHP2Shell exploit roots 25 servers, including US Government servers",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "a92d7b7ef0e2da4d5922c4312bd7f7df8d2b093b922e0a6553e761255b0eac7a",
-      "title": "Gemini 4 Carbon",
+      "key": "815e9f76383a90122a5efa264e464937c82e515631936c699eed9c27b99af25b",
+      "title": "LLM Voice",
       "category": "news",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon",
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html",
       "tags": [],
-      "purpose": "Gemini 4 Carbon",
+      "purpose": "LLM Voice",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "17a75de37df03bf69cc8cd6f945d43030c6c3e3ce93699d18b7dc09af34e59c0",
-      "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+      "key": "09b80fe03886ba3bba7fb7f536f9ac4d86318d029345f52c639cdee43c060b81",
+      "title": "What we know so far about Spain train crash",
       "category": "news",
-      "url": "https://surgehq.ai/blog/dayjob-tax",
+      "url": "https://www.bbc.com/news/articles/cm8xz7pkd0jjo",
       "tags": [],
-      "purpose": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+      "purpose": "What we know so far about Spain train crash",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "dcad83d827337ce853e769bf19b79a79ad8c761d88eacae14de27814d19f0b1d",
-      "title": "Early progress on accelerating drug development with Claude",
+      "key": "a1f8d24a51e36d46298d421e548d8eae69829234ac148f77efd2fa95ddfac22a",
+      "title": "Zombie stats: Where the numbers AI quotes come from",
       "category": "news",
-      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "url": "https://trakkr.ai/trakkr-research/zombie-stats",
       "tags": [],
-      "purpose": "Early progress on accelerating drug development with Claude",
+      "purpose": "Zombie stats: Where the numbers AI quotes come from",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "b9b5de18e9156d548c9e56f000e9ba90e1a7218d2ec27abca07022b7bcdfd71e",
-      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+      "key": "2cf1fb795ba0396c9bccccb3fef5e5568e0b47f7e5c2500057928a764f1aaa0e",
+      "title": "We ran AI agent swarms in Minecraft and Mindustry",
       "category": "news",
-      "url": "https://www.brangus.io/survival-llm",
+      "url": "https://labs.ycombinator.com/projects/games/index.html",
       "tags": [],
-      "purpose": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+      "purpose": "We ran AI agent swarms in Minecraft and Mindustry",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
+    },
+    {
+      "key": "b96a53d108527e57771c8562434f5ba561d178c0aeda94b290d8cf9a44e05e32",
+      "title": "ZiChuanLan/agent-purge",
+      "category": "repo",
+      "url": "https://github.com/ZiChuanLan/agent-purge",
+      "tags": [],
+      "purpose": "One persona, many coding agents. Replace or inject system prompts across codex, claude, opencode, grok, omp, hermes, pi, zcode - with a local web console.",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 875
     },
     {
       "key": "eea6fa6e160f5eae94af990d3bdb29c098c1f610c62220d598ce37b87226ffcd",
@@ -71,7 +83,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1860
+      "stars": 3122
     },
     {
       "key": "dd9400311fbaa81628b715293de179e48134843d00ac5b1be49bc2355cbd7c47",
@@ -83,19 +95,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 2256
-    },
-    {
-      "key": "574e9fcc474d5a2363c2aa806562cc18391c9ba2315dcda46de3f9400f8c29c0",
-      "title": "morganlinton/BeautifulRust",
-      "category": "repo",
-      "url": "https://github.com/morganlinton/BeautifulRust",
-      "tags": [],
-      "purpose": "Agent Skills that teach coding agents to write, review, and port idiomatic Rust, plus a tested clippy config. Works with Claude Code, Codex, Copilot, Cursor, and Gemini CLI.",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 1365
+      "stars": 2390
     },
     {
       "key": "413b56795fe49c36b52c96fda5508a8bb16c88b082e088af4c248ae4ee504644",
@@ -107,7 +107,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1302
+      "stars": 1463
     },
     {
       "key": "7836bad8e3afc7ed28762c5609e81c8189c9702076342569d5d6d35a7190b692",
@@ -119,7 +119,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1181
+      "stars": 1266
     }
   ]
 }
