@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-10-30</title>
+    <title>AI Tech Radar - 2026-10-31</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Chained PHP2Shell exploit roots 25 servers, including US Government servers</title>
-      <link>https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers</link>
-      <guid isPermaLink="false">https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers#2026-10-30</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Chained PHP2Shell exploit roots 25 servers, including US Government servers]]></description>
+      <title>[NEWS] Backdoor in Claude Code for VS Code extension on the Cursor Marketplace</title>
+      <link>https://phorion.io/blog/offical-claude-code-vsx-compromise</link>
+      <guid isPermaLink="false">https://phorion.io/blog/offical-claude-code-vsx-compromise#2026-10-31</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;cursor.com&amp;#x2F;blog&amp;#x2F;claude-code-extension-security-notice&quot; rel=&quot;nofollow&quot;&gt;https:&amp;#x2F;&amp;#x2F;cursor.com&amp;#x2F;blog&amp;#x2F;claude-code-extension-security-notic...&lt;/a&gt;]]></description>
     </item>
     <item>
-      <title>[NEWS] LLM Voice</title>
-      <link>https://martinfowler.com/bliki/LLM-Voice.html</link>
-      <guid isPermaLink="false">https://martinfowler.com/bliki/LLM-Voice.html#2026-10-30</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 LLM Voice]]></description>
+      <title>[NEWS] AI isn&apos;t replacing SREs, it&apos;s deskilling them</title>
+      <link>https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling</link>
+      <guid isPermaLink="false">https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling#2026-10-31</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI isn&apos;t replacing SREs, it&apos;s deskilling them]]></description>
     </item>
     <item>
-      <title>[NEWS] What we know so far about Spain train crash</title>
-      <link>https://www.bbc.com/news/articles/cm8xz7pkd0jjo</link>
-      <guid isPermaLink="false">https://www.bbc.com/news/articles/cm8xz7pkd0jjo#2026-10-30</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 What we know so far about Spain train crash]]></description>
+      <title>[NEWS] Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man</title>
+      <link>https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation</link>
+      <guid isPermaLink="false">https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation#2026-10-31</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man]]></description>
     </item>
     <item>
-      <title>[NEWS] Zombie stats: Where the numbers AI quotes come from</title>
-      <link>https://trakkr.ai/trakkr-research/zombie-stats</link>
-      <guid isPermaLink="false">https://trakkr.ai/trakkr-research/zombie-stats#2026-10-30</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Zombie stats: Where the numbers AI quotes come from]]></description>
+      <title>[NEWS] Sleep framework: A new way for LLMs to retain knowledge in continual learning</title>
+      <link>https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning</link>
+      <guid isPermaLink="false">https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning#2026-10-31</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;pdf&amp;#x2F;2606.03979&quot; rel=&quot;nofollow&quot;&gt;https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;pdf&amp;#x2F;2606.03979&lt;/a&gt;]]></description>
     </item>
     <item>
-      <title>[NEWS] We ran AI agent swarms in Minecraft and Mindustry</title>
-      <link>https://labs.ycombinator.com/projects/games/index.html</link>
-      <guid isPermaLink="false">https://labs.ycombinator.com/projects/games/index.html#2026-10-30</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 We ran AI agent swarms in Minecraft and Mindustry]]></description>
+      <title>[NEWS] Building an AI-native engineering org</title>
+      <link>https://twitter.com/sgondala2/status/2115832070274723875</link>
+      <guid isPermaLink="false">https://twitter.com/sgondala2/status/2115832070274723875#2026-10-31</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Building an AI-native engineering org]]></description>
     </item>
     <item>
-      <title>[REPO] ZiChuanLan/agent-purge</title>
-      <link>https://github.com/ZiChuanLan/agent-purge</link>
-      <guid isPermaLink="false">https://github.com/ZiChuanLan/agent-purge#2026-10-30</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 One persona, many coding agents. Replace or inject system prompts across codex, claude, opencode, grok, omp, hermes, pi, zcode - with a local web console.]]></description>
+      <title>[REPO] ccch1mneyyy/dsh-Go</title>
+      <link>https://github.com/ccch1mneyyy/dsh-Go</link>
+      <guid isPermaLink="false">https://github.com/ccch1mneyyy/dsh-Go#2026-10-31</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。]]></description>
     </item>
     <item>
-      <title>[REPO] anhao/ai-pose-gallery-zh</title>
-      <link>https://github.com/anhao/ai-pose-gallery-zh</link>
-      <guid isPermaLink="false">https://github.com/anhao/ai-pose-gallery-zh#2026-10-30</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊]]></description>
+      <title>[REPO] wangzan101/Mika</title>
+      <link>https://github.com/wangzan101/Mika</link>
+      <guid isPermaLink="false">https://github.com/wangzan101/Mika#2026-10-31</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you.]]></description>
     </item>
     <item>
-      <title>[REPO] t3dotgg/tstack</title>
-      <link>https://github.com/t3dotgg/tstack</link>
-      <guid isPermaLink="false">https://github.com/t3dotgg/tstack#2026-10-30</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 The agent skills I use every day. Works with Claude Code and Codex.]]></description>
+      <title>[REPO] heydamir/unslop</title>
+      <link>https://github.com/heydamir/unslop</link>
+      <guid isPermaLink="false">https://github.com/heydamir/unslop#2026-10-31</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 A Claude skill that turns vibecoded, AI-looking UI into a designed interface]]></description>
     </item>
     <item>
-      <title>[REPO] andyhuo520/digital-human-koubo</title>
-      <link>https://github.com/andyhuo520/digital-human-koubo</link>
-      <guid isPermaLink="false">https://github.com/andyhuo520/digital-human-koubo#2026-10-30</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing styles + 48 creator-grade packaging components. Agent skill for Claude Code / Codex / OpenClaw / WorkBuddy …]]></description>
+      <title>[REPO] paipiange/nvzhuang</title>
+      <link>https://github.com/paipiange/nvzhuang</link>
+      <guid isPermaLink="false">https://github.com/paipiange/nvzhuang#2026-10-31</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang]]></description>
     </item>
     <item>
-      <title>[REPO] DenisSergeevitch/ex-ussr-kinship-research</title>
-      <link>https://github.com/DenisSergeevitch/ex-ussr-kinship-research</link>
-      <guid isPermaLink="false">https://github.com/DenisSergeevitch/ex-ussr-kinship-research#2026-10-30</guid>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.]]></description>
+      <title>[REPO] qybaihe/bla</title>
+      <link>https://github.com/qybaihe/bla</link>
+      <guid isPermaLink="false">https://github.com/qybaihe/bla#2026-10-31</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -&gt; Exhaust -&gt; Hallucinate.]]></description>
     </item>
   </channel>
 </rss>
