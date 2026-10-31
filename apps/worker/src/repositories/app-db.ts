@@ -1,3 +1,4 @@
+import type { CreateBookmark, UserBookmarkItem } from '@radar/core';
 export interface ChatEventRecord {
     userId?: string | null;
     anonHash?: string;
@@ -154,6 +155,11 @@ export interface AppDbRepository {
 
     // Admin Overview
     getAdminOverview(today: string): Promise<AdminOverviewMetrics>;
+
+    // User Bookmarks
+    addBookmark(userId: string, data: CreateBookmark): Promise<UserBookmarkItem>;
+    removeBookmark(userId: string, itemKey: string): Promise<void>;
+    getUserBookmarks(userId: string): Promise<UserBookmarkItem[]>;
 }
 
 export interface TagSettingRecord {
@@ -223,6 +229,7 @@ export class InMemoryAppDbRepository implements AppDbRepository {
     private auditLogs: AuditLogRecord[] = [];
     private nextTagRequestId = 1;
     private nextAuditLogId = 1;
+    private bookmarks = new Map<string, UserBookmarkItem & { userId: string }>();
 
     constructor() {
         this.settings.set('chat.user_daily_limit', '10');
@@ -432,6 +439,9 @@ export class InMemoryAppDbRepository implements AppDbRepository {
             if (session.userId === id) this.sessions.delete(key);
         }
         this.userTags.delete(id);
+        for (const [key, b] of this.bookmarks.entries()) {
+            if (b.userId === id) this.bookmarks.delete(key);
+        }
         for (const [key, quota] of this.userQuotas.entries()) {
             if (quota.userId === id) this.userQuotas.delete(key);
         }
@@ -518,6 +528,40 @@ export class InMemoryAppDbRepository implements AppDbRepository {
         quota.tokensIn += tokensIn;
         quota.tokensOut += tokensOut;
         this.userQuotas.set(key, quota);
+    }
+
+    // Bookmarks
+    async addBookmark(userId: string, data: CreateBookmark): Promise<UserBookmarkItem> {
+        const item: UserBookmarkItem = {
+            itemKey: data.itemKey,
+            title: data.title,
+            url: data.url,
+            category: data.category,
+            author: data.author ?? null,
+            tags: data.tags ?? null,
+            summary: data.summary ?? null,
+            createdAt: new Date().toISOString(),
+        };
+        const key = `${userId}:${data.itemKey}`;
+        this.bookmarks.set(key, { ...item, userId });
+        return item;
+    }
+
+    async removeBookmark(userId: string, itemKey: string): Promise<void> {
+        const key = `${userId}:${itemKey}`;
+        this.bookmarks.delete(key);
+    }
+
+    async getUserBookmarks(userId: string): Promise<UserBookmarkItem[]> {
+        const results: UserBookmarkItem[] = [];
+        for (const b of this.bookmarks.values()) {
+            if (b.userId === userId) {
+                const { userId: _, ...item } = b;
+                results.push(item);
+            }
+        }
+        results.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+        return results;
     }
 
     // Settings
