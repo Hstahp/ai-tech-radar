@@ -148,7 +148,7 @@ pnpm typecheck
     - [x] Web Dashboard Bento Grid (React 19 + Tailwind v4 + Dark mode + Lucide icons).
     - [x] Tự động hóa CI/CD GitHub Actions hàng ngày lúc 07:00 AM VN.
     - [x] Hệ thống kiểm thử CI tự động, Husky Git hooks bảo vệ nhánh cục bộ và tích hợp CodeRabbit AI.
-- [ ] **Giai đoạn 2 (Cloudflare Worker & RAG Chatbox - theo [DESIGN_PHASE2_AUTH_ADMIN_CHAT.md](DESIGN_PHASE2_AUTH_ADMIN_CHAT.md)):**
+- [ ] **Giai đoạn 2 (Cloudflare Worker & RAG Chatbox - theo [DESIGN_PHASE2_AUTH_ADMIN_CHAT.md](docs/DESIGN_PHASE2_AUTH_ADMIN_CHAT.md)):**
     - [x] **Bước A:** Nền tảng + Chatbox RAG chặt (zero-token rejection, trích dẫn chuẩn, Turnstile).
     - [x] **Bước B:** Cơ chế giải thích sâu (Deep explain) có cache theo bài viết và modal hiển thị trên web.
     - [x] **Bước C:** Đăng nhập Google/GitHub OAuth, lưu phiên session và lọc thẻ (tags) cá nhân hóa.
@@ -157,7 +157,7 @@ pnpm typecheck
     - [ ] **Bước F:** Quản lý Pool key an toàn & Hỗ trợ BYOK (Bring Your Own Key).
 - [ ] **Mốc 3:** Browser Extension (WXT, Manifest V3).
 
-Chi tiết tiến độ thực hiện được cập nhật liên tục tại [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md).
+Chi tiết tiến độ thực hiện được cập nhật liên tục tại [docs/PROGRESS.md](docs/PROGRESS.md).
 
 ---
 
@@ -166,7 +166,7 @@ Chi tiết tiến độ thực hiện được cập nhật liên tục tại [P
 Vui lòng đọc kỹ hướng dẫn trước khi đóng góp:
 
 - [AGENTS.md](AGENTS.md): Quy tắc clean code, kiến trúc phân lớp và quy chuẩn đặt tên.
-- [GIT_WORKFLOW.md](GIT_WORKFLOW.md): Quy trình chia nhánh Git Flow và quy tắc Conventional Commits (**bắt buộc tách riêng commit `test:` khỏi commit `feat:`**).
+- [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md): Quy trình chia nhánh Git Flow và quy tắc Conventional Commits (**bắt buộc tách riêng commit `test:` khỏi commit `feat:`**).
 
 ---
 

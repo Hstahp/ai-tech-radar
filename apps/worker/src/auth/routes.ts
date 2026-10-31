@@ -64,7 +64,14 @@ export function createAuthRouter(authService: AuthService) {
             });
 
             const userAgent = c.req.header('user-agent') ?? null;
-            const { token } = await authService.createSessionForUser(user.id, userAgent);
+            const userTags = await authService.getUserTags(user.id);
+            const { token } = await authService.createSessionForUser(user.id, userAgent, undefined, {
+                email: user.email,
+                role: user.role,
+                displayName: user.displayName,
+                avatarUrl: user.avatarUrl,
+                tags: userTags,
+            });
 
             const isSecure = c.req.url.startsWith('https://');
             const sameSite = isSecure ? 'None' : 'Lax';
@@ -137,7 +144,14 @@ export function createAuthRouter(authService: AuthService) {
             });
 
             const userAgent = c.req.header('user-agent') ?? null;
-            const { token } = await authService.createSessionForUser(user.id, userAgent);
+            const userTags = await authService.getUserTags(user.id);
+            const { token } = await authService.createSessionForUser(user.id, userAgent, undefined, {
+                email: user.email,
+                role: user.role,
+                displayName: user.displayName,
+                avatarUrl: user.avatarUrl,
+                tags: userTags,
+            });
 
             const isSecure = c.req.url.startsWith('https://');
             const sameSite = isSecure ? 'None' : 'Lax';
@@ -216,8 +230,16 @@ export function createAuthRouter(authService: AuthService) {
             );
         }
 
-        const updatedTags = await authService.updateUserTags(user.id, parsed.data.tags);
-        return c.json({ tags: updatedTags });
+        await authService.updateUserTags(user.id, parsed.data.tags);
+        const updatedTags = await authService.getUserTags(user.id);
+        const { token } = await authService.createSessionForUser(user.id, undefined, undefined, {
+            email: user.email,
+            role: user.role,
+            displayName: user.displayName,
+            avatarUrl: user.avatarUrl,
+            tags: updatedTags,
+        });
+        return c.json({ tags: updatedTags, token });
     });
 
     // 8. De xuat tag moi (yeu cau dang nhap)

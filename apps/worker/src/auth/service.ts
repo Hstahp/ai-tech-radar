@@ -1,5 +1,5 @@
 import type { AppDbRepository, UserRecord } from '../repositories/app-db.js';
-import { generateSessionToken, hashSessionToken } from './token.js';
+import { createSignedSessionToken, verifySignedSessionToken, hashSessionToken } from './token.js';
 import { AppError, AuthError } from '../lib/errors.js';
 import type { UserProfile } from '@radar/core';
 
@@ -23,11 +23,34 @@ export class AuthService {
         userId: string,
         userAgent?: string | null,
         maxAgeSeconds: number = 30 * 86400,
+        userData?: {
+            email?: string;
+            role?: 'user' | 'admin';
+            displayName?: string | null;
+            avatarUrl?: string | null;
+            tags?: string[];
+        },
     ): Promise<{ token: string; expiresAt: string }> {
-        const token = generateSessionToken();
-        const tokenHash = await hashSessionToken(token);
-        const expiresAt = new Date(Date.now() + maxAgeSeconds * 1000).toISOString();
+        const user = userData?.email ? null : await this.options.appDb.findUserById(userId);
+        const email = userData?.email || user?.email || `${userId}@radar.local`;
+        const role = userData?.role || user?.role || 'user';
+        const displayName = userData?.displayName ?? user?.displayName ?? null;
+        const avatarUrl = userData?.avatarUrl ?? user?.avatarUrl ?? null;
+        const tags = userData?.tags ?? (await this.options.appDb.getUserTags(userId));
 
+        const { token, expiresAt } = await createSignedSessionToken(
+            {
+                userId,
+                email,
+                role,
+                displayName,
+                avatarUrl,
+                tags,
+            },
+            maxAgeSeconds,
+        );
+
+        const tokenHash = await hashSessionToken(token);
         await this.options.appDb.createSession(tokenHash, userId, expiresAt, userAgent);
         await this.options.appDb.updateUserLastLogin(userId);
 
@@ -37,6 +60,45 @@ export class AuthService {
     async validateSession(rawToken: string): Promise<{ user: UserRecord; tags: string[] } | null> {
         if (!rawToken) return null;
         const tokenHash = await hashSessionToken(rawToken);
+
+        // Kiểm tra xem token này đã bị thu hồi do đăng xuất chưa
+        if (this.options.appDb.isSessionRevoked && (await this.options.appDb.isSessionRevoked(tokenHash))) {
+            return null;
+        }
+
+        // 1. Ưu tiên xác thực bằng stateless signed JWT token (chống mất session khi isolate restart sau 30 phút)
+        const verifiedPayload = await verifySignedSessionToken(rawToken);
+        if (verifiedPayload) {
+            // Kiểm tra xem user này đã bị xóa tài khoản chưa
+            if (this.options.appDb.isUserDeleted && (await this.options.appDb.isUserDeleted(verifiedPayload.userId))) {
+                return null;
+            }
+
+            let user = await this.options.appDb.findUserById(verifiedPayload.userId);
+            if (!user) {
+                // Tự động khôi phục UserRecord nếu isolate mới khởi động lại chưa có trong memory
+                user = await this.options.appDb.createUser({
+                    id: verifiedPayload.userId,
+                    email: verifiedPayload.email,
+                    displayName: verifiedPayload.displayName,
+                    avatarUrl: verifiedPayload.avatarUrl,
+                    role: verifiedPayload.role,
+                });
+                if (verifiedPayload.tags && verifiedPayload.tags.length > 0) {
+                    await this.options.appDb.setUserTags(user.id, verifiedPayload.tags);
+                }
+            }
+
+            if (user.status !== 'active') {
+                return null;
+            }
+
+            const tags = await this.options.appDb.getUserTags(user.id);
+            const finalTags = tags.length > 0 ? tags : (verifiedPayload.tags || []);
+            return { user, tags: finalTags };
+        }
+
+        // 2. Fallback cho opaque token cũ trong DB
         const session = await this.options.appDb.getSession(tokenHash);
         if (!session) return null;
 
@@ -69,18 +131,21 @@ export class AuthService {
                 }
             } else {
                 const role = this.adminEmails.has(cleanEmail) ? 'admin' : 'user';
+                const id = `usr_${params.provider}_${params.providerUserId}`;
                 user = await this.options.appDb.createUser({
-                    id: crypto.randomUUID(),
+                    id,
                     email: cleanEmail,
                     displayName: params.displayName,
                     avatarUrl: params.avatarUrl,
                     role,
                 });
-                await this.options.appDb.linkOAuthAccount(params.provider, params.providerUserId, user.id);
+                await this.options.appDb.linkOAuthAccount(params.provider, params.providerUserId, id);
             }
-        } else if (this.adminEmails.has(cleanEmail) && user.role !== 'admin') {
-            await this.options.appDb.updateUserRoleAndStatus(user.id, { role: 'admin' });
-            user = { ...user, role: 'admin' };
+        } else {
+            if (this.adminEmails.has(cleanEmail) && user.role !== 'admin') {
+                await this.options.appDb.updateUserRoleAndStatus(user.id, { role: 'admin' });
+                user = { ...user, role: 'admin' };
+            }
         }
 
         await this.options.appDb.updateUserLastLogin(user.id);
@@ -96,12 +161,10 @@ export class AuthService {
         return {
             id: user.id,
             email: user.email,
-            displayName: user.displayName,
-            avatarUrl: user.avatarUrl,
+            displayName: user.displayName ?? null,
+            avatarUrl: user.avatarUrl ?? null,
             role: user.role,
             tags,
-            createdAt: user.createdAt,
-            lastLoginAt: user.lastLoginAt,
         };
     }
 
@@ -129,5 +192,20 @@ export class AuthService {
 
     async requestTag(userId: string, slugProposed: string, label: string, reason?: string) {
         return this.options.appDb.createTagRequest(userId, slugProposed, label, reason);
+    }
+
+    async getUserTags(userId: string): Promise<string[]> {
+        return this.options.appDb.getUserTags(userId);
+    }
+
+    mapToProfile(user: UserRecord, tags: string[]): UserProfile {
+        return {
+            id: user.id,
+            email: user.email,
+            displayName: user.displayName ?? null,
+            avatarUrl: user.avatarUrl ?? null,
+            role: user.role,
+            tags,
+        };
     }
 }

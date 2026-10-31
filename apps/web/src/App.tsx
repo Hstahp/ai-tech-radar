@@ -1,4 +1,4 @@
-import { Loader2, AlertCircle } from "lucide-react";
+import { Loader2, AlertCircle, Bookmark } from "lucide-react";
 import { UserLayout } from "./app/layouts/UserLayout";
 import { AdminLayout } from "./app/layouts/AdminLayout";
 import { RequireAdmin } from "./app/guards/RequireAdmin";
@@ -14,6 +14,7 @@ import {
 } from "./features/admin";
 import { ItemDetailPage } from "./pages/ItemDetailPage";
 import { ChatPanel } from "./features/chat";
+import { useBookmarks } from "./features/bookmarks";
 
 export function App() {
   const { currentPath, navigate } = useSimpleRouter();
@@ -31,6 +32,12 @@ export function App() {
   } = useAuth();
 
   const {
+    bookmarkFeedItems,
+    isBookmarked,
+    toggleBookmark,
+  } = useBookmarks(user);
+
+  const {
     data,
     isLoading,
     error,
@@ -43,7 +50,7 @@ export function App() {
     filteredItems,
     totalCount,
     filteredCount,
-  } = useDigest(user?.tags);
+  } = useDigest(user?.tags, bookmarkFeedItems);
 
   // 1. Phân luồng ROUTE ADMIN
   if (currentPath.startsWith("/admin")) {
@@ -98,14 +105,19 @@ export function App() {
       );
     }
 
+    // Kết hợp cả danh sách bản tin và bài đã lưu để tìm thấy bài chi tiết
+    const allKnownItems = [...(data?.items || []), ...bookmarkFeedItems];
+
     return (
       <>
         <ItemDetailPage
           itemKey={itemKey}
-          items={data?.items || []}
+          items={allKnownItems}
           user={user}
           onNavigateHome={() => navigate("/")}
           onLogin={loginWithGoogle}
+          isBookmarked={isBookmarked(itemKey)}
+          onToggleBookmark={toggleBookmark}
           rightSlot={
             <UserMenu
               user={user}
@@ -173,10 +185,39 @@ export function App() {
               filteredCount={filteredCount}
             />
 
-            <DigestSection
-              items={filteredItems}
-              onNavigateToDetail={(key: string) => navigate(`/item/${encodeURIComponent(key)}`)}
-            />
+            {selectedCategory === "bookmarks" && !user ? (
+              <div className="flex flex-col items-center justify-center py-16 px-4 text-center rounded-2xl border border-dashed border-slate-300 dark:border-slate-800 bg-white/80 dark:bg-slate-900/50 backdrop-blur-md shadow-xs dark:shadow-none">
+                <div className="h-14 w-14 rounded-2xl bg-amber-50 dark:bg-amber-950/40 text-amber-500 flex items-center justify-center mb-4 ring-1 ring-amber-200 dark:ring-amber-800/60 shadow-xs">
+                  <Bookmark className="h-7 w-7 fill-current" />
+                </div>
+                <h3 className="text-base font-bold text-slate-900 dark:text-slate-100 mb-1.5">
+                  Đăng nhập để xem danh sách đã lưu
+                </h3>
+                <p className="text-sm text-slate-600 dark:text-slate-400 max-w-sm mb-5 leading-relaxed">
+                  Các bài viết và paper bạn đánh dấu bookmark sẽ được lưu trữ an toàn theo tài khoản và xem lại mọi lúc.
+                </p>
+                <button
+                  type="button"
+                  onClick={loginWithGoogle}
+                  className="px-4 py-2 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs transition-colors cursor-pointer"
+                >
+                  Đăng nhập bằng Google
+                </button>
+              </div>
+            ) : (
+              <DigestSection
+                items={filteredItems}
+                onNavigateToDetail={(key: string) => navigate(`/item/${encodeURIComponent(key)}`)}
+                isBookmarked={isBookmarked}
+                onToggleBookmark={toggleBookmark}
+                emptyTitle={selectedCategory === "bookmarks" ? "Chưa có bài viết nào được lưu" : undefined}
+                emptyDescription={
+                  selectedCategory === "bookmarks"
+                    ? "Bấm vào biểu tượng bookmark 🔖 trên bất kỳ tin tức hoặc paper nào để lưu lại danh sách cá nhân nhé."
+                    : undefined
+                }
+              />
+            )}
           </div>
         )}
 
