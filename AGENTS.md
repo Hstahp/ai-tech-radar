@@ -30,12 +30,13 @@ AI Tech Radar: mỗi ngày tự động thu thập, chấm điểm, tóm tắt b
 ## 1. NGUYÊN TẮC CHUNG (áp dụng cho mọi nơi)
 
 ### 1.1. Cách làm việc của agent
-1. **Đọc trước, viết sau.** Xem file liên quan, file test và `packages/core` để tái sử dụng cái đã có, không viết lại.
-2. **Thay đổi nhỏ, đúng phạm vi.** Chỉ sửa những gì được yêu cầu. Không tự ý refactor, đổi tên hàng loạt hay "dọn dẹp" ngoài phạm vi.
-3. **Không thêm dependency mới** nếu thư viện chuẩn hoặc thư viện đã có làm được. Khi thật sự cần, nêu lý do, kích thước và giấy phép.
-4. **Không bịa API, tên hàm, tên cột.** Nếu không chắc, tìm trong code hoặc `db/schema.sql`, hoặc hỏi lại.
-5. **Cập nhật kèm theo:** sửa schema thì thêm migration; đổi prompt thì tăng `PROMPT_VERSION`; đổi hành vi thì cập nhật test và tài liệu liên quan.
-6. **Chạy kiểm tra trước khi báo xong:** `pnpm typecheck`, `pnpm lint`, `pnpm test` (nếu có script tương ứng).
+1. **Đọc `PROGRESS.md` trước tiên.** Mỗi khi bắt đầu một phiên làm việc mới hoặc thực hiện một task, luôn đọc `PROGRESS.md` để nắm rõ tiến độ hiện tại, những việc đã xong và task tiếp theo cần làm.
+2. **Đọc trước, viết sau.** Xem file liên quan, file test và `packages/core` để tái sử dụng cái đã có, không viết lại.
+3. **Thay đổi nhỏ, đúng phạm vi.** Chỉ sửa những gì được yêu cầu. Không tự ý refactor, đổi tên hàng loạt hay "dọn dẹp" ngoài phạm vi.
+4. **Không thêm dependency mới** nếu thư viện chuẩn hoặc thư viện đã có làm được. Khi thật sự cần, nêu lý do, kích thước và giấy phép.
+5. **Không bịa API, tên hàm, tên cột.** Nếu không chắc, tìm trong code hoặc `db/schema.sql`, hoặc hỏi lại.
+6. **Cập nhật kèm theo:** sửa schema thì thêm migration; đổi prompt thì tăng `PROMPT_VERSION`; đổi hành vi thì cập nhật test, tài liệu liên quan và cập nhật `PROGRESS.md`.
+7. **Kiểm thử đầy đủ trước khi deploy/báo xong:** Viết unit test cho các trường hợp của tính năng đó; chạy `pnpm typecheck`, `pnpm lint`, `pnpm test`. Toàn bộ test phải PASS 100% trước khi tạo commit, push hay deploy.
 
 ### 1.2. Clean code — những điều không thương lượng
 
