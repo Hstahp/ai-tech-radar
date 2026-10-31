@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { loadLatestDigest } from "../api/load-digest";
 import type { CategoryFilter, DigestFeedItem, DigestFeedPayload, VerdictFilter } from "../../../types";
 
-export function useDigest(userTags?: string[]) {
+export function useDigest(userTags?: string[], bookmarkItems?: DigestFeedItem[]) {
   const [data, setData] = useState<DigestFeedPayload | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -41,11 +41,18 @@ export function useDigest(userTags?: string[]) {
   }, []);
 
   const filteredItems = useMemo<DigestFeedItem[]>(() => {
-    if (!data?.items) return [];
+    const sourceItems =
+      selectedCategory === "bookmarks"
+        ? (bookmarkItems ?? [])
+        : (data?.items ?? []);
 
-    return data.items.filter((item) => {
+    if (!sourceItems || sourceItems.length === 0) return [];
+
+    return sourceItems.filter((item) => {
       // 1. Category filter
-      if (selectedCategory === "my_feed") {
+      if (selectedCategory === "bookmarks") {
+        // Đã là danh sách bookmark, giữ nguyên
+      } else if (selectedCategory === "my_feed") {
         if (!userTags || userTags.length === 0) {
           return false;
         }
@@ -80,7 +87,12 @@ export function useDigest(userTags?: string[]) {
 
       return true;
     });
-  }, [data, selectedCategory, selectedVerdict, searchQuery]);
+  }, [data, bookmarkItems, selectedCategory, selectedVerdict, searchQuery, userTags]);
+
+  const totalCount =
+    selectedCategory === "bookmarks"
+      ? (bookmarkItems?.length ?? 0)
+      : (data?.items?.length ?? 0);
 
   return {
     data,
@@ -93,7 +105,7 @@ export function useDigest(userTags?: string[]) {
     selectedVerdict,
     setSelectedVerdict,
     filteredItems,
-    totalCount: data?.items?.length ?? 0,
+    totalCount,
     filteredCount: filteredItems.length,
   };
 }

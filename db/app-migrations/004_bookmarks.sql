@@ -15,3 +15,4 @@ CREATE TABLE IF NOT EXISTS user_bookmarks (
 );
 
 CREATE INDEX IF NOT EXISTS idx_user_bookmarks_created ON user_bookmarks (user_id, created_at DESC);
+
