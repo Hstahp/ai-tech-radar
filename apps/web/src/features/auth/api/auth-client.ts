@@ -75,6 +75,12 @@ export async function saveUserTags(tags: string[]): Promise<string[]> {
         const errData = await res.json().catch(() => ({}));
         throw new Error(errData?.error?.message || 'Không thể cập nhật danh sách thẻ.');
     }
-    const data = (await res.json()) as { tags: string[] };
+    const data = (await res.json()) as { tags: string[]; token?: string };
+    if (data.token) {
+        setStoredToken(data.token);
+    }
+    if (typeof window !== 'undefined') {
+        localStorage.setItem('radar_user_tags', JSON.stringify(data.tags ?? []));
+    }
     return data.tags ?? [];
 }

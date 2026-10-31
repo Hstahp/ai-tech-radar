@@ -219,3 +219,27 @@ export const ActiveTagsResponseSchema = z.object({
 });
 export type ActiveTagsResponse = z.infer<typeof ActiveTagsResponseSchema>;
 
+
+// Bookmark Schemas
+export const CreateBookmarkSchema = z.object({
+    itemKey: z.string().trim().min(1),
+    title: z.string().trim().min(1),
+    url: z.string().trim().min(1),
+    category: z.string().trim().min(1),
+    author: z.string().nullable().optional(),
+    tags: z.string().nullable().optional(),
+    summary: z.string().nullable().optional(),
+});
+export type CreateBookmark = z.infer<typeof CreateBookmarkSchema>;
+
+export const UserBookmarkItemSchema = z.object({
+    itemKey: z.string(),
+    title: z.string(),
+    url: z.string(),
+    category: z.string(),
+    author: z.string().nullable().optional(),
+    tags: z.string().nullable().optional(),
+    summary: z.string().nullable().optional(),
+    createdAt: z.string(),
+});
+export type UserBookmarkItem = z.infer<typeof UserBookmarkItemSchema>;

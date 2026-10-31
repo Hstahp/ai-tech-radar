@@ -1,3 +1,4 @@
+import { BookmarkButton } from '../../bookmarks';
 import { useState } from 'react';
 import { Target, Sparkles, Compass, Code2, Star, ExternalLink } from 'lucide-react';
 import { BentoCard } from '../../../components/ui/BentoCard';
@@ -11,9 +12,11 @@ interface DigestCardProps {
     item: DigestFeedItem;
     isFeatured?: boolean;
     onNavigateToDetail?: (key: string) => void;
+    isBookmarked?: boolean;
+    onToggleBookmark?: (item: DigestFeedItem) => void;
 }
 
-export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: DigestCardProps) {
+export function DigestCard({ item, isFeatured = false, onNavigateToDetail, isBookmarked = false, onToggleBookmark }: DigestCardProps) {
     const [isExplainOpen, setIsExplainOpen] = useState(false);
 
     const tagsList = item.tags
@@ -35,12 +38,21 @@ export function DigestCard({ item, isFeatured = false, onNavigateToDetail }: Dig
                         <CategoryBadge category={item.category} />
                         <VerdictBadge verdict={item.verdict} />
                     </div>
-                    {scoreDisplay !== null && (
-                        <div className="flex items-center gap-1.5 text-xs font-mono font-semibold px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30">
-                            <span className="text-slate-500 dark:text-slate-400">Score:</span>
-                            <span className="text-indigo-600 dark:text-indigo-400">{scoreDisplay}</span>
-                        </div>
-                    )}
+                    <div className="flex items-center gap-2">
+                        {scoreDisplay !== null && (
+                            <div className="flex items-center gap-1.5 text-xs font-mono font-semibold px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30">
+                                <span className="text-slate-500 dark:text-slate-400">Score:</span>
+                                <span className="text-indigo-600 dark:text-indigo-400">{scoreDisplay}</span>
+                            </div>
+                        )}
+                        {onToggleBookmark && (
+                            <BookmarkButton
+                                isBookmarked={isBookmarked}
+                                onToggle={() => onToggleBookmark(item)}
+                                size="sm"
+                            />
+                        )}
+                    </div>
                 </div>
 
                 {/* Title & Link */}

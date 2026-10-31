@@ -11,6 +11,7 @@ import { ItemsRepository } from "../repositories/items-repo.js";
 import { SummariesRepository } from "../repositories/summaries-repo.js";
 import { GitHubSearchAdapter } from "../sources/github-search.js";
 import { HackerNewsAdapter } from "../sources/hacker-news.js";
+import { HuggingFacePapersAdapter } from "../sources/huggingface-papers.js";
 import type { SourceAdapter } from "../sources/source.js";
 import { fetchAllSources } from "./steps/fetch-items.js";
 import { publishAndExportDigest } from "./steps/export-digest.js";
@@ -52,6 +53,7 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
     const sources: SourceAdapter[] = [
       new GitHubSearchAdapter(config.GITHUB_API_TOKEN),
       new HackerNewsAdapter(),
+      new HuggingFacePapersAdapter(),
     ];
 
     // 2. Fetch step

@@ -20,6 +20,19 @@ export function useAuth() {
     setError(null);
     try {
       const current = await fetchCurrentUser();
+      if (current && typeof window !== 'undefined') {
+        const savedTagsStr = localStorage.getItem('radar_user_tags');
+        if ((!current.tags || current.tags.length === 0) && savedTagsStr) {
+          try {
+            const savedTags = JSON.parse(savedTagsStr);
+            if (Array.isArray(savedTags) && savedTags.length > 0) {
+              current.tags = savedTags;
+            }
+          } catch {}
+        } else if (current.tags && current.tags.length > 0) {
+          localStorage.setItem('radar_user_tags', JSON.stringify(current.tags));
+        }
+      }
       setUser(current);
     } catch (err: any) {
       setError(err.message || "Lỗi nạp thông tin người dùng.");

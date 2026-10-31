@@ -1,6 +1,6 @@
 export const API_BASE =
-  import.meta.env.VITE_API_BASE_URL ||
-  (import.meta.env.DEV ? '' : 'https://ai-tech-radar.phatle219.workers.dev');
+  (typeof import.meta !== 'undefined' && import.meta.env?.VITE_API_BASE_URL) ||
+  (typeof import.meta !== 'undefined' && import.meta.env?.DEV ? '' : 'https://ai-tech-radar.phatle219.workers.dev');
 
 const TOKEN_KEY = 'radar_session_token';
 

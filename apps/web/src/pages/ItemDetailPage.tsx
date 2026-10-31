@@ -1,3 +1,4 @@
+import { BookmarkButton } from '../features/bookmarks';
 import { useEffect } from 'react';
 import {
   ArrowLeft,
@@ -25,6 +26,8 @@ interface ItemDetailPageProps {
   onNavigateHome: () => void;
   onLogin?: () => void;
   rightSlot?: React.ReactNode;
+  isBookmarked?: boolean;
+  onToggleBookmark?: (item: DigestFeedItem) => void;
 }
 
 /**
@@ -76,6 +79,8 @@ export function ItemDetailPage({
   items,
   onNavigateHome,
   rightSlot,
+  isBookmarked,
+  onToggleBookmark,
 }: ItemDetailPageProps) {
   const item = items.find(
     (i) => slugify(i.title) === itemKey || (i.key ?? String(i.item_id)) === itemKey
@@ -132,15 +137,24 @@ export function ItemDetailPage({
               <CategoryBadge category={item.category} />
               <VerdictBadge verdict={item.verdict} />
             </div>
-            <a
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 hover:text-indigo-900 dark:hover:text-white transition-all shadow-xs"
-            >
-              <span>Xem dự án gốc</span>
-              <ExternalLink className="h-3.5 w-3.5 text-indigo-500 dark:text-indigo-400" />
-            </a>
+            <div className="flex items-center gap-2">
+              {onToggleBookmark && (
+                <BookmarkButton
+                  isBookmarked={Boolean(isBookmarked)}
+                  onToggle={() => onToggleBookmark(item)}
+                  showText
+                />
+              )}
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 hover:text-indigo-900 dark:hover:text-white transition-all shadow-xs"
+              >
+                <span>Xem dự án gốc</span>
+                <ExternalLink className="h-3.5 w-3.5 text-indigo-500 dark:text-indigo-400" />
+              </a>
+            </div>
           </div>
 
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-snug">
