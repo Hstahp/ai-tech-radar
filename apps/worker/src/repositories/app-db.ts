@@ -100,6 +100,8 @@ export interface AppDbRepository {
     createSession(tokenHash: string, userId: string, expiresAt: string, userAgent?: string | null): Promise<void>;
     getSession(tokenHash: string): Promise<SessionRecord | null>;
     deleteSession(tokenHash: string): Promise<void>;
+    isSessionRevoked?(tokenHash: string): Promise<boolean>;
+    isUserDeleted?(userId: string): Promise<boolean>;
 
     // User Tags
     getUserTags(userId: string): Promise<string[]>;
@@ -230,6 +232,16 @@ export class InMemoryAppDbRepository implements AppDbRepository {
     private nextTagRequestId = 1;
     private nextAuditLogId = 1;
     private bookmarks = new Map<string, UserBookmarkItem & { userId: string }>();
+    private revokedTokens = new Set<string>();
+    private deletedUserIds = new Set<string>();
+
+    async isSessionRevoked(tokenHash: string): Promise<boolean> {
+        return this.revokedTokens.has(tokenHash);
+    }
+
+    async isUserDeleted(userId: string): Promise<boolean> {
+        return this.deletedUserIds.has(userId);
+    }
 
     constructor() {
         this.settings.set('chat.user_daily_limit', '10');
@@ -432,6 +444,7 @@ export class InMemoryAppDbRepository implements AppDbRepository {
 
     async deleteUser(id: string): Promise<void> {
         this.users.delete(id);
+        this.deletedUserIds.add(id);
         for (const [key, link] of this.oauthAccounts.entries()) {
             if (link.userId === id) this.oauthAccounts.delete(key);
         }
@@ -475,6 +488,7 @@ export class InMemoryAppDbRepository implements AppDbRepository {
 
     async deleteSession(tokenHash: string): Promise<void> {
         this.sessions.delete(tokenHash);
+        this.revokedTokens.add(tokenHash);
     }
 
     // User Tags
