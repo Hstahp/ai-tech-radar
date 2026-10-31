@@ -36,7 +36,7 @@ describe('Phase 2 - Step C: Auth and Personal Tags', () => {
 
         // Cap session
         const { token, expiresAt } = await authService.createSessionForUser(user.id);
-        expect(token).toHaveLength(64); // 32 bytes hex
+        expect(token.length).toBeGreaterThan(64); // Signed stateless JWT session token
         expect(new Date(expiresAt).getTime()).toBeGreaterThan(Date.now());
 
         // Kiem tra validate session
@@ -48,6 +48,32 @@ describe('Phase 2 - Step C: Auth and Personal Tags', () => {
         // Token gia mao phai tra ve null
         const invalidAuth = await authService.validateSession('fake_token_123456');
         expect(invalidAuth).toBeNull();
+    });
+
+    it('tu dong khoi phuc session va thong tin user khi worker isolate bi restart (Bug 1 - stateless recovery)', async () => {
+        // 1. User dang nhap o isolate A
+        const user = await authService.handleOAuthUser({
+            provider: 'github',
+            providerUserId: 'gh_98765',
+            email: 'coldstart@example.com',
+            displayName: 'Cold Start Dev',
+        });
+        await authService.updateUserTags(user.id, ['local-llm', 'rag']);
+        const { token } = await authService.createSessionForUser(user.id);
+
+        // 2. Gia lap Worker Isolate bi destroy sau 30 phut khong hoat dong (AppDb moi hoan toan)
+        const freshAppDb = new InMemoryAppDbRepository();
+        const freshAuthService = new AuthService({
+            appDb: freshAppDb,
+            adminEmails: ['admin@ideal.ai'],
+        });
+
+        // 3. Request tiep theo mang token cu toi isolate moi -> phai tu dong phuc hoi thanh cong khong bi logout
+        const recoveredAuth = await freshAuthService.validateSession(token);
+        expect(recoveredAuth).not.toBeNull();
+        expect(recoveredAuth?.user.id).toBe(user.id);
+        expect(recoveredAuth?.user.email).toBe('coldstart@example.com');
+        expect(recoveredAuth?.tags).toEqual(['local-llm', 'rag']);
     });
 
     it('tu dong gan role admin neu email nam trong ADMIN_EMAILS', async () => {

@@ -45,3 +45,4 @@ describe('Bookmark Schemas', () => {
         expect(result.success).toBe(true);
     });
 });
+

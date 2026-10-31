@@ -162,3 +162,4 @@ describe('Bookmarks API (/api/me/bookmarks)', () => {
         expect(listData.bookmarks.length).toBe(0);
     });
 });
+

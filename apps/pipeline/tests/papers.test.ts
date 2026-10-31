@@ -106,3 +106,4 @@ describe("HuggingFacePapersAdapter", () => {
     await expect(adapter.fetchItems()).rejects.toThrowError();
   });
 });
+
