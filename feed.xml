@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-10-31</title>
+    <title>AI Tech Radar - 2026-11-01</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Sat, 31 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Backdoor in Claude Code for VS Code extension on the Cursor Marketplace</title>
-      <link>https://phorion.io/blog/offical-claude-code-vsx-compromise</link>
-      <guid isPermaLink="false">https://phorion.io/blog/offical-claude-code-vsx-compromise#2026-10-31</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;cursor.com&amp;#x2F;blog&amp;#x2F;claude-code-extension-security-notice&quot; rel=&quot;nofollow&quot;&gt;https:&amp;#x2F;&amp;#x2F;cursor.com&amp;#x2F;blog&amp;#x2F;claude-code-extension-security-notic...&lt;/a&gt;]]></description>
+      <title>[NEWS] Serbia just elected the world&apos;s brainiest parliament</title>
+      <link>https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament</link>
+      <guid isPermaLink="false">https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament#2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Serbia just elected the world&apos;s brainiest parliament]]></description>
     </item>
     <item>
-      <title>[NEWS] AI isn&apos;t replacing SREs, it&apos;s deskilling them</title>
-      <link>https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling</link>
-      <guid isPermaLink="false">https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling#2026-10-31</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 AI isn&apos;t replacing SREs, it&apos;s deskilling them]]></description>
+      <title>[NEWS] Do the math: How we took over ChatGPT accounts</title>
+      <link>https://www.parameter.ai/labs/we-found-a-gap-at-openai</link>
+      <guid isPermaLink="false">https://www.parameter.ai/labs/we-found-a-gap-at-openai#2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Do the math: How we took over ChatGPT accounts]]></description>
     </item>
     <item>
-      <title>[NEWS] Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man</title>
-      <link>https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation</link>
-      <guid isPermaLink="false">https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation#2026-10-31</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man]]></description>
+      <title>[NEWS] Anthropic blocks users for anything touching training larger models</title>
+      <link>https://twitter.com/jiahaoshao1/status/2116475922190922088</link>
+      <guid isPermaLink="false">https://twitter.com/jiahaoshao1/status/2116475922190922088#2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Anthropic blocks users for anything touching training larger models]]></description>
     </item>
     <item>
-      <title>[NEWS] Sleep framework: A new way for LLMs to retain knowledge in continual learning</title>
-      <link>https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning</link>
-      <guid isPermaLink="false">https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning#2026-10-31</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;pdf&amp;#x2F;2606.03979&quot; rel=&quot;nofollow&quot;&gt;https:&amp;#x2F;&amp;#x2F;arxiv.org&amp;#x2F;pdf&amp;#x2F;2606.03979&lt;/a&gt;]]></description>
+      <title>[NEWS] I post trained a model on Demoscenes</title>
+      <link>https://datavorous.com/writing/demoscener</link>
+      <guid isPermaLink="false">https://datavorous.com/writing/demoscener#2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 I post trained a model on Demoscenes]]></description>
     </item>
     <item>
-      <title>[NEWS] Building an AI-native engineering org</title>
-      <link>https://twitter.com/sgondala2/status/2115832070274723875</link>
-      <guid isPermaLink="false">https://twitter.com/sgondala2/status/2115832070274723875#2026-10-31</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Building an AI-native engineering org]]></description>
+      <title>[NEWS] 5 years of OqtaDrive: Microdrive emulation to Sinclair Network over the internet</title>
+      <link>https://oqtadrive.org/10.other/5-years</link>
+      <guid isPermaLink="false">https://oqtadrive.org/10.other/5-years#2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 5 years of OqtaDrive: Microdrive emulation to Sinclair Network over the internet]]></description>
     </item>
     <item>
-      <title>[REPO] ccch1mneyyy/dsh-Go</title>
-      <link>https://github.com/ccch1mneyyy/dsh-Go</link>
-      <guid isPermaLink="false">https://github.com/ccch1mneyyy/dsh-Go#2026-10-31</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。]]></description>
+      <title>[REPO] deepseek-ai/dsh-superagent-prototype</title>
+      <link>https://github.com/deepseek-ai/dsh-superagent-prototype</link>
+      <guid isPermaLink="false">https://github.com/deepseek-ai/dsh-superagent-prototype#2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Towards a More Autonomous Agent System]]></description>
     </item>
     <item>
       <title>[REPO] wangzan101/Mika</title>
       <link>https://github.com/wangzan101/Mika</link>
-      <guid isPermaLink="false">https://github.com/wangzan101/Mika#2026-10-31</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/wangzan101/Mika#2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you.]]></description>
     </item>
     <item>
       <title>[REPO] heydamir/unslop</title>
       <link>https://github.com/heydamir/unslop</link>
-      <guid isPermaLink="false">https://github.com/heydamir/unslop#2026-10-31</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/heydamir/unslop#2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 A Claude skill that turns vibecoded, AI-looking UI into a designed interface]]></description>
     </item>
     <item>
       <title>[REPO] paipiange/nvzhuang</title>
       <link>https://github.com/paipiange/nvzhuang</link>
-      <guid isPermaLink="false">https://github.com/paipiange/nvzhuang#2026-10-31</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/paipiange/nvzhuang#2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang]]></description>
     </item>
     <item>
-      <title>[REPO] qybaihe/bla</title>
-      <link>https://github.com/qybaihe/bla</link>
-      <guid isPermaLink="false">https://github.com/qybaihe/bla#2026-10-31</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -&gt; Exhaust -&gt; Hallucinate.]]></description>
+      <title>[REPO] anhao/ai-pose-gallery-zh</title>
+      <link>https://github.com/anhao/ai-pose-gallery-zh</link>
+      <guid isPermaLink="false">https://github.com/anhao/ai-pose-gallery-zh#2026-11-01</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊]]></description>
     </item>
   </channel>
 </rss>

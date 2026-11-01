@@ -1,77 +1,77 @@
 {
-  "generated_at": "2026-10-31T00:01:18.375Z",
+  "generated_at": "2026-11-01T00:01:15.762Z",
   "items": [
     {
-      "key": "6edd96eae3e66dcbe1d77054079f3428bf1b0ec53fd631bbf72eead8c26241fd",
-      "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+      "key": "9e9070e438511010b7d70dce88ab1bee362fc1d4ee4f91181c3329a315beabf3",
+      "title": "Serbia just elected the world's brainiest parliament",
       "category": "news",
-      "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise",
+      "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
       "tags": [],
-      "purpose": "<a href=\"https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;claude-code-extension-security-notice\" rel=\"nofollow\">https:&#x2F;&#x2F;cursor.com&#x2F;blog&#x2F;claude-code-extension-security-notic...</a>",
+      "purpose": "Serbia just elected the world's brainiest parliament",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "55737272f83db8f20c925a42cebb24bf05305780f9db527180de3677b5e23b08",
-      "title": "AI isn't replacing SREs, it's deskilling them",
+      "key": "1c640f88e053cb517a45732d6f16f620b91ae8dcc8c28cbe79a3d64ecb89b0a9",
+      "title": "Do the math: How we took over ChatGPT accounts",
       "category": "news",
-      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
       "tags": [],
-      "purpose": "AI isn't replacing SREs, it's deskilling them",
+      "purpose": "Do the math: How we took over ChatGPT accounts",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "3730fecf762f6322602d99034dd90b92724b0d2288fd38d6a5ae13bb46c10b8c",
-      "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
+      "key": "3c488a5d9e8fc9b748dff7aa188e11c59b7333143151dc184d1add66c5e1b5ad",
+      "title": "Anthropic blocks users for anything touching training larger models",
       "category": "news",
-      "url": "https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation",
+      "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
       "tags": [],
-      "purpose": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
+      "purpose": "Anthropic blocks users for anything touching training larger models",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "e97319d8730a2e80195490143ca95496a4ab7bf1c08a36e632b78ec4325b5c2c",
-      "title": "Sleep framework: A new way for LLMs to retain knowledge in continual learning",
+      "key": "53736324889bfc4d3e637b703fb374e4bf1f32455fcaaf7aedddf8741e0b1262",
+      "title": "I post trained a model on Demoscenes",
       "category": "news",
-      "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning",
+      "url": "https://datavorous.com/writing/demoscener",
       "tags": [],
-      "purpose": "<a href=\"https:&#x2F;&#x2F;arxiv.org&#x2F;pdf&#x2F;2606.03979\" rel=\"nofollow\">https:&#x2F;&#x2F;arxiv.org&#x2F;pdf&#x2F;2606.03979</a>",
+      "purpose": "I post trained a model on Demoscenes",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "97c67637a7780f4fa42fecaac0ff02d7dc02744a235e7566a517bd8f2a7efdc4",
-      "title": "Building an AI-native engineering org",
+      "key": "2581fb7229ea59bb71d8f94e1fa36dafa6c2832ce5afbd949e2089c96c782f85",
+      "title": "5 years of OqtaDrive: Microdrive emulation to Sinclair Network over the internet",
       "category": "news",
-      "url": "https://twitter.com/sgondala2/status/2115832070274723875",
+      "url": "https://oqtadrive.org/10.other/5-years",
       "tags": [],
-      "purpose": "Building an AI-native engineering org",
+      "purpose": "5 years of OqtaDrive: Microdrive emulation to Sinclair Network over the internet",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "52ed5fcd54e4c7b17d7953a850da01dc5c91dc9dca6e077898f39834878fd362",
-      "title": "ccch1mneyyy/dsh-Go",
+      "key": "5bd78febd4a59e340761bca8cf3eecd73cb9cf13f978fb71af227a77d743e940",
+      "title": "deepseek-ai/dsh-superagent-prototype",
       "category": "repo",
-      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
       "tags": [],
-      "purpose": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "purpose": "Towards a More Autonomous Agent System",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 2450
+      "stars": 2237
     },
     {
       "key": "1e03415a592fab8662c338916540faed798bbe0e23d8038a452815e582c3c1e1",
@@ -83,7 +83,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1239
+      "stars": 2706
     },
     {
       "key": "78e49b200426b4d3309aaf6081574ecec306bd6f29e02143e4c947988b2590af",
@@ -95,7 +95,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1210
+      "stars": 3435
     },
     {
       "key": "f0e2ceed18bb124f6247d1f4f5a2eb55164893d7ef323f690167f9968b76e167",
@@ -107,19 +107,19 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1164
+      "stars": 1707
     },
     {
-      "key": "b50c89b4a0e7ebef010d57abdd8064c06c403ad6686a0d5265016737dc2e1178",
-      "title": "qybaihe/bla",
+      "key": "eea6fa6e160f5eae94af990d3bdb29c098c1f610c62220d598ce37b87226ffcd",
+      "title": "anhao/ai-pose-gallery-zh",
       "category": "repo",
-      "url": "https://github.com/qybaihe/bla",
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
       "tags": [],
-      "purpose": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
+      "purpose": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1393
+      "stars": 4665
     }
   ]
 }
