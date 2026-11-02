@@ -1,61 +1,61 @@
 {
-  "generated_at": "2026-11-01T00:01:15.762Z",
+  "generated_at": "2026-11-02T00:01:00.149Z",
   "items": [
     {
-      "key": "9e9070e438511010b7d70dce88ab1bee362fc1d4ee4f91181c3329a315beabf3",
-      "title": "Serbia just elected the world's brainiest parliament",
+      "key": "967be99077d13f07b20132085b2ac0eb5d0fbd3cb0a50295b078d334af95ae78",
+      "title": "The AI cost of JavaScript frameworks",
       "category": "news",
-      "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
       "tags": [],
-      "purpose": "Serbia just elected the world's brainiest parliament",
+      "purpose": "The AI cost of JavaScript frameworks",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "1c640f88e053cb517a45732d6f16f620b91ae8dcc8c28cbe79a3d64ecb89b0a9",
-      "title": "Do the math: How we took over ChatGPT accounts",
+      "key": "134d4cd02b4501b81f7994b71bd77f0d7fcb5672492201731852797199141b8b",
+      "title": "Frontier Airlines Likely Breached",
       "category": "news",
-      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "url": "https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam",
       "tags": [],
-      "purpose": "Do the math: How we took over ChatGPT accounts",
+      "purpose": "Frontier Airlines Likely Breached",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "3c488a5d9e8fc9b748dff7aa188e11c59b7333143151dc184d1add66c5e1b5ad",
-      "title": "Anthropic blocks users for anything touching training larger models",
+      "key": "d7c50e7dfe6c751d4fd0df38c4e70f7ef33c29b05f40e0ddad6b5440b604a708",
+      "title": "Understanding Email Encryption (2025)",
       "category": "news",
-      "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+      "url": "https://www.fastmail.com/blog/email-encryption",
       "tags": [],
-      "purpose": "Anthropic blocks users for anything touching training larger models",
+      "purpose": "Understanding Email Encryption (2025)",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "53736324889bfc4d3e637b703fb374e4bf1f32455fcaaf7aedddf8741e0b1262",
-      "title": "I post trained a model on Demoscenes",
+      "key": "79ffda0a470cc0fd1c29b2addf5c65e9e86b4d66e85a9e13fb9d6008e948e470",
+      "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
       "category": "news",
-      "url": "https://datavorous.com/writing/demoscener",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist",
       "tags": [],
-      "purpose": "I post trained a model on Demoscenes",
+      "purpose": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "2581fb7229ea59bb71d8f94e1fa36dafa6c2832ce5afbd949e2089c96c782f85",
-      "title": "5 years of OqtaDrive: Microdrive emulation to Sinclair Network over the internet",
+      "key": "77097668b2e57fafe4f0489057fb8544d9013960f10ceed7636f1b5d70db7b55",
+      "title": "Domain hacks with unusual Unicode characters (2018)",
       "category": "news",
-      "url": "https://oqtadrive.org/10.other/5-years",
+      "url": "https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters",
       "tags": [],
-      "purpose": "5 years of OqtaDrive: Microdrive emulation to Sinclair Network over the internet",
+      "purpose": "Domain hacks with unusual Unicode characters (2018)",
       "highlight": null,
       "action": null,
       "verdict": null,
@@ -71,7 +71,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 2237
+      "stars": 7183
     },
     {
       "key": "1e03415a592fab8662c338916540faed798bbe0e23d8038a452815e582c3c1e1",
@@ -79,11 +79,11 @@
       "category": "repo",
       "url": "https://github.com/wangzan101/Mika",
       "tags": [],
-      "purpose": "Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "purpose": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 2706
+      "stars": 3810
     },
     {
       "key": "78e49b200426b4d3309aaf6081574ecec306bd6f29e02143e4c947988b2590af",
@@ -95,7 +95,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 3435
+      "stars": 4839
     },
     {
       "key": "f0e2ceed18bb124f6247d1f4f5a2eb55164893d7ef323f690167f9968b76e167",
@@ -107,7 +107,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1707
+      "stars": 1862
     },
     {
       "key": "eea6fa6e160f5eae94af990d3bdb29c098c1f610c62220d598ce37b87226ffcd",
@@ -119,7 +119,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 4665
+      "stars": 5132
     }
   ]
 }

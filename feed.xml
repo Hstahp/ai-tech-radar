@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-01</title>
+    <title>AI Tech Radar - 2026-11-02</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Serbia just elected the world&apos;s brainiest parliament</title>
-      <link>https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament</link>
-      <guid isPermaLink="false">https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament#2026-11-01</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Serbia just elected the world&apos;s brainiest parliament]]></description>
+      <title>[NEWS] The AI cost of JavaScript frameworks</title>
+      <link>https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks</link>
+      <guid isPermaLink="false">https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks#2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 The AI cost of JavaScript frameworks]]></description>
     </item>
     <item>
-      <title>[NEWS] Do the math: How we took over ChatGPT accounts</title>
-      <link>https://www.parameter.ai/labs/we-found-a-gap-at-openai</link>
-      <guid isPermaLink="false">https://www.parameter.ai/labs/we-found-a-gap-at-openai#2026-11-01</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Do the math: How we took over ChatGPT accounts]]></description>
+      <title>[NEWS] Frontier Airlines Likely Breached</title>
+      <link>https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam</link>
+      <guid isPermaLink="false">https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam#2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Frontier Airlines Likely Breached]]></description>
     </item>
     <item>
-      <title>[NEWS] Anthropic blocks users for anything touching training larger models</title>
-      <link>https://twitter.com/jiahaoshao1/status/2116475922190922088</link>
-      <guid isPermaLink="false">https://twitter.com/jiahaoshao1/status/2116475922190922088#2026-11-01</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Anthropic blocks users for anything touching training larger models]]></description>
+      <title>[NEWS] Understanding Email Encryption (2025)</title>
+      <link>https://www.fastmail.com/blog/email-encryption</link>
+      <guid isPermaLink="false">https://www.fastmail.com/blog/email-encryption#2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Understanding Email Encryption (2025)]]></description>
     </item>
     <item>
-      <title>[NEWS] I post trained a model on Demoscenes</title>
-      <link>https://datavorous.com/writing/demoscener</link>
-      <guid isPermaLink="false">https://datavorous.com/writing/demoscener#2026-11-01</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 I post trained a model on Demoscenes]]></description>
+      <title>[NEWS] AI delivers &apos;zero financial payoff&apos; to most companies, Apollo economist says</title>
+      <link>https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist</link>
+      <guid isPermaLink="false">https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist#2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI delivers &apos;zero financial payoff&apos; to most companies, Apollo economist says]]></description>
     </item>
     <item>
-      <title>[NEWS] 5 years of OqtaDrive: Microdrive emulation to Sinclair Network over the internet</title>
-      <link>https://oqtadrive.org/10.other/5-years</link>
-      <guid isPermaLink="false">https://oqtadrive.org/10.other/5-years#2026-11-01</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 5 years of OqtaDrive: Microdrive emulation to Sinclair Network over the internet]]></description>
+      <title>[NEWS] Domain hacks with unusual Unicode characters (2018)</title>
+      <link>https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters</link>
+      <guid isPermaLink="false">https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters#2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Domain hacks with unusual Unicode characters (2018)]]></description>
     </item>
     <item>
       <title>[REPO] deepseek-ai/dsh-superagent-prototype</title>
       <link>https://github.com/deepseek-ai/dsh-superagent-prototype</link>
-      <guid isPermaLink="false">https://github.com/deepseek-ai/dsh-superagent-prototype#2026-11-01</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/deepseek-ai/dsh-superagent-prototype#2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Towards a More Autonomous Agent System]]></description>
     </item>
     <item>
       <title>[REPO] wangzan101/Mika</title>
       <link>https://github.com/wangzan101/Mika</link>
-      <guid isPermaLink="false">https://github.com/wangzan101/Mika#2026-11-01</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you.]]></description>
+      <guid isPermaLink="false">https://github.com/wangzan101/Mika#2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 An on-device AI agent for Android that operates apps and the web to get things done for you.]]></description>
     </item>
     <item>
       <title>[REPO] heydamir/unslop</title>
       <link>https://github.com/heydamir/unslop</link>
-      <guid isPermaLink="false">https://github.com/heydamir/unslop#2026-11-01</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/heydamir/unslop#2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 A Claude skill that turns vibecoded, AI-looking UI into a designed interface]]></description>
     </item>
     <item>
       <title>[REPO] paipiange/nvzhuang</title>
       <link>https://github.com/paipiange/nvzhuang</link>
-      <guid isPermaLink="false">https://github.com/paipiange/nvzhuang#2026-11-01</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/paipiange/nvzhuang#2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang]]></description>
     </item>
     <item>
       <title>[REPO] anhao/ai-pose-gallery-zh</title>
       <link>https://github.com/anhao/ai-pose-gallery-zh</link>
-      <guid isPermaLink="false">https://github.com/anhao/ai-pose-gallery-zh#2026-11-01</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/anhao/ai-pose-gallery-zh#2026-11-02</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊]]></description>
     </item>
   </channel>
