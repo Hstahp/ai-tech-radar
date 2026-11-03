@@ -1,65 +1,89 @@
 {
-  "generated_at": "2026-11-02T00:01:00.149Z",
+  "generated_at": "2026-11-03T00:01:04.121Z",
   "items": [
     {
-      "key": "967be99077d13f07b20132085b2ac0eb5d0fbd3cb0a50295b078d334af95ae78",
-      "title": "The AI cost of JavaScript frameworks",
+      "key": "1263ce4e09302da828b267c3a147018cbca5909b3443d65462b62f6b7c300ced",
+      "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
       "category": "news",
-      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
       "tags": [],
-      "purpose": "The AI cost of JavaScript frameworks",
+      "purpose": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "134d4cd02b4501b81f7994b71bd77f0d7fcb5672492201731852797199141b8b",
-      "title": "Frontier Airlines Likely Breached",
+      "key": "570f5e1efb5964ca71378f8912fd84517cb3958f6b4f348190c33995b5d684fd",
+      "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
       "category": "news",
-      "url": "https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam",
+      "url": "https://momentic.ai/",
       "tags": [],
-      "purpose": "Frontier Airlines Likely Breached",
+      "purpose": "Hey HN, we’re Wei-Wei and Jeff. We’re building Momentic, QA agents that autonomously plan, explore, and bug-bash controls and user flows in your web, iOS, Android, and (soon) desktop apps to catch bugs.<p>Here’s a demo: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;BFsM-Se1Fh8\" rel=\"nofollow\">https:&#x2F",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "d7c50e7dfe6c751d4fd0df38c4e70f7ef33c29b05f40e0ddad6b5440b604a708",
-      "title": "Understanding Email Encryption (2025)",
+      "key": "5010fb296f767bbc9bf253c86281958cc0cecf384f82ef1d1164b6172486452e",
+      "title": "Egoless Mathematics in the AI Era",
       "category": "news",
-      "url": "https://www.fastmail.com/blog/email-encryption",
+      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era",
       "tags": [],
-      "purpose": "Understanding Email Encryption (2025)",
+      "purpose": "Egoless Mathematics in the AI Era",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "79ffda0a470cc0fd1c29b2addf5c65e9e86b4d66e85a9e13fb9d6008e948e470",
-      "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "key": "dc7eb9e8885fba44653ad09d64cdb266447e5bc3620595b621c7b06581ffdc3a",
+      "title": "Agentic backdoors via pretraining poisoning",
       "category": "news",
-      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist",
+      "url": "https://arxiv.org/abs/2610.37741",
       "tags": [],
-      "purpose": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "purpose": "Agentic backdoors via pretraining poisoning",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "77097668b2e57fafe4f0489057fb8544d9013960f10ceed7636f1b5d70db7b55",
-      "title": "Domain hacks with unusual Unicode characters (2018)",
+      "key": "327e862bb29c2bb4f765d7d2997a933b3983a844ade6c4ba7ada4d055c7b0b1a",
+      "title": "LongCat-2.5: Native Multimodality for Agentic Tasks",
       "category": "news",
-      "url": "https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters",
+      "url": "https://longcat.ai/blog/longcat-2.5",
       "tags": [],
-      "purpose": "Domain hacks with unusual Unicode characters (2018)",
+      "purpose": "LongCat-2.5: Native Multimodality for Agentic Tasks",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
+    },
+    {
+      "key": "c3810de547986e1dff80b25eba326bb02843f63d4325f566e09acbc3ba394735",
+      "title": "caru-ini/stack-diagram",
+      "category": "repo",
+      "url": "https://github.com/caru-ini/stack-diagram",
+      "tags": [],
+      "purpose": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1177
+    },
+    {
+      "key": "fcddd9440aaffa0821a69e6959440d716188c0f85212d6a49de3630f98db5c11",
+      "title": "jacke-pp/open-yoki",
+      "category": "repo",
+      "url": "https://github.com/jacke-pp/open-yoki",
+      "tags": [],
+      "purpose": "An AI live-stream host that runs on one server: voice, face, chat, memory, posts. The base yoki runs on. By Jacke_pp · contact: DM @Jacke_pp on X",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 828
     },
     {
       "key": "5bd78febd4a59e340761bca8cf3eecd73cb9cf13f978fb71af227a77d743e940",
@@ -71,7 +95,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 7183
+      "stars": 13061
     },
     {
       "key": "1e03415a592fab8662c338916540faed798bbe0e23d8038a452815e582c3c1e1",
@@ -83,7 +107,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 3810
+      "stars": 5263
     },
     {
       "key": "78e49b200426b4d3309aaf6081574ecec306bd6f29e02143e4c947988b2590af",
@@ -95,31 +119,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 4839
-    },
-    {
-      "key": "f0e2ceed18bb124f6247d1f4f5a2eb55164893d7ef323f690167f9968b76e167",
-      "title": "paipiange/nvzhuang",
-      "category": "repo",
-      "url": "https://github.com/paipiange/nvzhuang",
-      "tags": [],
-      "purpose": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 1862
-    },
-    {
-      "key": "eea6fa6e160f5eae94af990d3bdb29c098c1f610c62220d598ce37b87226ffcd",
-      "title": "anhao/ai-pose-gallery-zh",
-      "category": "repo",
-      "url": "https://github.com/anhao/ai-pose-gallery-zh",
-      "tags": [],
-      "purpose": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 5132
+      "stars": 6238
     }
   ]
 }

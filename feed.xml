@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-02</title>
+    <title>AI Tech Radar - 2026-11-03</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] The AI cost of JavaScript frameworks</title>
-      <link>https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks</link>
-      <guid isPermaLink="false">https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks#2026-11-02</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 The AI cost of JavaScript frameworks]]></description>
+      <title>[NEWS] Oracle files to sell $20B in new stock, bonds to finance AI buildout</title>
+      <link>https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html</link>
+      <guid isPermaLink="false">https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html#2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Oracle files to sell $20B in new stock, bonds to finance AI buildout]]></description>
     </item>
     <item>
-      <title>[NEWS] Frontier Airlines Likely Breached</title>
-      <link>https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam</link>
-      <guid isPermaLink="false">https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam#2026-11-02</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Frontier Airlines Likely Breached]]></description>
+      <title>[NEWS] Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app</title>
+      <link>https://momentic.ai/</link>
+      <guid isPermaLink="false">https://momentic.ai/#2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Hey HN, we’re Wei-Wei and Jeff. We’re building Momentic, QA agents that autonomously plan, explore, and bug-bash controls and user flows in your web, iOS, Android, and (soon) desktop apps to catch bugs.&lt;p&gt;Here’s a demo: &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;youtu.be&amp;#x2F;BFsM-Se1Fh8&quot; rel=&quot;nofollow&quot;&gt;https:&amp;#x2F]]></description>
     </item>
     <item>
-      <title>[NEWS] Understanding Email Encryption (2025)</title>
-      <link>https://www.fastmail.com/blog/email-encryption</link>
-      <guid isPermaLink="false">https://www.fastmail.com/blog/email-encryption#2026-11-02</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Understanding Email Encryption (2025)]]></description>
+      <title>[NEWS] Egoless Mathematics in the AI Era</title>
+      <link>https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era</link>
+      <guid isPermaLink="false">https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era#2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Egoless Mathematics in the AI Era]]></description>
     </item>
     <item>
-      <title>[NEWS] AI delivers &apos;zero financial payoff&apos; to most companies, Apollo economist says</title>
-      <link>https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist</link>
-      <guid isPermaLink="false">https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist#2026-11-02</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 AI delivers &apos;zero financial payoff&apos; to most companies, Apollo economist says]]></description>
+      <title>[NEWS] Agentic backdoors via pretraining poisoning</title>
+      <link>https://arxiv.org/abs/2610.37741</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.37741#2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Agentic backdoors via pretraining poisoning]]></description>
     </item>
     <item>
-      <title>[NEWS] Domain hacks with unusual Unicode characters (2018)</title>
-      <link>https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters</link>
-      <guid isPermaLink="false">https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters#2026-11-02</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Domain hacks with unusual Unicode characters (2018)]]></description>
+      <title>[NEWS] LongCat-2.5: Native Multimodality for Agentic Tasks</title>
+      <link>https://longcat.ai/blog/longcat-2.5</link>
+      <guid isPermaLink="false">https://longcat.ai/blog/longcat-2.5#2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 LongCat-2.5: Native Multimodality for Agentic Tasks]]></description>
+    </item>
+    <item>
+      <title>[REPO] caru-ini/stack-diagram</title>
+      <link>https://github.com/caru-ini/stack-diagram</link>
+      <guid isPermaLink="false">https://github.com/caru-ini/stack-diagram#2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Agent skill: describe your stack in a sentence, get an architecture diagram with official logos]]></description>
+    </item>
+    <item>
+      <title>[REPO] jacke-pp/open-yoki</title>
+      <link>https://github.com/jacke-pp/open-yoki</link>
+      <guid isPermaLink="false">https://github.com/jacke-pp/open-yoki#2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 An AI live-stream host that runs on one server: voice, face, chat, memory, posts. The base yoki runs on. By Jacke_pp · contact: DM @Jacke_pp on X]]></description>
     </item>
     <item>
       <title>[REPO] deepseek-ai/dsh-superagent-prototype</title>
       <link>https://github.com/deepseek-ai/dsh-superagent-prototype</link>
-      <guid isPermaLink="false">https://github.com/deepseek-ai/dsh-superagent-prototype#2026-11-02</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/deepseek-ai/dsh-superagent-prototype#2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Towards a More Autonomous Agent System]]></description>
     </item>
     <item>
       <title>[REPO] wangzan101/Mika</title>
       <link>https://github.com/wangzan101/Mika</link>
-      <guid isPermaLink="false">https://github.com/wangzan101/Mika#2026-11-02</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/wangzan101/Mika#2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 An on-device AI agent for Android that operates apps and the web to get things done for you.]]></description>
     </item>
     <item>
       <title>[REPO] heydamir/unslop</title>
       <link>https://github.com/heydamir/unslop</link>
-      <guid isPermaLink="false">https://github.com/heydamir/unslop#2026-11-02</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/heydamir/unslop#2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 A Claude skill that turns vibecoded, AI-looking UI into a designed interface]]></description>
-    </item>
-    <item>
-      <title>[REPO] paipiange/nvzhuang</title>
-      <link>https://github.com/paipiange/nvzhuang</link>
-      <guid isPermaLink="false">https://github.com/paipiange/nvzhuang#2026-11-02</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang]]></description>
-    </item>
-    <item>
-      <title>[REPO] anhao/ai-pose-gallery-zh</title>
-      <link>https://github.com/anhao/ai-pose-gallery-zh</link>
-      <guid isPermaLink="false">https://github.com/anhao/ai-pose-gallery-zh#2026-11-02</guid>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊]]></description>
     </item>
   </channel>
 </rss>
