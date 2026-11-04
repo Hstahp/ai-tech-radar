@@ -1,61 +1,61 @@
 {
-  "generated_at": "2026-11-03T00:01:04.121Z",
+  "generated_at": "2026-11-04T00:01:10.529Z",
   "items": [
     {
-      "key": "1263ce4e09302da828b267c3a147018cbca5909b3443d65462b62f6b7c300ced",
-      "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+      "key": "5fc6be8f903ae4e0d9b57e236c3a5246936138704c66dcb930eedfd6ebf27038",
+      "title": "Jailbreaking my car's navigation system just so I can change the time",
       "category": "news",
-      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "url": "https://blog.nns.ee/2026/11/02/renault-hack",
       "tags": [],
-      "purpose": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+      "purpose": "Jailbreaking my car's navigation system just so I can change the time",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "570f5e1efb5964ca71378f8912fd84517cb3958f6b4f348190c33995b5d684fd",
-      "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+      "key": "210b26f029f33a3ef7fe3515ece25538b3c2fd8043720d57f14f3a706409d450",
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
       "category": "news",
-      "url": "https://momentic.ai/",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
       "tags": [],
-      "purpose": "Hey HN, we’re Wei-Wei and Jeff. We’re building Momentic, QA agents that autonomously plan, explore, and bug-bash controls and user flows in your web, iOS, Android, and (soon) desktop apps to catch bugs.<p>Here’s a demo: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;BFsM-Se1Fh8\" rel=\"nofollow\">https:&#x2F",
+      "purpose": "Postman silently auto-installs AI plugins and attempts to share all API data",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "5010fb296f767bbc9bf253c86281958cc0cecf384f82ef1d1164b6172486452e",
-      "title": "Egoless Mathematics in the AI Era",
+      "key": "9c79addb856a9fb17d996b566a03afc479f4eeef8935988cbc25c0ac5e4e2bcb",
+      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
       "category": "news",
-      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era",
+      "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand",
       "tags": [],
-      "purpose": "Egoless Mathematics in the AI Era",
+      "purpose": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "dc7eb9e8885fba44653ad09d64cdb266447e5bc3620595b621c7b06581ffdc3a",
-      "title": "Agentic backdoors via pretraining poisoning",
+      "key": "01b1e45f222dec5edce91e9f286b6ecdf2aeede4326d9eecd2ea68c5139c8784",
+      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
       "category": "news",
-      "url": "https://arxiv.org/abs/2610.37741",
+      "url": "https://arxiv.org/abs/2605.29713",
       "tags": [],
-      "purpose": "Agentic backdoors via pretraining poisoning",
+      "purpose": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "327e862bb29c2bb4f765d7d2997a933b3983a844ade6c4ba7ada4d055c7b0b1a",
-      "title": "LongCat-2.5: Native Multimodality for Agentic Tasks",
+      "key": "f7735096343ce81152b1d5c648c011ed31e805aac536109f028e21653f468c45",
+      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
       "category": "news",
-      "url": "https://longcat.ai/blog/longcat-2.5",
+      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
       "tags": [],
-      "purpose": "LongCat-2.5: Native Multimodality for Agentic Tasks",
+      "purpose": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
       "highlight": null,
       "action": null,
       "verdict": null,
@@ -71,19 +71,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1177
-    },
-    {
-      "key": "fcddd9440aaffa0821a69e6959440d716188c0f85212d6a49de3630f98db5c11",
-      "title": "jacke-pp/open-yoki",
-      "category": "repo",
-      "url": "https://github.com/jacke-pp/open-yoki",
-      "tags": [],
-      "purpose": "An AI live-stream host that runs on one server: voice, face, chat, memory, posts. The base yoki runs on. By Jacke_pp · contact: DM @Jacke_pp on X",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 828
+      "stars": 1524
     },
     {
       "key": "5bd78febd4a59e340761bca8cf3eecd73cb9cf13f978fb71af227a77d743e940",
@@ -95,7 +83,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 13061
+      "stars": 16674
     },
     {
       "key": "1e03415a592fab8662c338916540faed798bbe0e23d8038a452815e582c3c1e1",
@@ -107,7 +95,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 5263
+      "stars": 6037
     },
     {
       "key": "78e49b200426b4d3309aaf6081574ecec306bd6f29e02143e4c947988b2590af",
@@ -119,7 +107,19 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 6238
+      "stars": 7519
+    },
+    {
+      "key": "f0e2ceed18bb124f6247d1f4f5a2eb55164893d7ef323f690167f9968b76e167",
+      "title": "paipiange/nvzhuang",
+      "category": "repo",
+      "url": "https://github.com/paipiange/nvzhuang",
+      "tags": [],
+      "purpose": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 2121
     }
   ]
 }
