@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-04</title>
+    <title>AI Tech Radar - 2026-11-05</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Wed, 04 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Jailbreaking my car&apos;s navigation system just so I can change the time</title>
-      <link>https://blog.nns.ee/2026/11/02/renault-hack</link>
-      <guid isPermaLink="false">https://blog.nns.ee/2026/11/02/renault-hack#2026-11-04</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Jailbreaking my car&apos;s navigation system just so I can change the time]]></description>
+      <title>[NEWS] AI is forcing us to pay off 40 years of technical debt</title>
+      <link>https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability</link>
+      <guid isPermaLink="false">https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability#2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI is forcing us to pay off 40 years of technical debt]]></description>
     </item>
     <item>
-      <title>[NEWS] Postman silently auto-installs AI plugins and attempts to share all API data</title>
-      <link>https://github.com/postmanlabs/postman-app-support/issues/14370</link>
-      <guid isPermaLink="false">https://github.com/postmanlabs/postman-app-support/issues/14370#2026-11-04</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Postman silently auto-installs AI plugins and attempts to share all API data]]></description>
+      <title>[NEWS] Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding</title>
+      <link>https://www.ricursive.com/ripple</link>
+      <guid isPermaLink="false">https://www.ricursive.com/ripple#2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding]]></description>
     </item>
     <item>
-      <title>[NEWS] Fujifilm to boost tape production 5x as AI fuels archiving demand</title>
-      <link>https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand</link>
-      <guid isPermaLink="false">https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand#2026-11-04</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Fujifilm to boost tape production 5x as AI fuels archiving demand]]></description>
+      <title>[NEWS] OpenAI to acquire Pierre Computer Company</title>
+      <link>https://openai.com/index/openai-to-acquire-pierre</link>
+      <guid isPermaLink="false">https://openai.com/index/openai-to-acquire-pierre#2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;twitter.com&amp;#x2F;pierrecomputer&amp;#x2F;status&amp;#x2F;2117999036175188183&quot; rel=&quot;nofollow&quot;&gt;https:&amp;#x2F;&amp;#x2F;twitter.com&amp;#x2F;pierrecomputer&amp;#x2F;status&amp;#x2F;211799903617518818...&lt;/a&gt;]]></description>
     </item>
     <item>
-      <title>[NEWS] The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer</title>
-      <link>https://arxiv.org/abs/2605.29713</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2605.29713#2026-11-04</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer]]></description>
+      <title>[NEWS] Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s</title>
+      <link>https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra</link>
+      <guid isPermaLink="false">https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra#2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s]]></description>
     </item>
     <item>
-      <title>[NEWS] US tech giants&apos; hidden AI debt swells 90% to $3.2T in 6 months</title>
-      <link>https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months</link>
-      <guid isPermaLink="false">https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months#2026-11-04</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 US tech giants&apos; hidden AI debt swells 90% to $3.2T in 6 months]]></description>
+      <title>[NEWS] Ask HN: What&apos;s your current AI agentic setup?</title>
+      <link>https://news.ycombinator.com/item?id=50366117</link>
+      <guid isPermaLink="false">https://news.ycombinator.com/item?id=50366117#2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 I&amp;#x27;m curious how people on HN are using AI day to day, and came up with a list of questions I thought could be interesting to know. No need to answer every question of course, just wanted to get a gut feel how people are using AI.&lt;p&gt;1) What AI subscriptions are you personally paying for? (Claude]]></description>
+    </item>
+    <item>
+      <title>[REPO] KKKKhazix/agent-autoloop</title>
+      <link>https://github.com/KKKKhazix/agent-autoloop</link>
+      <guid isPermaLink="false">https://github.com/KKKKhazix/agent-autoloop#2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。]]></description>
+    </item>
+    <item>
+      <title>[REPO] wquguru/cicada</title>
+      <link>https://github.com/wquguru/cicada</link>
+      <guid isPermaLink="false">https://github.com/wquguru/cicada#2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 知了 Cicada · 任意会议与直播的实时字幕、同声传译、AI 会议纪要（macOS）。Live subtitles, interpreting and meeting notes for any call or stream on your Mac.]]></description>
+    </item>
+    <item>
+      <title>[REPO] N1nEmAn/sapper-v2</title>
+      <link>https://github.com/N1nEmAn/sapper-v2</link>
+      <guid isPermaLink="false">https://github.com/N1nEmAn/sapper-v2#2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Autonomous pentest legion — AI commander + worker swarm + layered fact-intent graph. 3rd Tencent Intelligent Attack-Defense online champion (634 teams · 8h unattended · 1B tokens beat 4.5B). The Nüwa Test: give AIs Create/Language/History, let a civilization grow.]]></description>
     </item>
     <item>
       <title>[REPO] caru-ini/stack-diagram</title>
       <link>https://github.com/caru-ini/stack-diagram</link>
-      <guid isPermaLink="false">https://github.com/caru-ini/stack-diagram#2026-11-04</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/caru-ini/stack-diagram#2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Agent skill: describe your stack in a sentence, get an architecture diagram with official logos]]></description>
     </item>
     <item>
       <title>[REPO] deepseek-ai/dsh-superagent-prototype</title>
       <link>https://github.com/deepseek-ai/dsh-superagent-prototype</link>
-      <guid isPermaLink="false">https://github.com/deepseek-ai/dsh-superagent-prototype#2026-11-04</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/deepseek-ai/dsh-superagent-prototype#2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Towards a More Autonomous Agent System]]></description>
-    </item>
-    <item>
-      <title>[REPO] wangzan101/Mika</title>
-      <link>https://github.com/wangzan101/Mika</link>
-      <guid isPermaLink="false">https://github.com/wangzan101/Mika#2026-11-04</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 An on-device AI agent for Android that operates apps and the web to get things done for you.]]></description>
-    </item>
-    <item>
-      <title>[REPO] heydamir/unslop</title>
-      <link>https://github.com/heydamir/unslop</link>
-      <guid isPermaLink="false">https://github.com/heydamir/unslop#2026-11-04</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 A Claude skill that turns vibecoded, AI-looking UI into a designed interface]]></description>
-    </item>
-    <item>
-      <title>[REPO] paipiange/nvzhuang</title>
-      <link>https://github.com/paipiange/nvzhuang</link>
-      <guid isPermaLink="false">https://github.com/paipiange/nvzhuang#2026-11-04</guid>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang]]></description>
     </item>
   </channel>
 </rss>

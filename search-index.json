@@ -1,65 +1,101 @@
 {
-  "generated_at": "2026-11-04T00:01:10.529Z",
+  "generated_at": "2026-11-05T00:01:02.117Z",
   "items": [
     {
-      "key": "5fc6be8f903ae4e0d9b57e236c3a5246936138704c66dcb930eedfd6ebf27038",
-      "title": "Jailbreaking my car's navigation system just so I can change the time",
+      "key": "857e942cc1110bf466bd604f7ab53e12e55e499bb6199d142bb42c790f2292e7",
+      "title": "AI is forcing us to pay off 40 years of technical debt",
       "category": "news",
-      "url": "https://blog.nns.ee/2026/11/02/renault-hack",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
       "tags": [],
-      "purpose": "Jailbreaking my car's navigation system just so I can change the time",
+      "purpose": "AI is forcing us to pay off 40 years of technical debt",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "210b26f029f33a3ef7fe3515ece25538b3c2fd8043720d57f14f3a706409d450",
-      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "key": "dfa876a54a2df16b901af7d5d98eae674e32f3e96c3e77ba85e114a5b2058a8e",
+      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
       "category": "news",
-      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "url": "https://www.ricursive.com/ripple",
       "tags": [],
-      "purpose": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "purpose": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "9c79addb856a9fb17d996b566a03afc479f4eeef8935988cbc25c0ac5e4e2bcb",
-      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+      "key": "1be4fdd8e6ca80f0ec0127711bf05d7cfcd7194eac7f7e3b9f6a7d04824358c9",
+      "title": "OpenAI to acquire Pierre Computer Company",
       "category": "news",
-      "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand",
+      "url": "https://openai.com/index/openai-to-acquire-pierre",
       "tags": [],
-      "purpose": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+      "purpose": "<a href=\"https:&#x2F;&#x2F;twitter.com&#x2F;pierrecomputer&#x2F;status&#x2F;2117999036175188183\" rel=\"nofollow\">https:&#x2F;&#x2F;twitter.com&#x2F;pierrecomputer&#x2F;status&#x2F;211799903617518818...</a>",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "01b1e45f222dec5edce91e9f286b6ecdf2aeede4326d9eecd2ea68c5139c8784",
-      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+      "key": "3a41f9480808b68557197066692a0e9ca966549c3ab609d92fa0fd90845b1157",
+      "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
       "category": "news",
-      "url": "https://arxiv.org/abs/2605.29713",
+      "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
       "tags": [],
-      "purpose": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+      "purpose": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "f7735096343ce81152b1d5c648c011ed31e805aac536109f028e21653f468c45",
-      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+      "key": "d7d9a2a25df6ba5386fde18a0f872abfae6e86b29805b9ad390f902f51b6b820",
+      "title": "Ask HN: What's your current AI agentic setup?",
       "category": "news",
-      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+      "url": "https://news.ycombinator.com/item?id=50366117",
       "tags": [],
-      "purpose": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+      "purpose": "I&#x27;m curious how people on HN are using AI day to day, and came up with a list of questions I thought could be interesting to know. No need to answer every question of course, just wanted to get a gut feel how people are using AI.<p>1) What AI subscriptions are you personally paying for? (Claude",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
+    },
+    {
+      "key": "d51d4d67577c8a7aebb9e2cbfa90a7557eb49262416e72d194eac138e9bc2b36",
+      "title": "KKKKhazix/agent-autoloop",
+      "category": "repo",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "tags": [],
+      "purpose": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 2460
+    },
+    {
+      "key": "2e3153378c0d5f3e9dfe017ce91ebca988c5cf2a552a2548d7f55c09606bf957",
+      "title": "wquguru/cicada",
+      "category": "repo",
+      "url": "https://github.com/wquguru/cicada",
+      "tags": [],
+      "purpose": "知了 Cicada · 任意会议与直播的实时字幕、同声传译、AI 会议纪要（macOS）。Live subtitles, interpreting and meeting notes for any call or stream on your Mac.",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1123
+    },
+    {
+      "key": "4ff51e4e30dd0b3689662cf2d80e9df41c363fa2258b8e74af4bd3c2f9cc0742",
+      "title": "N1nEmAn/sapper-v2",
+      "category": "repo",
+      "url": "https://github.com/N1nEmAn/sapper-v2",
+      "tags": [],
+      "purpose": "Autonomous pentest legion — AI commander + worker swarm + layered fact-intent graph. 3rd Tencent Intelligent Attack-Defense online champion (634 teams · 8h unattended · 1B tokens beat 4.5B). The Nüwa Test: give AIs Create/Language/History, let a civilization grow.",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 836
     },
     {
       "key": "c3810de547986e1dff80b25eba326bb02843f63d4325f566e09acbc3ba394735",
@@ -71,7 +107,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1524
+      "stars": 1745
     },
     {
       "key": "5bd78febd4a59e340761bca8cf3eecd73cb9cf13f978fb71af227a77d743e940",
@@ -83,43 +119,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 16674
-    },
-    {
-      "key": "1e03415a592fab8662c338916540faed798bbe0e23d8038a452815e582c3c1e1",
-      "title": "wangzan101/Mika",
-      "category": "repo",
-      "url": "https://github.com/wangzan101/Mika",
-      "tags": [],
-      "purpose": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 6037
-    },
-    {
-      "key": "78e49b200426b4d3309aaf6081574ecec306bd6f29e02143e4c947988b2590af",
-      "title": "heydamir/unslop",
-      "category": "repo",
-      "url": "https://github.com/heydamir/unslop",
-      "tags": [],
-      "purpose": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 7519
-    },
-    {
-      "key": "f0e2ceed18bb124f6247d1f4f5a2eb55164893d7ef323f690167f9968b76e167",
-      "title": "paipiange/nvzhuang",
-      "category": "repo",
-      "url": "https://github.com/paipiange/nvzhuang",
-      "tags": [],
-      "purpose": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 2121
+      "stars": 18543
     }
   ]
 }
