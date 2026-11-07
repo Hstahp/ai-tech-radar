@@ -1,101 +1,65 @@
 {
-  "generated_at": "2026-11-06T00:01:02.621Z",
+  "generated_at": "2026-11-07T00:01:01.516Z",
   "items": [
     {
-      "key": "0b42787f451fe03fc9556b8d8b1610d023bf6f7ec52a9e67d82dc02e7dc4d995",
-      "title": "GPT-6 Astra covertly underperforms on safety research",
+      "key": "485654c1f98a7cdcb6064f6e64d0e23046003494af425773d67115f9624ac235",
+      "title": "Gemini Omni 1.2 Flash",
       "category": "news",
-      "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
       "tags": [],
-      "purpose": "GPT-6 Astra covertly underperforms on safety research",
+      "purpose": "Gemini Omni 1.2 Flash",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "199af8aea5b61129022fe080e48927778cfec869ca504d65378933049c27baf7",
-      "title": "Claude Code sends your email address to websites",
+      "key": "1cff92b3d4b08e145f06db7e862958295ef5e1e687fde0e5c1932bf37487bfbf",
+      "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
       "category": "news",
-      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05",
       "tags": [],
-      "purpose": "Claude Code sends your email address to websites",
+      "purpose": "US FAA says it will phase out floppy disks from air traffic control by 2028",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "ef3f53e2698295a00515dc569b4ea199f6a66f0d122117848099e0d22874b72d",
-      "title": "MS Paint Remote Code Execution Vulnerability",
+      "key": "e0c8b4541e0b5e8be31a9bff4568011d13ec940dcb82958e18289ef296b725f4",
+      "title": "AI is dramatically accelerating AI research",
       "category": "news",
-      "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
       "tags": [],
-      "purpose": "MS Paint Remote Code Execution Vulnerability",
+      "purpose": "AI is dramatically accelerating AI research",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "25c2b7d9d66adefad3929e770c5d7fee21987b27605f10623c73ec1c067ab53b",
-      "title": "Baidu released ERNIE 5.5 Flash Base",
+      "key": "bc00e1abe23c7a7329aa814fe5150dfaef6f5ba5421ddaf868c92523c290ff65",
+      "title": "Memorilla: Latent Semantic Memory for LLMs",
       "category": "news",
-      "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base",
+      "url": "https://arxiv.org/abs/2610.21375",
       "tags": [],
-      "purpose": "Baidu released ERNIE 5.5 Flash Base",
+      "purpose": "Memorilla: Latent Semantic Memory for LLMs",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "aae2e624d6dfcd5e11598a9b101123dbf4e9a85edb0b8016a0965a0050b54aae",
-      "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
+      "key": "c1c67cc6800fc35aff8a2324581fbcf3377a02dd5ce856dbb513de80a80ab407",
+      "title": "Restaurant Delivery Payment-Skimming Campaign",
       "category": "news",
-      "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
+      "url": "https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming",
       "tags": [],
-      "purpose": "Hungary: Communist-era files released, up to 60k former agents revealed",
+      "purpose": "Restaurant Delivery Payment-Skimming Campaign",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
-    },
-    {
-      "key": "3e4fba2ab329d27770d4c8bc3939e258c02a5a56f3aafe926f112ac9a59bc8e4",
-      "title": "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
-      "category": "repo",
-      "url": "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
-      "tags": [],
-      "purpose": "Google_AI_Pro_2Year_ZeroCost_Auto",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 2313
-    },
-    {
-      "key": "9e2cdcf616b28fd0a7d1ae7f8758c0671805bae1021262bf33dfa100dbdef99a",
-      "title": "UncensoredLabs/uncensored-ai-api",
-      "category": "repo",
-      "url": "https://github.com/UncensoredLabs/uncensored-ai-api",
-      "tags": [],
-      "purpose": "Uncensored AI API and browser chat: DeepSeek and GLM models, streaming, Python and TypeScript examples, pricing and setup guides.",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 848
-    },
-    {
-      "key": "c53462e8ac41702165ad2c36f6fe1d8b541b30538cdd9c6e137c22a3773494b6",
-      "title": "andrew-babo/muse4ai",
-      "category": "repo",
-      "url": "https://github.com/andrew-babo/muse4ai",
-      "tags": [],
-      "purpose": "Muse4AI — let your AI agent make the pictures and the videos. Local Windows bridge for Muse via REST, MCP, and OAuth.",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 809
     },
     {
       "key": "d51d4d67577c8a7aebb9e2cbfa90a7557eb49262416e72d194eac138e9bc2b36",
@@ -107,7 +71,19 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 3225
+      "stars": 3672
+    },
+    {
+      "key": "3e4fba2ab329d27770d4c8bc3939e258c02a5a56f3aafe926f112ac9a59bc8e4",
+      "title": "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+      "category": "repo",
+      "url": "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+      "tags": [],
+      "purpose": "Google_AI_Pro_2Year_ZeroCost_Auto",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 2879
     },
     {
       "key": "2e3153378c0d5f3e9dfe017ce91ebca988c5cf2a552a2548d7f55c09606bf957",
@@ -119,7 +95,31 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1482
+      "stars": 1554
+    },
+    {
+      "key": "c3810de547986e1dff80b25eba326bb02843f63d4325f566e09acbc3ba394735",
+      "title": "caru-ini/stack-diagram",
+      "category": "repo",
+      "url": "https://github.com/caru-ini/stack-diagram",
+      "tags": [],
+      "purpose": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1952
+    },
+    {
+      "key": "43b226d3f8c0e87c3fdf7fa8316496f119acaaf775fc37647e450f03a34c5e8d",
+      "title": "Sandflow-ai/sand3d",
+      "category": "repo",
+      "url": "https://github.com/Sandflow-ai/sand3d",
+      "tags": [],
+      "purpose": "3D modeling in Python, built for LLMs.",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 783
     }
   ]
 }

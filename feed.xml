@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-06</title>
+    <title>AI Tech Radar - 2026-11-07</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] GPT-6 Astra covertly underperforms on safety research</title>
-      <link>https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks</link>
-      <guid isPermaLink="false">https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks#2026-11-06</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 GPT-6 Astra covertly underperforms on safety research]]></description>
+      <title>[NEWS] Gemini Omni 1.2 Flash</title>
+      <link>https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash</link>
+      <guid isPermaLink="false">https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash#2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Gemini Omni 1.2 Flash]]></description>
     </item>
     <item>
-      <title>[NEWS] Claude Code sends your email address to websites</title>
-      <link>https://github.com/anthropics/claude-code/issues/107757</link>
-      <guid isPermaLink="false">https://github.com/anthropics/claude-code/issues/107757#2026-11-06</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Claude Code sends your email address to websites]]></description>
+      <title>[NEWS] US FAA says it will phase out floppy disks from air traffic control by 2028</title>
+      <link>https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05</link>
+      <guid isPermaLink="false">https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05#2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 US FAA says it will phase out floppy disks from air traffic control by 2028]]></description>
     </item>
     <item>
-      <title>[NEWS] MS Paint Remote Code Execution Vulnerability</title>
-      <link>https://www.cve.org/CVERecord?id=CVE-2026-83844</link>
-      <guid isPermaLink="false">https://www.cve.org/CVERecord?id=CVE-2026-83844#2026-11-06</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 MS Paint Remote Code Execution Vulnerability]]></description>
+      <title>[NEWS] AI is dramatically accelerating AI research</title>
+      <link>https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai</link>
+      <guid isPermaLink="false">https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai#2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI is dramatically accelerating AI research]]></description>
     </item>
     <item>
-      <title>[NEWS] Baidu released ERNIE 5.5 Flash Base</title>
-      <link>https://ernie.baidu.com/release/ernie-5-5-flash-base</link>
-      <guid isPermaLink="false">https://ernie.baidu.com/release/ernie-5-5-flash-base#2026-11-06</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Baidu released ERNIE 5.5 Flash Base]]></description>
+      <title>[NEWS] Memorilla: Latent Semantic Memory for LLMs</title>
+      <link>https://arxiv.org/abs/2610.21375</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2610.21375#2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Memorilla: Latent Semantic Memory for LLMs]]></description>
     </item>
     <item>
-      <title>[NEWS] Hungary: Communist-era files released, up to 60k former agents revealed</title>
-      <link>https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed</link>
-      <guid isPermaLink="false">https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed#2026-11-06</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Hungary: Communist-era files released, up to 60k former agents revealed]]></description>
-    </item>
-    <item>
-      <title>[REPO] worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto</title>
-      <link>https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto</link>
-      <guid isPermaLink="false">https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto#2026-11-06</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Google_AI_Pro_2Year_ZeroCost_Auto]]></description>
-    </item>
-    <item>
-      <title>[REPO] UncensoredLabs/uncensored-ai-api</title>
-      <link>https://github.com/UncensoredLabs/uncensored-ai-api</link>
-      <guid isPermaLink="false">https://github.com/UncensoredLabs/uncensored-ai-api#2026-11-06</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Uncensored AI API and browser chat: DeepSeek and GLM models, streaming, Python and TypeScript examples, pricing and setup guides.]]></description>
-    </item>
-    <item>
-      <title>[REPO] andrew-babo/muse4ai</title>
-      <link>https://github.com/andrew-babo/muse4ai</link>
-      <guid isPermaLink="false">https://github.com/andrew-babo/muse4ai#2026-11-06</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Muse4AI — let your AI agent make the pictures and the videos. Local Windows bridge for Muse via REST, MCP, and OAuth.]]></description>
+      <title>[NEWS] Restaurant Delivery Payment-Skimming Campaign</title>
+      <link>https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming</link>
+      <guid isPermaLink="false">https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming#2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Restaurant Delivery Payment-Skimming Campaign]]></description>
     </item>
     <item>
       <title>[REPO] KKKKhazix/agent-autoloop</title>
       <link>https://github.com/KKKKhazix/agent-autoloop</link>
-      <guid isPermaLink="false">https://github.com/KKKKhazix/agent-autoloop#2026-11-06</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/KKKKhazix/agent-autoloop#2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。]]></description>
+    </item>
+    <item>
+      <title>[REPO] worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto</title>
+      <link>https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto</link>
+      <guid isPermaLink="false">https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto#2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Google_AI_Pro_2Year_ZeroCost_Auto]]></description>
     </item>
     <item>
       <title>[REPO] wquguru/cicada</title>
       <link>https://github.com/wquguru/cicada</link>
-      <guid isPermaLink="false">https://github.com/wquguru/cicada#2026-11-06</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/wquguru/cicada#2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 知了 Cicada · 任何会议和直播的实时字幕、同声传译、AI 会议纪要，Mac、Windows、Linux、Android 免费开源。Live subtitles, interpreting and meeting notes for any call or stream, on Mac, Windows, Linux and Android.]]></description>
+    </item>
+    <item>
+      <title>[REPO] caru-ini/stack-diagram</title>
+      <link>https://github.com/caru-ini/stack-diagram</link>
+      <guid isPermaLink="false">https://github.com/caru-ini/stack-diagram#2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Agent skill: describe your stack in a sentence, get an architecture diagram with official logos]]></description>
+    </item>
+    <item>
+      <title>[REPO] Sandflow-ai/sand3d</title>
+      <link>https://github.com/Sandflow-ai/sand3d</link>
+      <guid isPermaLink="false">https://github.com/Sandflow-ai/sand3d#2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 3D modeling in Python, built for LLMs.]]></description>
     </item>
   </channel>
 </rss>
