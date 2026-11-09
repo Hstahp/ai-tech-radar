@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-08T00:01:05.122Z",
+  "generated_at": "2026-11-09T00:01:00.409Z",
   "items": [
     {
-      "key": "8017ce29f6d88c8d95a2209177888f3f25a01062fdf68e0d0a30026ee2c203ba",
-      "title": "The end of Microsoft Research's AI Frontiers group",
+      "key": "fe5fdb83e1ea95f1b42419b0848c6704005c1a0d97bf5b622b17271058205ad1",
+      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
       "category": "news",
-      "url": "https://hunch.net/?p=13764006",
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
       "tags": [],
-      "purpose": "<a href=\"https:&#x2F;&#x2F;archive.is&#x2F;AaY5O\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;AaY5O</a><p><a href=\"https:&#x2F;&#x2F;businessexaminer.ca&#x2F;victoria-articles&#x2F;item&#x2F;microsoft-researcher-john-langford-exits-as-ai-frontiers-group-is-declared&#x2F;\" rel=\"nofollow\">https:&",
+      "purpose": "Goldman Sachs is pulling Claude Code from its bankers and traders",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "f7c4b6b4979900dd8b0acc449ccb4d23b2339f7ae5c3b0992a087d74cb3f013b",
-      "title": "How Long Can Life Wait?",
+      "key": "149c124f7b07d2a10e3ffaa75f4c05dcc2955d8ea85e57aa9f715501d394f537",
+      "title": "Goodbye Claude, hello Pi",
       "category": "news",
-      "url": "https://mceglowski.substack.com/p/how-long-can-life-wait",
+      "url": "https://caleb.software/posts/claude-to-pi.html",
       "tags": [],
-      "purpose": "How Long Can Life Wait?",
+      "purpose": "Goodbye Claude, hello Pi",
       "highlight": null,
       "action": null,
       "verdict": null,
@@ -38,28 +38,40 @@
       "stars": null
     },
     {
-      "key": "e9faad409040a5470341b922588bdc219399c37fc32d90560fd3b13801913fd7",
-      "title": "Uranium cubes reveal why the German nuclear project failed",
+      "key": "55858f2b4ca73bdea18bb38cb3df7729963affc8f5ea52147479775223be0c4a",
+      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
       "category": "news",
-      "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed",
+      "url": "https://github.com/synchopate/llama-modchip",
       "tags": [],
-      "purpose": "Uranium cubes reveal why the German nuclear project failed",
+      "purpose": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "2d0f77b80e4094290960b65cecc4f4459c5885e93c9f18e8f9f1e3dac542b9c0",
-      "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
+      "key": "3edd9018e9e656df005412e059e4b6fdeabee1ee42b2b83151f903c47fd68b26",
+      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
       "category": "news",
-      "url": "https://eyesrhythm.com/",
+      "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
       "tags": [],
-      "purpose": "Profession like software engineer, mechanical &#x2F; graphics designer takes a lot of strain on your eyes, observing minute details for hours and hours on screen can significantly reduce the blink rate which you might not even notice until it gets irreversibly painful, leaving you with dry eyes. I a",
+      "purpose": "Nvidia CEO Jensen Huang's letter to staff about affair",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
+    },
+    {
+      "key": "e1771a6dc300cb58ea7f9e05a1b2fc943d4f477aa96fec024e1633c436078bea",
+      "title": "shanselman/gputaskman",
+      "category": "repo",
+      "url": "https://github.com/shanselman/gputaskman",
+      "tags": [],
+      "purpose": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 996
     },
     {
       "key": "16d98e3fe2b26ac8f683efae8c68a067fbe178fb6b4ad8dea505799012aade1f",
@@ -71,7 +83,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 870
+      "stars": 1116
     },
     {
       "key": "43b226d3f8c0e87c3fdf7fa8316496f119acaaf775fc37647e450f03a34c5e8d",
@@ -83,7 +95,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1048
+      "stars": 1386
     },
     {
       "key": "d51d4d67577c8a7aebb9e2cbfa90a7557eb49262416e72d194eac138e9bc2b36",
@@ -95,7 +107,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 3951
+      "stars": 4098
     },
     {
       "key": "3e4fba2ab329d27770d4c8bc3939e258c02a5a56f3aafe926f112ac9a59bc8e4",
@@ -107,19 +119,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 3054
-    },
-    {
-      "key": "2abce8109659f034526b1de1de5fdbb93583fbd1f9f7018e10b25a430e4766d2",
-      "title": "sarpstar/cinecode",
-      "category": "repo",
-      "url": "https://github.com/sarpstar/cinecode",
-      "tags": [],
-      "purpose": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4.",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 772
+      "stars": 3256
     }
   ]
 }
