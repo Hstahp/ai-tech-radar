@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-09</title>
+    <title>AI Tech Radar - 2026-11-10</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Goldman Sachs is pulling Claude Code from its bankers and traders</title>
-      <link>https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers</link>
-      <guid isPermaLink="false">https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers#2026-11-09</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Goldman Sachs is pulling Claude Code from its bankers and traders]]></description>
+      <title>[NEWS] Fold Epic Paper Airplanes</title>
+      <link>https://www.foldableflight.com/</link>
+      <guid isPermaLink="false">https://www.foldableflight.com/#2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Fold Epic Paper Airplanes]]></description>
     </item>
     <item>
-      <title>[NEWS] Goodbye Claude, hello Pi</title>
-      <link>https://caleb.software/posts/claude-to-pi.html</link>
-      <guid isPermaLink="false">https://caleb.software/posts/claude-to-pi.html#2026-11-09</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Goodbye Claude, hello Pi]]></description>
+      <title>[NEWS] Claude Fable 5.2 and Mythos 5.2</title>
+      <link>https://www.anthropic.com/claude-fable-and-mythos-5-2</link>
+      <guid isPermaLink="false">https://www.anthropic.com/claude-fable-and-mythos-5-2#2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Claude Fable 5.2 and Mythos 5.2]]></description>
     </item>
     <item>
-      <title>[NEWS] Claude Code&apos;s &quot;Don&apos;t Ask Again&quot; exposes passwords in 1,122 public GitHub files</title>
-      <link>https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again</link>
-      <guid isPermaLink="false">https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again#2026-11-09</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Claude Code&apos;s &quot;Don&apos;t Ask Again&quot; exposes passwords in 1,122 public GitHub files]]></description>
+      <title>[NEWS] Payments Canada announces launch of Canada&apos;s Real-Time Rail (RTR) payment system</title>
+      <link>https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy</link>
+      <guid isPermaLink="false">https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy#2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Payments Canada announces launch of Canada&apos;s Real-Time Rail (RTR) payment system]]></description>
     </item>
     <item>
-      <title>[NEWS] Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU</title>
-      <link>https://github.com/synchopate/llama-modchip</link>
-      <guid isPermaLink="false">https://github.com/synchopate/llama-modchip#2026-11-09</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU]]></description>
+      <title>[NEWS] Google Gemini routes personal Drive files and emails to human annotators</title>
+      <link>https://github.com/thisisme6598/gemini_files</link>
+      <guid isPermaLink="false">https://github.com/thisisme6598/gemini_files#2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Google Gemini routes personal Drive files and emails to human annotators]]></description>
     </item>
     <item>
-      <title>[NEWS] Nvidia CEO Jensen Huang&apos;s letter to staff about affair</title>
-      <link>https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company</link>
-      <guid isPermaLink="false">https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company#2026-11-09</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Nvidia CEO Jensen Huang&apos;s letter to staff about affair]]></description>
+      <title>[NEWS] Magenta solar panels may be agrivoltaics&apos; cleverest trick yet</title>
+      <link>https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet</link>
+      <guid isPermaLink="false">https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet#2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Magenta solar panels may be agrivoltaics&apos; cleverest trick yet]]></description>
     </item>
     <item>
-      <title>[REPO] shanselman/gputaskman</title>
-      <link>https://github.com/shanselman/gputaskman</link>
-      <guid isPermaLink="false">https://github.com/shanselman/gputaskman#2026-11-09</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).]]></description>
+      <title>[REPO] DIYgod/pinky</title>
+      <link>https://github.com/DIYgod/pinky</link>
+      <guid isPermaLink="false">https://github.com/DIYgod/pinky#2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Let AI agents use your phone, with you in the loop.]]></description>
     </item>
     <item>
       <title>[REPO] voyager-so/vork</title>
       <link>https://github.com/voyager-so/vork</link>
-      <guid isPermaLink="false">https://github.com/voyager-so/vork#2026-11-09</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/voyager-so/vork#2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Headless 3D and VFX engine for agents. Research preview.]]></description>
     </item>
     <item>
-      <title>[REPO] Sandflow-ai/sand3d</title>
-      <link>https://github.com/Sandflow-ai/sand3d</link>
-      <guid isPermaLink="false">https://github.com/Sandflow-ai/sand3d#2026-11-09</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 3D modeling in Python, built for LLMs.]]></description>
+      <title>[REPO] JosssphZhou/poki</title>
+      <link>https://github.com/JosssphZhou/poki</link>
+      <guid isPermaLink="false">https://github.com/JosssphZhou/poki#2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.]]></description>
     </item>
     <item>
-      <title>[REPO] KKKKhazix/agent-autoloop</title>
-      <link>https://github.com/KKKKhazix/agent-autoloop</link>
-      <guid isPermaLink="false">https://github.com/KKKKhazix/agent-autoloop#2026-11-09</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。]]></description>
+      <title>[REPO] majorminorlabs/hermes-voice</title>
+      <link>https://github.com/majorminorlabs/hermes-voice</link>
+      <guid isPermaLink="false">https://github.com/majorminorlabs/hermes-voice#2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Talk to a Hermes Agent profile through Home Assistant Assist]]></description>
     </item>
     <item>
-      <title>[REPO] worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto</title>
-      <link>https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto</link>
-      <guid isPermaLink="false">https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto#2026-11-09</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Google_AI_Pro_2Year_ZeroCost_Auto]]></description>
+      <title>[REPO] lxe/phoneuse</title>
+      <link>https://github.com/lxe/phoneuse</link>
+      <guid isPermaLink="false">https://github.com/lxe/phoneuse#2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 See and operate an unmodified iPhone from a Linux PC: AirPlay mirror in, Bluetooth HID mouse/keyboard out, plus a CLI and skill for agents.]]></description>
     </item>
   </channel>
 </rss>

@@ -1,77 +1,77 @@
 {
-  "generated_at": "2026-11-09T00:01:00.409Z",
+  "generated_at": "2026-11-10T00:01:01.852Z",
   "items": [
     {
-      "key": "fe5fdb83e1ea95f1b42419b0848c6704005c1a0d97bf5b622b17271058205ad1",
-      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "key": "ab9a571901c9fe81ed20b1e3f7dee7e375ba75a61e9a78c28766064bb0b68867",
+      "title": "Fold Epic Paper Airplanes",
       "category": "news",
-      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "url": "https://www.foldableflight.com/",
       "tags": [],
-      "purpose": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "purpose": "Fold Epic Paper Airplanes",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "149c124f7b07d2a10e3ffaa75f4c05dcc2955d8ea85e57aa9f715501d394f537",
-      "title": "Goodbye Claude, hello Pi",
+      "key": "a989f1582084d0cf153c32d2fa32483a4ec12dee696b65f0f20a1d5ab4b8abfd",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
       "category": "news",
-      "url": "https://caleb.software/posts/claude-to-pi.html",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
       "tags": [],
-      "purpose": "Goodbye Claude, hello Pi",
+      "purpose": "Claude Fable 5.2 and Mythos 5.2",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "10bdc73097cfd2386d0a762b95dc77e518c680989d890e766788d398671a3536",
-      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "key": "a8ac24a5fed69e7112677854a708e4e870ed2857956710e28a2b427feb009dec",
+      "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
       "category": "news",
-      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
       "tags": [],
-      "purpose": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "purpose": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "55858f2b4ca73bdea18bb38cb3df7729963affc8f5ea52147479775223be0c4a",
-      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "key": "a847d1340755ee53c98dcc252499cd0603506bd00b99f9169eee55a050ca3039",
+      "title": "Google Gemini routes personal Drive files and emails to human annotators",
       "category": "news",
-      "url": "https://github.com/synchopate/llama-modchip",
+      "url": "https://github.com/thisisme6598/gemini_files",
       "tags": [],
-      "purpose": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "purpose": "Google Gemini routes personal Drive files and emails to human annotators",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "3edd9018e9e656df005412e059e4b6fdeabee1ee42b2b83151f903c47fd68b26",
-      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "key": "a425346c085c7dcb995ae799439ff3424ba9f2473d330046843e9191dedb61d4",
+      "title": "Magenta solar panels may be agrivoltaics' cleverest trick yet",
       "category": "news",
-      "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
+      "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet",
       "tags": [],
-      "purpose": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "purpose": "Magenta solar panels may be agrivoltaics' cleverest trick yet",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "e1771a6dc300cb58ea7f9e05a1b2fc943d4f477aa96fec024e1633c436078bea",
-      "title": "shanselman/gputaskman",
+      "key": "d071452cc136d7f864cdd866ccfa1d23518a8d67f98a2ced2232199f6f09199c",
+      "title": "DIYgod/pinky",
       "category": "repo",
-      "url": "https://github.com/shanselman/gputaskman",
+      "url": "https://github.com/DIYgod/pinky",
       "tags": [],
-      "purpose": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).",
+      "purpose": "Let AI agents use your phone, with you in the loop.",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 996
+      "stars": 1424
     },
     {
       "key": "16d98e3fe2b26ac8f683efae8c68a067fbe178fb6b4ad8dea505799012aade1f",
@@ -83,43 +83,43 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1116
+      "stars": 1287
     },
     {
-      "key": "43b226d3f8c0e87c3fdf7fa8316496f119acaaf775fc37647e450f03a34c5e8d",
-      "title": "Sandflow-ai/sand3d",
+      "key": "d5f8ab1a0d4a222d015dfbfb3138fd8d53082b8415b8246eaa4208d5fb488055",
+      "title": "JosssphZhou/poki",
       "category": "repo",
-      "url": "https://github.com/Sandflow-ai/sand3d",
+      "url": "https://github.com/JosssphZhou/poki",
       "tags": [],
-      "purpose": "3D modeling in Python, built for LLMs.",
+      "purpose": "Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1386
+      "stars": 757
     },
     {
-      "key": "d51d4d67577c8a7aebb9e2cbfa90a7557eb49262416e72d194eac138e9bc2b36",
-      "title": "KKKKhazix/agent-autoloop",
+      "key": "800e689628d3cd318b95b38b134f4810f1a94390c1f9689d58468b3444869505",
+      "title": "majorminorlabs/hermes-voice",
       "category": "repo",
-      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "url": "https://github.com/majorminorlabs/hermes-voice",
       "tags": [],
-      "purpose": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "purpose": "Talk to a Hermes Agent profile through Home Assistant Assist",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 4098
+      "stars": 621
     },
     {
-      "key": "3e4fba2ab329d27770d4c8bc3939e258c02a5a56f3aafe926f112ac9a59bc8e4",
-      "title": "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+      "key": "12e97efa45f58928f1d1be82ca1464bb898fd61aafcdda16ec0e92b6032ace39",
+      "title": "lxe/phoneuse",
       "category": "repo",
-      "url": "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+      "url": "https://github.com/lxe/phoneuse",
       "tags": [],
-      "purpose": "Google_AI_Pro_2Year_ZeroCost_Auto",
+      "purpose": "See and operate an unmodified iPhone from a Linux PC: AirPlay mirror in, Bluetooth HID mouse/keyboard out, plus a CLI and skill for agents.",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 3256
+      "stars": 536
     }
   ]
 }
