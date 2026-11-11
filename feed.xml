@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-10</title>
+    <title>AI Tech Radar - 2026-11-11</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Fold Epic Paper Airplanes</title>
-      <link>https://www.foldableflight.com/</link>
-      <guid isPermaLink="false">https://www.foldableflight.com/#2026-11-10</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Fold Epic Paper Airplanes]]></description>
+      <title>[NEWS] AI usage generates a fragile codebase</title>
+      <link>https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase</link>
+      <guid isPermaLink="false">https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase#2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI usage generates a fragile codebase]]></description>
     </item>
     <item>
-      <title>[NEWS] Claude Fable 5.2 and Mythos 5.2</title>
-      <link>https://www.anthropic.com/claude-fable-and-mythos-5-2</link>
-      <guid isPermaLink="false">https://www.anthropic.com/claude-fable-and-mythos-5-2#2026-11-10</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Claude Fable 5.2 and Mythos 5.2]]></description>
+      <title>[NEWS] Synaptics patent claims stop work on DisplayLink drivers</title>
+      <link>https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f</link>
+      <guid isPermaLink="false">https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f#2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Synaptics patent claims stop work on DisplayLink drivers]]></description>
     </item>
     <item>
-      <title>[NEWS] Payments Canada announces launch of Canada&apos;s Real-Time Rail (RTR) payment system</title>
-      <link>https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy</link>
-      <guid isPermaLink="false">https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy#2026-11-10</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Payments Canada announces launch of Canada&apos;s Real-Time Rail (RTR) payment system]]></description>
+      <title>[NEWS] Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives</title>
+      <link>https://github.com/GoogleChrome/modern-web-guidance</link>
+      <guid isPermaLink="false">https://github.com/GoogleChrome/modern-web-guidance#2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without &amp;lt;span&amp;gt;s everywhere, `&amp;lt;dialog&amp;gt;` and showModal() give you backdrops and ideal focus management, `field-sizing` to auto-grow textareas as the user types]]></description>
     </item>
     <item>
-      <title>[NEWS] Google Gemini routes personal Drive files and emails to human annotators</title>
-      <link>https://github.com/thisisme6598/gemini_files</link>
-      <guid isPermaLink="false">https://github.com/thisisme6598/gemini_files#2026-11-10</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Google Gemini routes personal Drive files and emails to human annotators]]></description>
+      <title>[NEWS] Show HN: Valencia, Spain in Sim City/Isometric View</title>
+      <link>https://tinyvalencia.com/</link>
+      <guid isPermaLink="false">https://tinyvalencia.com/#2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Show HN: Valencia, Spain in Sim City/Isometric View]]></description>
     </item>
     <item>
-      <title>[NEWS] Magenta solar panels may be agrivoltaics&apos; cleverest trick yet</title>
-      <link>https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet</link>
-      <guid isPermaLink="false">https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet#2026-11-10</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Magenta solar panels may be agrivoltaics&apos; cleverest trick yet]]></description>
+      <title>[NEWS] Claude Whiteboards, Claude Sheets, and Claude Data</title>
+      <link>https://claude.com/resources/articles/sheets-whiteboards-data</link>
+      <guid isPermaLink="false">https://claude.com/resources/articles/sheets-whiteboards-data#2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Claude Whiteboards, Claude Sheets, and Claude Data]]></description>
     </item>
     <item>
       <title>[REPO] DIYgod/pinky</title>
       <link>https://github.com/DIYgod/pinky</link>
-      <guid isPermaLink="false">https://github.com/DIYgod/pinky#2026-11-10</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/DIYgod/pinky#2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Let AI agents use your phone, with you in the loop.]]></description>
     </item>
     <item>
       <title>[REPO] voyager-so/vork</title>
       <link>https://github.com/voyager-so/vork</link>
-      <guid isPermaLink="false">https://github.com/voyager-so/vork#2026-11-10</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/voyager-so/vork#2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Headless 3D and VFX engine for agents. Research preview.]]></description>
+    </item>
+    <item>
+      <title>[REPO] hembramneeraj3-create/aida-64-extreme</title>
+      <link>https://github.com/hembramneeraj3-create/aida-64-extreme</link>
+      <guid isPermaLink="false">https://github.com/hembramneeraj3-create/aida-64-extreme#2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Aida 64 Extreme 2026: Complete Standalone Desktop Setup with Full Feature Configuration]]></description>
+    </item>
+    <item>
+      <title>[REPO] Arda313131882/aion-2-trainer-tool</title>
+      <link>https://github.com/Arda313131882/aion-2-trainer-tool</link>
+      <guid isPermaLink="false">https://github.com/Arda313131882/aion-2-trainer-tool#2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Aion 2 AI Prompt Engineering Toolkit - Standalone Desktop Trainer Setup]]></description>
     </item>
     <item>
       <title>[REPO] JosssphZhou/poki</title>
       <link>https://github.com/JosssphZhou/poki</link>
-      <guid isPermaLink="false">https://github.com/JosssphZhou/poki#2026-11-10</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/JosssphZhou/poki#2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.]]></description>
-    </item>
-    <item>
-      <title>[REPO] majorminorlabs/hermes-voice</title>
-      <link>https://github.com/majorminorlabs/hermes-voice</link>
-      <guid isPermaLink="false">https://github.com/majorminorlabs/hermes-voice#2026-11-10</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Talk to a Hermes Agent profile through Home Assistant Assist]]></description>
-    </item>
-    <item>
-      <title>[REPO] lxe/phoneuse</title>
-      <link>https://github.com/lxe/phoneuse</link>
-      <guid isPermaLink="false">https://github.com/lxe/phoneuse#2026-11-10</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 See and operate an unmodified iPhone from a Linux PC: AirPlay mirror in, Bluetooth HID mouse/keyboard out, plus a CLI and skill for agents.]]></description>
     </item>
   </channel>
 </rss>
