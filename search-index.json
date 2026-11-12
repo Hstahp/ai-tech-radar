@@ -1,61 +1,61 @@
 {
-  "generated_at": "2026-11-11T00:01:05.166Z",
+  "generated_at": "2026-11-12T00:01:05.821Z",
   "items": [
     {
-      "key": "db8fc494992101409f7d5d089792e86aefc39f9265a19a9833f05297bbce1ae2",
-      "title": "AI usage generates a fragile codebase",
+      "key": "c8dde4086f9ad8bc8df04dacfd29f50935da7bc53d5f7c11e5e8135247a3bfb0",
+      "title": "My AI agents found an unmapped Maya site",
       "category": "news",
-      "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase",
+      "url": "https://pietromiotti.com/latest/maya-site",
       "tags": [],
-      "purpose": "AI usage generates a fragile codebase",
+      "purpose": "My AI agents found an unmapped Maya site",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "a377d628449e50ac9469d1f271d23cd5e5ab09852ab6a78f3cd9127c9d4b22bd",
-      "title": "Synaptics patent claims stop work on DisplayLink drivers",
+      "key": "1df6a00742e99b5a005c0a78a421a5b6942e095ec0450cf2125be3f75497863a",
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
       "category": "news",
-      "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f",
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights",
       "tags": [],
-      "purpose": "Synaptics patent claims stop work on DisplayLink drivers",
+      "purpose": "United Airlines bans AI agents from booking flights on behalf of travelers",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "a4978faa7e166cdb12b818c5397aad221fe34e5d74e2dc0c479fe886ef474c07",
-      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+      "key": "f6b4870412a7c624f2e98cea71c7287889c8ad968934b460d3679067f41ade99",
+      "title": "Atuin Threads: All your agent sessions on every machine",
       "category": "news",
-      "url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "url": "https://blog.atuin.sh/threads-agent-sessions",
       "tags": [],
-      "purpose": "Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without &lt;span&gt;s everywhere, `&lt;dialog&gt;` and showModal() give you backdrops and ideal focus management, `field-sizing` to auto-grow textareas as the user types",
+      "purpose": "Atuin Threads: All your agent sessions on every machine",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "d3934e8550a651001a801d2abbefd00832b900ebb2ab88b63d638ad2d8c922e0",
-      "title": "Show HN: Valencia, Spain in Sim City/Isometric View",
+      "key": "0de9825e0c756423f2aa36b44c55dc05c2d4c9b4d78af88f1455b31dbf974df6",
+      "title": "Jensen Huang said to have had relationship with executive who reports to him",
       "category": "news",
-      "url": "https://tinyvalencia.com/",
+      "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
       "tags": [],
-      "purpose": "Show HN: Valencia, Spain in Sim City/Isometric View",
+      "purpose": "Jensen Huang said to have had relationship with executive who reports to him",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "001cd33c965241bc733395330dc1002dceba1895316b2079b3357cff11fd774d",
-      "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+      "key": "02bfed5e7aa817ea9dcb99d63f8534e8e78ab10e8ae50e00c6e9b6a68bd6b403",
+      "title": "Gemini Decisions API",
       "category": "news",
-      "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
       "tags": [],
-      "purpose": "Claude Whiteboards, Claude Sheets, and Claude Data",
+      "purpose": "Gemini Decisions API",
       "highlight": null,
       "action": null,
       "verdict": null,
@@ -71,19 +71,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1664
-    },
-    {
-      "key": "16d98e3fe2b26ac8f683efae8c68a067fbe178fb6b4ad8dea505799012aade1f",
-      "title": "voyager-so/vork",
-      "category": "repo",
-      "url": "https://github.com/voyager-so/vork",
-      "tags": [],
-      "purpose": "Headless 3D and VFX engine for agents. Research preview.",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 1357
+      "stars": 1862
     },
     {
       "key": "9cd0bd586ed82fdeddcac50e4fe7a42ceb00dc25c3a9ace489bd9f704b23c19f",
@@ -95,7 +83,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 772
+      "stars": 1304
     },
     {
       "key": "3fb8baa4bcc229edbb49647ecf5caac1a6ac19f15447e179b85459af25155620",
@@ -107,19 +95,31 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 772
+      "stars": 1296
     },
     {
-      "key": "d5f8ab1a0d4a222d015dfbfb3138fd8d53082b8415b8246eaa4208d5fb488055",
-      "title": "JosssphZhou/poki",
+      "key": "5b5b6da01dd0f8267547698fa80157381822c577f196055bb5c21b85096147eb",
+      "title": "dabingfy-dot/solo-to-team-skills",
       "category": "repo",
-      "url": "https://github.com/JosssphZhou/poki",
+      "url": "https://github.com/dabingfy-dot/solo-to-team-skills",
       "tags": [],
-      "purpose": "Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.",
+      "purpose": "Skills for human-led AI teams: delegate tasks, verify evidence, explain steps clearly, and learn from real cases. 一个人统筹 AI 团队：派活、核证、清楚说明、经验复用。",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 916
+      "stars": 649
+    },
+    {
+      "key": "f3149cebb3fc766a70d9daae57ff34b6be1af27c16f258eb04047592e40168c9",
+      "title": "devvmhq/devvm",
+      "category": "repo",
+      "url": "https://github.com/devvmhq/devvm",
+      "tags": [],
+      "purpose": "One VM for every project. An isolated sandbox with your project’s toolchain, ready for you or a coding agent to start coding",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 561
     }
   ]
 }
