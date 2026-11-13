@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-12</title>
+    <title>AI Tech Radar - 2026-11-13</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] My AI agents found an unmapped Maya site</title>
-      <link>https://pietromiotti.com/latest/maya-site</link>
-      <guid isPermaLink="false">https://pietromiotti.com/latest/maya-site#2026-11-12</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 My AI agents found an unmapped Maya site]]></description>
+      <title>[NEWS] Gemini 4 Hydrogen</title>
+      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen</link>
+      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen#2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Gemini 4 Hydrogen]]></description>
     </item>
     <item>
-      <title>[NEWS] United Airlines bans AI agents from booking flights on behalf of travelers</title>
-      <link>https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights</link>
-      <guid isPermaLink="false">https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights#2026-11-12</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 United Airlines bans AI agents from booking flights on behalf of travelers]]></description>
+      <title>[NEWS] I&apos;m making LLMs work on small and old devices</title>
+      <link>https://github.com/hyperionaidev/smolmaxxing</link>
+      <guid isPermaLink="false">https://github.com/hyperionaidev/smolmaxxing#2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 I&apos;m making LLMs work on small and old devices]]></description>
     </item>
     <item>
-      <title>[NEWS] Atuin Threads: All your agent sessions on every machine</title>
-      <link>https://blog.atuin.sh/threads-agent-sessions</link>
-      <guid isPermaLink="false">https://blog.atuin.sh/threads-agent-sessions#2026-11-12</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Atuin Threads: All your agent sessions on every machine]]></description>
+      <title>[NEWS] Gemini 4 Hydrogen and Orchestrator</title>
+      <link>https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity</link>
+      <guid isPermaLink="false">https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity#2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Gemini 4 Hydrogen and Orchestrator]]></description>
     </item>
     <item>
-      <title>[NEWS] Jensen Huang said to have had relationship with executive who reports to him</title>
-      <link>https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html</link>
-      <guid isPermaLink="false">https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html#2026-11-12</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Jensen Huang said to have had relationship with executive who reports to him]]></description>
+      <title>[NEWS] Chinese frontier AI models carry the fingerprint of export-controlled GPUs</title>
+      <link>https://unemploymentlabs.com/checkpoint-forensics</link>
+      <guid isPermaLink="false">https://unemploymentlabs.com/checkpoint-forensics#2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Chinese frontier AI models carry the fingerprint of export-controlled GPUs]]></description>
     </item>
     <item>
-      <title>[NEWS] Gemini Decisions API</title>
-      <link>https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api</link>
-      <guid isPermaLink="false">https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api#2026-11-12</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Gemini Decisions API]]></description>
+      <title>[NEWS] Why You Should Expect an AI Crash</title>
+      <link>https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash</link>
+      <guid isPermaLink="false">https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash#2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Why You Should Expect an AI Crash]]></description>
     </item>
     <item>
-      <title>[REPO] DIYgod/pinky</title>
-      <link>https://github.com/DIYgod/pinky</link>
-      <guid isPermaLink="false">https://github.com/DIYgod/pinky#2026-11-12</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Let AI agents use your phone, with you in the loop.]]></description>
+      <title>[REPO] agentes-chat/agentes-chat</title>
+      <link>https://github.com/agentes-chat/agentes-chat</link>
+      <guid isPermaLink="false">https://github.com/agentes-chat/agentes-chat#2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.]]></description>
     </item>
     <item>
-      <title>[REPO] hembramneeraj3-create/aida-64-extreme</title>
-      <link>https://github.com/hembramneeraj3-create/aida-64-extreme</link>
-      <guid isPermaLink="false">https://github.com/hembramneeraj3-create/aida-64-extreme#2026-11-12</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Aida 64 Extreme 2026: Complete Standalone Desktop Setup with Full Feature Configuration]]></description>
-    </item>
-    <item>
-      <title>[REPO] Arda313131882/aion-2-trainer-tool</title>
-      <link>https://github.com/Arda313131882/aion-2-trainer-tool</link>
-      <guid isPermaLink="false">https://github.com/Arda313131882/aion-2-trainer-tool#2026-11-12</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Aion 2 AI Prompt Engineering Toolkit - Standalone Desktop Trainer Setup]]></description>
+      <title>[REPO] FrigadeHQ/yogurt</title>
+      <link>https://github.com/FrigadeHQ/yogurt</link>
+      <guid isPermaLink="false">https://github.com/FrigadeHQ/yogurt#2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Private AI meeting notes. Free and open source.]]></description>
     </item>
     <item>
       <title>[REPO] dabingfy-dot/solo-to-team-skills</title>
       <link>https://github.com/dabingfy-dot/solo-to-team-skills</link>
-      <guid isPermaLink="false">https://github.com/dabingfy-dot/solo-to-team-skills#2026-11-12</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/dabingfy-dot/solo-to-team-skills#2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Skills for human-led AI teams: delegate tasks, verify evidence, explain steps clearly, and learn from real cases. 一个人统筹 AI 团队：派活、核证、清楚说明、经验复用。]]></description>
     </item>
     <item>
-      <title>[REPO] devvmhq/devvm</title>
-      <link>https://github.com/devvmhq/devvm</link>
-      <guid isPermaLink="false">https://github.com/devvmhq/devvm#2026-11-12</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 One VM for every project. An isolated sandbox with your project’s toolchain, ready for you or a coding agent to start coding]]></description>
+      <title>[REPO] 21stware/bowel</title>
+      <link>https://github.com/21stware/bowel</link>
+      <guid isPermaLink="false">https://github.com/21stware/bowel#2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Bowel is a mihomo client for macOS, Windows, Linux and Android.]]></description>
+    </item>
+    <item>
+      <title>[REPO] Dodaios/ste80-humanizer</title>
+      <link>https://github.com/Dodaios/ste80-humanizer</link>
+      <guid isPermaLink="false">https://github.com/Dodaios/ste80-humanizer#2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.]]></description>
     </item>
   </channel>
 </rss>
