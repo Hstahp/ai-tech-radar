@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-13</title>
+    <title>AI Tech Radar - 2026-11-14</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Fri, 13 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Gemini 4 Hydrogen</title>
-      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen</link>
-      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen#2026-11-13</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Gemini 4 Hydrogen]]></description>
+      <title>[NEWS] Reverse engineering my Coway air purifier to ditch the cloud</title>
+      <link>https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud</link>
+      <guid isPermaLink="false">https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud#2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Reverse engineering my Coway air purifier to ditch the cloud]]></description>
     </item>
     <item>
-      <title>[NEWS] I&apos;m making LLMs work on small and old devices</title>
-      <link>https://github.com/hyperionaidev/smolmaxxing</link>
-      <guid isPermaLink="false">https://github.com/hyperionaidev/smolmaxxing#2026-11-13</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 I&apos;m making LLMs work on small and old devices]]></description>
+      <title>[NEWS] AI unlocks Gödel&apos;s notebooks, said to contain hundreds of proved theorems</title>
+      <link>https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths</link>
+      <guid isPermaLink="false">https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths#2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI unlocks Gödel&apos;s notebooks, said to contain hundreds of proved theorems]]></description>
     </item>
     <item>
-      <title>[NEWS] Gemini 4 Hydrogen and Orchestrator</title>
-      <link>https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity</link>
-      <guid isPermaLink="false">https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity#2026-11-13</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Gemini 4 Hydrogen and Orchestrator]]></description>
+      <title>[NEWS] No AI Slop: A Manifesto</title>
+      <link>https://www.slopmanifesto.com/</link>
+      <guid isPermaLink="false">https://www.slopmanifesto.com/#2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 No AI Slop: A Manifesto]]></description>
     </item>
     <item>
-      <title>[NEWS] Chinese frontier AI models carry the fingerprint of export-controlled GPUs</title>
-      <link>https://unemploymentlabs.com/checkpoint-forensics</link>
-      <guid isPermaLink="false">https://unemploymentlabs.com/checkpoint-forensics#2026-11-13</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Chinese frontier AI models carry the fingerprint of export-controlled GPUs]]></description>
+      <title>[NEWS] OpenAI disbands its robotics team as its general models start running robots</title>
+      <link>https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots</link>
+      <guid isPermaLink="false">https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots#2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 OpenAI disbands its robotics team as its general models start running robots]]></description>
     </item>
     <item>
-      <title>[NEWS] Why You Should Expect an AI Crash</title>
-      <link>https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash</link>
-      <guid isPermaLink="false">https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash#2026-11-13</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Why You Should Expect an AI Crash]]></description>
+      <title>[NEWS] All US airports are currently ground stopped</title>
+      <link>https://twitter.com/flightradar24/status/2121347654714077605</link>
+      <guid isPermaLink="false">https://twitter.com/flightradar24/status/2121347654714077605#2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 All US airports are currently ground stopped]]></description>
     </item>
     <item>
       <title>[REPO] agentes-chat/agentes-chat</title>
       <link>https://github.com/agentes-chat/agentes-chat</link>
-      <guid isPermaLink="false">https://github.com/agentes-chat/agentes-chat#2026-11-13</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/agentes-chat/agentes-chat#2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.]]></description>
     </item>
     <item>
       <title>[REPO] FrigadeHQ/yogurt</title>
       <link>https://github.com/FrigadeHQ/yogurt</link>
-      <guid isPermaLink="false">https://github.com/FrigadeHQ/yogurt#2026-11-13</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Private AI meeting notes. Free and open source.]]></description>
+      <guid isPermaLink="false">https://github.com/FrigadeHQ/yogurt#2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.]]></description>
     </item>
     <item>
-      <title>[REPO] dabingfy-dot/solo-to-team-skills</title>
-      <link>https://github.com/dabingfy-dot/solo-to-team-skills</link>
-      <guid isPermaLink="false">https://github.com/dabingfy-dot/solo-to-team-skills#2026-11-13</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Skills for human-led AI teams: delegate tasks, verify evidence, explain steps clearly, and learn from real cases. 一个人统筹 AI 团队：派活、核证、清楚说明、经验复用。]]></description>
+      <title>[REPO] linknimiball1974/ai-texture-forge</title>
+      <link>https://github.com/linknimiball1974/ai-texture-forge</link>
+      <guid isPermaLink="false">https://github.com/linknimiball1974/ai-texture-forge#2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 An AI-powered texture forge for Blender — turn text prompts into seamless PBR materials, concept art and scene-wide projections with local or cloud diffusion models, straight inside the 3D viewport on Windows. · dream textures · dream textures blender · dream textures addon · dream textures ai · dream textures seamless · dream textures pbr]]></description>
     </item>
     <item>
-      <title>[REPO] 21stware/bowel</title>
-      <link>https://github.com/21stware/bowel</link>
-      <guid isPermaLink="false">https://github.com/21stware/bowel#2026-11-13</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Bowel is a mihomo client for macOS, Windows, Linux and Android.]]></description>
+      <title>[REPO] op7418/guizang-game-skill</title>
+      <link>https://github.com/op7418/guizang-game-skill</link>
+      <guid isPermaLink="false">https://github.com/op7418/guizang-game-skill#2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.]]></description>
     </item>
     <item>
-      <title>[REPO] Dodaios/ste80-humanizer</title>
-      <link>https://github.com/Dodaios/ste80-humanizer</link>
-      <guid isPermaLink="false">https://github.com/Dodaios/ste80-humanizer#2026-11-13</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.]]></description>
+      <title>[REPO] threerocks/article2media</title>
+      <link>https://github.com/threerocks/article2media</link>
+      <guid isPermaLink="false">https://github.com/threerocks/article2media#2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 npm 依赖。]]></description>
     </item>
   </channel>
 </rss>

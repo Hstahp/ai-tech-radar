@@ -1,61 +1,61 @@
 {
-  "generated_at": "2026-11-13T00:01:00.598Z",
+  "generated_at": "2026-11-14T00:01:04.699Z",
   "items": [
     {
-      "key": "d7c21c501eb23f12ba47c2340d026d981857380497913d0eb9b51d95ebac21c6",
-      "title": "Gemini 4 Hydrogen",
+      "key": "cf14d9f186a2331efa8b9e730b168c6153bb5b533146164af53e8e7d95c4e71f",
+      "title": "Reverse engineering my Coway air purifier to ditch the cloud",
       "category": "news",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
+      "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud",
       "tags": [],
-      "purpose": "Gemini 4 Hydrogen",
+      "purpose": "Reverse engineering my Coway air purifier to ditch the cloud",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "2fb376d25394119438b80909d0cf5ae810a1b0ad78ba38f413fed94af5b7b446",
-      "title": "I'm making LLMs work on small and old devices",
+      "key": "12990af15e181ab96cfcd59af6eb8fe359a02784c42db964df77ea8b1b569aeb",
+      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
       "category": "news",
-      "url": "https://github.com/hyperionaidev/smolmaxxing",
+      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
       "tags": [],
-      "purpose": "I'm making LLMs work on small and old devices",
+      "purpose": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "d7e80ea809e6c296043d70c8e5328258502daecd250c0256dd5ebd2be347971f",
-      "title": "Gemini 4 Hydrogen and Orchestrator",
+      "key": "5f85a3f54a95f92ed52611360e4d901e1127ec215b1d7e90edc4c977e2ec600c",
+      "title": "No AI Slop: A Manifesto",
       "category": "news",
-      "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity",
+      "url": "https://www.slopmanifesto.com/",
       "tags": [],
-      "purpose": "Gemini 4 Hydrogen and Orchestrator",
+      "purpose": "No AI Slop: A Manifesto",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "076934ef461be2b954dba572893fb5f40ae22001098ff8f6135cabaaf477c54b",
-      "title": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "key": "691d6cdbb8fb511a56072bca1c5e895394882496b1df7a2bbe79b038813f3149",
+      "title": "OpenAI disbands its robotics team as its general models start running robots",
       "category": "news",
-      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots",
       "tags": [],
-      "purpose": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+      "purpose": "OpenAI disbands its robotics team as its general models start running robots",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "d3a8f79ced3bc4687901d695680021b2868f480ede5bdff44d0be61fed65cbff",
-      "title": "Why You Should Expect an AI Crash",
+      "key": "cdfd26896257823e516e31a31ded355e64b3ee9baf2a51d7ca408f25f935b929",
+      "title": "All US airports are currently ground stopped",
       "category": "news",
-      "url": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
+      "url": "https://twitter.com/flightradar24/status/2121347654714077605",
       "tags": [],
-      "purpose": "Why You Should Expect an AI Crash",
+      "purpose": "All US airports are currently ground stopped",
       "highlight": null,
       "action": null,
       "verdict": null,
@@ -71,7 +71,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1157
+      "stars": 1339
     },
     {
       "key": "e40297c9b5a8aa9019bb2c0af4d139202655e3d67fd7e9252fdd403af59b2217",
@@ -79,47 +79,47 @@
       "category": "repo",
       "url": "https://github.com/FrigadeHQ/yogurt",
       "tags": [],
-      "purpose": "Private AI meeting notes. Free and open source.",
+      "purpose": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 934
+      "stars": 1259
     },
     {
-      "key": "5b5b6da01dd0f8267547698fa80157381822c577f196055bb5c21b85096147eb",
-      "title": "dabingfy-dot/solo-to-team-skills",
+      "key": "69e19bc6b0441f4f5f5f05dbcf4d7084dcfac21d6b56bb3ca33ffd36f3f3c8c5",
+      "title": "linknimiball1974/ai-texture-forge",
       "category": "repo",
-      "url": "https://github.com/dabingfy-dot/solo-to-team-skills",
+      "url": "https://github.com/linknimiball1974/ai-texture-forge",
       "tags": [],
-      "purpose": "Skills for human-led AI teams: delegate tasks, verify evidence, explain steps clearly, and learn from real cases. 一个人统筹 AI 团队：派活、核证、清楚说明、经验复用。",
+      "purpose": "An AI-powered texture forge for Blender — turn text prompts into seamless PBR materials, concept art and scene-wide projections with local or cloud diffusion models, straight inside the 3D viewport on Windows. · dream textures · dream textures blender · dream textures addon · dream textures ai · dream textures seamless · dream textures pbr",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 777
+      "stars": 369
     },
     {
-      "key": "76b63de81604035c19f54510c53e21032a3f7f9bbbbc1b67e346388b4965d9e9",
-      "title": "21stware/bowel",
+      "key": "330730c995aab5ccff3e923429e915853e5794b30c05566be1fc765734c40f70",
+      "title": "op7418/guizang-game-skill",
       "category": "repo",
-      "url": "https://github.com/21stware/bowel",
+      "url": "https://github.com/op7418/guizang-game-skill",
       "tags": [],
-      "purpose": "Bowel is a mihomo client for macOS, Windows, Linux and Android.",
+      "purpose": "歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 460
+      "stars": 312
     },
     {
-      "key": "eee402332b6dfec316632ec2f4d2c68589f703a1f251a39f9e14443644a5b420",
-      "title": "Dodaios/ste80-humanizer",
+      "key": "e7457afb59af1c80c30137fb54dcc65a03f3fadd2faf9f7704611ee78cbaadc0",
+      "title": "threerocks/article2media",
       "category": "repo",
-      "url": "https://github.com/Dodaios/ste80-humanizer",
+      "url": "https://github.com/threerocks/article2media",
       "tags": [],
-      "purpose": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
+      "purpose": "把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 npm 依赖。",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 456
+      "stars": 305
     }
   ]
 }
