@@ -1,61 +1,61 @@
 {
-  "generated_at": "2026-11-14T00:01:04.699Z",
+  "generated_at": "2026-11-15T00:01:19.768Z",
   "items": [
     {
-      "key": "cf14d9f186a2331efa8b9e730b168c6153bb5b533146164af53e8e7d95c4e71f",
-      "title": "Reverse engineering my Coway air purifier to ditch the cloud",
+      "key": "daf938509f03026751a714f0d83f6aeab05f5cea89007e94f0a03678a266d6e0",
+      "title": "Lovable apps expose passport details and more than 200K private messages",
       "category": "news",
-      "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud",
+      "url": "https://www.crissyfield.de/research/lovable-en",
       "tags": [],
-      "purpose": "Reverse engineering my Coway air purifier to ditch the cloud",
+      "purpose": "Lovable apps expose passport details and more than 200K private messages",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "12990af15e181ab96cfcd59af6eb8fe359a02784c42db964df77ea8b1b569aeb",
-      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+      "key": "7e8a918c3908973f72a375cfc244f039ff89d661675a44d10656cc5198eee56d",
+      "title": "Tech companies are trying to shift the concept of privacy again",
       "category": "news",
-      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
       "tags": [],
-      "purpose": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+      "purpose": "Tech companies are trying to shift the concept of privacy again",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "5f85a3f54a95f92ed52611360e4d901e1127ec215b1d7e90edc4c977e2ec600c",
-      "title": "No AI Slop: A Manifesto",
+      "key": "491f8d171c272620910c10d47dd77e7f01112e1d5725f272b9085b994d738116",
+      "title": "Generative AI uses more energy on non-English text",
       "category": "news",
-      "url": "https://www.slopmanifesto.com/",
+      "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text",
       "tags": [],
-      "purpose": "No AI Slop: A Manifesto",
+      "purpose": "Generative AI uses more energy on non-English text",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "691d6cdbb8fb511a56072bca1c5e895394882496b1df7a2bbe79b038813f3149",
-      "title": "OpenAI disbands its robotics team as its general models start running robots",
+      "key": "34de9d80d81453d365b2c336c0d6deffc6573f103d39937a2e29a144ab2f7dd6",
+      "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
       "category": "news",
-      "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots",
+      "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
       "tags": [],
-      "purpose": "OpenAI disbands its robotics team as its general models start running robots",
+      "purpose": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "cdfd26896257823e516e31a31ded355e64b3ee9baf2a51d7ca408f25f935b929",
-      "title": "All US airports are currently ground stopped",
+      "key": "af7f8d8cd3854a599b3ab421d5233f6dc3f1639e5547e45c4641768cdbf677f2",
+      "title": "Show HN: Agweb – a browser for agents that stays out of your way",
       "category": "news",
-      "url": "https://twitter.com/flightradar24/status/2121347654714077605",
+      "url": "https://github.com/paul-nameless/agweb",
       "tags": [],
-      "purpose": "All US airports are currently ground stopped",
+      "purpose": "Show HN: Agweb – a browser for agents that stays out of your way",
       "highlight": null,
       "action": null,
       "verdict": null,
@@ -71,7 +71,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1339
+      "stars": 1400
     },
     {
       "key": "e40297c9b5a8aa9019bb2c0af4d139202655e3d67fd7e9252fdd403af59b2217",
@@ -83,43 +83,43 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1259
+      "stars": 1482
     },
     {
-      "key": "69e19bc6b0441f4f5f5f05dbcf4d7084dcfac21d6b56bb3ca33ffd36f3f3c8c5",
-      "title": "linknimiball1974/ai-texture-forge",
+      "key": "6ab9c1127f6f5ed7529841d1e0642e6fba5fb2e7558c6ca0192df376b5f69ecc",
+      "title": "Topkiflare74/ai--manus2.0",
       "category": "repo",
-      "url": "https://github.com/linknimiball1974/ai-texture-forge",
+      "url": "https://github.com/Topkiflare74/ai--manus2.0",
       "tags": [],
-      "purpose": "An AI-powered texture forge for Blender — turn text prompts into seamless PBR materials, concept art and scene-wide projections with local or cloud diffusion models, straight inside the 3D viewport on Windows. · dream textures · dream textures blender · dream textures addon · dream textures ai · dream textures seamless · dream textures pbr",
+      "purpose": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 369
+      "stars": 677
     },
     {
-      "key": "330730c995aab5ccff3e923429e915853e5794b30c05566be1fc765734c40f70",
-      "title": "op7418/guizang-game-skill",
+      "key": "3a0cde621d2b0a03a4afe75b8eb1f7e0e47cf24fb786e8eb129b5050a401c790",
+      "title": "trackboatwrightplan/GitHub-Copilot-app",
       "category": "repo",
-      "url": "https://github.com/op7418/guizang-game-skill",
+      "url": "https://github.com/trackboatwrightplan/GitHub-Copilot-app",
       "tags": [],
-      "purpose": "歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.",
+      "purpose": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories. ",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 312
+      "stars": 672
     },
     {
-      "key": "e7457afb59af1c80c30137fb54dcc65a03f3fadd2faf9f7704611ee78cbaadc0",
-      "title": "threerocks/article2media",
+      "key": "e966e0cd80538cd9c582f4f3f7f0a88d5d20c8681493123fe5b6a1d131f83294",
+      "title": "TrapAccountant/GitHub-Copilot-app",
       "category": "repo",
-      "url": "https://github.com/threerocks/article2media",
+      "url": "https://github.com/TrapAccountant/GitHub-Copilot-app",
       "tags": [],
-      "purpose": "把一篇文章或一条视频（抖音、B 站、YouTube，先转逐字稿）一键做成小红书图文、杂志长图、公众号排版和 AI 配音口播短视频的开源 Claude Code / Codex Skill。21 套主题，自动验收，零 npm 依赖。",
+      "purpose": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories. ",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 305
+      "stars": 670
     }
   ]
 }
