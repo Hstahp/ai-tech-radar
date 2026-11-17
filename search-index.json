@@ -1,61 +1,61 @@
 {
-  "generated_at": "2026-11-16T00:01:27.101Z",
+  "generated_at": "2026-11-17T00:01:04.247Z",
   "items": [
     {
-      "key": "91935a49528247b549bb751d00c3727481a827debfa9c0e0e5147b34296a92c4",
-      "title": "All AI-generated code should be Open Source",
+      "key": "74a4e87de084a0a8b9d2ce3e3def5718592564306219c1cf0be4cb80c0968315",
+      "title": "Microsoft blames monster email outage on software defect introduced in July fix",
       "category": "news",
-      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source",
+      "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
       "tags": [],
-      "purpose": "All AI-generated code should be Open Source",
+      "purpose": "Microsoft blames monster email outage on software defect introduced in July fix",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "f3ec7aca50104437d60acb0d046a18bf8a33dd04eb9710fc7bf3044fbd78652f",
-      "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
+      "key": "4353c1c4ce1b00e72f42acec9652a41b76210bbdce3c2fe750a8b2b63d0b5370",
+      "title": "United Airlines experiencing a widespread system outage, airline says",
       "category": "news",
-      "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
+      "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
       "tags": [],
-      "purpose": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
+      "purpose": "<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50524260\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=50524260</a>",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "eba8c0480eb85e20e49201775937da2eadf209173c538662f2e900126aa6ea82",
-      "title": "Understanding Positional Embeddings in Modern LLMs",
+      "key": "dd659f011024f04f24b0b918544913431aa1336cb6fdeb78ce4549a3a5fdd29c",
+      "title": "Strengthening the fight against online child sexual abuse",
       "category": "news",
-      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "url": "https://openai.com/index/strengthening-online-child-safety",
       "tags": [],
-      "purpose": "Understanding Positional Embeddings in Modern LLMs",
+      "purpose": "Strengthening the fight against online child sexual abuse",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "7895a3ff8eb274c6f1a2e03fa3df980a8f234400b541378f1faa867622e3d46c",
-      "title": "A short explainer on how El Niño works [video]",
+      "key": "b5625a22999d028e46d9d0e9bd06b73088155f9c6afe28a00d91393f1cfb61da",
+      "title": "Spamhaus new email sender requirements in November",
       "category": "news",
-      "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
+      "url": "https://www.spamhaus.org/sender-guidelines",
       "tags": [],
-      "purpose": "A short explainer on how El Niño works [video]",
+      "purpose": "Spamhaus new email sender requirements in November",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "45d7221487cb2b24ad0a5155192dff711ed221169e9fa7ff9f1d3bbf0eb84313",
-      "title": "'Birdbrain' Is a Misnomer. Crows Make Decisions Faster Than We Can",
+      "key": "d586dccccf61f0412017c4f74a54d8687b67c037cc7a2ae00dffc718d2fa0866",
+      "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
       "category": "news",
-      "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry",
       "tags": [],
-      "purpose": "'Birdbrain' Is a Misnomer. Crows Make Decisions Faster Than We Can",
+      "purpose": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
       "highlight": null,
       "action": null,
       "verdict": null,
@@ -71,7 +71,19 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1010
+      "stars": 1435
+    },
+    {
+      "key": "3184a86eddbe706f3ccd50a910ea0c519ddb92b11ddf852bfddf6da0a6b37660",
+      "title": "ZiChuanLan/freebie-radar",
+      "category": "repo",
+      "url": "https://github.com/ZiChuanLan/freebie-radar",
+      "tags": [],
+      "purpose": "白嫖与资讯资源聚合雷达：100+个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1134
     },
     {
       "key": "d30344c001416d261d6cd2c72351612b00ba0db3ef2a7e8d80dce5014f19288a",
@@ -83,43 +95,31 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1057
+      "stars": 2180
     },
     {
-      "key": "e40297c9b5a8aa9019bb2c0af4d139202655e3d67fd7e9252fdd403af59b2217",
-      "title": "FrigadeHQ/yogurt",
+      "key": "5c1d012efa9081e3c53abd7c7ff9a9bbe32f472b1c25aa384ead3f17fc7a7f6f",
+      "title": "haziqahmedqasmi/PeakCut",
       "category": "repo",
-      "url": "https://github.com/FrigadeHQ/yogurt",
+      "url": "https://github.com/haziqahmedqasmi/PeakCut",
       "tags": [],
-      "purpose": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
+      "purpose": "AI clipping for long videos and live streams. Self-hosted, bring your own AI key.",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1641
+      "stars": 654
     },
     {
-      "key": "3184a86eddbe706f3ccd50a910ea0c519ddb92b11ddf852bfddf6da0a6b37660",
-      "title": "ZiChuanLan/freebie-radar",
+      "key": "01407e022c6d7c308f8a637adce3a4fef3b35c169d2e5a63ddebea24c9a58394",
+      "title": "tiobeharxi1987/blender-ai-copilot-flow",
       "category": "repo",
-      "url": "https://github.com/ZiChuanLan/freebie-radar",
+      "url": "https://github.com/tiobeharxi1987/blender-ai-copilot-flow",
       "tags": [],
-      "purpose": "白嫖资源聚合雷达：57 个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送",
+      "purpose": "A controlled AI workflow for Blender: every copilot edit is a supervised tool call—proposed, approved, executed in sequence, cancellable after the current step and undoable by name—inside a visual studio with a built-in MCP server. · blender-ai-copilot-flow · blender · blender 3d · blender addon · blender plugin · blender extension",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 795
-    },
-    {
-      "key": "99aa4895319285d793251f02f27ebbb7dbe603dddafd4875031d2b2644d28ee6",
-      "title": "credoksopho1984/blender-ai-copilot-studio",
-      "category": "repo",
-      "url": "https://github.com/credoksopho1984/blender-ai-copilot-studio",
-      "tags": [],
-      "purpose": "An AI copilot and MCP server for Blender that turns plain-language briefs into scene operations—inside a visual chat studio with multi-agent teams, your choice of AI models, and 27 built-in scene tools. · blender-ai-copilot-studio · blender ai · ai for blender · blender copilot · blender ai copilot · blender ai assistant · blender mcp server",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 513
+      "stars": 514
     }
   ]
 }
