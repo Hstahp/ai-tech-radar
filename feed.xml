@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-18</title>
+    <title>AI Tech Radar - 2026-11-19</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Wed, 18 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] GPT‑6.2 Astra and Sol</title>
-      <link>https://openai.com/index/introducing-gpt-6-2-astra-sol</link>
-      <guid isPermaLink="false">https://openai.com/index/introducing-gpt-6-2-astra-sol#2026-11-18</guid>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 GPT‑6.2 Astra and Sol]]></description>
+      <title>[NEWS] AI agents ask better questions than KPMG accountants in audit trial</title>
+      <link>https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg</link>
+      <guid isPermaLink="false">https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg#2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI agents ask better questions than KPMG accountants in audit trial]]></description>
     </item>
     <item>
-      <title>[NEWS] MAI Code 2 and Code 2 Flash</title>
-      <link>https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash</link>
-      <guid isPermaLink="false">https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash#2026-11-18</guid>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 MAI Code 2 and Code 2 Flash]]></description>
+      <title>[NEWS] Gemini 4 Neon</title>
+      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon</link>
+      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon#2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Gemini 4 Neon]]></description>
     </item>
     <item>
-      <title>[NEWS] How the Claude Code team thinks about verification</title>
-      <link>https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification</link>
-      <guid isPermaLink="false">https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification#2026-11-18</guid>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 How the Claude Code team thinks about verification]]></description>
+      <title>[NEWS] Genie 4 is now available</title>
+      <link>https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie</link>
+      <guid isPermaLink="false">https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie#2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Genie 4 is now available]]></description>
     </item>
     <item>
-      <title>[NEWS] Not Everything Needs an LLM</title>
-      <link>https://newsletter.posthog.com/p/decision-models</link>
-      <guid isPermaLink="false">https://newsletter.posthog.com/p/decision-models#2026-11-18</guid>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Not Everything Needs an LLM]]></description>
+      <title>[NEWS] Advancing chip design with OpenAI models</title>
+      <link>https://openai.com/index/advancing-chip-design-with-our-models</link>
+      <guid isPermaLink="false">https://openai.com/index/advancing-chip-design-with-our-models#2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Advancing chip design with OpenAI models]]></description>
     </item>
     <item>
-      <title>[NEWS] Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos</title>
-      <link>https://starsling.dev/</link>
-      <guid isPermaLink="false">https://starsling.dev/#2026-11-18</guid>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 We’re Yonas and Daniel and we’re building StarSling (&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;starsling.dev&quot;&gt;https:&amp;#x2F;&amp;#x2F;starsling.dev&lt;/a&gt;), fast GitHub Actions runners with AI agents that ship PRs to continuously improve your tests and workflows.&lt;p&gt;Every CI job gets its own ephemeral sandbox on the fastest]]></description>
-    </item>
-    <item>
-      <title>[REPO] Immortal-Protocols/lastbook</title>
-      <link>https://github.com/Immortal-Protocols/lastbook</link>
-      <guid isPermaLink="false">https://github.com/Immortal-Protocols/lastbook#2026-11-18</guid>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Offline knowledge AI, maps and videos for survival and rebuilding]]></description>
+      <title>[NEWS] DaisyRose-27B: 1,200-task RL took Qwen3.8 from 5.6% to 12% on Terminal-Bench 4.1</title>
+      <link>https://www.radixark.com/blog/daisyrose-27b</link>
+      <guid isPermaLink="false">https://www.radixark.com/blog/daisyrose-27b#2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 DaisyRose-27B: 1,200-task RL took Qwen3.8 from 5.6% to 12% on Terminal-Bench 4.1]]></description>
     </item>
     <item>
       <title>[REPO] erkamyaman/rust-anything</title>
       <link>https://github.com/erkamyaman/rust-anything</link>
-      <guid isPermaLink="false">https://github.com/erkamyaman/rust-anything#2026-11-18</guid>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/erkamyaman/rust-anything#2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Rewrite your whole app in Rust, one piece at a time, checked against the original&apos;s recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.]]></description>
     </item>
     <item>
       <title>[REPO] sybil-solutions/inference-optimisation-skill</title>
       <link>https://github.com/sybil-solutions/inference-optimisation-skill</link>
-      <guid isPermaLink="false">https://github.com/sybil-solutions/inference-optimisation-skill#2026-11-18</guid>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/sybil-solutions/inference-optimisation-skill#2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization]]></description>
+    </item>
+    <item>
+      <title>[REPO] haziqahmedqasmi/PeakCut</title>
+      <link>https://github.com/haziqahmedqasmi/PeakCut</link>
+      <guid isPermaLink="false">https://github.com/haziqahmedqasmi/PeakCut#2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI clipping for long videos and live streams. Self-hosted, bring your own AI key.]]></description>
     </item>
     <item>
       <title>[REPO] duwqijlk/muse-protocol</title>
       <link>https://github.com/duwqijlk/muse-protocol</link>
-      <guid isPermaLink="false">https://github.com/duwqijlk/muse-protocol#2026-11-18</guid>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/duwqijlk/muse-protocol#2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）]]></description>
     </item>
     <item>
-      <title>[REPO] ZiChuanLan/freebie-radar</title>
-      <link>https://github.com/ZiChuanLan/freebie-radar</link>
-      <guid isPermaLink="false">https://github.com/ZiChuanLan/freebie-radar#2026-11-18</guid>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 白嫖与资讯资源聚合雷达：100+个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送]]></description>
+      <title>[REPO] boringmarketer/boring-marketing-skills</title>
+      <link>https://github.com/boringmarketer/boring-marketing-skills</link>
+      <guid isPermaLink="false">https://github.com/boringmarketer/boring-marketing-skills#2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.]]></description>
     </item>
   </channel>
 </rss>

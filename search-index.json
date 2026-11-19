@@ -1,77 +1,65 @@
 {
-  "generated_at": "2026-11-18T00:01:04.316Z",
+  "generated_at": "2026-11-19T00:01:02.144Z",
   "items": [
     {
-      "key": "8f6af8c44a4a1bfb5de31585ff7d049da9f0b0c7303ae5eb79fd652e216c50e9",
-      "title": "GPT‑6.2 Astra and Sol",
+      "key": "f6f0576c6cc397f30abc09f34fd8389c3f37f9e9abdd4f2f15398332a12dd851",
+      "title": "AI agents ask better questions than KPMG accountants in audit trial",
       "category": "news",
-      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg",
       "tags": [],
-      "purpose": "GPT‑6.2 Astra and Sol",
+      "purpose": "AI agents ask better questions than KPMG accountants in audit trial",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "c74e8eacd8b57733cc238f3e68fd114fdb94ae6399707937eeb271c2d04e4048",
-      "title": "MAI Code 2 and Code 2 Flash",
+      "key": "be0aed2f51056a6d6c6f6be3844c842fd10cee1a25a0713c0c8c904167c3b26d",
+      "title": "Gemini 4 Neon",
       "category": "news",
-      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
       "tags": [],
-      "purpose": "MAI Code 2 and Code 2 Flash",
+      "purpose": "Gemini 4 Neon",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "9a0aa0e71b450c03e243f76acf49ec0cb65f52136b18fdee44b8007295d0a92c",
-      "title": "How the Claude Code team thinks about verification",
+      "key": "a261d2eee241a886eda0f4dfc3126b623eda54fe9df5ccfbdf5530ae964b6d38",
+      "title": "Genie 4 is now available",
       "category": "news",
-      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie",
       "tags": [],
-      "purpose": "How the Claude Code team thinks about verification",
+      "purpose": "Genie 4 is now available",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "233f4988e8c3601e84ee2f063f23a5f6c6d7f30234984fe40b8586cc6da1de86",
-      "title": "Not Everything Needs an LLM",
+      "key": "68ddb817fe4001c0fc7b71404e8ed33269a5f57651ec2110d7ae5f13ebb157e7",
+      "title": "Advancing chip design with OpenAI models",
       "category": "news",
-      "url": "https://newsletter.posthog.com/p/decision-models",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models",
       "tags": [],
-      "purpose": "Not Everything Needs an LLM",
+      "purpose": "Advancing chip design with OpenAI models",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "35ca44d444f163d1774f03920964cb4866be6696ba51842ced7657c998fa7ea1",
-      "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+      "key": "f8fba398499bc4a3f9209f8873f41fd955d7466817f9e37a7e24d5983ffdb61f",
+      "title": "DaisyRose-27B: 1,200-task RL took Qwen3.8 from 5.6% to 12% on Terminal-Bench 4.1",
       "category": "news",
-      "url": "https://starsling.dev/",
+      "url": "https://www.radixark.com/blog/daisyrose-27b",
       "tags": [],
-      "purpose": "We’re Yonas and Daniel and we’re building StarSling (<a href=\"https:&#x2F;&#x2F;starsling.dev\">https:&#x2F;&#x2F;starsling.dev</a>), fast GitHub Actions runners with AI agents that ship PRs to continuously improve your tests and workflows.<p>Every CI job gets its own ephemeral sandbox on the fastest",
+      "purpose": "DaisyRose-27B: 1,200-task RL took Qwen3.8 from 5.6% to 12% on Terminal-Bench 4.1",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
-    },
-    {
-      "key": "06d0abbc37d63f9444146e24a2d00952120fe703083e778df313ca8d5404e0b1",
-      "title": "Immortal-Protocols/lastbook",
-      "category": "repo",
-      "url": "https://github.com/Immortal-Protocols/lastbook",
-      "tags": [],
-      "purpose": "Offline knowledge AI, maps and videos for survival and rebuilding",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 1752
     },
     {
       "key": "52586a3c1da9dd72f7a916927e7179bd4b7825925c9698653381c8f64f990fad",
@@ -83,7 +71,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1243
+      "stars": 3321
     },
     {
       "key": "34d18f2606ec330236e6ab8bd6e48ac61281f63805a4a2e506e4aa3d7e96f1b4",
@@ -95,7 +83,19 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 915
+      "stars": 1106
+    },
+    {
+      "key": "5c1d012efa9081e3c53abd7c7ff9a9bbe32f472b1c25aa384ead3f17fc7a7f6f",
+      "title": "haziqahmedqasmi/PeakCut",
+      "category": "repo",
+      "url": "https://github.com/haziqahmedqasmi/PeakCut",
+      "tags": [],
+      "purpose": "AI clipping for long videos and live streams. Self-hosted, bring your own AI key.",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1081
     },
     {
       "key": "c47310da96c9a6bc5dad526e3934be04e4ed26f3ded3fcbf2f0a96c13d703eea",
@@ -107,19 +107,19 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1583
+      "stars": 1627
     },
     {
-      "key": "3184a86eddbe706f3ccd50a910ea0c519ddb92b11ddf852bfddf6da0a6b37660",
-      "title": "ZiChuanLan/freebie-radar",
+      "key": "3de9cb2c7a116d96b1e0597c27cdc2265df28c3e568a98e9d88c1c22bb281ea4",
+      "title": "boringmarketer/boring-marketing-skills",
       "category": "repo",
-      "url": "https://github.com/ZiChuanLan/freebie-radar",
+      "url": "https://github.com/boringmarketer/boring-marketing-skills",
       "tags": [],
-      "purpose": "白嫖与资讯资源聚合雷达：100+个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送",
+      "purpose": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1422
+      "stars": 659
     }
   ]
 }
