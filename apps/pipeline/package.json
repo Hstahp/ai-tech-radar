@@ -12,7 +12,8 @@
     "db:migrate": "node --import tsx/esm src/cli/db-migrate.ts",
     "db:check": "node --import tsx/esm src/cli/db-check.ts",
     "db:maintain": "node --import tsx/esm src/cli/db-maintain.ts",
-    "search": "node --import tsx/esm src/cli/search.ts"
+    "search": "node --import tsx/esm src/cli/search.ts",
+    "eval:rag": "node --import tsx/esm src/cli/eval-rag.ts"
   },
   "dependencies": {
     "@radar/core": "workspace:*",
