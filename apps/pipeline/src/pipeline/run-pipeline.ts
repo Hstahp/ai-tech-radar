@@ -8,6 +8,7 @@ import { runMigrations } from "../cli/db-migrate.js";
 import { openDatabase } from "../repositories/db.js";
 import { DigestsRepository } from "../repositories/digests-repo.js";
 import { ItemsRepository } from "../repositories/items-repo.js";
+import { MetricsRepository } from "../repositories/metrics-repo.js";
 import { SummariesRepository } from "../repositories/summaries-repo.js";
 import { GitHubSearchAdapter } from "../sources/github-search.js";
 import { HackerNewsAdapter } from "../sources/hacker-news.js";
@@ -15,6 +16,7 @@ import { HuggingFacePapersAdapter } from "../sources/huggingface-papers.js";
 import type { SourceAdapter } from "../sources/source.js";
 import { fetchAllSources } from "./steps/fetch-items.js";
 import { publishAndExportDigest } from "./steps/export-digest.js";
+import { exportTrending } from "./steps/export-trending.js";
 import { scoreAndSelectCandidates } from "./steps/score-items.js";
 import { summarizeCandidates } from "./steps/summarize-items.js";
 import { buildDiscordEmbeds, sendDiscordNotification } from "../lib/discord.js";
@@ -99,9 +101,13 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
         fallbackLlm.modelName
       );
 
-      // 7. Discord notification (if configured)
+      // 7. Trending export
+      logger.info("--- Step 5: Exporting trending snapshot ---");
+      exportTrending(new MetricsRepository(db), config.EXPORT_DIR, todayStr);
+
+      // 8. Discord notification (if configured)
       if (config.DISCORD_WEBHOOK_URL) {
-        logger.info("--- Step 5: Sending Discord notification ---");
+        logger.info("--- Step 6: Sending Discord notification ---");
         const batches = buildDiscordEmbeds(feedItems, todayStr);
         for (const batch of batches) {
           await sendDiscordNotification(config.DISCORD_WEBHOOK_URL, batch);

@@ -13,6 +13,7 @@ import {
   AdminAuditPage,
 } from "./features/admin";
 import { ItemDetailPage } from "./pages/ItemDetailPage";
+import { SearchPage } from "./pages/SearchPage";
 import { ChatPanel } from "./features/chat";
 import { useBookmarks } from "./features/bookmarks";
 
@@ -74,7 +75,32 @@ export function App() {
     );
   }
 
-  // 2. Phân luồng ROUTE ITEM DETAIL (/item/:key)
+  // 2. Phân luồng ROUTE TÌM KIẾM (/search)
+  if (currentPath.startsWith("/search")) {
+    return (
+      <>
+        <UserLayout
+          onNavigateHome={() => navigate("/")}
+          rightSlot={
+            <UserMenu
+              user={user}
+              isLoading={isAuthLoading}
+              onLogin={loginWithGoogle}
+              onLogout={logout}
+              onDeleteAccount={deleteAccount}
+              onOpenTagModal={openTagModal}
+              onOpenAdmin={() => navigate("/admin")}
+            />
+          }
+        >
+          <SearchPage />
+        </UserLayout>
+        <ChatPanel user={user} isAuthLoading={isAuthLoading} onLogin={loginWithGoogle} />
+      </>
+    );
+  }
+
+  // 3. Phân luồng ROUTE ITEM DETAIL (/item/:key)
   if (currentPath.startsWith("/item/")) {
     const itemKey = decodeURIComponent(currentPath.replace("/item/", ""));
 
@@ -135,7 +161,7 @@ export function App() {
     );
   }
 
-  // 3. Phân luồng ROUTE TRANG CHỦ (Bản tin / Bento Grid)
+  // 4. Phân luồng ROUTE TRANG CHỦ (Bản tin / Bento Grid)
   return (
     <>
       <UserLayout
