@@ -1,61 +1,61 @@
 {
-  "generated_at": "2026-11-19T00:01:02.144Z",
+  "generated_at": "2026-11-20T00:01:03.526Z",
   "items": [
     {
-      "key": "f6f0576c6cc397f30abc09f34fd8389c3f37f9e9abdd4f2f15398332a12dd851",
-      "title": "AI agents ask better questions than KPMG accountants in audit trial",
+      "key": "21c18831fcc7a86452977ec05907f043b70e1adb3d065d6fc12ee2897d289bc8",
+      "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
       "category": "news",
-      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg",
+      "url": "https://verialabs.com/ruby2shell",
       "tags": [],
-      "purpose": "AI agents ask better questions than KPMG accountants in audit trial",
+      "purpose": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "be0aed2f51056a6d6c6f6be3844c842fd10cee1a25a0713c0c8c904167c3b26d",
-      "title": "Gemini 4 Neon",
+      "key": "5fe21d2b4ecab0b0d155093a6e6ab840418403ca7f39e16ef22c0a3ac253e717",
+      "title": "Claude solves two open problems in the physics of black holes",
       "category": "news",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
       "tags": [],
-      "purpose": "Gemini 4 Neon",
+      "purpose": "Claude solves two open problems in the physics of black holes",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "a261d2eee241a886eda0f4dfc3126b623eda54fe9df5ccfbdf5530ae964b6d38",
-      "title": "Genie 4 is now available",
+      "key": "e39600edda0e5accc0d59352a6d46bf86b1de745583abb6b1cea48ac3ffaa788",
+      "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
       "category": "news",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie",
+      "url": "https://thedataexchange.media/pete-warden-moonshine",
       "tags": [],
-      "purpose": "Genie 4 is now available",
+      "purpose": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "68ddb817fe4001c0fc7b71404e8ed33269a5f57651ec2110d7ae5f13ebb157e7",
-      "title": "Advancing chip design with OpenAI models",
+      "key": "a75a478f677277d8ec7f405a30d60463d5a3a1cbe763db310c78270ba9708782",
+      "title": "An Oregon library ditched Dewey Decimal and got people excited about books again",
       "category": "news",
-      "url": "https://openai.com/index/advancing-chip-design-with-our-models",
+      "url": "https://www.fastcompany.com/91597520/oregon-library-ditched-dewey-decimal-wayfinding-system",
       "tags": [],
-      "purpose": "Advancing chip design with OpenAI models",
+      "purpose": "An Oregon library ditched Dewey Decimal and got people excited about books again",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "f8fba398499bc4a3f9209f8873f41fd955d7466817f9e37a7e24d5983ffdb61f",
-      "title": "DaisyRose-27B: 1,200-task RL took Qwen3.8 from 5.6% to 12% on Terminal-Bench 4.1",
+      "key": "c50a064b65c55ff5ed6ecfc0d7a212185011c0797d4a95574fbd5b0aab76d5e1",
+      "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
       "category": "news",
-      "url": "https://www.radixark.com/blog/daisyrose-27b",
+      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
       "tags": [],
-      "purpose": "DaisyRose-27B: 1,200-task RL took Qwen3.8 from 5.6% to 12% on Terminal-Bench 4.1",
+      "purpose": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
       "highlight": null,
       "action": null,
       "verdict": null,
@@ -71,7 +71,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 3321
+      "stars": 5149
     },
     {
       "key": "34d18f2606ec330236e6ab8bd6e48ac61281f63805a4a2e506e4aa3d7e96f1b4",
@@ -83,7 +83,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1106
+      "stars": 1258
     },
     {
       "key": "5c1d012efa9081e3c53abd7c7ff9a9bbe32f472b1c25aa384ead3f17fc7a7f6f",
@@ -95,7 +95,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1081
+      "stars": 1331
     },
     {
       "key": "c47310da96c9a6bc5dad526e3934be04e4ed26f3ded3fcbf2f0a96c13d703eea",
@@ -107,7 +107,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1627
+      "stars": 1655
     },
     {
       "key": "3de9cb2c7a116d96b1e0597c27cdc2265df28c3e568a98e9d88c1c22bb281ea4",
@@ -119,7 +119,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 659
+      "stars": 718
     }
   ]
 }
