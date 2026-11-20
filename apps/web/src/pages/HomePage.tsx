@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Loader2, AlertCircle, Sparkles, Tag as TagIcon, LogIn } from "lucide-react";
 import { MainLayout } from "../layouts/MainLayout";
 import { FilterBar, DigestSection, useDigest } from "../features/digest";
+import { TrendingStrip } from "../features/trending";
 import { useAuth, UserMenu, UserTagModal } from "../features/auth";
 import { AdminModal } from "../features/admin";
 import { Button } from "../components/ui/Button";
@@ -72,6 +73,8 @@ export function HomePage() {
       {/* Content state */}
       {!isLoading && !error && (
         <>
+          <TrendingStrip />
+
           <FilterBar
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
