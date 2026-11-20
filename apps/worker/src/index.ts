@@ -9,6 +9,7 @@ import { createExplainRouter } from './explain/routes.js';
 import { createAdminRouter } from './admin/routes.js';
 import { createInternalRouter } from './internal/routes.js';
 import { createBookmarkRouter } from './bookmarks/routes.js';
+import { createSearchRouter } from './search/routes.js';
 import { appErrorHandler } from './lib/errors.js';
 import type { SearchIndexItem } from '@radar/core';
 
@@ -106,6 +107,7 @@ export async function getSearchIndexItems(env?: unknown): Promise<SearchIndexIte
 app.route('/', createAuthRouter(authService));
 app.route('/', createChatRouter({ appDb, getSearchIndex: getSearchIndexItems }));
 app.route('/', createExplainRouter({ appDb, getSearchIndex: getSearchIndexItems }));
+app.route('/', createSearchRouter({ getSearchIndex: (env) => getSearchIndexItems(env) }));
 app.route('/api/admin', createAdminRouter({ appDb }));
 app.route('/internal', createInternalRouter({ appDb }));
 app.route('/api/me/bookmarks', createBookmarkRouter({ appDb }));

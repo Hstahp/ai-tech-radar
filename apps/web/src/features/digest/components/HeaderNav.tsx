@@ -1,4 +1,4 @@
-import { Radar, Calendar, Rss, GitFork } from "lucide-react";
+import { Radar, Calendar, Rss, GitFork, Search } from "lucide-react";
 import { formatDigestDate } from "../../../lib/date-format";
 import { ThemeToggle, useTheme } from "../../theme";
 
@@ -58,6 +58,19 @@ export function HeaderNav({ digestDate, itemsCount, rightSlot, onNavigateHome }:
                 {itemsCount !== undefined && <span className="text-slate-400 dark:text-slate-500">• {itemsCount} tin</span>}
               </div>
             )}
+
+            <a
+              href="/search"
+              onClick={(e) => {
+                e.preventDefault();
+                window.history.pushState({}, '', '/search');
+                window.dispatchEvent(new PopStateEvent('popstate'));
+              }}
+              className="text-xs font-medium px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 flex items-center gap-1.5 transition-colors"
+            >
+              <Search className="h-3.5 w-3.5" />
+              <span>Tìm kiếm</span>
+            </a>
 
             <a
               href="/data/export/feed.xml"
