@@ -1,0 +1,45 @@
+{
+  "cases": [
+    {
+      "query": "DeepInfer là gì?",
+      "expectedTitleContains": ["DeepInfer"]
+    },
+    {
+      "query": "framework inference cho DeepSeek",
+      "expectedTitleContains": ["DeepInfer"]
+    },
+    {
+      "query": "Facebook Pages trả phí đăng link",
+      "expectedTitleContains": ["Facebook Pages"]
+    },
+    {
+      "query": "Claude thiết kế protein binder",
+      "expectedTitleContains": ["Claude designed protein binders"]
+    },
+    {
+      "query": "whatsapp mcp",
+      "expectedTitleContains": ["whatsapp-mcp"]
+    },
+    {
+      "query": "Rust AI gateway plugin",
+      "expectedTitleContains": ["Respan"]
+    },
+    {
+      "query": "huashu motion",
+      "expectedTitleContains": ["huashu-motion"]
+    },
+    {
+      "query": "git-ai",
+      "expectedTitleContains": ["git-ai"]
+    },
+    {
+      "query": "blender mcp addon",
+      "expectedTitleContains": ["blender-ai-mcp-addon"]
+    },
+    {
+      "query": "Giá vàng hôm nay bao nhiêu?",
+      "expectedTitleContains": ["không có trong bản tin"],
+      "expectRefusal": true
+    }
+  ]
+}
