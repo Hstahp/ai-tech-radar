@@ -1,7 +1,9 @@
 import type { Category } from "@radar/core";
 import { calculateItemScore } from "../../domain/scoring.js";
+import { calculateDailyVelocity } from "../../domain/metrics.js";
 import { logger } from "../../lib/logger.js";
 import type { DBAdapter } from "../../repositories/db.js";
+import { MetricsRepository } from "../../repositories/metrics-repo.js";
 
 export interface ScoredCandidate {
   id: number;
@@ -24,6 +26,9 @@ export function scoreAndSelectCandidates(
   maxPerCategory: number = 5
 ): ScoredCandidate[] {
   logger.info(`Scoring items for digest date: ${todayStr}`);
+
+  const deltaRows = new MetricsRepository(db).getDeltasForDate(todayStr);
+  const deltaByItem = new Map(deltaRows.map((row) => [row.itemId, row]));
 
   // Fetch active items with metrics
   const rows = db
@@ -48,11 +53,10 @@ export function scoreAndSelectCandidates(
     const sourceWeight = row.source_weight ?? 1.0;
     const novelty = row.digest_appearances === 0 ? 1.0 : 0.2;
 
-    const stars = row.stars ?? 0;
-    const points = row.points ?? 0;
-    const installs = row.installs ?? 0;
-
-    const velocity = Math.min((stars + points * 2 + installs) / 1000, 1.0);
+    const deltaRow = deltaByItem.get(row.id);
+    const velocity = deltaRow
+      ? calculateDailyVelocity(deltaRow.previous, deltaRow.current, deltaRow.days)
+      : 0;
     const recency = 0.8;
     const quality = row.description && row.description.length > 20 ? 0.9 : 0.5;
 
