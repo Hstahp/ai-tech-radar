@@ -1,65 +1,77 @@
 {
-  "generated_at": "2026-11-20T00:01:03.526Z",
+  "generated_at": "2026-11-21T00:01:03.717Z",
   "items": [
     {
-      "key": "21c18831fcc7a86452977ec05907f043b70e1adb3d065d6fc12ee2897d289bc8",
-      "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
+      "key": "3b3270b0917323ae879a1f5a2e2db2f4dea36313e995fa2b3fa90521189cc310",
+      "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
       "category": "news",
-      "url": "https://verialabs.com/ruby2shell",
+      "url": "https://alpo.ge/remark.pdf",
       "tags": [],
-      "purpose": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
+      "purpose": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "5fe21d2b4ecab0b0d155093a6e6ab840418403ca7f39e16ef22c0a3ac253e717",
-      "title": "Claude solves two open problems in the physics of black holes",
+      "key": "e1c97d950edb30187e244f0e5585698213db3fc8ac2ddb72851dd7f7c2c5465f",
+      "title": "NINLIVE: The Nine Inch Nails live archive",
       "category": "news",
-      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "url": "https://ninlive.com/",
       "tags": [],
-      "purpose": "Claude solves two open problems in the physics of black holes",
+      "purpose": "NINLIVE: The Nine Inch Nails live archive",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "e39600edda0e5accc0d59352a6d46bf86b1de745583abb6b1cea48ac3ffaa788",
-      "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
+      "key": "75b8dbd1e569b3d48a5271775a7560bde9a3ebbf21456914aa2418443426990a",
+      "title": "If you can't explain something in simple terms, you don't understand it (2017)",
       "category": "news",
-      "url": "https://thedataexchange.media/pete-warden-moonshine",
+      "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
       "tags": [],
-      "purpose": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
+      "purpose": "If you can't explain something in simple terms, you don't understand it (2017)",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "a75a478f677277d8ec7f405a30d60463d5a3a1cbe763db310c78270ba9708782",
-      "title": "An Oregon library ditched Dewey Decimal and got people excited about books again",
+      "key": "3381c1b46b2b81fa0a771b8a1f3da29d0a409d7a204fa1944649d30c79a386e2",
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
       "category": "news",
-      "url": "https://www.fastcompany.com/91597520/oregon-library-ditched-dewey-decimal-wayfinding-system",
+      "url": "https://architectlabs.com/blog/frostbite",
       "tags": [],
-      "purpose": "An Oregon library ditched Dewey Decimal and got people excited about books again",
+      "purpose": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "c50a064b65c55ff5ed6ecfc0d7a212185011c0797d4a95574fbd5b0aab76d5e1",
-      "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+      "key": "fb565551db854bc7fe0ad8a77224e10b728082daeec9f0aaf774c007986ee32e",
+      "title": "Nasdaq erases all 2026 gains",
       "category": "news",
-      "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+      "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
       "tags": [],
-      "purpose": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+      "purpose": "Nasdaq erases all 2026 gains",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
+    },
+    {
+      "key": "079a57dfe32b33e82b632fd90a54aed0f8adf56a50b7fdc6a15fa9cdd581daf1",
+      "title": "bookwjitchieni1986/blender-ai-mcp-addon",
+      "category": "repo",
+      "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+      "tags": [],
+      "purpose": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1763
     },
     {
       "key": "52586a3c1da9dd72f7a916927e7179bd4b7825925c9698653381c8f64f990fad",
@@ -71,7 +83,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 5149
+      "stars": 6627
     },
     {
       "key": "34d18f2606ec330236e6ab8bd6e48ac61281f63805a4a2e506e4aa3d7e96f1b4",
@@ -83,31 +95,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 1258
-    },
-    {
-      "key": "5c1d012efa9081e3c53abd7c7ff9a9bbe32f472b1c25aa384ead3f17fc7a7f6f",
-      "title": "haziqahmedqasmi/PeakCut",
-      "category": "repo",
-      "url": "https://github.com/haziqahmedqasmi/PeakCut",
-      "tags": [],
-      "purpose": "AI clipping for long videos and live streams. Self-hosted, bring your own AI key.",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 1331
-    },
-    {
-      "key": "c47310da96c9a6bc5dad526e3934be04e4ed26f3ded3fcbf2f0a96c13d703eea",
-      "title": "duwqijlk/muse-protocol",
-      "category": "repo",
-      "url": "https://github.com/duwqijlk/muse-protocol",
-      "tags": [],
-      "purpose": "muse.ai 注册与邀请码兑换协议研究（纯 HTTP Python 实现）",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 1655
+      "stars": 1327
     },
     {
       "key": "3de9cb2c7a116d96b1e0597c27cdc2265df28c3e568a98e9d88c1c22bb281ea4",
@@ -119,7 +107,19 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 718
+      "stars": 744
+    },
+    {
+      "key": "69533b070935b057e35a860157686e63b047f92fc2b5942022434d27191eadb2",
+      "title": "iamajmeena/neonclipping",
+      "category": "repo",
+      "url": "https://github.com/iamajmeena/neonclipping",
+      "tags": [],
+      "purpose": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 1240
     }
   ]
 }
