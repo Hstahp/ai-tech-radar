@@ -81,6 +81,12 @@ Tránh tên mơ hồ: `data`, `info`, `temp`, `utils2`, `helper`, `manager`, `ha
 - Một module `config` duy nhất đọc và validate biến môi trường (Zod), phần còn lại của code **không** đọc `process.env` trực tiếp.
 - Tên model LLM nằm trong config, **không** viết thẳng trong logic.
 
+### 1.6. Vòng lặp xác minh và xử lý thất bại
+1. **Trước khi tạo PR:** chạy `pnpm typecheck`, `pnpm lint`, `pnpm test` (thêm `pnpm build` nếu sửa web). Nếu môi trường có skill `verify`, dùng skill đó làm cổng kiểm tra cuối.
+2. **Tự sửa tối đa 3 lần:** mỗi lần sửa phải chạy lại đúng bộ kiểm tra đã fail. Sau 3 lần vẫn fail, **dừng lại**, báo người kèm lỗi cụ thể, lệnh đã chạy và phạm vi đã thử.
+3. **Không sửa test hay `REVIEW.md` chỉ để test pass.** Nếu hành vi thay đổi có chủ đích, cập nhật test tương ứng và ghi rõ lý do trong PR. Không xóa, bỏ qua hay làm yếu assertion để che lỗi.
+4. **Khi review PR:** đọc `REVIEW.md` ở thư mục gốc, gắn nhãn Important / Nit / Pre-existing và chạy checklist theo diff.
+
 ---
 
 ## 2. QUY TẮC BACKEND
