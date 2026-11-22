@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-21</title>
+    <title>AI Tech Radar - 2026-11-22</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Sat, 21 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]</title>
-      <link>https://alpo.ge/remark.pdf</link>
-      <guid isPermaLink="false">https://alpo.ge/remark.pdf#2026-11-21</guid>
-      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]]]></description>
+      <title>[NEWS] Pill to treat pancreatic cancer hailed as &apos;biggest breakthrough in decades&apos;</title>
+      <link>https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib</link>
+      <guid isPermaLink="false">https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib#2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Pill to treat pancreatic cancer hailed as &apos;biggest breakthrough in decades&apos;]]></description>
     </item>
     <item>
-      <title>[NEWS] NINLIVE: The Nine Inch Nails live archive</title>
-      <link>https://ninlive.com/</link>
-      <guid isPermaLink="false">https://ninlive.com/#2026-11-21</guid>
-      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 NINLIVE: The Nine Inch Nails live archive]]></description>
+      <title>[NEWS] Tropical Rainforests Species may be surprisingly young</title>
+      <link>https://phys.org/news/2026-11-species-tropical-rainforests-young-emergence.html</link>
+      <guid isPermaLink="false">https://phys.org/news/2026-11-species-tropical-rainforests-young-emergence.html#2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Tropical Rainforests Species may be surprisingly young]]></description>
     </item>
     <item>
-      <title>[NEWS] If you can&apos;t explain something in simple terms, you don&apos;t understand it (2017)</title>
-      <link>https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it</link>
-      <guid isPermaLink="false">https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it#2026-11-21</guid>
-      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 If you can&apos;t explain something in simple terms, you don&apos;t understand it (2017)]]></description>
+      <title>[NEWS] Context-Generic Programming v0.8.0 – Pluggable trait implementations for Rust</title>
+      <link>https://contextgeneric.dev/blog/v0.8.0-release</link>
+      <guid isPermaLink="false">https://contextgeneric.dev/blog/v0.8.0-release#2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Context-Generic Programming v0.8.0 – Pluggable trait implementations for Rust]]></description>
     </item>
     <item>
-      <title>[NEWS] Frostbite: A new CPU architecture discovered, designed and verified by AI</title>
-      <link>https://architectlabs.com/blog/frostbite</link>
-      <guid isPermaLink="false">https://architectlabs.com/blog/frostbite#2026-11-21</guid>
-      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Frostbite: A new CPU architecture discovered, designed and verified by AI]]></description>
+      <title>[NEWS] Pandex – Official European Law for AI Agents, over MCP</title>
+      <link>https://www.pandex.io/</link>
+      <guid isPermaLink="false">https://www.pandex.io/#2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Pandex – Official European Law for AI Agents, over MCP]]></description>
     </item>
     <item>
-      <title>[NEWS] Nasdaq erases all 2026 gains</title>
-      <link>https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html</link>
-      <guid isPermaLink="false">https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html#2026-11-21</guid>
-      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Nasdaq erases all 2026 gains]]></description>
+      <title>[NEWS] LLMs can read and write executables byte by byte from a hex dump</title>
+      <link>https://sgiannopoulos.github.io/blog/machine-code-programming</link>
+      <guid isPermaLink="false">https://sgiannopoulos.github.io/blog/machine-code-programming#2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 LLMs can read and write executables byte by byte from a hex dump]]></description>
+    </item>
+    <item>
+      <title>[REPO] iamajmeena/neonclipping</title>
+      <link>https://github.com/iamajmeena/neonclipping</link>
+      <guid isPermaLink="false">https://github.com/iamajmeena/neonclipping#2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).]]></description>
     </item>
     <item>
       <title>[REPO] bookwjitchieni1986/blender-ai-mcp-addon</title>
       <link>https://github.com/bookwjitchieni1986/blender-ai-mcp-addon</link>
-      <guid isPermaLink="false">https://github.com/bookwjitchieni1986/blender-ai-mcp-addon#2026-11-21</guid>
-      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/bookwjitchieni1986/blender-ai-mcp-addon#2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.]]></description>
     </item>
     <item>
       <title>[REPO] erkamyaman/rust-anything</title>
       <link>https://github.com/erkamyaman/rust-anything</link>
-      <guid isPermaLink="false">https://github.com/erkamyaman/rust-anything#2026-11-21</guid>
-      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/erkamyaman/rust-anything#2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Rewrite your whole app in Rust, one piece at a time, checked against the original&apos;s recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.]]></description>
     </item>
     <item>
       <title>[REPO] sybil-solutions/inference-optimisation-skill</title>
       <link>https://github.com/sybil-solutions/inference-optimisation-skill</link>
-      <guid isPermaLink="false">https://github.com/sybil-solutions/inference-optimisation-skill#2026-11-21</guid>
-      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/sybil-solutions/inference-optimisation-skill#2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization]]></description>
     </item>
     <item>
-      <title>[REPO] boringmarketer/boring-marketing-skills</title>
-      <link>https://github.com/boringmarketer/boring-marketing-skills</link>
-      <guid isPermaLink="false">https://github.com/boringmarketer/boring-marketing-skills#2026-11-21</guid>
-      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.]]></description>
-    </item>
-    <item>
-      <title>[REPO] iamajmeena/neonclipping</title>
-      <link>https://github.com/iamajmeena/neonclipping</link>
-      <guid isPermaLink="false">https://github.com/iamajmeena/neonclipping#2026-11-21</guid>
-      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).]]></description>
+      <title>[REPO] staryone/motlab</title>
+      <link>https://github.com/staryone/motlab</link>
+      <guid isPermaLink="false">https://github.com/staryone/motlab#2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Video as code: canvas scenes rendered with WebCodecs in headless Chrome, a review viewer, and agent skills that build the video from your references.]]></description>
     </item>
   </channel>
 </rss>
