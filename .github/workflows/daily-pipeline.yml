@@ -19,9 +19,16 @@
 #   DISCORD_WEBHOOK_URL   (tùy chọn, gửi điểm tin lên Discord)
 #   TELEGRAM_BOT_TOKEN    (tùy chọn, để nhận cảnh báo lỗi)
 #   TELEGRAM_CHAT_ID      (tùy chọn)
+#   REDDIT_CLIENT_ID      (tùy chọn, Reddit app client ID)
+#   REDDIT_CLIENT_SECRET  (tùy chọn, Reddit app secret)
+#   X_BEARER_TOKEN        (tùy chọn, X API app-only bearer token)
+#   SEMANTIC_SCHOLAR_API_KEY (tùy chọn, tránh rate limit 429)
 # Variables (tùy chọn):
 #   LLM_PRIMARY_MODEL     tên model chính, vd đặt theo model Flash/Flash-Lite hiện hành
 #   LLM_FALLBACK_MODEL    tên model dự phòng
+#   REDDIT_USER_AGENT     User-Agent mô tả app, vd "script:ai-tech-radar:v1.0 (by /u/username)"
+#   MAX_DIGEST_ITEMS      số mục tối đa mỗi bản tin (mặc định 25)
+#   MAX_ITEMS_PER_CATEGORY số mục tối đa mỗi category (mặc định 8)
 #
 # Lưu ý:
 #   - cron của GitHub chạy theo UTC và có thể trễ vài phút đến hàng chục phút khi tải cao.
@@ -127,6 +134,13 @@ jobs:
                   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
                   GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
                   DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+                  REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+                  REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+                  REDDIT_USER_AGENT: ${{ vars.REDDIT_USER_AGENT || 'AI-Tech-Radar/1.0' }}
+                  X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+                  SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+                  MAX_DIGEST_ITEMS: ${{ vars.MAX_DIGEST_ITEMS || '25' }}
+                  MAX_ITEMS_PER_CATEGORY: ${{ vars.MAX_ITEMS_PER_CATEGORY || '8' }}
                   SITE_URL: 'https://ai-tech-radar-fe.phatle219.workers.dev'
                   LLM_PRIMARY_MODEL: ${{ vars.LLM_PRIMARY_MODEL }}
                   LLM_FALLBACK_MODEL: ${{ vars.LLM_FALLBACK_MODEL }}
