@@ -35,6 +35,8 @@ const VERDICT_EMOJIS: Record<Verdict, string> = {
     skip: '⏭️ Bỏ qua',
 };
 
+export const DISCORD_TEASER_ITEMS = 4;
+
 export function buildDiscordEmbeds(
     items: DigestFeedItem[],
     digestDate: string,
@@ -42,8 +44,8 @@ export function buildDiscordEmbeds(
 ): DiscordWebhookPayload[] {
     if (items.length === 0) return [];
 
-    // Lấy top 3-5 mục nổi bật nhất để làm teaser
-    const topItems = items.slice(0, 4);
+    // Discord chỉ gửi teaser; phần còn lại xem trên web.
+    const topItems = items.slice(0, DISCORD_TEASER_ITEMS);
 
     const fields: DiscordEmbedField[] = topItems.map((item) => {
         const verdictEmoji = item.verdict ? VERDICT_EMOJIS[item.verdict] : '⚡';
