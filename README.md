@@ -11,7 +11,8 @@
 
 ## Điểm nổi bật
 
-- **Thu thập tự động đa nguồn:** Quét liên tục GitHub Trending/Topics, Hacker News AI discussions, và Open VSX AI extensions.
+- **Thu thập tự động đa nguồn:** GitHub Search, Hacker News, Reddit (LocalLLaMA, MachineLearning, artificial), X/Twitter (tuỳ chọn), Hugging Face Daily Papers, Semantic Scholar và OpenAlex.
+- **Bản tin 20–25 mục/ngày:** chọn theo điểm, tối đa 8 mục mỗi category; Discord chỉ gửi teaser 4 tin kèm link web để xem đầy đủ.
 - **Tóm tắt & Đánh giá bằng LLM:** Tự động phân tích mục đích, điểm nổi bật, hành động gợi ý và gán nhãn khuyến nghị (Thử ngay, Theo dõi, Bỏ qua) bằng Google Gemini / Groq / Ollama.
 - **Zero-cost & Fallback thông minh:** Tự động chuyển đổi giữa Gemini và Groq khi chạm giới hạn quota; cache nội dung chống gọi trùng lặp; tự động chuyển đổi SQLite driver trên Windows.
 - **Phân phối đa kênh:**
