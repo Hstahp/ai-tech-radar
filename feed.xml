@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-22</title>
+    <title>AI Tech Radar - 2026-11-23</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Sun, 22 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Pill to treat pancreatic cancer hailed as &apos;biggest breakthrough in decades&apos;</title>
-      <link>https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib</link>
-      <guid isPermaLink="false">https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib#2026-11-22</guid>
-      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Pill to treat pancreatic cancer hailed as &apos;biggest breakthrough in decades&apos;]]></description>
+      <title>[NEWS] A Beginner&apos;s Guide to Local AI with Inkling, Qwen, and Unsloth</title>
+      <link>https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth</link>
+      <guid isPermaLink="false">https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth#2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 A Beginner&apos;s Guide to Local AI with Inkling, Qwen, and Unsloth]]></description>
     </item>
     <item>
-      <title>[NEWS] Tropical Rainforests Species may be surprisingly young</title>
-      <link>https://phys.org/news/2026-11-species-tropical-rainforests-young-emergence.html</link>
-      <guid isPermaLink="false">https://phys.org/news/2026-11-species-tropical-rainforests-young-emergence.html#2026-11-22</guid>
-      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Tropical Rainforests Species may be surprisingly young]]></description>
+      <title>[NEWS] Show HN: I built a game where you are an LLM&apos;s subagent</title>
+      <link>https://github.com/gulivan/worker755</link>
+      <guid isPermaLink="false">https://github.com/gulivan/worker755#2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Show HN: I built a game where you are an LLM&apos;s subagent]]></description>
     </item>
     <item>
-      <title>[NEWS] Context-Generic Programming v0.8.0 – Pluggable trait implementations for Rust</title>
-      <link>https://contextgeneric.dev/blog/v0.8.0-release</link>
-      <guid isPermaLink="false">https://contextgeneric.dev/blog/v0.8.0-release#2026-11-22</guid>
-      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Context-Generic Programming v0.8.0 – Pluggable trait implementations for Rust]]></description>
+      <title>[NEWS] Agent swarm trying to solve P vs. NP</title>
+      <link>https://pequalnp.com/</link>
+      <guid isPermaLink="false">https://pequalnp.com/#2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Agent swarm trying to solve P vs. NP]]></description>
     </item>
     <item>
-      <title>[NEWS] Pandex – Official European Law for AI Agents, over MCP</title>
-      <link>https://www.pandex.io/</link>
-      <guid isPermaLink="false">https://www.pandex.io/#2026-11-22</guid>
-      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Pandex – Official European Law for AI Agents, over MCP]]></description>
+      <title>[NEWS] Localcode, open source agentic coding on your Mac with one command</title>
+      <link>https://github.com/mjwsolo/localcode</link>
+      <guid isPermaLink="false">https://github.com/mjwsolo/localcode#2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Localcode, open source agentic coding on your Mac with one command]]></description>
     </item>
     <item>
-      <title>[NEWS] LLMs can read and write executables byte by byte from a hex dump</title>
-      <link>https://sgiannopoulos.github.io/blog/machine-code-programming</link>
-      <guid isPermaLink="false">https://sgiannopoulos.github.io/blog/machine-code-programming#2026-11-22</guid>
-      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 LLMs can read and write executables byte by byte from a hex dump]]></description>
+      <title>[NEWS] Agentics: Mushy Software</title>
+      <link>https://12gramsofcarbon.com/p/agentics-mushy-software</link>
+      <guid isPermaLink="false">https://12gramsofcarbon.com/p/agentics-mushy-software#2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Agentics: Mushy Software]]></description>
+    </item>
+    <item>
+      <title>[REPO] INK-Q/agy-fast</title>
+      <link>https://github.com/INK-Q/agy-fast</link>
+      <guid isPermaLink="false">https://github.com/INK-Q/agy-fast#2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affecting native UI or diffs.]]></description>
+    </item>
+    <item>
+      <title>[REPO] antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po</title>
+      <link>https://github.com/antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po</link>
+      <guid isPermaLink="false">https://github.com/antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po#2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Discord &amp; Local Uncensored AI Discord Activity serial-utility, Quest Auto-Completer &amp; Badge Booster: native 64-bit Windows 10/11 portable x64 build with hot-reloadable JSON configuration, low-overhead runtime, and prebuilt portable release.]]></description>
+    </item>
+    <item>
+      <title>[REPO] w01fb0ss/PiBot</title>
+      <link>https://github.com/w01fb0ss/PiBot</link>
+      <guid isPermaLink="false">https://github.com/w01fb0ss/PiBot#2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Open-source, local-first AI agent team for your desktop: multi-agent group chats, computer use, browser, MCP, routines and approvals. macOS, Windows, Linux + Android. Built on pi.]]></description>
+    </item>
+    <item>
+      <title>[REPO] danielwh2/sprite-stacking</title>
+      <link>https://github.com/danielwh2/sprite-stacking</link>
+      <guid isPermaLink="false">https://github.com/danielwh2/sprite-stacking#2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.]]></description>
     </item>
     <item>
       <title>[REPO] iamajmeena/neonclipping</title>
       <link>https://github.com/iamajmeena/neonclipping</link>
-      <guid isPermaLink="false">https://github.com/iamajmeena/neonclipping#2026-11-22</guid>
-      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/iamajmeena/neonclipping#2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).]]></description>
-    </item>
-    <item>
-      <title>[REPO] bookwjitchieni1986/blender-ai-mcp-addon</title>
-      <link>https://github.com/bookwjitchieni1986/blender-ai-mcp-addon</link>
-      <guid isPermaLink="false">https://github.com/bookwjitchieni1986/blender-ai-mcp-addon#2026-11-22</guid>
-      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.]]></description>
-    </item>
-    <item>
-      <title>[REPO] erkamyaman/rust-anything</title>
-      <link>https://github.com/erkamyaman/rust-anything</link>
-      <guid isPermaLink="false">https://github.com/erkamyaman/rust-anything#2026-11-22</guid>
-      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Rewrite your whole app in Rust, one piece at a time, checked against the original&apos;s recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.]]></description>
-    </item>
-    <item>
-      <title>[REPO] sybil-solutions/inference-optimisation-skill</title>
-      <link>https://github.com/sybil-solutions/inference-optimisation-skill</link>
-      <guid isPermaLink="false">https://github.com/sybil-solutions/inference-optimisation-skill#2026-11-22</guid>
-      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization]]></description>
-    </item>
-    <item>
-      <title>[REPO] staryone/motlab</title>
-      <link>https://github.com/staryone/motlab</link>
-      <guid isPermaLink="false">https://github.com/staryone/motlab#2026-11-22</guid>
-      <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Video as code: canvas scenes rendered with WebCodecs in headless Chrome, a review viewer, and agent skills that build the video from your references.]]></description>
     </item>
   </channel>
 </rss>
