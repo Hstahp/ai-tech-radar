@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-23</title>
+    <title>AI Tech Radar - 2026-11-24</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Mon, 23 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] A Beginner&apos;s Guide to Local AI with Inkling, Qwen, and Unsloth</title>
-      <link>https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth</link>
-      <guid isPermaLink="false">https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth#2026-11-23</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 A Beginner&apos;s Guide to Local AI with Inkling, Qwen, and Unsloth]]></description>
+      <title>[NEWS] C++26 is done (again): ISO C++ meeting trip report</title>
+      <link>https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil</link>
+      <guid isPermaLink="false">https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil#2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 C++26 is done (again): ISO C++ meeting trip report]]></description>
     </item>
     <item>
-      <title>[NEWS] Show HN: I built a game where you are an LLM&apos;s subagent</title>
-      <link>https://github.com/gulivan/worker755</link>
-      <guid isPermaLink="false">https://github.com/gulivan/worker755#2026-11-23</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Show HN: I built a game where you are an LLM&apos;s subagent]]></description>
+      <title>[NEWS] GLM-5.4: Toward generalized coding with our first loop transformer</title>
+      <link>https://z.ai/blog/glm-5.4</link>
+      <guid isPermaLink="false">https://z.ai/blog/glm-5.4#2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 GLM-5.4: Toward generalized coding with our first loop transformer]]></description>
     </item>
     <item>
-      <title>[NEWS] Agent swarm trying to solve P vs. NP</title>
-      <link>https://pequalnp.com/</link>
-      <guid isPermaLink="false">https://pequalnp.com/#2026-11-23</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Agent swarm trying to solve P vs. NP]]></description>
+      <title>[NEWS] Kagi Mail (public beta)</title>
+      <link>https://blog.kagi.com/kagi-mail-public-beta</link>
+      <guid isPermaLink="false">https://blog.kagi.com/kagi-mail-public-beta#2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Kagi Mail (public beta)]]></description>
     </item>
     <item>
-      <title>[NEWS] Localcode, open source agentic coding on your Mac with one command</title>
-      <link>https://github.com/mjwsolo/localcode</link>
-      <guid isPermaLink="false">https://github.com/mjwsolo/localcode#2026-11-23</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Localcode, open source agentic coding on your Mac with one command]]></description>
+      <title>[NEWS] Show HN: PlaceBench – Testing AI on opening and closing hours (and last trains)</title>
+      <link>https://github.com/voygr-tech/placebench</link>
+      <guid isPermaLink="false">https://github.com/voygr-tech/placebench#2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Hi everyone, we love maps and doing some fun side quests exploring this domain.&lt;p&gt;We were always surprised by the fact that products like ChatGpt recommends you  places to go which have been shut down for years.&lt;p&gt;Last March we built a benchmark measuring how often LLMs make mistakes when answering ]]></description>
     </item>
     <item>
-      <title>[NEWS] Agentics: Mushy Software</title>
-      <link>https://12gramsofcarbon.com/p/agentics-mushy-software</link>
-      <guid isPermaLink="false">https://12gramsofcarbon.com/p/agentics-mushy-software#2026-11-23</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Agentics: Mushy Software]]></description>
+      <title>[NEWS] How should an LLM see a computer?</title>
+      <link>https://www.greptile.com/blog/trex-computer-use</link>
+      <guid isPermaLink="false">https://www.greptile.com/blog/trex-computer-use#2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 How should an LLM see a computer?]]></description>
     </item>
     <item>
-      <title>[REPO] INK-Q/agy-fast</title>
-      <link>https://github.com/INK-Q/agy-fast</link>
-      <guid isPermaLink="false">https://github.com/INK-Q/agy-fast#2026-11-23</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affecting native UI or diffs.]]></description>
+      <title>[REPO] EL4CTEO/fast-anything</title>
+      <link>https://github.com/EL4CTEO/fast-anything</link>
+      <guid isPermaLink="false">https://github.com/EL4CTEO/fast-anything#2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Don&apos;t rewrite it in Rust. Rewrite the 5% that&apos;s slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.]]></description>
     </item>
     <item>
-      <title>[REPO] antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po</title>
-      <link>https://github.com/antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po</link>
-      <guid isPermaLink="false">https://github.com/antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po#2026-11-23</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Discord &amp; Local Uncensored AI Discord Activity serial-utility, Quest Auto-Completer &amp; Badge Booster: native 64-bit Windows 10/11 portable x64 build with hot-reloadable JSON configuration, low-overhead runtime, and prebuilt portable release.]]></description>
-    </item>
-    <item>
-      <title>[REPO] w01fb0ss/PiBot</title>
-      <link>https://github.com/w01fb0ss/PiBot</link>
-      <guid isPermaLink="false">https://github.com/w01fb0ss/PiBot#2026-11-23</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Open-source, local-first AI agent team for your desktop: multi-agent group chats, computer use, browser, MCP, routines and approvals. macOS, Windows, Linux + Android. Built on pi.]]></description>
+      <title>[REPO] ThreatDefence/agentic-attack-detections</title>
+      <link>https://github.com/ThreatDefence/agentic-attack-detections</link>
+      <guid isPermaLink="false">https://github.com/ThreatDefence/agentic-attack-detections#2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Detection rules and IOCs for AI agent attack frameworks: ARTEX, Cairn, PentAGI, HexStrike, CyberStrikeAI, Strix, Hermes Agent, Agent Zero, RedAmon, Xalgorix, Pentest Swarm AI. KQL hunts for Microsoft Sentinel and Defender XDR, Sigma, Suricata, Zeek, YARA, Splunk, Elastic, STIX 2.1.]]></description>
     </item>
     <item>
       <title>[REPO] danielwh2/sprite-stacking</title>
       <link>https://github.com/danielwh2/sprite-stacking</link>
-      <guid isPermaLink="false">https://github.com/danielwh2/sprite-stacking#2026-11-23</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/danielwh2/sprite-stacking#2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.]]></description>
     </item>
     <item>
-      <title>[REPO] iamajmeena/neonclipping</title>
-      <link>https://github.com/iamajmeena/neonclipping</link>
-      <guid isPermaLink="false">https://github.com/iamajmeena/neonclipping#2026-11-23</guid>
-      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).]]></description>
+      <title>[REPO] INK-Q/agy-fast</title>
+      <link>https://github.com/INK-Q/agy-fast</link>
+      <guid isPermaLink="false">https://github.com/INK-Q/agy-fast#2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affecting native UI or diffs.]]></description>
+    </item>
+    <item>
+      <title>[REPO] w01fb0ss/PiBot</title>
+      <link>https://github.com/w01fb0ss/PiBot</link>
+      <guid isPermaLink="false">https://github.com/w01fb0ss/PiBot#2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Open-source, local-first AI agent team for your desktop: multi-agent group chats, computer use, browser, MCP, routines and approvals. macOS, Windows, Linux + Android. Built on pi.]]></description>
     </item>
   </channel>
 </rss>
