@@ -23,7 +23,12 @@ export function UserMenu({
     onOpenAdmin,
 }: UserMenuProps) {
     const [isOpen, setIsOpen] = useState(false);
+    const [imageFailed, setImageFailed] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        setImageFailed(false);
+    }, [user?.id]);
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
@@ -36,17 +41,17 @@ export function UserMenu({
     }, []);
 
     if (isLoading) {
-        return <div className="h-8 w-24 rounded-lg bg-slate-900 animate-pulse border border-slate-800" />;
+        return <div className="h-10 w-28 rounded-xl bg-slate-100 dark:bg-slate-900 animate-pulse border border-slate-200 dark:border-slate-800" />;
     }
 
     // Chua dang nhap -> Hien thi nut Dang nhap Google
     if (!user) {
         return (
             <Button
-                variant="secondary"
+                variant="primary"
                 size="sm"
                 onClick={onLogin}
-                className="flex items-center gap-2 border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 bg-white dark:bg-slate-900/90 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 shadow-xs dark:shadow-none transition-colors"
+                className="flex h-10 items-center gap-2 px-4 shadow-sm shadow-indigo-500/20"
             >
                 <svg className="h-3.5 w-3.5" viewBox="0 0 24 24">
                     <path
@@ -66,7 +71,7 @@ export function UserMenu({
                         d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
                     />
                 </svg>
-                <span>Đăng nhập Google</span>
+                <span>Đăng nhập</span>
             </Button>
         );
     }
@@ -77,13 +82,15 @@ export function UserMenu({
             <button
                 type="button"
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-2 p-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-colors"
+                className="flex h-10 items-center gap-2 rounded-xl border border-slate-200 bg-slate-100 py-1 pl-1.5 pr-2.5 transition-colors hover:border-slate-300 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-slate-700"
             >
-                {user.avatarUrl ? (
+                {user.avatarUrl && !imageFailed ? (
                     <img
                         src={user.avatarUrl}
                         alt={user.displayName ?? user.email}
                         className="h-6 w-6 rounded-lg object-cover"
+                        referrerPolicy="no-referrer"
+                        onError={() => setImageFailed(true)}
                     />
                 ) : (
                     <div className="h-6 w-6 rounded-lg bg-indigo-100 dark:bg-indigo-600/30 text-indigo-700 dark:text-indigo-300 flex items-center justify-center text-xs font-bold">
@@ -94,7 +101,7 @@ export function UserMenu({
                     {user.displayName ?? user.email.split('@')[0]}
                 </span>
                 {user.role === 'admin' && (
-                    <span className="px-1.5 py-0.5 rounded text-[9px] font-bold uppercase bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/30">
+                    <span className="px-1.5 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/30">
                         Admin
                     </span>
                 )}

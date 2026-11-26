@@ -115,6 +115,7 @@ html:not(.dark) .admin-shell .text-violet-400 {
 }
 
 html:not(.dark) .admin-shell .hover\:bg-slate-800:hover,
+html:not(.dark) .admin-shell .hover\:bg-slate-800\/80:hover,
 html:not(.dark) .admin-shell .hover\:bg-slate-800\/50:hover,
 html:not(.dark) .admin-shell .hover\:bg-slate-800\/30:hover {
   background-color: #f1f5f9;
@@ -125,6 +126,10 @@ html:not(.dark) .admin-shell .hover\:bg-slate-700:hover {
 }
 
 html:not(.dark) .admin-shell .hover\:text-white:hover {
+  color: #0f172a;
+}
+
+html:not(.dark) .admin-shell .hover\:text-slate-200:hover {
   color: #0f172a;
 }
 

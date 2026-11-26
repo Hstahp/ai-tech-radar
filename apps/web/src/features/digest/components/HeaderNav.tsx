@@ -9,13 +9,44 @@ interface HeaderNavProps {
   onNavigateHome?: () => void;
 }
 
+interface HeaderIconLinkProps {
+  href: string;
+  label: string;
+  children: React.ReactNode;
+  external?: boolean;
+}
+
+function HeaderIconLink({ href, label, children, external }: HeaderIconLinkProps) {
+  return (
+    <a
+      href={href}
+      aria-label={label}
+      title={label}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      onClick={
+        external
+          ? undefined
+          : (event) => {
+              event.preventDefault();
+              window.history.pushState({}, "", href);
+              window.dispatchEvent(new PopStateEvent("popstate"));
+            }
+      }
+      className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 transition-colors hover:border-slate-300 hover:bg-slate-50 hover:text-indigo-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-slate-700 dark:hover:bg-slate-800 dark:hover:text-slate-100"
+    >
+      {children}
+    </a>
+  );
+}
+
 export function HeaderNav({ digestDate, itemsCount, rightSlot, onNavigateHome }: HeaderNavProps) {
   const { theme, toggleTheme } = useTheme();
 
   return (
     <header className="border-b border-slate-200 dark:border-slate-800/80 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md sticky top-0 z-40 transition-colors duration-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           {/* Logo & Tagline (Clickable to Home) */}
           <a
             href="/"
@@ -49,76 +80,67 @@ export function HeaderNav({ digestDate, itemsCount, rightSlot, onNavigateHome }:
             </div>
           </a>
 
-          {/* Links, Date & Actions */}
-          <div className="flex flex-wrap items-center gap-2.5">
+          {/* Navigation & Actions */}
+          <div className="flex flex-wrap items-center gap-2">
             {digestDate && (
-              <div className="text-xs font-mono px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 inline-flex items-center gap-1.5">
+              <div className="hidden xl:inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-mono text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300">
                 <Calendar className="h-3.5 w-3.5 text-slate-400" />
                 <span>{formatDigestDate(digestDate)}</span>
-                {itemsCount !== undefined && <span className="text-slate-400 dark:text-slate-500">• {itemsCount} tin</span>}
+                {itemsCount !== undefined && (
+                  <span className="text-slate-400 dark:text-slate-500">• {itemsCount} tin</span>
+                )}
               </div>
             )}
 
-            <a
-              href="/search"
-              onClick={(e) => {
-                e.preventDefault();
-                window.history.pushState({}, '', '/search');
-                window.dispatchEvent(new PopStateEvent('popstate'));
-              }}
-              className="text-xs font-medium px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 flex items-center gap-1.5 transition-colors"
+            <nav
+              aria-label="Bản tin theo thời gian"
+              className="inline-flex items-center gap-0.5 rounded-xl border border-slate-200 bg-slate-50 p-1 dark:border-slate-800 dark:bg-slate-900/80"
             >
-              <Search className="h-3.5 w-3.5" />
-              <span>Tìm kiếm</span>
-            </a>
+              <a
+                href="/weekly"
+                onClick={(event) => {
+                  event.preventDefault();
+                  window.history.pushState({}, '', '/weekly');
+                  window.dispatchEvent(new PopStateEvent('popstate'));
+                }}
+                className="inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:bg-white hover:text-indigo-600 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white"
+              >
+                <CalendarDays className="h-3.5 w-3.5" />
+                <span className="hidden sm:inline">Tuần</span>
+              </a>
+              <a
+                href="/history"
+                onClick={(event) => {
+                  event.preventDefault();
+                  window.history.pushState({}, '', '/history');
+                  window.dispatchEvent(new PopStateEvent('popstate'));
+                }}
+                className="inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:bg-white hover:text-indigo-600 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white"
+              >
+                <History className="h-3.5 w-3.5" />
+                <span className="hidden sm:inline">Lịch sử</span>
+              </a>
+            </nav>
 
-            <a
-              href="/weekly"
-              onClick={(e) => {
-                e.preventDefault();
-                window.history.pushState({}, '', '/weekly');
-                window.dispatchEvent(new PopStateEvent('popstate'));
-              }}
-              className="text-xs font-medium px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 flex items-center gap-1.5 transition-colors"
-            >
-              <CalendarDays className="h-3.5 w-3.5" />
-              <span>Tuần</span>
-            </a>
+            <div className="flex items-center gap-1.5">
+              <HeaderIconLink href="/search" label="Tìm kiếm">
+                <Search className="h-4 w-4" />
+              </HeaderIconLink>
+              <HeaderIconLink href="/data/export/feed.xml" label="RSS Feed" external>
+                <Rss className="h-4 w-4" />
+              </HeaderIconLink>
+              <HeaderIconLink
+                href="https://github.com/Hstahp/ai-tech-radar"
+                label="GitHub"
+                external
+              >
+                <GitFork className="h-4 w-4" />
+              </HeaderIconLink>
+            </div>
 
-            <a
-              href="/history"
-              onClick={(e) => {
-                e.preventDefault();
-                window.history.pushState({}, '', '/history');
-                window.dispatchEvent(new PopStateEvent('popstate'));
-              }}
-              className="text-xs font-medium px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 flex items-center gap-1.5 transition-colors"
-            >
-              <History className="h-3.5 w-3.5" />
-              <span>Lịch sử</span>
-            </a>
+            <ThemeToggle theme={theme} onToggle={toggleTheme} className="h-10 w-10" />
 
-            <a
-              href="/data/export/feed.xml"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-medium px-3 py-1.5 rounded-lg bg-amber-50 dark:bg-amber-950/40 hover:bg-amber-100 dark:hover:bg-amber-900/40 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-500/30 flex items-center gap-1.5 transition-colors"
-            >
-              <Rss className="h-3.5 w-3.5" />
-              <span>RSS Feed</span>
-            </a>
-
-            <a
-              href="https://github.com/Hstahp/ai-tech-radar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-medium px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 flex items-center gap-1.5 transition-colors"
-            >
-              <GitFork className="h-3.5 w-3.5" />
-              <span>GitHub</span>
-            </a>
-
-            <ThemeToggle theme={theme} onToggle={toggleTheme} />
+            <div className="mx-0.5 hidden h-6 w-px bg-slate-200 dark:bg-slate-800 sm:block" />
 
             {rightSlot}
           </div>
