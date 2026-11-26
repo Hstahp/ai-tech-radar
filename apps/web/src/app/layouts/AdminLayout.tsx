@@ -9,6 +9,7 @@ import {
     Menu,
     X,
     ShieldCheck,
+    Activity,
 } from 'lucide-react';
 import { copy } from '../../lib/copy';
 
@@ -27,6 +28,7 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
         { path: '/admin/tags', label: copy.admin.tags, icon: Tags },
         { path: '/admin/users', label: copy.admin.users, icon: Users },
         { path: '/admin/audit', label: copy.admin.audit, icon: ShieldAlert },
+        { path: '/admin/health', label: copy.admin.health, icon: Activity },
     ];
 
     return (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Activity, AlertTriangle, CheckCircle2, Clock, Loader2 } from "lucide-react";
-import { loadPipelineHealth, type HealthRun, type PipelineHealth } from "../features/status";
+import { loadPipelineHealth, type HealthRun, type PipelineHealth } from "../../status";
 
 const STATUS_STYLES: Record<string, string> = {
   success: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30",
@@ -44,7 +44,7 @@ function RunSummary({ run }: { run: HealthRun }) {
   );
 }
 
-export function StatusPage() {
+export function AdminHealthPage() {
   const [health, setHealth] = useState<PipelineHealth | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
