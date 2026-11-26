@@ -42,7 +42,7 @@ html:not(.dark) .admin-shell .bg-slate-950 {
 }
 
 html:not(.dark) .admin-shell .bg-slate-950\/80 {
-  background-color: rgba(15, 23, 42, 0.45);
+  background-color: rgba(15, 23, 42, 0.35);
 }
 
 html:not(.dark) .admin-shell .bg-slate-900,
@@ -68,8 +68,16 @@ html:not(.dark) .admin-shell .border-slate-700 {
   border-color: #e2e8f0;
 }
 
+html:not(.dark) .admin-shell .divide-slate-800\/60 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #e2e8f0;
+}
+
 html:not(.dark) .admin-shell .text-white {
   color: #0f172a;
+}
+
+html:not(.dark) .admin-shell .text-slate-200 {
+  color: #1e293b;
 }
 
 html:not(.dark) .admin-shell .text-slate-300 {
@@ -77,6 +85,10 @@ html:not(.dark) .admin-shell .text-slate-300 {
 }
 
 html:not(.dark) .admin-shell .text-slate-400 {
+  color: #475569;
+}
+
+html:not(.dark) .admin-shell .text-slate-500 {
   color: #475569;
 }
 
