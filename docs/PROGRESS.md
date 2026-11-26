@@ -84,6 +84,15 @@ Theo lộ trình đặc tả trong `docs/DESIGN_PHASE2_AUTH_ADMIN_CHAT.md`:
 - [x] Bản tin tuần `/weekly` (rolling 7 ngày, đếm số ngày xuất hiện) + `weekly.json`/`weekly-feed.xml`.
 - [x] Lịch sử 30 ngày `/history` + `history-index.json`, tìm kiếm và lọc theo ngày.
 
+### 🔜 Giai đoạn 5: Lưu trữ bền vững & thông báo theo chủ đề (kế hoạch)
+- **Quyết định 2026-11-26:** dùng **Cloudflare D1**, không dùng Supabase, cho user/tag/thông báo/audit.
+- **Lý do chọn D1:** binding native trong Worker, free 5 GB dung lượng, 5 triệu rows read/ngày và 100.000 rows written/ngày, không bị pause vì ít hoạt động, SQLite khớp schema hiện có. Supabase Free tuy đủ cho 1k user nhưng chỉ 500 MB database, 5 GB egress và tự pause sau 7 ngày ít hoạt động.
+- **Phạm vi dữ liệu:** `users`, `user_tags`, `notification_prefs`, `notification_log`, `audit_log`; thay `InMemoryAppDbRepository` bằng repository D1.
+- **Thông báo:** sau khi pipeline export digest, gọi worker `/internal/notify`; worker khớp tag của từng user, chống gửi trùng bằng `notification_log`, giới hạn 1 lần/ngày và giữ log 90 ngày.
+- **Kênh gửi:** Telegram bot trước (miễn phí, không cần domain), kèm chuông thông báo trong web làm fallback.
+- **Trạng thái:** chưa triển khai. Bước tiếp theo: thêm D1 binding trong `apps/worker/wrangler.json`, migration bảng, rồi viết `D1AppDbRepository`.
+- **Sau khi có D1:** hiện lại cột “Người theo dõi” trong trang Quản lý Thẻ.
+
 ---
 
 ## 3. CÔNG VIỆC TIẾP THEO (NEXT STEPS)

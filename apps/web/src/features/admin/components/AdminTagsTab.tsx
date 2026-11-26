@@ -246,7 +246,6 @@ export function AdminTagsTab() {
                             <tr>
                                 <th className="p-3 font-semibold">Tên thẻ</th>
                                 <th className="p-3 font-semibold">Slug</th>
-                                <th className="p-3 font-semibold">Người theo dõi</th>
                                 <th className="p-3 font-semibold text-center">Ghim hệ thống</th>
                                 <th className="p-3 font-semibold text-center">Trạng thái</th>
                             </tr>
@@ -256,11 +255,6 @@ export function AdminTagsTab() {
                                 <tr key={tag.slug} className="hover:bg-slate-800/30 transition-colors">
                                     <td className="p-3 font-medium text-white">{tag.label}</td>
                                     <td className="p-3 font-mono text-slate-400">{tag.slug}</td>
-                                    <td className="p-3">
-                                        <span className="px-2 py-0.5 rounded-full bg-slate-800 text-[11px] font-mono text-slate-300">
-                                            {tag.followers ?? 0}
-                                        </span>
-                                    </td>
                                     <td className="p-3 text-center">
                                         <button
                                             type="button"
