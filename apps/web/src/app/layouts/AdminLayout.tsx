@@ -12,6 +12,7 @@ import {
     Activity,
 } from 'lucide-react';
 import { copy } from '../../lib/copy';
+import { ThemeToggle, useTheme } from '../../features/theme';
 
 interface AdminLayoutProps {
     currentPath: string;
@@ -21,6 +22,7 @@ interface AdminLayoutProps {
 
 export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutProps) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { theme, toggleTheme } = useTheme();
 
     const navItems = [
         { path: '/admin', label: copy.admin.overview, icon: LayoutDashboard },
@@ -47,14 +49,17 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
                     </div>
                 </div>
 
-                <button
-                    type="button"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    className="h-11 w-11 inline-flex items-center justify-center rounded-lg bg-slate-800 text-slate-300 hover:text-white"
-                    aria-label="Chuyển đổi menu quản trị"
-                >
-                    {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-                </button>
+                <div className="flex items-center gap-2">
+                    <ThemeToggle theme={theme} onToggle={toggleTheme} className="h-11 w-11" />
+                    <button
+                        type="button"
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        className="h-11 w-11 inline-flex items-center justify-center rounded-lg bg-slate-800 text-slate-300 hover:text-white"
+                        aria-label="Chuyển đổi menu quản trị"
+                    >
+                        {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                    </button>
+                </div>
             </header>
 
             {/* Menu Mobile mở rộng ngay trong trang (không dùng overlay chặn theo mục 6.2) */}
@@ -142,6 +147,10 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
 
                 {/* Nút thoát về trang người dùng */}
                 <div className="pt-4 border-t border-slate-800">
+                    <div className="flex items-center justify-between px-1 pb-3">
+                        <span className="text-xs text-slate-400">Giao diện</span>
+                        <ThemeToggle theme={theme} onToggle={toggleTheme} className="h-11 w-11" />
+                    </div>
                     <button
                         type="button"
                         onClick={() => onNavigate('/')}
