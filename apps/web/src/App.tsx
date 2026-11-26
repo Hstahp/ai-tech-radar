@@ -11,6 +11,7 @@ import {
   AdminTagsPage,
   AdminUsersPage,
   AdminAuditPage,
+  AdminHealthPage,
 } from "./features/admin";
 import { ItemDetailPage } from "./pages/ItemDetailPage";
 import { SearchPage } from "./pages/SearchPage";
@@ -68,6 +69,7 @@ export function App() {
             {currentPath === "/admin/tags" && <AdminTagsPage />}
             {currentPath === "/admin/users" && <AdminUsersPage />}
             {currentPath === "/admin/audit" && <AdminAuditPage />}
+            {currentPath === "/admin/health" && <AdminHealthPage />}
           </AdminLayout>
         </RequireAdmin>
         <ChatPanel user={user} isAuthLoading={isAuthLoading} onLogin={loginWithGoogle} />

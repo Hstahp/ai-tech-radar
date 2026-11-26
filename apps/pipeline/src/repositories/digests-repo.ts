@@ -83,7 +83,17 @@ export class DigestsRepository {
     return Number(res.lastInsertRowid);
   }
 
-  finishPipelineRun(runId: number, status: "success" | "partial" | "failed", stats: { itemsFetched: number; itemsNew: number; llmRequests: number }, error?: string): void {
+  finishPipelineRun(
+    runId: number,
+    status: "success" | "partial" | "failed",
+    stats: {
+      itemsFetched: number;
+      itemsNew: number;
+      llmRequests: number;
+      sourceStats?: Array<{ key: string; fetched: number; error?: string }>;
+    },
+    error?: string
+  ): void {
     this.db
       .prepare(
         `UPDATE pipeline_runs
@@ -92,9 +102,18 @@ export class DigestsRepository {
                 items_fetched = ?,
                 items_new = ?,
                 llm_requests = ?,
+                stats_json = ?,
                 error = ?
           WHERE id = ?`
       )
-      .run(status, stats.itemsFetched, stats.itemsNew, stats.llmRequests, error ?? null, runId);
+      .run(
+        status,
+        stats.itemsFetched,
+        stats.itemsNew,
+        stats.llmRequests,
+        JSON.stringify({ sources: stats.sourceStats ?? [] }),
+        error ?? null,
+        runId
+      );
   }
 }
