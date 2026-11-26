@@ -1,6 +1,7 @@
 import type { Category } from "@radar/core";
 import { calculateItemScore } from "../../domain/scoring.js";
 import { calculateDailyVelocity } from "../../domain/metrics.js";
+import { dedupeCandidates } from "../../domain/dedupe.js";
 import { selectTopCandidates, type SelectionOptions } from "../../domain/selection.js";
 import { logger } from "../../lib/logger.js";
 import type { DBAdapter } from "../../repositories/db.js";
@@ -89,7 +90,13 @@ export function scoreAndSelectCandidates(
     allCandidates.push(candidate);
   }
 
-  const selected = selectTopCandidates(allCandidates, options);
+  const deduped = dedupeCandidates(allCandidates);
+  const duplicatesRemoved = allCandidates.length - deduped.length;
+  if (duplicatesRemoved > 0) {
+    logger.info(`Removed ${duplicatesRemoved} duplicate candidates before selection.`);
+  }
+
+  const selected = selectTopCandidates(deduped, options);
   const counts = new Map<Category, number>();
   for (const candidate of selected) {
     counts.set(candidate.category, (counts.get(candidate.category) ?? 0) + 1);

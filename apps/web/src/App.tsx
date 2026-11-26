@@ -13,6 +13,7 @@ import {
   AdminAuditPage,
 } from "./features/admin";
 import { ItemDetailPage } from "./pages/ItemDetailPage";
+import { StatusPage } from "./pages/StatusPage";
 import { SearchPage } from "./pages/SearchPage";
 import { ChatPanel } from "./features/chat";
 import { useBookmarks } from "./features/bookmarks";
@@ -100,7 +101,32 @@ export function App() {
     );
   }
 
-  // 3. Phân luồng ROUTE ITEM DETAIL (/item/:key)
+  // 3. Phân luồng ROUTE TRẠNG THÁI (/status)
+  if (currentPath.startsWith("/status")) {
+    return (
+      <>
+        <UserLayout
+          onNavigateHome={() => navigate("/")}
+          rightSlot={
+            <UserMenu
+              user={user}
+              isLoading={isAuthLoading}
+              onLogin={loginWithGoogle}
+              onLogout={logout}
+              onDeleteAccount={deleteAccount}
+              onOpenTagModal={openTagModal}
+              onOpenAdmin={() => navigate("/admin")}
+            />
+          }
+        >
+          <StatusPage />
+        </UserLayout>
+        <ChatPanel user={user} isAuthLoading={isAuthLoading} onLogin={loginWithGoogle} />
+      </>
+    );
+  }
+
+  // 4. Phân luồng ROUTE ITEM DETAIL (/item/:key)
   if (currentPath.startsWith("/item/")) {
     const itemKey = decodeURIComponent(currentPath.replace("/item/", ""));
 
