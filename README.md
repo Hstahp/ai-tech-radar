@@ -11,7 +11,7 @@
 
 ## Điểm nổi bật
 
-- **Thu thập tự động đa nguồn:** GitHub Search, Hacker News, Hugging Face Daily Papers, Semantic Scholar và OpenAlex.
+- **Thu thập tự động đa nguồn:** GitHub Search, Hacker News, Hugging Face Daily Papers, Semantic Scholar (cần API key) và OpenAlex.
 - **Bản tin 20–25 mục/ngày:** chọn theo điểm, tối đa 8 mục mỗi category; Discord chỉ gửi teaser 4 tin kèm link web để xem đầy đủ.
 - **Chống trùng xuyên nguồn:** gộp các bài cùng sự kiện bằng URL hash + độ giống tiêu đề trước khi chọn top.
 - **Bản tin tuần & lịch sử 30 ngày:** trang `/weekly` tổng hợp mục xuất hiện nhiều ngày; `/history` tìm kiếm và lọc theo ngày.
