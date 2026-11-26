@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-25</title>
+    <title>AI Tech Radar - 2026-11-26</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Wed, 25 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] Ternary Bonsai 2.5 27B</title>
-      <link>https://prismml.com/news/bonsai-2-5-27b</link>
-      <guid isPermaLink="false">https://prismml.com/news/bonsai-2-5-27b#2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Ternary Bonsai 2.5 27B]]></description>
+      <title>[NEWS] GPT-6.2 Astra is the first model to beat Googlers&apos; code golf records</title>
+      <link>https://bjin.github.io/go-codegolf-benchmark</link>
+      <guid isPermaLink="false">https://bjin.github.io/go-codegolf-benchmark#2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Back in 2015, when I was still at Google, there was a small group of code-golf enthusiasts spending hours trying to save just one byte on their solutions for weekly code-golf problems. No matter how hard you tried, there always seemed to be another Googler who found a shorter solution. And once a pr]]></description>
     </item>
     <item>
-      <title>[NEWS] GPT-6 models demonstrate intrinsic protein-design capabilities</title>
-      <link>https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities</link>
-      <guid isPermaLink="false">https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities#2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 GPT-6 models demonstrate intrinsic protein-design capabilities]]></description>
+      <title>[NEWS] Britain&apos;s ghost stations</title>
+      <link>https://spectator.com/article/britains-ghost-stations-are-fascinating</link>
+      <guid isPermaLink="false">https://spectator.com/article/britains-ghost-stations-are-fascinating#2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;pfVdX&quot; rel=&quot;nofollow&quot;&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;pfVdX&lt;/a&gt;]]></description>
     </item>
     <item>
-      <title>[NEWS] Launch HN: Versine (YC F26) – MCP to send and receive money</title>
-      <link>https://news.ycombinator.com/item?id=50634426</link>
-      <guid isPermaLink="false">https://news.ycombinator.com/item?id=50634426#2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Hey HN, we’re Harshith, Param, and Vishnu and we&amp;#x27;re building Versine (&lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;versine.com&quot;&gt;https:&amp;#x2F;&amp;#x2F;versine.com&lt;/a&gt;). Versine lets you send and request money just by talking or texting with your AI (think Venmo with an MCP). We’re software engineers who have worked o]]></description>
+      <title>[NEWS] Porting Rockbox to an undocumented $9 AliExpress &apos;YP3&apos; MP3 player with LLMs</title>
+      <link>https://jayd.ml/2026/11/14/rockbox-on-yp3.html</link>
+      <guid isPermaLink="false">https://jayd.ml/2026/11/14/rockbox-on-yp3.html#2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Porting Rockbox to an undocumented $9 AliExpress &apos;YP3&apos; MP3 player with LLMs]]></description>
     </item>
     <item>
-      <title>[NEWS] Active intrusion campaign against Check Point security management servers</title>
-      <link>https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign</link>
-      <guid isPermaLink="false">https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign#2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Active intrusion campaign against Check Point security management servers]]></description>
+      <title>[NEWS] Show HN: An agent skill that optimizes code with falsifiable hypotheses</title>
+      <link>https://chszlab.github.io/AgenticAlgorithmEngineering</link>
+      <guid isPermaLink="false">https://chszlab.github.io/AgenticAlgorithmEngineering#2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Hi all, I am a professor in algorithm engineering. In our field we use a method of falsifiable hypothesis testing to improve algorithms. More precisely, this is a cycle consisting of designing an algorithm, analyzing the algorithm, then implementing it and lastly testing it using experiments on real]]></description>
     </item>
     <item>
-      <title>[NEWS] Fable 5.2 Tries Less on Some Hard Tasks When a Shortcut Is Available</title>
-      <link>https://goodhartlabs.com/blog/fable-5-2-tries-less-on-some-hard-tasks-when-a-shortcut-is-available</link>
-      <guid isPermaLink="false">https://goodhartlabs.com/blog/fable-5-2-tries-less-on-some-hard-tasks-when-a-shortcut-is-available#2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Fable 5.2 Tries Less on Some Hard Tasks When a Shortcut Is Available]]></description>
-    </item>
-    <item>
-      <title>[REPO] erkamyaman/safe-anything</title>
-      <link>https://github.com/erkamyaman/safe-anything</link>
-      <guid isPermaLink="false">https://github.com/erkamyaman/safe-anything#2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.]]></description>
-    </item>
-    <item>
-      <title>[REPO] xikhar/papercraft</title>
-      <link>https://github.com/xikhar/papercraft</link>
-      <guid isPermaLink="false">https://github.com/xikhar/papercraft#2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Agent skill to build games, interactive scenes, web pages and animations in a handcrafted pop-up papercraft style]]></description>
+      <title>[NEWS] LLM agents work for their parent companies, not for you</title>
+      <link>https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you</link>
+      <guid isPermaLink="false">https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you#2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 LLM agents work for their parent companies, not for you]]></description>
     </item>
     <item>
       <title>[REPO] qianyiai/kurocat</title>
       <link>https://github.com/qianyiai/kurocat</link>
-      <guid isPermaLink="false">https://github.com/qianyiai/kurocat#2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/qianyiai/kurocat#2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 KuroCat — Free open-source desktop typing cat pet &amp; OBS overlay (Bongo Cat alternative, Tauri v2 + Rust + MCP)｜轻量级透明置顶桌面打字小黑猫伴侣（6款猫咪+鲸鱼娘大肥鱼 / 输密码防偷窥 / OBS透明源 / AI捏猫 / Win·Mac·Linux·Android）]]></description>
-    </item>
-    <item>
-      <title>[REPO] A training engine for your local model, using your idle compute</title>
-      <link>https://github.com/sous-labs/songe</link>
-      <guid isPermaLink="false">https://github.com/sous-labs/songe#2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 A training engine for your local model, using your idle compute]]></description>
     </item>
     <item>
       <title>[REPO] EL4CTEO/fast-anything</title>
       <link>https://github.com/EL4CTEO/fast-anything</link>
-      <guid isPermaLink="false">https://github.com/EL4CTEO/fast-anything#2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/EL4CTEO/fast-anything#2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Don&apos;t rewrite it in Rust. Rewrite the 5% that&apos;s slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.]]></description>
+    </item>
+    <item>
+      <title>[REPO] danielwh2/sprite-stacking</title>
+      <link>https://github.com/danielwh2/sprite-stacking</link>
+      <guid isPermaLink="false">https://github.com/danielwh2/sprite-stacking#2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.]]></description>
+    </item>
+    <item>
+      <title>[REPO] xikhar/papercraft</title>
+      <link>https://github.com/xikhar/papercraft</link>
+      <guid isPermaLink="false">https://github.com/xikhar/papercraft#2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Agent skill to build games, interactive scenes, web pages and animations in a handcrafted pop-up papercraft style]]></description>
+    </item>
+    <item>
+      <title>[REPO] erkamyaman/safe-anything</title>
+      <link>https://github.com/erkamyaman/safe-anything</link>
+      <guid isPermaLink="false">https://github.com/erkamyaman/safe-anything#2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.]]></description>
     </item>
   </channel>
 </rss>

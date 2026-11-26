@@ -1,89 +1,65 @@
 {
-  "generated_at": "2026-11-25T00:01:05.228Z",
+  "generated_at": "2026-11-26T00:00:59.518Z",
   "items": [
     {
-      "key": "57993858eb1cb09379994a038222a5c2075f2f1272fc40a98a948ab9542c6590",
-      "title": "Ternary Bonsai 2.5 27B",
+      "key": "3c4b97052931aadcfc5316d48f6c2898e2d2aaab205ea8ee0792d2cf3b93e0ff",
+      "title": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
       "category": "news",
-      "url": "https://prismml.com/news/bonsai-2-5-27b",
+      "url": "https://bjin.github.io/go-codegolf-benchmark",
       "tags": [],
-      "purpose": "Ternary Bonsai 2.5 27B",
+      "purpose": "Back in 2015, when I was still at Google, there was a small group of code-golf enthusiasts spending hours trying to save just one byte on their solutions for weekly code-golf problems. No matter how hard you tried, there always seemed to be another Googler who found a shorter solution. And once a pr",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "ac2f786b30f6d45772c42167559dc1dfd027b2c713b30efaaeedeee5585de3fa",
-      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "key": "1a4998e5118f8fc4e83140faeb5984c323b93b64f77d8fe99684a66cfa20984b",
+      "title": "Britain's ghost stations",
       "category": "news",
-      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "url": "https://spectator.com/article/britains-ghost-stations-are-fascinating",
       "tags": [],
-      "purpose": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "purpose": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;pfVdX\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;pfVdX</a>",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "f13f50765ddb35d9b0c1471c768ecd1182a5f803913ddb76a94da9d6219fe3db",
-      "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
+      "key": "247664f7b48ac8a87d276a828dfa3086c1a54ec798cd47a2a3792ea904b85435",
+      "title": "Porting Rockbox to an undocumented $9 AliExpress 'YP3' MP3 player with LLMs",
       "category": "news",
-      "url": "https://news.ycombinator.com/item?id=50634426",
+      "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
       "tags": [],
-      "purpose": "Hey HN, we’re Harshith, Param, and Vishnu and we&#x27;re building Versine (<a href=\"https:&#x2F;&#x2F;versine.com\">https:&#x2F;&#x2F;versine.com</a>). Versine lets you send and request money just by talking or texting with your AI (think Venmo with an MCP). We’re software engineers who have worked o",
+      "purpose": "Porting Rockbox to an undocumented $9 AliExpress 'YP3' MP3 player with LLMs",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "c323da16e5377644064a8e864416b76df5d0a8f37b289e5b22eb0965168611ca",
-      "title": "Active intrusion campaign against Check Point security management servers",
+      "key": "abfca96c86b5b0904b914058d3d0dcc5507cc376bac982b1625b2c08584a9a5b",
+      "title": "Show HN: An agent skill that optimizes code with falsifiable hypotheses",
       "category": "news",
-      "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+      "url": "https://chszlab.github.io/AgenticAlgorithmEngineering",
       "tags": [],
-      "purpose": "Active intrusion campaign against Check Point security management servers",
+      "purpose": "Hi all, I am a professor in algorithm engineering. In our field we use a method of falsifiable hypothesis testing to improve algorithms. More precisely, this is a cycle consisting of designing an algorithm, analyzing the algorithm, then implementing it and lastly testing it using experiments on real",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
     },
     {
-      "key": "dccb9dfaa4879a5d1c03809506f56e51bd442b6aaec445a53b3a29cff08a3cc2",
-      "title": "Fable 5.2 Tries Less on Some Hard Tasks When a Shortcut Is Available",
+      "key": "02e27935986cfcf8fbc25855ccbdf472fe1a916cbfdc03b0a5e8782ad2c6d6f9",
+      "title": "LLM agents work for their parent companies, not for you",
       "category": "news",
-      "url": "https://goodhartlabs.com/blog/fable-5-2-tries-less-on-some-hard-tasks-when-a-shortcut-is-available",
+      "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you",
       "tags": [],
-      "purpose": "Fable 5.2 Tries Less on Some Hard Tasks When a Shortcut Is Available",
+      "purpose": "LLM agents work for their parent companies, not for you",
       "highlight": null,
       "action": null,
       "verdict": null,
       "stars": null
-    },
-    {
-      "key": "a43d0e259060c66d3f305ec8773de47fa6720161ba1aaf51ab909b2ec1dd5595",
-      "title": "erkamyaman/safe-anything",
-      "category": "repo",
-      "url": "https://github.com/erkamyaman/safe-anything",
-      "tags": [],
-      "purpose": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 624
-    },
-    {
-      "key": "4f63923cc9327e3921f869e4c6c8dfcc88165a76158242693f3cf9e8153e428f",
-      "title": "xikhar/papercraft",
-      "category": "repo",
-      "url": "https://github.com/xikhar/papercraft",
-      "tags": [],
-      "purpose": "Agent skill to build games, interactive scenes, web pages and animations in a handcrafted pop-up papercraft style",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 612
     },
     {
       "key": "9f299b2ae3185561093f744e79313acf4ce0d5b2f8a1119a44335bedec9069b5",
@@ -95,19 +71,7 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 604
-    },
-    {
-      "key": "9121917f87f40b617f50831383737ac13aaf30ed8737c57ee7046cd57c41027c",
-      "title": "A training engine for your local model, using your idle compute",
-      "category": "repo",
-      "url": "https://github.com/sous-labs/songe",
-      "tags": [],
-      "purpose": "A training engine for your local model, using your idle compute",
-      "highlight": null,
-      "action": null,
-      "verdict": null,
-      "stars": 657
+      "stars": 951
     },
     {
       "key": "2a3dc20019c6a4be9c913a605be34bae944c70c8fabde3a263d3fa6c901fc31a",
@@ -119,7 +83,43 @@
       "highlight": null,
       "action": null,
       "verdict": null,
-      "stars": 3596
+      "stars": 3950
+    },
+    {
+      "key": "9853df09918cd6221b627c93f3896f6d63a55dbd5160e50523d321a80914120f",
+      "title": "danielwh2/sprite-stacking",
+      "category": "repo",
+      "url": "https://github.com/danielwh2/sprite-stacking",
+      "tags": [],
+      "purpose": "Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 908
+    },
+    {
+      "key": "4f63923cc9327e3921f869e4c6c8dfcc88165a76158242693f3cf9e8153e428f",
+      "title": "xikhar/papercraft",
+      "category": "repo",
+      "url": "https://github.com/xikhar/papercraft",
+      "tags": [],
+      "purpose": "Agent skill to build games, interactive scenes, web pages and animations in a handcrafted pop-up papercraft style",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 703
+    },
+    {
+      "key": "a43d0e259060c66d3f305ec8773de47fa6720161ba1aaf51ab909b2ec1dd5595",
+      "title": "erkamyaman/safe-anything",
+      "category": "repo",
+      "url": "https://github.com/erkamyaman/safe-anything",
+      "tags": [],
+      "purpose": "Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.",
+      "highlight": null,
+      "action": null,
+      "verdict": null,
+      "stars": 704
     }
   ]
 }
