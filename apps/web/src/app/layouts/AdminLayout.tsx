@@ -107,11 +107,11 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
                         <div>
                             <div className="flex items-center gap-1.5">
                                 <span className="text-sm font-bold text-white tracking-tight">AI Radar</span>
-                                <span className="px-1.5 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                                <span className="px-1.5 py-0.5 rounded text-xs font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
                                     Admin
                                 </span>
                             </div>
-                            <p className="text-[11px] text-slate-400">{copy.admin.overview}</p>
+                            <p className="text-xs text-slate-400">{copy.admin.overview}</p>
                         </div>
                     </div>
 

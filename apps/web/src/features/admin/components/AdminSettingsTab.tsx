@@ -58,7 +58,7 @@ export function AdminSettingsTab() {
         <form onSubmit={handleSave} className="space-y-6">
             <div className="flex items-center justify-between pb-2 border-b border-slate-800">
                 <div>
-                    <h3 className="text-sm font-semibold text-white">Cấu hình tham số hệ thống</h3>
+                    <h2 className="text-sm font-semibold text-white">Cấu hình tham số hệ thống</h2>
                     <p className="text-xs text-slate-400">
                         Điều chỉnh hạn mức chat, giải thích sâu và các ngưỡng vận hành
                     </p>
@@ -93,13 +93,14 @@ export function AdminSettingsTab() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Chat Configs */}
                 <div className="p-4 rounded-2xl bg-slate-900/50 border border-slate-800/80 space-y-4">
-                    <h4 className="text-xs font-bold text-indigo-400 uppercase tracking-wider">Hạn mức Chat RAG</h4>
+                    <h3 className="text-xs font-bold text-indigo-400 uppercase tracking-wider">Hạn mức Chat RAG</h3>
 
                     <div>
-                        <label className="block text-xs font-medium text-slate-300 mb-1">
+                        <label htmlFor="setting-chat-user-limit" className="block text-xs font-medium text-slate-300 mb-1">
                             Lượt chat mỗi người dùng / ngày
                         </label>
                         <input
+                            id="setting-chat-user-limit"
                             type="number"
                             value={settings['chat.user_daily_limit'] ?? '10'}
                             onChange={(e) => handleChange('chat.user_daily_limit', e.target.value)}
@@ -108,10 +109,11 @@ export function AdminSettingsTab() {
                     </div>
 
                     <div>
-                        <label className="block text-xs font-medium text-slate-300 mb-1">
+                        <label htmlFor="setting-chat-global-limit" className="block text-xs font-medium text-slate-300 mb-1">
                             Hạn mức chat toàn hệ thống / ngày
                         </label>
                         <input
+                            id="setting-chat-global-limit"
                             type="number"
                             value={settings['chat.global_daily_limit'] ?? '300'}
                             onChange={(e) => handleChange('chat.global_daily_limit', e.target.value)}
@@ -120,10 +122,11 @@ export function AdminSettingsTab() {
                     </div>
 
                     <div>
-                        <label className="block text-xs font-medium text-slate-300 mb-1">
+                        <label htmlFor="setting-chat-max-question" className="block text-xs font-medium text-slate-300 mb-1">
                             Độ dài câu hỏi tối đa (ký tự)
                         </label>
                         <input
+                            id="setting-chat-max-question"
                             type="number"
                             value={settings['chat.max_question_chars'] ?? '500'}
                             onChange={(e) => handleChange('chat.max_question_chars', e.target.value)}
@@ -132,10 +135,11 @@ export function AdminSettingsTab() {
                     </div>
 
                     <div>
-                        <label className="block text-xs font-medium text-slate-300 mb-1">
+                        <label htmlFor="setting-chat-min-score" className="block text-xs font-medium text-slate-300 mb-1">
                             Ngưỡng điểm truy xuất tối thiểu (min retrieval score)
                         </label>
                         <input
+                            id="setting-chat-min-score"
                             type="number"
                             step="0.05"
                             value={settings['chat.min_retrieval_score'] ?? '0.5'}
@@ -147,15 +151,16 @@ export function AdminSettingsTab() {
 
                 {/* Explain & Tag Configs */}
                 <div className="p-4 rounded-2xl bg-slate-900/50 border border-slate-800/80 space-y-4">
-                    <h4 className="text-xs font-bold text-violet-400 uppercase tracking-wider">
+                    <h3 className="text-xs font-bold text-violet-400 uppercase tracking-wider">
                         Hạn mức Giải thích &amp; Thẻ
-                    </h4>
+                    </h3>
 
                     <div>
-                        <label className="block text-xs font-medium text-slate-300 mb-1">
+                        <label htmlFor="setting-explain-user-limit" className="block text-xs font-medium text-slate-300 mb-1">
                             Lượt giải thích sâu mỗi người dùng / ngày
                         </label>
                         <input
+                            id="setting-explain-user-limit"
                             type="number"
                             value={settings['explain.user_daily_limit'] ?? '5'}
                             onChange={(e) => handleChange('explain.user_daily_limit', e.target.value)}
@@ -164,10 +169,11 @@ export function AdminSettingsTab() {
                     </div>
 
                     <div>
-                        <label className="block text-xs font-medium text-slate-300 mb-1">
+                        <label htmlFor="setting-explain-global-limit" className="block text-xs font-medium text-slate-300 mb-1">
                             Hạn mức giải thích sâu toàn hệ thống / ngày
                         </label>
                         <input
+                            id="setting-explain-global-limit"
                             type="number"
                             value={settings['explain.global_daily_limit'] ?? '30'}
                             onChange={(e) => handleChange('explain.global_daily_limit', e.target.value)}
@@ -176,10 +182,11 @@ export function AdminSettingsTab() {
                     </div>
 
                     <div>
-                        <label className="block text-xs font-medium text-slate-300 mb-1">
+                        <label htmlFor="setting-tags-max-per-user" className="block text-xs font-medium text-slate-300 mb-1">
                             Số thẻ tối đa mỗi người dùng được chọn
                         </label>
                         <input
+                            id="setting-tags-max-per-user"
                             type="number"
                             value={settings['tags.max_per_user'] ?? '10'}
                             onChange={(e) => handleChange('tags.max_per_user', e.target.value)}
@@ -188,10 +195,11 @@ export function AdminSettingsTab() {
                     </div>
 
                     <div>
-                        <label className="block text-xs font-medium text-slate-300 mb-1">
+                        <label htmlFor="setting-tags-max-active" className="block text-xs font-medium text-slate-300 mb-1">
                             Số thẻ tối đa kích hoạt hệ thống thu thập
                         </label>
                         <input
+                            id="setting-tags-max-active"
                             type="number"
                             value={settings['tags.max_active'] ?? '30'}
                             onChange={(e) => handleChange('tags.max_active', e.target.value)}
