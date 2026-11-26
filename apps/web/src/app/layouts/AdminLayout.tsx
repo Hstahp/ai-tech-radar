@@ -32,7 +32,7 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
     ];
 
     return (
-        <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col lg:flex-row transition-colors duration-200">
+        <div className="admin-shell min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col lg:flex-row transition-colors duration-200">
             {/* 1. Header trên Mobile (< 1024px) */}
             <header className="lg:hidden flex items-center justify-between px-4 py-3 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-40">
                 <div className="flex items-center gap-2.5">
@@ -40,8 +40,8 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
                         <ShieldCheck className="h-4 w-4" />
                     </div>
                     <div>
-                        <h1 className="text-sm font-bold text-white tracking-tight">AI Tech Radar</h1>
-                        <p className="text-[10px] text-amber-400 font-semibold uppercase tracking-wider">
+                        <span className="block text-sm font-bold text-white tracking-tight">AI Tech Radar</span>
+                        <p className="text-xs text-amber-400 font-semibold uppercase tracking-wider">
                             {copy.auth.adminOnly}
                         </p>
                     </div>
@@ -50,7 +50,7 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
                 <button
                     type="button"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    className="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white"
+                    className="h-11 w-11 inline-flex items-center justify-center rounded-lg bg-slate-800 text-slate-300 hover:text-white"
                     aria-label="Chuyển đổi menu quản trị"
                 >
                     {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -107,11 +107,11 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
                         <div>
                             <div className="flex items-center gap-1.5">
                                 <span className="text-sm font-bold text-white tracking-tight">AI Radar</span>
-                                <span className="px-1.5 py-0.5 rounded text-[9px] font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                                <span className="px-1.5 py-0.5 rounded text-xs font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
                                     Admin
                                 </span>
                             </div>
-                            <p className="text-[11px] text-slate-400">{copy.admin.overview}</p>
+                            <p className="text-xs text-slate-400">{copy.admin.overview}</p>
                         </div>
                     </div>
 
