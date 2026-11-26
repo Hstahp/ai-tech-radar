@@ -62,7 +62,7 @@ describe('Web Auth Client & Tag Synchronization (Bug 1 & 2)', () => {
         expect(profile).toBeNull();
     });
 
-    it('saveUserTags: cập nhật tags, lưu cache radar_user_tags vào localStorage và cập nhật token mới', async () => {
+    it('saveUserTags: cập nhật tags, không ghi cache toàn cục và cập nhật token mới', async () => {
         const updatedTags = ['agent', 'rag', 'devtools'];
         const updatedToken = 'new_signed_jwt_token_sample';
 
@@ -75,9 +75,9 @@ describe('Web Auth Client & Tag Synchronization (Bug 1 & 2)', () => {
         const resTags = await saveUserTags(updatedTags);
         expect(resTags).toEqual(updatedTags);
 
-        // Kiểm tra cache localStorage đã được đồng bộ
-        expect(localStorage.setItem).toHaveBeenCalledWith('radar_user_tags', JSON.stringify(updatedTags));
-        expect(store['radar_user_tags']).toBe(JSON.stringify(updatedTags));
+        // Cache tag do useAuth lưu theo từng user id, không dùng key chung.
+        expect(localStorage.setItem).not.toHaveBeenCalledWith('radar_user_tags', expect.anything());
+        expect(store['radar_user_tags']).toBeUndefined();
 
         // Kiểm tra token đã được lưu
         expect(getStoredToken()).toBe(updatedToken);

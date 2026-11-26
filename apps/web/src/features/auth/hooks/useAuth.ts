@@ -21,7 +21,10 @@ export function useAuth() {
     try {
       const current = await fetchCurrentUser();
       if (current && typeof window !== 'undefined') {
-        const savedTagsStr = localStorage.getItem('radar_user_tags');
+        // Key cũ dùng chung mọi tài khoản từng gây lộ tag giữa các user.
+        localStorage.removeItem('radar_user_tags');
+        const userTagsKey = `radar_user_tags_${current.id}`;
+        const savedTagsStr = localStorage.getItem(userTagsKey);
         if ((!current.tags || current.tags.length === 0) && savedTagsStr) {
           try {
             const savedTags = JSON.parse(savedTagsStr);
@@ -30,7 +33,7 @@ export function useAuth() {
             }
           } catch {}
         } else if (current.tags && current.tags.length > 0) {
-          localStorage.setItem('radar_user_tags', JSON.stringify(current.tags));
+          localStorage.setItem(userTagsKey, JSON.stringify(current.tags));
         }
       }
       setUser(current);
@@ -89,6 +92,9 @@ export function useAuth() {
     async (tags: string[]) => {
       if (!user) return;
       const updated = await saveUserTags(tags);
+      if (typeof window !== "undefined") {
+        localStorage.setItem(`radar_user_tags_${user.id}`, JSON.stringify(updated));
+      }
       setUser({ ...user, tags: updated });
     },
     [user]
