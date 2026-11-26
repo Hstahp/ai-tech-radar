@@ -24,7 +24,7 @@ interface HuggingFacePaperEntry {
  * Nguồn uy tín được cộng đồng nhà nghiên cứu quốc tế bình chọn hàng ngày.
  */
 export class HuggingFacePapersAdapter implements SourceAdapter {
-  readonly key = "huggingface_papers";
+  readonly key = "hf_papers";
   readonly name = "Hugging Face Daily Papers";
 
   private readonly apiUrl = "https://huggingface.co/api/daily_papers";

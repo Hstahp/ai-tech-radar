@@ -13,6 +13,8 @@ import { SummariesRepository } from "../repositories/summaries-repo.js";
 import { GitHubSearchAdapter } from "../sources/github-search.js";
 import { HackerNewsAdapter } from "../sources/hacker-news.js";
 import { HuggingFacePapersAdapter } from "../sources/huggingface-papers.js";
+import { OpenAlexAdapter } from "../sources/openalex.js";
+import { SemanticScholarAdapter } from "../sources/semantic-scholar.js";
 import type { SourceAdapter } from "../sources/source.js";
 import { fetchAllSources } from "./steps/fetch-items.js";
 import { publishAndExportDigest } from "./steps/export-digest.js";
@@ -56,6 +58,8 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
       new GitHubSearchAdapter(config.GITHUB_API_TOKEN),
       new HackerNewsAdapter(),
       new HuggingFacePapersAdapter(),
+      new SemanticScholarAdapter(config.SEMANTIC_SCHOLAR_API_KEY),
+      new OpenAlexAdapter(),
     ];
 
     // 2. Fetch step
@@ -65,7 +69,10 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
 
     // 3. Score step
     logger.info("--- Step 2: Scoring and selecting top candidates ---");
-    const candidates = scoreAndSelectCandidates(db, todayStr, 5);
+    const candidates = scoreAndSelectCandidates(db, todayStr, {
+      maxItems: config.MAX_DIGEST_ITEMS,
+      maxPerCategory: config.MAX_ITEMS_PER_CATEGORY,
+    });
     const validCandidates =
       activeTagsResult.hiddenKeys.size > 0
         ? candidates.filter((c) => !activeTagsResult.hiddenKeys.has(c.urlHash ?? ""))

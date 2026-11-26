@@ -46,7 +46,7 @@ describe("HuggingFacePapersAdapter", () => {
     } as unknown as Response);
 
     const adapter = new HuggingFacePapersAdapter();
-    expect(adapter.key).toBe("huggingface_papers");
+    expect(adapter.key).toBe("hf_papers");
     expect(adapter.name).toBe("Hugging Face Daily Papers");
 
     const items = await adapter.fetchItems();

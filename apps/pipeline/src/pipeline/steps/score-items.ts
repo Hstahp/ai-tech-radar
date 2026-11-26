@@ -1,9 +1,12 @@
 import type { Category } from "@radar/core";
 import { calculateItemScore } from "../../domain/scoring.js";
 import { calculateDailyVelocity } from "../../domain/metrics.js";
+import { selectTopCandidates, type SelectionOptions } from "../../domain/selection.js";
 import { logger } from "../../lib/logger.js";
 import type { DBAdapter } from "../../repositories/db.js";
 import { MetricsRepository } from "../../repositories/metrics-repo.js";
+
+const CANDIDATE_POOL_LIMIT = 500;
 
 export interface ScoredCandidate {
   id: number;
@@ -23,7 +26,7 @@ export interface ScoredCandidate {
 export function scoreAndSelectCandidates(
   db: DBAdapter,
   todayStr: string,
-  maxPerCategory: number = 5
+  options: SelectionOptions = {}
 ): ScoredCandidate[] {
   logger.info(`Scoring items for digest date: ${todayStr}`);
 
@@ -42,11 +45,11 @@ export function scoreAndSelectCandidates(
     LEFT JOIN metrics m ON m.item_id = i.id AND m.date = ?
         WHERE i.status = 'active'
         ORDER BY i.first_seen_at DESC
-        LIMIT 200`
+        LIMIT ?`
     )
-    .all(todayStr) as any[];
+    .all(todayStr, CANDIDATE_POOL_LIMIT) as any[];
 
-  const candidatesByCategory = new Map<Category, ScoredCandidate[]>();
+  const allCandidates: ScoredCandidate[] = [];
 
   for (const row of rows) {
     const category = row.category as Category;
@@ -83,18 +86,16 @@ export function scoreAndSelectCandidates(
       score,
     };
 
-    if (!candidatesByCategory.has(category)) {
-      candidatesByCategory.set(category, []);
-    }
-    candidatesByCategory.get(category)!.push(candidate);
+    allCandidates.push(candidate);
   }
 
-  const selected: ScoredCandidate[] = [];
-  for (const [cat, list] of candidatesByCategory.entries()) {
-    list.sort((a, b) => b.score - a.score);
-    const top = list.slice(0, maxPerCategory);
-    selected.push(...top);
-    logger.info(`Selected top ${top.length} candidates for category=${cat}`);
+  const selected = selectTopCandidates(allCandidates, options);
+  const counts = new Map<Category, number>();
+  for (const candidate of selected) {
+    counts.set(candidate.category, (counts.get(candidate.category) ?? 0) + 1);
+  }
+  for (const [category, count] of counts.entries()) {
+    logger.info(`Selected ${count} candidates for category=${category}`);
   }
 
   return selected;

@@ -70,6 +70,13 @@ Theo lộ trình đặc tả trong `docs/DESIGN_PHASE2_AUTH_ADMIN_CHAT.md`:
   - Đồng bộ `selectedTags` với `currentTags` bằng `useEffect` trong `UserTagModal` (sửa lỗi click vào modal bị hiển thị 0/10 tag).
   - Thiết kế lại `UserTagModal` tương thích hoàn hảo cả 2 chế độ Sáng (Light mode - nền trắng tinh tế) và Tối (Dark mode).
 
+### ✅ Giai đoạn 3: Mở rộng nguồn tin & tăng volume bản tin
+- [x] Đã thử adapter Reddit và X/Twitter nhưng gỡ bỏ vì các nền tảng không cấp API key khả dụng.
+- [x] Thêm adapter Semantic Scholar và OpenAlex cho bài báo khoa học; Semantic Scholar có retry 429 và API key tuỳ chọn.
+- [x] Sửa key nguồn Hugging Face Papers từ `huggingface_papers` về `hf_papers` khớp seed.
+- [x] Chọn tối đa 25 mục/ngày, tối đa 8 mục mỗi category, pool ứng viên 500.
+- [x] Discord chỉ gửi teaser 4 tin nổi bật kèm link web; phần còn lại xem trên web.
+
 ---
 
 ## 3. CÔNG VIỆC TIẾP THEO (NEXT STEPS)
