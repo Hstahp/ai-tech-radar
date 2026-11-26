@@ -77,6 +77,13 @@ Theo lộ trình đặc tả trong `docs/DESIGN_PHASE2_AUTH_ADMIN_CHAT.md`:
 - [x] Chọn tối đa 25 mục/ngày, tối đa 8 mục mỗi category, pool ứng viên 500.
 - [x] Discord chỉ gửi teaser 4 tin nổi bật kèm link web; phần còn lại xem trên web.
 
+### ✅ Giai đoạn 4: Chất lượng dữ liệu & khám phá nội dung
+- [x] Dedupe xuyên nguồn bằng `urlHash` + độ giống tiêu đề (Jaccard token) trước khi chọn top.
+- [x] Ghi thống kê từng nguồn vào `pipeline_runs.stats_json` và export `health.json`.
+- [x] Trang “Sức khỏe” trong khu admin (`/admin/health`), chỉ hiển thị sau khi đăng nhập admin.
+- [x] Bản tin tuần `/weekly` (rolling 7 ngày, đếm số ngày xuất hiện) + `weekly.json`/`weekly-feed.xml`.
+- [x] Lịch sử 30 ngày `/history` + `history-index.json`, tìm kiếm và lọc theo ngày.
+
 ---
 
 ## 3. CÔNG VIỆC TIẾP THEO (NEXT STEPS)
