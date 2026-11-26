@@ -14,6 +14,8 @@ import {
   AdminHealthPage,
 } from "./features/admin";
 import { ItemDetailPage } from "./pages/ItemDetailPage";
+import { WeeklyPage } from "./pages/WeeklyPage";
+import { HistoryPage } from "./pages/HistoryPage";
 import { SearchPage } from "./pages/SearchPage";
 import { ChatPanel } from "./features/chat";
 import { useBookmarks } from "./features/bookmarks";
@@ -102,7 +104,57 @@ export function App() {
     );
   }
 
-  // 3. Phân luồng ROUTE ITEM DETAIL (/item/:key)
+  // 3. Phân luồng ROUTE BẢN TIN TUẦN (/weekly)
+  if (currentPath.startsWith("/weekly")) {
+    return (
+      <>
+        <UserLayout
+          onNavigateHome={() => navigate("/")}
+          rightSlot={
+            <UserMenu
+              user={user}
+              isLoading={isAuthLoading}
+              onLogin={loginWithGoogle}
+              onLogout={logout}
+              onDeleteAccount={deleteAccount}
+              onOpenTagModal={openTagModal}
+              onOpenAdmin={() => navigate("/admin")}
+            />
+          }
+        >
+          <WeeklyPage />
+        </UserLayout>
+        <ChatPanel user={user} isAuthLoading={isAuthLoading} onLogin={loginWithGoogle} />
+      </>
+    );
+  }
+
+  // 4. Phân luồng ROUTE LỊCH SỬ (/history)
+  if (currentPath.startsWith("/history")) {
+    return (
+      <>
+        <UserLayout
+          onNavigateHome={() => navigate("/")}
+          rightSlot={
+            <UserMenu
+              user={user}
+              isLoading={isAuthLoading}
+              onLogin={loginWithGoogle}
+              onLogout={logout}
+              onDeleteAccount={deleteAccount}
+              onOpenTagModal={openTagModal}
+              onOpenAdmin={() => navigate("/admin")}
+            />
+          }
+        >
+          <HistoryPage />
+        </UserLayout>
+        <ChatPanel user={user} isAuthLoading={isAuthLoading} onLogin={loginWithGoogle} />
+      </>
+    );
+  }
+
+  // 5. Phân luồng ROUTE ITEM DETAIL (/item/:key)
   if (currentPath.startsWith("/item/")) {
     const itemKey = decodeURIComponent(currentPath.replace("/item/", ""));
 

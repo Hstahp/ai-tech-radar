@@ -19,7 +19,9 @@ import type { SourceAdapter } from "../sources/source.js";
 import { fetchAllSources, type SourceRunStat } from "./steps/fetch-items.js";
 import { publishAndExportDigest } from "./steps/export-digest.js";
 import { exportHealth } from "./steps/export-health.js";
+import { exportHistory } from "./steps/export-history.js";
 import { exportTrending } from "./steps/export-trending.js";
+import { exportWeekly } from "./steps/export-weekly.js";
 import { scoreAndSelectCandidates } from "./steps/score-items.js";
 import { summarizeCandidates } from "./steps/summarize-items.js";
 import { buildDiscordEmbeds, sendDiscordNotification } from "../lib/discord.js";
@@ -123,9 +125,14 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
       logger.info("--- Step 6: Exporting pipeline health snapshot ---");
       exportHealth(db, config.EXPORT_DIR);
 
-      // 9. Discord notification (if configured)
+      // 9. Weekly digest and 30-day history index
+      logger.info("--- Step 7: Exporting weekly digest and history index ---");
+      exportWeekly(digestsRepo, config.EXPORT_DIR, todayStr);
+      exportHistory(digestsRepo, config.EXPORT_DIR, todayStr);
+
+      // 10. Discord notification (if configured)
       if (config.DISCORD_WEBHOOK_URL) {
-        logger.info("--- Step 7: Sending Discord notification ---");
+        logger.info("--- Step 8: Sending Discord notification ---");
         const batches = buildDiscordEmbeds(feedItems, todayStr);
         for (const batch of batches) {
           await sendDiscordNotification(config.DISCORD_WEBHOOK_URL, batch);

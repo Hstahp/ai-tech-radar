@@ -76,6 +76,40 @@ export class DigestsRepository {
     }));
   }
 
+  getFeedBetween(startDate: string, endDate: string, limit = 500): DigestFeedItem[] {
+    const rows = this.db
+      .prepare(
+        `SELECT * FROM v_digest_feed
+          WHERE digest_date BETWEEN ? AND ?
+          ORDER BY digest_date DESC, section, rank
+          LIMIT ?`
+      )
+      .all(startDate, endDate, limit) as Record<string, unknown>[];
+
+    return rows.map((r) => ({
+      digest_date: r.digest_date as string,
+      section: r.section as Category,
+      rank: r.rank as number,
+      score: (r.score as number) ?? undefined,
+      item_id: Number(r.item_id),
+      key: (r.key as string) ?? undefined,
+      category: r.category as Category,
+      title: r.title as string,
+      url: r.url as string,
+      language: (r.language as string) ?? null,
+      purpose: (r.purpose as string) ?? null,
+      highlight: (r.highlight as string) ?? null,
+      action: (r.action as string) ?? null,
+      verdict: (r.verdict as any) ?? null,
+      confidence: (r.confidence as any) ?? null,
+      tags: (r.tags as string) ?? null,
+      stars: (r.stars as number) ?? null,
+      author: (r.author as string) ?? null,
+      published_at: (r.published_at as string) ?? null,
+      description: (r.description as string) ?? null,
+    }));
+  }
+
   startPipelineRun(trigger: "schedule" | "manual" | "local"): number {
     const res = this.db
       .prepare("INSERT INTO pipeline_runs (trigger, status) VALUES (?, 'running')")
