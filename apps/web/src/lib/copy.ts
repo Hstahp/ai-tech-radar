@@ -42,6 +42,7 @@ export const copy = {
         tags: 'Quản lý Thẻ',
         users: 'Người dùng',
         audit: 'Nhật ký kiểm tra',
+        health: 'Sức khỏe',
         unsavedWarning: 'Bạn có thay đổi chưa lưu. Bạn có chắc muốn rời đi?',
         saveBarNote: 'Thay đổi được ghi lại vào nhật ký kiểm toán.',
     },

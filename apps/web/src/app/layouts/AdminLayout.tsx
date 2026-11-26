@@ -9,8 +9,10 @@ import {
     Menu,
     X,
     ShieldCheck,
+    Activity,
 } from 'lucide-react';
 import { copy } from '../../lib/copy';
+import { ThemeToggle, useTheme } from '../../features/theme';
 
 interface AdminLayoutProps {
     currentPath: string;
@@ -20,6 +22,7 @@ interface AdminLayoutProps {
 
 export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutProps) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { theme, toggleTheme } = useTheme();
 
     const navItems = [
         { path: '/admin', label: copy.admin.overview, icon: LayoutDashboard },
@@ -27,10 +30,11 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
         { path: '/admin/tags', label: copy.admin.tags, icon: Tags },
         { path: '/admin/users', label: copy.admin.users, icon: Users },
         { path: '/admin/audit', label: copy.admin.audit, icon: ShieldAlert },
+        { path: '/admin/health', label: copy.admin.health, icon: Activity },
     ];
 
     return (
-        <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col lg:flex-row transition-colors duration-200">
+        <div className="admin-shell min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col lg:flex-row transition-colors duration-200">
             {/* 1. Header trên Mobile (< 1024px) */}
             <header className="lg:hidden flex items-center justify-between px-4 py-3 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-40">
                 <div className="flex items-center gap-2.5">
@@ -38,21 +42,24 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
                         <ShieldCheck className="h-4 w-4" />
                     </div>
                     <div>
-                        <h1 className="text-sm font-bold text-white tracking-tight">AI Tech Radar</h1>
-                        <p className="text-[10px] text-amber-400 font-semibold uppercase tracking-wider">
+                        <span className="block text-sm font-bold text-white tracking-tight">AI Tech Radar</span>
+                        <p className="text-xs text-amber-400 font-semibold uppercase tracking-wider">
                             {copy.auth.adminOnly}
                         </p>
                     </div>
                 </div>
 
-                <button
-                    type="button"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    className="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white"
-                    aria-label="Chuyển đổi menu quản trị"
-                >
-                    {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-                </button>
+                <div className="flex items-center gap-2">
+                    <ThemeToggle theme={theme} onToggle={toggleTheme} className="h-11 w-11" />
+                    <button
+                        type="button"
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        className="h-11 w-11 inline-flex items-center justify-center rounded-lg bg-slate-800 text-slate-300 hover:text-white"
+                        aria-label="Chuyển đổi menu quản trị"
+                    >
+                        {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                    </button>
+                </div>
             </header>
 
             {/* Menu Mobile mở rộng ngay trong trang (không dùng overlay chặn theo mục 6.2) */}
@@ -105,11 +112,11 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
                         <div>
                             <div className="flex items-center gap-1.5">
                                 <span className="text-sm font-bold text-white tracking-tight">AI Radar</span>
-                                <span className="px-1.5 py-0.5 rounded text-[9px] font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                                <span className="px-1.5 py-0.5 rounded text-xs font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/30">
                                     Admin
                                 </span>
                             </div>
-                            <p className="text-[11px] text-slate-400">{copy.admin.overview}</p>
+                            <p className="text-xs text-slate-400">{copy.admin.overview}</p>
                         </div>
                     </div>
 
@@ -140,6 +147,10 @@ export function AdminLayout({ currentPath, onNavigate, children }: AdminLayoutPr
 
                 {/* Nút thoát về trang người dùng */}
                 <div className="pt-4 border-t border-slate-800">
+                    <div className="flex items-center justify-between px-1 pb-3">
+                        <span className="text-xs text-slate-400">Giao diện</span>
+                        <ThemeToggle theme={theme} onToggle={toggleTheme} className="h-11 w-11" />
+                    </div>
                     <button
                         type="button"
                         onClick={() => onNavigate('/')}

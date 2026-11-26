@@ -7,7 +7,10 @@ const RESULTS_LIMIT = 20;
 const SEARCH_QUERY = "large language model";
 const S2_SEARCH_URL = "https://api.semanticscholar.org/graph/v1/paper/search";
 const S2_FIELDS = "title,abstract,url,publicationDate,citationCount,externalIds,authors";
-const RATE_LIMIT_DELAY_MS = 2000;
+const MAX_ATTEMPTS = 3;
+const DEFAULT_DELAY_MS = 2000;
+const MAX_DELAY_MS = 10000;
+const ERROR_BODY_LIMIT = 200;
 
 const PaperSchema = z.object({
   paperId: z.string(),
@@ -29,7 +32,37 @@ export class SemanticScholarAdapter implements SourceAdapter {
 
   constructor(private readonly apiKey?: string) {}
 
+  private async fetchWithRetry(
+    url: string,
+    headers: Record<string, string>
+  ): Promise<Response> {
+    let response = await fetch(url, { headers });
+
+    for (let attempt = 1; attempt < MAX_ATTEMPTS && response.status === 429; attempt++) {
+      const retryAfterSeconds = Number(response.headers.get("retry-after"));
+      const delayMs =
+        Number.isFinite(retryAfterSeconds) && retryAfterSeconds > 0
+          ? Math.min(retryAfterSeconds * 1000, MAX_DELAY_MS)
+          : Math.min(DEFAULT_DELAY_MS * 2 ** (attempt - 1), MAX_DELAY_MS);
+
+      logger.warn(
+        `Semantic Scholar rate limited (429). Retry ${attempt}/${MAX_ATTEMPTS - 1} in ${delayMs}ms.`
+      );
+      await new Promise((resolve) => setTimeout(resolve, delayMs));
+      response = await fetch(url, { headers });
+    }
+
+    return response;
+  }
+
   async fetchItems(): Promise<RawItemData[]> {
+    if (!this.apiKey) {
+      logger.info(
+        "Semantic Scholar skipped: SEMANTIC_SCHOLAR_API_KEY is not configured (free tier without a key is rate-limited)."
+      );
+      return [];
+    }
+
     const params = new URLSearchParams({
       query: SEARCH_QUERY,
       limit: String(RESULTS_LIMIT),
@@ -40,28 +73,15 @@ export class SemanticScholarAdapter implements SourceAdapter {
     logger.info(`Fetching papers from Semantic Scholar: ${url}`);
 
     try {
-      const headers: Record<string, string> = {
+      const response = await this.fetchWithRetry(url, {
         "User-Agent": "AI-Tech-Radar/1.0",
         Accept: "application/json",
-      };
-      if (this.apiKey) {
-        headers["x-api-key"] = this.apiKey;
-      }
-
-      let response = await fetch(url, {
-        headers,
+        "x-api-key": this.apiKey,
       });
 
-      // Free tier is heavily rate-limited; one bounded retry avoids losing the daily batch.
-      if (response.status === 429) {
-        await new Promise((resolve) => setTimeout(resolve, RATE_LIMIT_DELAY_MS));
-        response = await fetch(url, {
-          headers,
-        });
-      }
-
       if (!response.ok) {
-        throw new SourceFetchError(this.key, `HTTP ${response.status}: ${await response.text()}`);
+        const body = (await response.text()).slice(0, ERROR_BODY_LIMIT);
+        throw new SourceFetchError(this.key, `HTTP ${response.status}: ${body}`);
       }
 
       const parsed = ResponseSchema.safeParse(await response.json());
