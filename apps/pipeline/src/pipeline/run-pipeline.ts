@@ -14,9 +14,7 @@ import { GitHubSearchAdapter } from "../sources/github-search.js";
 import { HackerNewsAdapter } from "../sources/hacker-news.js";
 import { HuggingFacePapersAdapter } from "../sources/huggingface-papers.js";
 import { OpenAlexAdapter } from "../sources/openalex.js";
-import { RedditAdapter } from "../sources/reddit.js";
 import { SemanticScholarAdapter } from "../sources/semantic-scholar.js";
-import { XRecentSearchAdapter } from "../sources/x-twitter.js";
 import type { SourceAdapter } from "../sources/source.js";
 import { fetchAllSources } from "./steps/fetch-items.js";
 import { publishAndExportDigest } from "./steps/export-digest.js";
@@ -59,12 +57,6 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
     const sources: SourceAdapter[] = [
       new GitHubSearchAdapter(config.GITHUB_API_TOKEN),
       new HackerNewsAdapter(),
-      new RedditAdapter({
-        userAgent: config.REDDIT_USER_AGENT,
-        clientId: config.REDDIT_CLIENT_ID,
-        clientSecret: config.REDDIT_CLIENT_SECRET,
-      }),
-      new XRecentSearchAdapter(config.X_BEARER_TOKEN),
       new HuggingFacePapersAdapter(),
       new SemanticScholarAdapter(config.SEMANTIC_SCHOLAR_API_KEY),
       new OpenAlexAdapter(),

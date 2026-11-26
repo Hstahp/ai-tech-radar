@@ -323,8 +323,6 @@ INSERT OR IGNORE INTO sources (key, name, kind, base_url, weight) VALUES
   ('vscode_marketplace',  'VS Code Marketplace',     'scrape', 'https://marketplace.visualstudio.com',   0.6),
   ('hf_papers',           'Hugging Face Papers',     'api',    'https://huggingface.co',                 0.8),
   ('arxiv',               'arXiv',                   'api',    'https://export.arxiv.org',               0.7),
-  ('reddit',              'Reddit AI Communities',   'api',    'https://www.reddit.com',                 0.7),
-  ('x_twitter',           'X (Twitter)',             'api',    'https://api.twitter.com',                0.7),
   ('semantic_scholar',    'Semantic Scholar',        'api',    'https://api.semanticscholar.org',        0.85),
   ('openalex',            'OpenAlex',                'api',    'https://api.openalex.org',               0.8);
 
