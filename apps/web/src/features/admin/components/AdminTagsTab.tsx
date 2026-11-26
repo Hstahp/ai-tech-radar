@@ -162,24 +162,26 @@ export function AdminTagsTab() {
 
             {/* Modal Thêm Thẻ Mới */}
             {showCreateModal && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm animate-in fade-in duration-200">
+                <div className="admin-shell fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm animate-in fade-in duration-200">
                     <div className="w-full max-w-md rounded-2xl bg-slate-900 border border-slate-800 p-6 shadow-2xl">
                         <div className="flex items-center justify-between mb-4">
                             <h3 className="text-sm font-bold text-white">Thêm Thẻ Hệ Thống Mới</h3>
                             <button
                                 type="button"
                                 onClick={() => setShowCreateModal(false)}
-                                className="text-slate-400 hover:text-white"
+                                aria-label="Đóng"
+                                className="h-11 w-11 inline-flex items-center justify-center rounded-lg text-slate-400 hover:text-white"
                             >
                                 <X className="h-4 w-4" />
                             </button>
                         </div>
                         <form onSubmit={handleCreateTag} className="space-y-4">
                             <div>
-                                <label className="block text-xs font-medium text-slate-300 mb-1">
+                                <label htmlFor="tag-slug" className="block text-xs font-medium text-slate-300 mb-1">
                                     Mã định danh (Slug)
                                 </label>
                                 <input
+                                    id="tag-slug"
                                     type="text"
                                     placeholder="vd: ai-agents"
                                     value={newSlug}
@@ -189,10 +191,11 @@ export function AdminTagsTab() {
                                 />
                             </div>
                             <div>
-                                <label className="block text-xs font-medium text-slate-300 mb-1">
+                                <label htmlFor="tag-label" className="block text-xs font-medium text-slate-300 mb-1">
                                     Tên hiển thị (Label)
                                 </label>
                                 <input
+                                    id="tag-label"
                                     type="text"
                                     placeholder="vd: Autonomous AI Agents"
                                     value={newLabel}
@@ -207,7 +210,7 @@ export function AdminTagsTab() {
                                     id="isSystemCheck"
                                     checked={newIsSystem}
                                     onChange={(e) => setNewIsSystem(e.target.checked)}
-                                    className="rounded border-slate-800 bg-slate-950 text-indigo-600 focus:ring-0"
+                                    className="h-6 w-6 rounded border-slate-800 bg-slate-950 accent-indigo-600 focus:ring-0"
                                 />
                                 <label htmlFor="isSystemCheck" className="text-xs text-slate-300">
                                     Thẻ mặc định hệ thống (luôn luôn thu thập)

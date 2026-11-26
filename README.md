@@ -11,8 +11,11 @@
 
 ## Điểm nổi bật
 
-- **Thu thập tự động đa nguồn:** GitHub Search, Hacker News, Hugging Face Daily Papers, Semantic Scholar và OpenAlex.
+- **Thu thập tự động đa nguồn:** GitHub Search, Hacker News, Hugging Face Daily Papers, Semantic Scholar (cần API key) và OpenAlex.
 - **Bản tin 20–25 mục/ngày:** chọn theo điểm, tối đa 8 mục mỗi category; Discord chỉ gửi teaser 4 tin kèm link web để xem đầy đủ.
+- **Chống trùng xuyên nguồn:** gộp các bài cùng sự kiện bằng URL hash + độ giống tiêu đề trước khi chọn top.
+- **Bản tin tuần & lịch sử 30 ngày:** trang `/weekly` tổng hợp mục xuất hiện nhiều ngày; `/history` tìm kiếm và lọc theo ngày.
+- **Dashboard sức khỏe pipeline:** mục “Sức khỏe” trong `/admin`, hiển thị nguồn lỗi, số item và lượt gọi LLM.
 - **Tóm tắt & Đánh giá bằng LLM:** Tự động phân tích mục đích, điểm nổi bật, hành động gợi ý và gán nhãn khuyến nghị (Thử ngay, Theo dõi, Bỏ qua) bằng Google Gemini / Groq / Ollama.
 - **Zero-cost & Fallback thông minh:** Tự động chuyển đổi giữa Gemini và Groq khi chạm giới hạn quota; cache nội dung chống gọi trùng lặp; tự động chuyển đổi SQLite driver trên Windows.
 - **Phân phối đa kênh:**

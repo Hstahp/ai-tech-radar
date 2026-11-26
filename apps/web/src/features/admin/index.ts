@@ -10,3 +10,4 @@ export * from './pages/AdminSettingsPage';
 export * from './pages/AdminTagsPage';
 export * from './pages/AdminUsersPage';
 export * from './pages/AdminAuditPage';
+export * from './pages/AdminHealthPage';

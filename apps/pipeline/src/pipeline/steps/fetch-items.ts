@@ -3,9 +3,16 @@ import { logger } from "../../lib/logger.js";
 import type { ItemsRepository } from "../../repositories/items-repo.js";
 import type { SourceAdapter } from "../../sources/source.js";
 
+export interface SourceRunStat {
+  key: string;
+  fetched: number;
+  error?: string;
+}
+
 export interface FetchResult {
   itemsFetched: number;
   itemsNew: number;
+  sourceStats: SourceRunStat[];
 }
 
 export async function fetchAllSources(
@@ -15,12 +22,16 @@ export async function fetchAllSources(
 ): Promise<FetchResult> {
   let itemsFetched = 0;
   let itemsNew = 0;
+  const sourceStats: SourceRunStat[] = [];
 
   for (const source of sources) {
+    let fetched = 0;
+
     try {
       logger.info(`Running source fetcher: ${source.name} [key=${source.key}]`);
       const rawItems = await source.fetchItems();
-      itemsFetched += rawItems.length;
+      fetched = rawItems.length;
+      itemsFetched += fetched;
 
       for (const raw of rawItems) {
         const normalizedUrl = normalizeUrl(raw.url);
@@ -59,10 +70,14 @@ export async function fetchAllSources(
           rating: raw.rating,
         });
       }
-    } catch (err: any) {
-      logger.error(`Error fetching source [${source.key}]: ${err.message}`);
+
+      sourceStats.push({ key: source.key, fetched });
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : String(err);
+      logger.error(`Error fetching source [${source.key}]: ${message}`);
+      sourceStats.push({ key: source.key, fetched, error: message });
     }
   }
 
-  return { itemsFetched, itemsNew };
+  return { itemsFetched, itemsNew, sourceStats };
 }

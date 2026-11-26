@@ -16,9 +16,12 @@ import { HuggingFacePapersAdapter } from "../sources/huggingface-papers.js";
 import { OpenAlexAdapter } from "../sources/openalex.js";
 import { SemanticScholarAdapter } from "../sources/semantic-scholar.js";
 import type { SourceAdapter } from "../sources/source.js";
-import { fetchAllSources } from "./steps/fetch-items.js";
+import { fetchAllSources, type SourceRunStat } from "./steps/fetch-items.js";
 import { publishAndExportDigest } from "./steps/export-digest.js";
+import { exportHealth } from "./steps/export-health.js";
+import { exportHistory } from "./steps/export-history.js";
 import { exportTrending } from "./steps/export-trending.js";
+import { exportWeekly } from "./steps/export-weekly.js";
 import { scoreAndSelectCandidates } from "./steps/score-items.js";
 import { summarizeCandidates } from "./steps/summarize-items.js";
 import { buildDiscordEmbeds, sendDiscordNotification } from "../lib/discord.js";
@@ -42,6 +45,7 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
 
   const runId = digestsRepo.startPipelineRun("schedule");
   const todayStr = new Date().toISOString().split("T")[0];
+  let sourceStats: SourceRunStat[] = [];
 
   try {
     // 0. Synchronize active tags from Worker API
@@ -64,7 +68,12 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
 
     // 2. Fetch step
     logger.info("--- Step 1: Fetching items from sources ---");
-    const { itemsFetched, itemsNew } = await fetchAllSources(sources, itemsRepo, todayStr);
+    const { itemsFetched, itemsNew, sourceStats: fetchedSourceStats } = await fetchAllSources(
+      sources,
+      itemsRepo,
+      todayStr
+    );
+    sourceStats = fetchedSourceStats;
     logger.info(`Fetch complete: ${itemsFetched} items fetched, ${itemsNew} new items saved.`);
 
     // 3. Score step
@@ -112,9 +121,18 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
       logger.info("--- Step 5: Exporting trending snapshot ---");
       exportTrending(new MetricsRepository(db), config.EXPORT_DIR, todayStr);
 
-      // 8. Discord notification (if configured)
+      // 8. Pipeline health snapshot
+      logger.info("--- Step 6: Exporting pipeline health snapshot ---");
+      exportHealth(db, config.EXPORT_DIR);
+
+      // 9. Weekly digest and 30-day history index
+      logger.info("--- Step 7: Exporting weekly digest and history index ---");
+      exportWeekly(digestsRepo, config.EXPORT_DIR, todayStr);
+      exportHistory(digestsRepo, config.EXPORT_DIR, todayStr);
+
+      // 10. Discord notification (if configured)
       if (config.DISCORD_WEBHOOK_URL) {
-        logger.info("--- Step 6: Sending Discord notification ---");
+        logger.info("--- Step 8: Sending Discord notification ---");
         const batches = buildDiscordEmbeds(feedItems, todayStr);
         for (const batch of batches) {
           await sendDiscordNotification(config.DISCORD_WEBHOOK_URL, batch);
@@ -128,11 +146,17 @@ export async function runPipeline(overrides?: Partial<PipelineConfig>): Promise<
       itemsFetched,
       itemsNew,
       llmRequests,
+      sourceStats,
     });
     logger.info("Pipeline completed successfully.");
   } catch (err: any) {
     logger.error(`Pipeline failed with error: ${err.message}`);
-    digestsRepo.finishPipelineRun(runId, "failed", { itemsFetched: 0, itemsNew: 0, llmRequests: 0 }, err.message);
+    digestsRepo.finishPipelineRun(
+      runId,
+      "failed",
+      { itemsFetched: 0, itemsNew: 0, llmRequests: 0, sourceStats },
+      err.message
+    );
     throw err;
   } finally {
     db.close();
