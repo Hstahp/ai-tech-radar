@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { DigestFeedItem } from "@radar/core";
-import { buildDiscordEmbeds } from "../src/lib/discord.js";
+import { buildDiscordEmbeds, DISCORD_TEASER_ITEMS } from "../src/lib/discord.js";
 
 describe("buildDiscordEmbeds", () => {
   const mockItems: DigestFeedItem[] = [
@@ -52,5 +52,25 @@ describe("buildDiscordEmbeds", () => {
     expect(embed.fields?.length).toBeGreaterThan(1);
     expect(embed.fields?.some((f) => f.name.includes("langchain-next"))).toBe(true);
     expect(embed.fields?.[0].value).toContain("/item/langchain-next");
+  });
+
+  it("chỉ gửi teaser giới hạn và trỏ người đọc sang web khi bản tin có 25 mục", () => {
+    const manyItems: DigestFeedItem[] = Array.from({ length: 25 }, (_, index) => ({
+      ...mockItems[0],
+      item_id: index + 1,
+      key: `item-${index + 1}`,
+      rank: index + 1,
+      title: `Item ${index + 1}`,
+    }));
+
+    const batches = buildDiscordEmbeds(manyItems, "2026-10-12", "https://radar.example.com");
+    const embed = batches[0].embeds[0];
+    const teaserFields = embed.fields?.filter((field) => field.name.includes("Item ")) ?? [];
+    const webField = embed.fields?.[embed.fields.length - 1];
+
+    expect(teaserFields).toHaveLength(DISCORD_TEASER_ITEMS);
+    expect(teaserFields.some((field) => field.name.includes("Item 5"))).toBe(false);
+    expect(webField?.value).toContain("toàn bộ 25");
+    expect(webField?.value).toContain("https://radar.example.com");
   });
 });

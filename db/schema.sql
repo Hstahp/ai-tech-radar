@@ -322,7 +322,9 @@ INSERT OR IGNORE INTO sources (key, name, kind, base_url, weight) VALUES
   ('openvsx',             'Open VSX Registry',       'api',    'https://open-vsx.org',                   0.8),
   ('vscode_marketplace',  'VS Code Marketplace',     'scrape', 'https://marketplace.visualstudio.com',   0.6),
   ('hf_papers',           'Hugging Face Papers',     'api',    'https://huggingface.co',                 0.8),
-  ('arxiv',               'arXiv',                   'api',    'https://export.arxiv.org',               0.7);
+  ('arxiv',               'arXiv',                   'api',    'https://export.arxiv.org',               0.7),
+  ('semantic_scholar',    'Semantic Scholar',        'api',    'https://api.semanticscholar.org',        0.85),
+  ('openalex',            'OpenAlex',                'api',    'https://api.openalex.org',               0.8);
 
 INSERT OR IGNORE INTO tags (slug, label) VALUES
   ('github',           'GitHub'),
