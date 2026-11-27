@@ -47,9 +47,9 @@ jobs:
       - name: Đồng bộ dữ liệu export mới nhất từ nhánh data
         run: |
           mkdir -p apps/web/public/data/export data/export
-          curl -sSf "https://raw.githubusercontent.com/${{ github.repository }}/data/latest.json" -o data/export/latest.json || true
-          curl -sSf "https://raw.githubusercontent.com/${{ github.repository }}/data/feed.xml" -o data/export/feed.xml || true
-          curl -sSf "https://raw.githubusercontent.com/${{ github.repository }}/data/search-index.json" -o data/export/search-index.json || true
+          for file in latest.json feed.xml search-index.json health.json weekly.json history-index.json trending.json; do
+            curl -sSf "https://raw.githubusercontent.com/${{ github.repository }}/data/$file" -o "data/export/$file" || true
+          done
           cp -r data/export/* apps/web/public/data/export/ || true
 
       - name: Build Web
