@@ -191,8 +191,27 @@ jobs:
                     cd - >/dev/null
                   fi
 
+                  # Chuyển digest cũ ở root và digests/ phẳng vào digests/YYYY/MM/.
+                  mkdir -p "$DATA_DIR/digests"
+                  for f in "$DATA_DIR"/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json \
+                           "$DATA_DIR"/digests/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json; do
+                    [ -f "$f" ] || continue
+                    name=$(basename "$f")
+                    year=${name:0:4}
+                    month=${name:5:2}
+                    mkdir -p "$DATA_DIR/digests/$year/$month"
+                    target="$DATA_DIR/digests/$year/$month/$name"
+                    if [ "$f" = "$target" ]; then
+                      continue
+                    elif [ -e "$target" ]; then
+                      rm -f "$f"
+                    else
+                      mv "$f" "$target"
+                    fi
+                  done
+
                   echo "Chép dữ liệu từ $EXPORT_DIR sang thư mục nhánh data..."
-                  cp -r "$EXPORT_DIR"/* "$DATA_DIR"/
+                  cp -r "$EXPORT_DIR"/. "$DATA_DIR"/
 
                   cd "$DATA_DIR"
                   git add .

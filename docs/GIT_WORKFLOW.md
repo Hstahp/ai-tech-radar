@@ -56,7 +56,7 @@ Hệ thống nhánh tuân theo mô hình Git Flow rút gọn bao gồm các nhá
 
 #### 5. `data` (Nhánh dữ liệu Orphan)
 
-- **Mục đích:** Lưu trữ độc lập toàn bộ dữ liệu xuất bản (`latest.json`, `YYYY-MM-DD.json`, `feed.xml`, `search-index.json`).
+- **Mục đích:** Lưu trữ độc lập toàn bộ dữ liệu xuất bản. Các file entrypoint (`latest.json`, `feed.xml`, `search-index.json`, `health.json`, `weekly.json`, `history-index.json`, `trending.json`) nằm ở root; digest theo ngày nằm trong `digests/YYYY/MM/YYYY-MM-DD.json`.
 - **Quy tắc:**
   - Là nhánh độc lập (orphan), không chứa mã nguồn ứng dụng, không merge vào `develop` hay `main`.
   - **Tuyệt đối không sửa tay:** Chỉ workflow GitHub Actions (`daily-pipeline.yml`) tự động cập nhật với tiền tố `chore(data):`.
