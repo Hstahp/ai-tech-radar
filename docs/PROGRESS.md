@@ -83,6 +83,7 @@ Theo lộ trình đặc tả trong `docs/DESIGN_PHASE2_AUTH_ADMIN_CHAT.md`:
 - [x] Trang “Sức khỏe” trong khu admin (`/admin/health`), chỉ hiển thị sau khi đăng nhập admin.
 - [x] Bản tin tuần `/weekly` (rolling 7 ngày, đếm số ngày xuất hiện) + `weekly.json`/`weekly-feed.xml`.
 - [x] Lịch sử 30 ngày `/history` + `history-index.json`, tìm kiếm và lọc theo ngày.
+- [x] Digest theo ngày chuyển vào `digests/YYYY/MM/YYYY-MM-DD.json`; root chỉ giữ các file entrypoint để nhánh `data` gọn hơn.
 - [x] Workflow deploy web đồng bộ đủ `health.json`, `weekly.json`, `history-index.json`, `trending.json` từ nhánh `data` (trước đây chỉ copy `latest.json`, `feed.xml`, `search-index.json`).
 
 ### 🔜 Giai đoạn 5: Lưu trữ bền vững & thông báo theo chủ đề (kế hoạch)
