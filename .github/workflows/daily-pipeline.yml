@@ -191,8 +191,15 @@ jobs:
                     cd - >/dev/null
                   fi
 
+                  # Chuyển các file digest cũ ở root vào digests/ để nhánh data gọn hơn.
+                  mkdir -p "$DATA_DIR/digests"
+                  for f in "$DATA_DIR"/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json; do
+                    [ -e "$f" ] || continue
+                    mv "$f" "$DATA_DIR/digests/"
+                  done
+
                   echo "Chép dữ liệu từ $EXPORT_DIR sang thư mục nhánh data..."
-                  cp -r "$EXPORT_DIR"/* "$DATA_DIR"/
+                  cp -r "$EXPORT_DIR"/. "$DATA_DIR"/
 
                   cd "$DATA_DIR"
                   git add .

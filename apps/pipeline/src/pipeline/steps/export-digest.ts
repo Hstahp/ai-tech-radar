@@ -6,6 +6,8 @@ import { generateRssXml } from "../../lib/rss.js";
 import type { DigestsRepository } from "../../repositories/digests-repo.js";
 import type { ScoredCandidate } from "./score-items.js";
 
+const DIGEST_ARCHIVE_DIR = "digests";
+
 export function publishAndExportDigest(
   digestsRepo: DigestsRepository,
   digestDate: string,
@@ -41,7 +43,9 @@ export function publishAndExportDigest(
     items: feedItems,
   };
 
-  const datedFilePath = path.join(exportDir, `${digestDate}.json`);
+  const archiveDir = path.join(exportDir, DIGEST_ARCHIVE_DIR);
+  fs.mkdirSync(archiveDir, { recursive: true });
+  const datedFilePath = path.join(archiveDir, `${digestDate}.json`);
   const latestFilePath = path.join(exportDir, "latest.json");
 
   fs.writeFileSync(datedFilePath, JSON.stringify(exportPayload, null, 2), "utf-8");
