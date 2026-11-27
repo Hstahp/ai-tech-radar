@@ -1,81 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-26</title>
+    <title>AI Tech Radar - 2026-11-27</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Thu, 26 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] GPT-6.2 Astra is the first model to beat Googlers&apos; code golf records</title>
-      <link>https://bjin.github.io/go-codegolf-benchmark</link>
-      <guid isPermaLink="false">https://bjin.github.io/go-codegolf-benchmark#2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Back in 2015, when I was still at Google, there was a small group of code-golf enthusiasts spending hours trying to save just one byte on their solutions for weekly code-golf problems. No matter how hard you tried, there always seemed to be another Googler who found a shorter solution. And once a pr]]></description>
+      <title>[NEWS] AI made self-hosting fun again</title>
+      <link>https://janlukas.blog/posts/ai-self-hosting</link>
+      <guid isPermaLink="false">https://janlukas.blog/posts/ai-self-hosting#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI made self-hosting fun again]]></description>
     </item>
     <item>
-      <title>[NEWS] Britain&apos;s ghost stations</title>
-      <link>https://spectator.com/article/britains-ghost-stations-are-fascinating</link>
-      <guid isPermaLink="false">https://spectator.com/article/britains-ghost-stations-are-fascinating#2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 &lt;a href=&quot;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;pfVdX&quot; rel=&quot;nofollow&quot;&gt;https:&amp;#x2F;&amp;#x2F;archive.ph&amp;#x2F;pfVdX&lt;/a&gt;]]></description>
+      <title>[NEWS] Top-cited AI scientists at four US companies compared</title>
+      <link>https://topcitedscientists.com/figures/ai-at-four-us-companies</link>
+      <guid isPermaLink="false">https://topcitedscientists.com/figures/ai-at-four-us-companies#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Top-cited AI scientists at four US companies compared]]></description>
     </item>
     <item>
-      <title>[NEWS] Porting Rockbox to an undocumented $9 AliExpress &apos;YP3&apos; MP3 player with LLMs</title>
-      <link>https://jayd.ml/2026/11/14/rockbox-on-yp3.html</link>
-      <guid isPermaLink="false">https://jayd.ml/2026/11/14/rockbox-on-yp3.html#2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Porting Rockbox to an undocumented $9 AliExpress &apos;YP3&apos; MP3 player with LLMs]]></description>
+      <title>[NEWS] OpenAI may be in cost control mode</title>
+      <link>https://micjm.com/blog/openai-is-in-cost-control-mode</link>
+      <guid isPermaLink="false">https://micjm.com/blog/openai-is-in-cost-control-mode#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 OpenAI may be in cost control mode]]></description>
     </item>
     <item>
-      <title>[NEWS] Show HN: An agent skill that optimizes code with falsifiable hypotheses</title>
-      <link>https://chszlab.github.io/AgenticAlgorithmEngineering</link>
-      <guid isPermaLink="false">https://chszlab.github.io/AgenticAlgorithmEngineering#2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Hi all, I am a professor in algorithm engineering. In our field we use a method of falsifiable hypothesis testing to improve algorithms. More precisely, this is a cycle consisting of designing an algorithm, analyzing the algorithm, then implementing it and lastly testing it using experiments on real]]></description>
+      <title>[NEWS] Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can&apos;t Send Email</title>
+      <link>https://techstackups.com/articles/google-workspace-ai-agents-mcp</link>
+      <guid isPermaLink="false">https://techstackups.com/articles/google-workspace-ai-agents-mcp#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can&apos;t Send Email]]></description>
     </item>
     <item>
-      <title>[NEWS] LLM agents work for their parent companies, not for you</title>
-      <link>https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you</link>
-      <guid isPermaLink="false">https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you#2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 LLM agents work for their parent companies, not for you]]></description>
+      <title>[NEWS] An algebraic quantization of gravity from the null cone</title>
+      <link>https://arxiv.org/abs/2611.34924</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.34924#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 An algebraic quantization of gravity from the null cone]]></description>
     </item>
     <item>
-      <title>[REPO] qianyiai/kurocat</title>
-      <link>https://github.com/qianyiai/kurocat</link>
-      <guid isPermaLink="false">https://github.com/qianyiai/kurocat#2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 KuroCat — Free open-source desktop typing cat pet &amp; OBS overlay (Bongo Cat alternative, Tauri v2 + Rust + MCP)｜轻量级透明置顶桌面打字小黑猫伴侣（6款猫咪+鲸鱼娘大肥鱼 / 输密码防偷窥 / OBS透明源 / AI捏猫 / Win·Mac·Linux·Android）]]></description>
+      <title>[NEWS] Harvard CS 2881R AI Safety</title>
+      <link>https://boazbk.github.io/mltheoryseminar</link>
+      <guid isPermaLink="false">https://boazbk.github.io/mltheoryseminar#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Harvard CS 2881R AI Safety]]></description>
     </item>
     <item>
-      <title>[REPO] EL4CTEO/fast-anything</title>
-      <link>https://github.com/EL4CTEO/fast-anything</link>
-      <guid isPermaLink="false">https://github.com/EL4CTEO/fast-anything#2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Don&apos;t rewrite it in Rust. Rewrite the 5% that&apos;s slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.]]></description>
+      <title>[NEWS] The Hungry Butler Effect: Concealed Commercial Incentives in LLMs</title>
+      <link>https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models</link>
+      <guid isPermaLink="false">https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 The Hungry Butler Effect: Concealed Commercial Incentives in LLMs]]></description>
     </item>
     <item>
-      <title>[REPO] danielwh2/sprite-stacking</title>
-      <link>https://github.com/danielwh2/sprite-stacking</link>
-      <guid isPermaLink="false">https://github.com/danielwh2/sprite-stacking#2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.]]></description>
+      <title>[NEWS] AI may have solved the most important problem in mathematics</title>
+      <link>https://www.economist.com/science-and-technology/2026/11/20/ai-may-have-solved-the-most-important-problem-in-mathematics</link>
+      <guid isPermaLink="false">https://www.economist.com/science-and-technology/2026/11/20/ai-may-have-solved-the-most-important-problem-in-mathematics#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI may have solved the most important problem in mathematics]]></description>
+    </item>
+    <item>
+      <title>[PAPER] The Llama 3 Herd of Models</title>
+      <link>https://arxiv.org/abs/2407.21783</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2407.21783#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an extensive empirical evaluation of Llama 3. We find that Llama 3 delivers comparable quality to leading language models s]]></description>
+    </item>
+    <item>
+      <title>[PAPER] Qwen3 Technical Report</title>
+      <link>http://arxiv.org/abs/2505.09388</link>
+      <guid isPermaLink="false">http://arxiv.org/abs/2505.09388#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-drive]]></description>
+    </item>
+    <item>
+      <title>[PAPER] Accurate structure prediction of biomolecular interactions with AlphaFold 3</title>
+      <link>https://doi.org/10.1038/s41586-024-07487-w</link>
+      <guid isPermaLink="false">https://doi.org/10.1038/s41586-024-07487-w#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 The introduction of AlphaFold 21 has spurred a revolution in modelling the structure of proteins and their interactions, enabling a huge range of applications in protein modelling and design2-6. Here we describe our AlphaFold 3 model with a substantially updated diffusion-based architecture that is capable of predicting the joint structure of complexes including proteins, nucleic acids, small molecules, ions and modified residues. The new AlphaFold model demonstrates substantially improved accur]]></description>
+    </item>
+    <item>
+      <title>[PAPER] DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning</title>
+      <link>https://doi.org/10.1038/s41586-025-09422-z</link>
+      <guid isPermaLink="false">https://doi.org/10.1038/s41586-025-09422-z#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 General reasoning represents a long-standing and formidable challenge in artificial intelligence (AI). Recent breakthroughs, exemplified by large language models (LLMs)1,2 and chain-of-thought (CoT) prompting3, have achieved considerable success on foundational reasoning tasks. However, this success is heavily contingent on extensive human-annotated demonstrations and the capabilities of models are still insufficient for more complex problems. Here we show that the reasoning abilities of LLMs ca]]></description>
+    </item>
+    <item>
+      <title>[PAPER] DINOv2: Learning Robust Visual Features without Supervision</title>
+      <link>https://openreview.net/pdf?id=a68SUt6zFt</link>
+      <guid isPermaLink="false">https://openreview.net/pdf?id=a68SUt6zFt#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 The recent breakthroughs in natural language processing for model pretraining on large quantities of data have opened the way for similar foundation models in computer vision. These models could greatly simplify the use of images in any system by producing all-purpose visual features, i.e., features that work across image distributions and tasks without finetuning. This work shows that existing pretraining methods, especially self-supervised methods, can produce such features if trained on enoug]]></description>
+    </item>
+    <item>
+      <title>[PAPER] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models</title>
+      <link>http://arxiv.org/abs/2402.03300</link>
+      <guid isPermaLink="false">http://arxiv.org/abs/2402.03300#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Mathematical reasoning poses a significant challenge for language models due to its complex and structured nature. In this paper, we introduce DeepSeekMath 7B, which continues pre-training DeepSeek-Coder-Base-v1.5 7B with 120B math-related tokens sourced from Common Crawl, together with natural language and code data. DeepSeekMath 7B has achieved an impressive score of 51.7% on the competition-level MATH benchmark without relying on external toolkits and voting techniques, approaching the perfor]]></description>
+    </item>
+    <item>
+      <title>[PAPER] Qwen2.5 Technical Report</title>
+      <link>http://arxiv.org/abs/2412.15115</link>
+      <guid isPermaLink="false">http://arxiv.org/abs/2412.15115#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ]]></description>
+    </item>
+    <item>
+      <title>[PAPER] GPT-4o System Card</title>
+      <link>http://arxiv.org/abs/2410.21276</link>
+      <guid isPermaLink="false">http://arxiv.org/abs/2410.21276#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 GPT-4o is an autoregressive omni model that accepts as input any combination of text, audio, image, and video, and generates any combination of text, audio, and image outputs. It&apos;s trained end-to-end across text, vision, and audio, meaning all inputs and outputs are processed by the same neural network. GPT-4o can respond to audio inputs in as little as 232 milliseconds, with an average of 320 milliseconds, which is similar to human response time in conversation. It matches GPT-4 Turbo performan]]></description>
+    </item>
+    <item>
+      <title>[REPO] chanke17/KuroCat</title>
+      <link>https://github.com/chanke17/KuroCat</link>
+      <guid isPermaLink="false">https://github.com/chanke17/KuroCat#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 KuroCat — Free open-source native desktop cat pet &amp; OBS overlay (Bongo Cat alternative, Swift/C++, 802 KB)｜开源免费原生桌面萌猫（全平台 macOS·Win·Linux·UOS / 2.5D转头捕猎 / 数位板 / OBS透明绿幕 / 在线皮肤工坊 / 零按键上传）]]></description>
+    </item>
+    <item>
+      <title>[REPO] alesha-pro/llm.asm</title>
+      <link>https://github.com/alesha-pro/llm.asm</link>
+      <guid isPermaLink="false">https://github.com/alesha-pro/llm.asm#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.]]></description>
     </item>
     <item>
       <title>[REPO] xikhar/papercraft</title>
       <link>https://github.com/xikhar/papercraft</link>
-      <guid isPermaLink="false">https://github.com/xikhar/papercraft#2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/xikhar/papercraft#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Agent skill to build games, interactive scenes, web pages and animations in a handcrafted pop-up papercraft style]]></description>
+    </item>
+    <item>
+      <title>[REPO] EL4CTEO/fast-anything</title>
+      <link>https://github.com/EL4CTEO/fast-anything</link>
+      <guid isPermaLink="false">https://github.com/EL4CTEO/fast-anything#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Don&apos;t rewrite it in Rust. Rewrite the 5% that&apos;s slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.]]></description>
     </item>
     <item>
       <title>[REPO] erkamyaman/safe-anything</title>
       <link>https://github.com/erkamyaman/safe-anything</link>
-      <guid isPermaLink="false">https://github.com/erkamyaman/safe-anything#2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/erkamyaman/safe-anything#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.]]></description>
+    </item>
+    <item>
+      <title>[REPO] EL4CTEO/shrink-anything</title>
+      <link>https://github.com/EL4CTEO/shrink-anything</link>
+      <guid isPermaLink="false">https://github.com/EL4CTEO/shrink-anything#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Less code, same tests passing: delete the dead code, files, dependencies and assets in any codebase, and keep each cut only if your own tests still pass.]]></description>
+    </item>
+    <item>
+      <title>[REPO] open-goat/pequalnp-proofs</title>
+      <link>https://github.com/open-goat/pequalnp-proofs</link>
+      <guid isPermaLink="false">https://github.com/open-goat/pequalnp-proofs#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Lean 4 proofs from the public AI attempt at P vs NP (pequalnp.com). Open gaps welcome pull requests.]]></description>
+    </item>
+    <item>
+      <title>[REPO] w01fb0ss/PiBot</title>
+      <link>https://github.com/w01fb0ss/PiBot</link>
+      <guid isPermaLink="false">https://github.com/w01fb0ss/PiBot#2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Open-source, local-first AI agent team for your desktop: multi-agent group chats, computer use, browser, MCP, routines and approvals. macOS, Windows, Linux + Android. Built on pi.]]></description>
     </item>
   </channel>
 </rss>

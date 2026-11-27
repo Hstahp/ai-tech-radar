@@ -1,0 +1,1088 @@
+{
+  "generated_at": "2026-11-27T00:01:07.103Z",
+  "history_days": 14,
+  "latest_run": {
+    "id": 50,
+    "trigger": "schedule",
+    "status": "running",
+    "started_at": "2026-11-27T00:01:02Z",
+    "finished_at": null,
+    "items_fetched": 0,
+    "items_new": 0,
+    "llm_requests": 0,
+    "error": null,
+    "sources": []
+  },
+  "runs": [
+    {
+      "id": 50,
+      "trigger": "schedule",
+      "status": "running",
+      "started_at": "2026-11-27T00:01:02Z",
+      "finished_at": null,
+      "items_fetched": 0,
+      "items_new": 0,
+      "llm_requests": 0,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 49,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-26T00:00:57Z",
+      "finished_at": "2026-11-26T00:01:00Z",
+      "items_fetched": 84,
+      "items_new": 9,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 48,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-25T00:01:01Z",
+      "finished_at": "2026-11-25T00:01:06Z",
+      "items_fetched": 87,
+      "items_new": 9,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 47,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-24T00:00:58Z",
+      "finished_at": "2026-11-24T00:01:02Z",
+      "items_fetched": 85,
+      "items_new": 23,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 46,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-23T00:00:59Z",
+      "finished_at": "2026-11-23T00:01:04Z",
+      "items_fetched": 87,
+      "items_new": 31,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 45,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-22T00:00:56Z",
+      "finished_at": "2026-11-22T00:01:00Z",
+      "items_fetched": 85,
+      "items_new": 28,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 44,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-21T00:00:59Z",
+      "finished_at": "2026-11-21T00:01:04Z",
+      "items_fetched": 87,
+      "items_new": 12,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 43,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-20T00:01:00Z",
+      "finished_at": "2026-11-20T00:01:04Z",
+      "items_fetched": 87,
+      "items_new": 8,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 42,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-19T00:00:59Z",
+      "finished_at": "2026-11-19T00:01:03Z",
+      "items_fetched": 86,
+      "items_new": 15,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 41,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-18T00:01:00Z",
+      "finished_at": "2026-11-18T00:01:05Z",
+      "items_fetched": 87,
+      "items_new": 13,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 40,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-17T00:01:00Z",
+      "finished_at": "2026-11-17T00:01:04Z",
+      "items_fetched": 85,
+      "items_new": 6,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 39,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-16T00:01:23Z",
+      "finished_at": "2026-11-16T00:01:27Z",
+      "items_fetched": 90,
+      "items_new": 30,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 38,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-15T00:01:08Z",
+      "finished_at": "2026-11-15T00:01:20Z",
+      "items_fetched": 86,
+      "items_new": 34,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    },
+    {
+      "id": 37,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-14T00:01:01Z",
+      "finished_at": "2026-11-14T00:01:05Z",
+      "items_fetched": 88,
+      "items_new": 19,
+      "llm_requests": 1,
+      "error": null,
+      "sources": []
+    }
+  ],
+  "llm_usage": [
+    {
+      "usage_date": "2026-11-27",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-27",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-27",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-26",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-26",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-26",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-25",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-25",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-25",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-24",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-24",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-24",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-23",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-23",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-23",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-22",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-22",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-22",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-21",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-21",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-21",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-20",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-20",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-20",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-19",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-19",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-19",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-18",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-18",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-18",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-17",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-17",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-17",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-16",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-16",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-16",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-15",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-15",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-15",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-14",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-14",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-14",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-13",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-13",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-13",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-12",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-12",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-12",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-11",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-11",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-11",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-10",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-10",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-10",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-09",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-09",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-09",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-08",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-08",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-08",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-07",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-07",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-07",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-06",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-06",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-06",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-05",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-05",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-05",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-04",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-04",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-04",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-03",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-03",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-03",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-02",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-02",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-02",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-01",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-01",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-01",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-31",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-31",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-31",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-30",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-30",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-30",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-29",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-29",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-29",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-28",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-28",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-28",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-27",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-27",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-27",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-26",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-26",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-26",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-10-25",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    }
+  ]
+}
