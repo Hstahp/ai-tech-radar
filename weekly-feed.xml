@@ -1,151 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-27</title>
+    <title>AI Tech Radar - 2026-11-28</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Fri, 27 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>[REPO] EL4CTEO/fast-anything</title>
       <link>https://github.com/EL4CTEO/fast-anything</link>
-      <guid isPermaLink="false">https://github.com/EL4CTEO/fast-anything#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/EL4CTEO/fast-anything#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Don&apos;t rewrite it in Rust. Rewrite the 5% that&apos;s slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.]]></description>
     </item>
     <item>
       <title>[REPO] xikhar/papercraft</title>
       <link>https://github.com/xikhar/papercraft</link>
-      <guid isPermaLink="false">https://github.com/xikhar/papercraft#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/xikhar/papercraft#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Agent skill to build games, interactive scenes, web pages and animations in a handcrafted pop-up papercraft style]]></description>
     </item>
     <item>
       <title>[REPO] erkamyaman/safe-anything</title>
       <link>https://github.com/erkamyaman/safe-anything</link>
-      <guid isPermaLink="false">https://github.com/erkamyaman/safe-anything#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/erkamyaman/safe-anything#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.]]></description>
     </item>
     <item>
       <title>[REPO] w01fb0ss/PiBot</title>
       <link>https://github.com/w01fb0ss/PiBot</link>
-      <guid isPermaLink="false">https://github.com/w01fb0ss/PiBot#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/w01fb0ss/PiBot#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Open-source, local-first AI agent team for your desktop: multi-agent group chats, computer use, browser, MCP, routines and approvals. macOS, Windows, Linux + Android. Built on pi.]]></description>
     </item>
     <item>
       <title>[REPO] danielwh2/sprite-stacking</title>
       <link>https://github.com/danielwh2/sprite-stacking</link>
-      <guid isPermaLink="false">https://github.com/danielwh2/sprite-stacking#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/danielwh2/sprite-stacking#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.]]></description>
     </item>
     <item>
-      <title>[REPO] iamajmeena/neonclipping</title>
-      <link>https://github.com/iamajmeena/neonclipping</link>
-      <guid isPermaLink="false">https://github.com/iamajmeena/neonclipping#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).]]></description>
+      <title>[REPO] alesha-pro/llm.asm</title>
+      <link>https://github.com/alesha-pro/llm.asm</link>
+      <guid isPermaLink="false">https://github.com/alesha-pro/llm.asm#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.]]></description>
+    </item>
+    <item>
+      <title>[REPO] chanke17/KuroCat</title>
+      <link>https://github.com/chanke17/KuroCat</link>
+      <guid isPermaLink="false">https://github.com/chanke17/KuroCat#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 KuroCat — Free open-source native desktop cat pet &amp; OBS overlay (Bongo Cat alternative, Swift/C++, 802 KB)｜开源免费原生桌面萌猫（全平台 macOS·Win·Linux·UOS / 2.5D转头捕猎 / 数位板 / OBS透明绿幕 / 在线皮肤工坊 / 零按键上传）]]></description>
     </item>
     <item>
       <title>[REPO] qianyiai/kurocat</title>
       <link>https://github.com/qianyiai/kurocat</link>
-      <guid isPermaLink="false">https://github.com/qianyiai/kurocat#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/qianyiai/kurocat#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 KuroCat — Free open-source desktop typing cat pet &amp; OBS overlay (Bongo Cat alternative, Tauri v2 + Rust + MCP)｜轻量级透明置顶桌面打字小黑猫伴侣（6款猫咪+鲸鱼娘大肥鱼 / 输密码防偷窥 / OBS透明源 / AI捏猫 / Win·Mac·Linux·Android）]]></description>
     </item>
     <item>
       <title>[REPO] INK-Q/agy-fast</title>
       <link>https://github.com/INK-Q/agy-fast</link>
-      <guid isPermaLink="false">https://github.com/INK-Q/agy-fast#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/INK-Q/agy-fast#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affecting native UI or diffs.]]></description>
     </item>
     <item>
-      <title>[REPO] bookwjitchieni1986/blender-ai-mcp-addon</title>
-      <link>https://github.com/bookwjitchieni1986/blender-ai-mcp-addon</link>
-      <guid isPermaLink="false">https://github.com/bookwjitchieni1986/blender-ai-mcp-addon#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.]]></description>
+      <title>[REPO] iamajmeena/neonclipping</title>
+      <link>https://github.com/iamajmeena/neonclipping</link>
+      <guid isPermaLink="false">https://github.com/iamajmeena/neonclipping#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).]]></description>
     </item>
     <item>
-      <title>[REPO] erkamyaman/rust-anything</title>
-      <link>https://github.com/erkamyaman/rust-anything</link>
-      <guid isPermaLink="false">https://github.com/erkamyaman/rust-anything#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Rewrite your whole app in Rust, one piece at a time, checked against the original&apos;s recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.]]></description>
+      <title>[REPO] nexu-io/opengame</title>
+      <link>https://github.com/nexu-io/opengame</link>
+      <guid isPermaLink="false">https://github.com/nexu-io/opengame#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 The Super Game Agent — the Unity &amp; Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D &amp; mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more.]]></description>
     </item>
     <item>
-      <title>[REPO] sybil-solutions/inference-optimisation-skill</title>
-      <link>https://github.com/sybil-solutions/inference-optimisation-skill</link>
-      <guid isPermaLink="false">https://github.com/sybil-solutions/inference-optimisation-skill#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization]]></description>
-    </item>
-    <item>
-      <title>[REPO] chanke17/KuroCat</title>
-      <link>https://github.com/chanke17/KuroCat</link>
-      <guid isPermaLink="false">https://github.com/chanke17/KuroCat#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 KuroCat — Free open-source native desktop cat pet &amp; OBS overlay (Bongo Cat alternative, Swift/C++, 802 KB)｜开源免费原生桌面萌猫（全平台 macOS·Win·Linux·UOS / 2.5D转头捕猎 / 数位板 / OBS透明绿幕 / 在线皮肤工坊 / 零按键上传）]]></description>
-    </item>
-    <item>
-      <title>[REPO] alesha-pro/llm.asm</title>
-      <link>https://github.com/alesha-pro/llm.asm</link>
-      <guid isPermaLink="false">https://github.com/alesha-pro/llm.asm#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.]]></description>
+      <title>[REPO] gary23w/f-ck_data_brokers</title>
+      <link>https://github.com/gary23w/f-ck_data_brokers</link>
+      <guid isPermaLink="false">https://github.com/gary23w/f-ck_data_brokers#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 fck_data_brokers.py is a free, open-source Python script that sends opt-out and deletion requests to data brokers on your behalf.]]></description>
     </item>
     <item>
       <title>[REPO] sous-labs/songe</title>
       <link>https://github.com/sous-labs/songe</link>
-      <guid isPermaLink="false">https://github.com/sous-labs/songe#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/sous-labs/songe#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 A training engine for your local model, using your idle compute]]></description>
     </item>
     <item>
       <title>[REPO] ThreatDefence/agentic-attack-detections</title>
       <link>https://github.com/ThreatDefence/agentic-attack-detections</link>
-      <guid isPermaLink="false">https://github.com/ThreatDefence/agentic-attack-detections#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/ThreatDefence/agentic-attack-detections#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Detection rules and IOCs for AI agent attack frameworks: ARTEX, Cairn, PentAGI, HexStrike, CyberStrikeAI, Strix, Hermes Agent, Agent Zero, RedAmon, Xalgorix, Pentest Swarm AI. KQL hunts for Microsoft Sentinel and Defender XDR, Sigma, Suricata, Zeek, YARA, Splunk, Elastic, STIX 2.1.]]></description>
     </item>
     <item>
       <title>[REPO] antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po</title>
       <link>https://github.com/antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po</link>
-      <guid isPermaLink="false">https://github.com/antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/antonhall-x91s9/discord-local-uncensored-ai-activity-utility-quest-auto-po#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Discord &amp; Local Uncensored AI Discord Activity serial-utility, Quest Auto-Completer &amp; Badge Booster: native 64-bit Windows 10/11 portable x64 build with hot-reloadable JSON configuration, low-overhead runtime, and prebuilt portable release.]]></description>
+    </item>
+    <item>
+      <title>[REPO] Moh4696/inkworks-skill</title>
+      <link>https://github.com/Moh4696/inkworks-skill</link>
+      <guid isPermaLink="false">https://github.com/Moh4696/inkworks-skill#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Inkworks: an agent skill for interactive 3D how-it-works pages drawn like an engineering sheet.]]></description>
+    </item>
+    <item>
+      <title>[REPO] bookwjitchieni1986/blender-ai-mcp-addon</title>
+      <link>https://github.com/bookwjitchieni1986/blender-ai-mcp-addon</link>
+      <guid isPermaLink="false">https://github.com/bookwjitchieni1986/blender-ai-mcp-addon#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.]]></description>
+    </item>
+    <item>
+      <title>[REPO] erkamyaman/rust-anything</title>
+      <link>https://github.com/erkamyaman/rust-anything</link>
+      <guid isPermaLink="false">https://github.com/erkamyaman/rust-anything#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Rewrite your whole app in Rust, one piece at a time, checked against the original&apos;s recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.]]></description>
+    </item>
+    <item>
+      <title>[REPO] sybil-solutions/inference-optimisation-skill</title>
+      <link>https://github.com/sybil-solutions/inference-optimisation-skill</link>
+      <guid isPermaLink="false">https://github.com/sybil-solutions/inference-optimisation-skill#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization]]></description>
     </item>
     <item>
       <title>[NEWS] C++26 is done (again): ISO C++ meeting trip report</title>
       <link>https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil</link>
-      <guid isPermaLink="false">https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 C++26 is done (again): ISO C++ meeting trip report]]></description>
-    </item>
-    <item>
-      <title>[REPO] staryone/motlab</title>
-      <link>https://github.com/staryone/motlab</link>
-      <guid isPermaLink="false">https://github.com/staryone/motlab#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Video as code: canvas scenes rendered with WebCodecs in headless Chrome, a review viewer, and agent skills that build the video from your references.]]></description>
-    </item>
-    <item>
-      <title>[REPO] EL4CTEO/shrink-anything</title>
-      <link>https://github.com/EL4CTEO/shrink-anything</link>
-      <guid isPermaLink="false">https://github.com/EL4CTEO/shrink-anything#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Less code, same tests passing: delete the dead code, files, dependencies and assets in any codebase, and keep each cut only if your own tests still pass.]]></description>
-    </item>
-    <item>
-      <title>[REPO] open-goat/pequalnp-proofs</title>
-      <link>https://github.com/open-goat/pequalnp-proofs</link>
-      <guid isPermaLink="false">https://github.com/open-goat/pequalnp-proofs#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Lean 4 proofs from the public AI attempt at P vs NP (pequalnp.com). Open gaps welcome pull requests.]]></description>
     </item>
   </channel>
 </rss>

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-27T00:01:07.103Z",
+  "generated_at": "2026-11-28T00:01:14.576Z",
   "history_days": 14,
   "latest_run": {
-    "id": 50,
+    "id": 51,
     "trigger": "schedule",
     "status": "running",
-    "started_at": "2026-11-27T00:01:02Z",
+    "started_at": "2026-11-28T00:01:00Z",
     "finished_at": null,
     "items_fetched": 0,
     "items_new": 0,
@@ -15,16 +15,49 @@
   },
   "runs": [
     {
-      "id": 50,
+      "id": 51,
       "trigger": "schedule",
       "status": "running",
-      "started_at": "2026-11-27T00:01:02Z",
+      "started_at": "2026-11-28T00:01:00Z",
       "finished_at": null,
       "items_fetched": 0,
       "items_new": 0,
       "llm_requests": 0,
       "error": null,
       "sources": []
+    },
+    {
+      "id": 50,
+      "trigger": "schedule",
+      "status": "success",
+      "started_at": "2026-11-27T00:01:02Z",
+      "finished_at": "2026-11-27T00:01:07Z",
+      "items_fetched": 105,
+      "items_new": 83,
+      "llm_requests": 1,
+      "error": null,
+      "sources": [
+        {
+          "key": "github_search",
+          "fetched": 30
+        },
+        {
+          "key": "hackernews",
+          "fetched": 5
+        },
+        {
+          "key": "hf_papers",
+          "fetched": 50
+        },
+        {
+          "key": "semantic_scholar",
+          "fetched": 0
+        },
+        {
+          "key": "openalex",
+          "fetched": 20
+        }
+      ]
     },
     {
       "id": 49,
@@ -169,22 +202,37 @@
       "llm_requests": 1,
       "error": null,
       "sources": []
-    },
-    {
-      "id": 37,
-      "trigger": "schedule",
-      "status": "success",
-      "started_at": "2026-11-14T00:01:01Z",
-      "finished_at": "2026-11-14T00:01:05Z",
-      "items_fetched": 88,
-      "items_new": 19,
-      "llm_requests": 1,
-      "error": null,
-      "sources": []
     }
   ],
   "llm_usage": [
     {
+      "usage_date": "2026-11-28",
+      "provider": "ollama",
+      "model": "llama3.2",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-28",
+      "provider": "groq",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
+      "usage_date": "2026-11-28",
+      "provider": "gemini",
+      "model": "",
+      "requests": 1,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": 1
+    },
+    {
       "usage_date": "2026-11-27",
       "provider": "ollama",
       "model": "llama3.2",
@@ -1050,33 +1098,6 @@
     },
     {
       "usage_date": "2026-10-26",
-      "provider": "ollama",
-      "model": "llama3.2",
-      "requests": 1,
-      "tokens_in": 0,
-      "tokens_out": 0,
-      "errors": 1
-    },
-    {
-      "usage_date": "2026-10-26",
-      "provider": "groq",
-      "model": "",
-      "requests": 1,
-      "tokens_in": 0,
-      "tokens_out": 0,
-      "errors": 1
-    },
-    {
-      "usage_date": "2026-10-26",
-      "provider": "gemini",
-      "model": "",
-      "requests": 1,
-      "tokens_in": 0,
-      "tokens_out": 0,
-      "errors": 1
-    },
-    {
-      "usage_date": "2026-10-25",
       "provider": "ollama",
       "model": "llama3.2",
       "requests": 1,

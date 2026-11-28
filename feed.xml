@@ -1,179 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Tech Radar - 2026-11-27</title>
+    <title>AI Tech Radar - 2026-11-28</title>
     <link>https://ai-tech-radar.pages.dev</link>
     <description>Radar công nghệ &amp; điểm tin AI thông minh dành cho lập trình viên</description>
     <language>vi</language>
-    <lastBuildDate>Fri, 27 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://ai-tech-radar.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[NEWS] AI made self-hosting fun again</title>
-      <link>https://janlukas.blog/posts/ai-self-hosting</link>
-      <guid isPermaLink="false">https://janlukas.blog/posts/ai-self-hosting#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 AI made self-hosting fun again]]></description>
+      <title>[NEWS] GPT 6.2 Astra Solves a Historical Mystery</title>
+      <link>https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical</link>
+      <guid isPermaLink="false">https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 GPT 6.2 Astra Solves a Historical Mystery]]></description>
     </item>
     <item>
-      <title>[NEWS] Top-cited AI scientists at four US companies compared</title>
-      <link>https://topcitedscientists.com/figures/ai-at-four-us-companies</link>
-      <guid isPermaLink="false">https://topcitedscientists.com/figures/ai-at-four-us-companies#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Top-cited AI scientists at four US companies compared]]></description>
+      <title>[NEWS] Michael Nielsen took down his book on neural nets</title>
+      <link>https://neuralnetworksanddeeplearning.com/</link>
+      <guid isPermaLink="false">https://neuralnetworksanddeeplearning.com/#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Michael Nielsen took down his book on neural nets]]></description>
     </item>
     <item>
-      <title>[NEWS] OpenAI may be in cost control mode</title>
-      <link>https://micjm.com/blog/openai-is-in-cost-control-mode</link>
-      <guid isPermaLink="false">https://micjm.com/blog/openai-is-in-cost-control-mode#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 OpenAI may be in cost control mode]]></description>
+      <title>[NEWS] Prospero: Bloat-free, native AI coding harness with ImGui</title>
+      <link>https://github.com/skeeto/prospero</link>
+      <guid isPermaLink="false">https://github.com/skeeto/prospero#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Prospero: Bloat-free, native AI coding harness with ImGui]]></description>
     </item>
     <item>
-      <title>[NEWS] Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can&apos;t Send Email</title>
-      <link>https://techstackups.com/articles/google-workspace-ai-agents-mcp</link>
-      <guid isPermaLink="false">https://techstackups.com/articles/google-workspace-ai-agents-mcp#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can&apos;t Send Email]]></description>
+      <title>[NEWS] Show HN: Getting 101 tok/s from Inkling 2 Mini in vLLM on one GB10</title>
+      <link>https://runtimenotes.com/blog/getting-101-tok-s-from-inkling-2-mini-in-vllm-on-one-gb10</link>
+      <guid isPermaLink="false">https://runtimenotes.com/blog/getting-101-tok-s-from-inkling-2-mini-in-vllm-on-one-gb10#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Show HN: Getting 101 tok/s from Inkling 2 Mini in vLLM on one GB10]]></description>
     </item>
     <item>
-      <title>[NEWS] An algebraic quantization of gravity from the null cone</title>
-      <link>https://arxiv.org/abs/2611.34924</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2611.34924#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 An algebraic quantization of gravity from the null cone]]></description>
+      <title>[NEWS] SessionGraph: Visualize all your coding agent sessions in one interactive graph</title>
+      <link>https://sessiongraph.ai/</link>
+      <guid isPermaLink="false">https://sessiongraph.ai/#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 SessionGraph: Visualize all your coding agent sessions in one interactive graph]]></description>
     </item>
     <item>
-      <title>[NEWS] Harvard CS 2881R AI Safety</title>
-      <link>https://boazbk.github.io/mltheoryseminar</link>
-      <guid isPermaLink="false">https://boazbk.github.io/mltheoryseminar#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Harvard CS 2881R AI Safety]]></description>
+      <title>[NEWS] The need for a formally verifiable mainstream programming language</title>
+      <link>https://blainehansen.me/post/mainstream-verifiable-language</link>
+      <guid isPermaLink="false">https://blainehansen.me/post/mainstream-verifiable-language#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 The need for a formally verifiable mainstream programming language]]></description>
     </item>
     <item>
-      <title>[NEWS] The Hungry Butler Effect: Concealed Commercial Incentives in LLMs</title>
-      <link>https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models</link>
-      <guid isPermaLink="false">https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 The Hungry Butler Effect: Concealed Commercial Incentives in LLMs]]></description>
+      <title>[NEWS] Why drivers want cheap, dumb cars again</title>
+      <link>https://slate.com/business/2026/11/dumb-cars-cheap-low-tech.html</link>
+      <guid isPermaLink="false">https://slate.com/business/2026/11/dumb-cars-cheap-low-tech.html#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Why drivers want cheap, dumb cars again]]></description>
     </item>
     <item>
-      <title>[NEWS] AI may have solved the most important problem in mathematics</title>
-      <link>https://www.economist.com/science-and-technology/2026/11/20/ai-may-have-solved-the-most-important-problem-in-mathematics</link>
-      <guid isPermaLink="false">https://www.economist.com/science-and-technology/2026/11/20/ai-may-have-solved-the-most-important-problem-in-mathematics#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 AI may have solved the most important problem in mathematics]]></description>
+      <title>[NEWS] Claude sabotaging ML research tasks?</title>
+      <link>https://twitter.com/RealAstropulse/status/2126119408997466389</link>
+      <guid isPermaLink="false">https://twitter.com/RealAstropulse/status/2126119408997466389#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Claude sabotaging ML research tasks?]]></description>
     </item>
     <item>
-      <title>[PAPER] The Llama 3 Herd of Models</title>
-      <link>https://arxiv.org/abs/2407.21783</link>
-      <guid isPermaLink="false">https://arxiv.org/abs/2407.21783#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an extensive empirical evaluation of Llama 3. We find that Llama 3 delivers comparable quality to leading language models s]]></description>
+      <title>[PAPER] Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts</title>
+      <link>https://arxiv.org/abs/2611.28732</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.28732#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 In-context learning (ICL) enables foundation models to perform unseen tasks from context without parameter updates. In robotic manipulation, a human video provides the context that specifies how a task should be performed. However, scaling human-video ICL on world-action models (WAMs) faces two challenges: task-level human-robot pairs are not temporally aligned with robot actions, and standard action losses allow policies to rely on initial-scene or task-identity shortcuts rather than tracking the context. We present Entangle, an in-context world-action model that maps a single human video and current robot observations to future visual states and executable actions. To scale temporally aligned training data, we convert recorded robot videos into matched human contexts via video-to-video generation, supplemented by real paired recordings. For model training, we combine variable-length video windows with an intra-task contrastive objective that distinguishes the paired action trajectory from other executions of the same task, preventing task-identity shortcuts. Without task-specific fine-tuning, Entangle improves steadily as aligned training data scales, reaching an average score of 83.5/100 across six unseen tasks on an Astribot S1 robot, and achieves a 69.5% average success rate on seven unseen RoboTwin tasks, outperforming Zero-WAM by 22.6 percentage points. Under Context-OOD, although trained only on scene-aligned pairs, Entangle transfers context-specified behaviors across rearranged layouts and substituted tools. Project page at https://entangle-robotics.github.io/]]></description>
     </item>
     <item>
-      <title>[PAPER] Qwen3 Technical Report</title>
-      <link>http://arxiv.org/abs/2505.09388</link>
-      <guid isPermaLink="false">http://arxiv.org/abs/2505.09388#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-drive]]></description>
+      <title>[PAPER] WorldBridge: Bridging Scattered Views for Coherent 3D World Generation</title>
+      <link>https://arxiv.org/abs/2611.34079</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.34079#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Generating coherent and explorable 3D worlds from scattered images with little or no visual overlap is a fundamental and long-standing challenge in computer vision, which existing geometry-aware methods fail to address. Meanwhile, existing image- and video-based methods may generate unseen regions but produce inconsistent geometry across views. To bridge this gap, we present WorldBridge, a framework for coherent and controllable 3D world generation under scattered images with little or no visual overlap. WorldBridge encodes scattered references into a global scene context to guide geometry and appearance generation across views. Our temporal and spatial reference attention mechanism further enhances the fidelity of temporal references along the target trajectory and supports flexible spatial references outside it. A plug-and-play latent-reference consistency strategy improves reference fidelity through reprojection-guided test-time optimization. We also introduce the WorldBridge benchmark suite to evaluate 3D world generation from scattered, low-overlap references, which is rarely explored by current benchmarks. Both qualitative and quantitative results demonstrate that our method enables controllable and coherent 3D world generation, surpassing the existing state-of-the-art solutions. Our project page is available at https://davidyan2001.github.io/WorldBridge/.]]></description>
     </item>
     <item>
-      <title>[PAPER] Accurate structure prediction of biomolecular interactions with AlphaFold 3</title>
-      <link>https://doi.org/10.1038/s41586-024-07487-w</link>
-      <guid isPermaLink="false">https://doi.org/10.1038/s41586-024-07487-w#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 The introduction of AlphaFold 21 has spurred a revolution in modelling the structure of proteins and their interactions, enabling a huge range of applications in protein modelling and design2-6. Here we describe our AlphaFold 3 model with a substantially updated diffusion-based architecture that is capable of predicting the joint structure of complexes including proteins, nucleic acids, small molecules, ions and modified residues. The new AlphaFold model demonstrates substantially improved accur]]></description>
+      <title>[PAPER] Letting Models Manage Their Own Context: Where We Stand</title>
+      <link>https://arxiv.org/abs/2611.34147</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.34147#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Agent harnesses today manage context on the model&apos;s behalf: when the window fills, the harness triggers a compaction that summarizes the history. We study the alternative, model-driven context management, in which the model itself decides when and what to compact through a context API. We gave models control over their own context in \nooa, NVIDIA&apos;s open source agent harness, and compared the two strategies on document research and machine learning engineering across context budgets from 8K to 512K tokens. Models that use the context API effectively reach higher accuracy, often with fewer input tokens, especially at tight budgets: GPT 6.1 nearly triples its score at a 32K budget on OfficeQA Pro v2 (21\%~rightarrow~56\%), and Kimi gains with up to 41\% fewer input tokens. Models differ widely, however, in how often they use the API, how aggressively they compact, and when they start compacting, and prompt changes shift that timing. Finally, we show that inference engines can make model-driven edits cheaper: by reusing the KV cache of the unchanged suffix after an edit, we cut prefill compute by up to 15\% per request with no measurable change in accuracy. Together, these results point to a new co-design frontier: models trained to manage their own context, served by inference engines that support KV cache editing.]]></description>
     </item>
     <item>
-      <title>[PAPER] DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning</title>
-      <link>https://doi.org/10.1038/s41586-025-09422-z</link>
-      <guid isPermaLink="false">https://doi.org/10.1038/s41586-025-09422-z#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 General reasoning represents a long-standing and formidable challenge in artificial intelligence (AI). Recent breakthroughs, exemplified by large language models (LLMs)1,2 and chain-of-thought (CoT) prompting3, have achieved considerable success on foundational reasoning tasks. However, this success is heavily contingent on extensive human-annotated demonstrations and the capabilities of models are still insufficient for more complex problems. Here we show that the reasoning abilities of LLMs ca]]></description>
+      <title>[PAPER] Playfulness as Feedback for Agentic Game Development</title>
+      <link>https://arxiv.org/abs/2611.33457</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33457#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Coding agents can generate runnable games from natural-language descriptions. However, a runnable game does not guarantee an excellent gameplay experience for players. In our view, a playful game should provide 1) reliable core functionality, 2) appealing visual design and assets, and 3) rich gameplay that supports exploration and progression. How agents can improve these aspects of playfulness remains underexplored. In our work, we propose Play2Evolve, a recursive game development framework with three stages: Initialization, Refinement, and Evolution. Using playfulness as feedback, agents playtest the game and diagnose issues in its functionality, visual presentation, and gameplay. Their feedback guides bug fixes and asset improvements. It also helps agents propose new gameplay and aesthetic goals for continued game evolution. To enrich game materials, we combine a video generation model with code to create appealing static and dynamic assets and integrate them into interactive gameplay. Finally, Play2Evolve achieves state-of-the-art performance among the evaluated methods, scoring 60.05 on GameCraft-Bench compared with 50.81 after Game Initialization and 52.46 for Play2Code. Human overall-quality ratings reach 3.67, compared with 2.38 and 2.43, respectively. Our code will be released at https://github.com/showlab/Play2Evolve.]]></description>
     </item>
     <item>
-      <title>[PAPER] DINOv2: Learning Robust Visual Features without Supervision</title>
-      <link>https://openreview.net/pdf?id=a68SUt6zFt</link>
-      <guid isPermaLink="false">https://openreview.net/pdf?id=a68SUt6zFt#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 The recent breakthroughs in natural language processing for model pretraining on large quantities of data have opened the way for similar foundation models in computer vision. These models could greatly simplify the use of images in any system by producing all-purpose visual features, i.e., features that work across image distributions and tasks without finetuning. This work shows that existing pretraining methods, especially self-supervised methods, can produce such features if trained on enoug]]></description>
+      <title>[PAPER] Let Vision-Language Models Generate Images through Their Representations</title>
+      <link>https://arxiv.org/abs/2611.31237</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.31237#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Recent unified multimodal models aim to combine visual understanding and generation within a single model, yet effectively integrating the two capabilities remains challenging. Leveraging pretrained vision-language models offers a way to build on already learned multimodal knowledge, but making this knowledge effectively accessible to visual generation remains nontrivial. We find that a central challenge lies in the heterogeneous visual representations used for understanding and generation. To address this challenge, we introduce Integral, which converts a pretrained vision-language model into a unified multimodal model by constructing a shared visual representation space across the two capabilities. Integral implements this design through two complementary components. Abstraction Fusion constructs shared visual tokens by aggregating hierarchical representations from the frozen vision encoder, while Block-wise MoT introduces a lightweight generative stream that interacts with the vision-language model only at block boundaries. Our approach effectively preserves the pretrained understanding capability while extending it to strong visual generation. Controlled comparisons further demonstrate that sharing visual representations between understanding and generation substantially improves generative learning compared with using a separate visual representation space, despite comparable reconstruction fidelity. These results suggest that representations learned by pretrained vision-language models already provide an effective foundation for visual generation.]]></description>
     </item>
     <item>
-      <title>[PAPER] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models</title>
-      <link>http://arxiv.org/abs/2402.03300</link>
-      <guid isPermaLink="false">http://arxiv.org/abs/2402.03300#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Mathematical reasoning poses a significant challenge for language models due to its complex and structured nature. In this paper, we introduce DeepSeekMath 7B, which continues pre-training DeepSeek-Coder-Base-v1.5 7B with 120B math-related tokens sourced from Common Crawl, together with natural language and code data. DeepSeekMath 7B has achieved an impressive score of 51.7% on the competition-level MATH benchmark without relying on external toolkits and voting techniques, approaching the perfor]]></description>
+      <title>[PAPER] Evaluating Memanto on DolphinBench for AI Agents</title>
+      <link>https://arxiv.org/abs/2611.28231</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.28231#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Memory benchmarks built on question answering tell an agent which fact to recall. Workplace requests often leave that need implicit: to post an update in the team&apos;s channel, an agent must work out which channel from earlier interactions and use it in a tool call. We evaluate Memanto, a memory agent that ranks memories with an information-theoretic relevance score, on DolphinBench, which tests memory through 600 simulated workplace tasks, each validated as requiring memory. Running in the Hermes agent harness with GPT-6-Luna and at most 6 iterations per conversation, Memanto completes 503 tasks (83.83%). The strongest configuration reported by the benchmark&apos;s authors, Mem0 with GPT-5.6-Luna and up to 60 iterations, completes 424 (70.67%). Memanto&apos;s run also has the lowest total cost (10.86, against 61.48 for the cheapest reported run) and the shortest median task latency (15.32s). Grading uses the benchmark&apos;s own judge, but the agent model differs, so these results compare complete systems. The memory system affects both whether an agent completes such tasks and what completion costs.]]></description>
     </item>
     <item>
-      <title>[PAPER] Qwen2.5 Technical Report</title>
-      <link>http://arxiv.org/abs/2412.15115</link>
-      <guid isPermaLink="false">http://arxiv.org/abs/2412.15115#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms ]]></description>
+      <title>[PAPER] Lost in Translation, Not in Confidence: Benchmarking and Calibrating Multilingual Decision Models</title>
+      <link>https://arxiv.org/abs/2611.33307</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33307#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Decision models are language models fine-tuned to return a probability for each option of a typed query, which routers and guardrails threshold directly. They are built on multilingual bases but ranked almost entirely in English. We evaluate 25 top-ranked open-weight decision models on 17 tasks in 14 languages, comparing each language with English on parallel items. Every model loses accuracy in every language, from about 2 points in high-resource languages to 8 in Tamil, while confidence falls only half as much: a threshold set for 95\% accuracy in English yields 90% in Tamil. The size of the loss is set by the language and the base model rather than by leaderboard rank. In 81 controlled fine-tuning runs, task skill learned in English transfers to other languages and a few thousand target-language items narrow large losses, but neither more data nor full-parameter tuning closes them. Finally, the same test items are answered more accurately in all 23 benchmark--language pairs we compare when an LLM rather than a person translated them, so LLM-translated test sets understate the gap.]]></description>
     </item>
     <item>
-      <title>[PAPER] GPT-4o System Card</title>
-      <link>http://arxiv.org/abs/2410.21276</link>
-      <guid isPermaLink="false">http://arxiv.org/abs/2410.21276#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 GPT-4o is an autoregressive omni model that accepts as input any combination of text, audio, image, and video, and generates any combination of text, audio, and image outputs. It&apos;s trained end-to-end across text, vision, and audio, meaning all inputs and outputs are processed by the same neural network. GPT-4o can respond to audio inputs in as little as 232 milliseconds, with an average of 320 milliseconds, which is similar to human response time in conversation. It matches GPT-4 Turbo performan]]></description>
+      <title>[PAPER] AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design</title>
+      <link>https://arxiv.org/abs/2611.33093</link>
+      <guid isPermaLink="false">https://arxiv.org/abs/2611.33093#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthesizable register-transfer-level (RTL) code against an executable integer reference that specifies the outputs and the stored state at every decoding step. They debug against public tests under fixed budgets; their frozen designs are graded on held-out token sequences, resets, memory stalls, and synthesis, and a second track asks them to speed up a correct design at nearly fixed area. Across 9,136 attempts by four coding agents, the difficulty lies in stored state. Feedback that points to the first state mismatch raises acceptance over output-only feedback in all 12 agent--task cells of a matched study, by 25.0 to 46.9 percentage points, and halves the agent-hours per accepted design. Regraded on new sequences and conditions, 45 of 69 accepted designs fail within the 32 steps their tests required. More than a third of attempts to speed up a correct design end without one. An overall score ranks Sol 5.6 and Fable 5.1 above Astra 6 and Opus 5.5, and both halves of the instances give this order in all 200 random splits. Hardware agents therefore need debugging feedback that exposes stored state, and their benchmarks need final tests well beyond the development cases.]]></description>
     </item>
     <item>
-      <title>[REPO] chanke17/KuroCat</title>
-      <link>https://github.com/chanke17/KuroCat</link>
-      <guid isPermaLink="false">https://github.com/chanke17/KuroCat#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 KuroCat — Free open-source native desktop cat pet &amp; OBS overlay (Bongo Cat alternative, Swift/C++, 802 KB)｜开源免费原生桌面萌猫（全平台 macOS·Win·Linux·UOS / 2.5D转头捕猎 / 数位板 / OBS透明绿幕 / 在线皮肤工坊 / 零按键上传）]]></description>
+      <title>[REPO] nexu-io/opengame</title>
+      <link>https://github.com/nexu-io/opengame</link>
+      <guid isPermaLink="false">https://github.com/nexu-io/opengame#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 The Super Game Agent — the Unity &amp; Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D &amp; mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more.]]></description>
+    </item>
+    <item>
+      <title>[REPO] gary23w/f-ck_data_brokers</title>
+      <link>https://github.com/gary23w/f-ck_data_brokers</link>
+      <guid isPermaLink="false">https://github.com/gary23w/f-ck_data_brokers#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 fck_data_brokers.py is a free, open-source Python script that sends opt-out and deletion requests to data brokers on your behalf.]]></description>
+    </item>
+    <item>
+      <title>[REPO] Moh4696/inkworks-skill</title>
+      <link>https://github.com/Moh4696/inkworks-skill</link>
+      <guid isPermaLink="false">https://github.com/Moh4696/inkworks-skill#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Inkworks: an agent skill for interactive 3D how-it-works pages drawn like an engineering sheet.]]></description>
     </item>
     <item>
       <title>[REPO] alesha-pro/llm.asm</title>
       <link>https://github.com/alesha-pro/llm.asm</link>
-      <guid isPermaLink="false">https://github.com/alesha-pro/llm.asm#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">https://github.com/alesha-pro/llm.asm#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[🎯 Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.]]></description>
     </item>
     <item>
-      <title>[REPO] xikhar/papercraft</title>
-      <link>https://github.com/xikhar/papercraft</link>
-      <guid isPermaLink="false">https://github.com/xikhar/papercraft#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Agent skill to build games, interactive scenes, web pages and animations in a handcrafted pop-up papercraft style]]></description>
+      <title>[REPO] chanke17/KuroCat</title>
+      <link>https://github.com/chanke17/KuroCat</link>
+      <guid isPermaLink="false">https://github.com/chanke17/KuroCat#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 KuroCat — Free open-source native desktop cat pet &amp; OBS overlay (Bongo Cat alternative, Swift/C++, 802 KB)｜开源免费原生桌面萌猫（全平台 macOS·Win·Linux·UOS / 2.5D转头捕猎 / 数位板 / OBS透明绿幕 / 在线皮肤工坊 / 零按键上传）]]></description>
     </item>
     <item>
-      <title>[REPO] EL4CTEO/fast-anything</title>
-      <link>https://github.com/EL4CTEO/fast-anything</link>
-      <guid isPermaLink="false">https://github.com/EL4CTEO/fast-anything#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Don&apos;t rewrite it in Rust. Rewrite the 5% that&apos;s slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.]]></description>
+      <title>[REPO] marilyncardoso/suno-ai</title>
+      <link>https://github.com/marilyncardoso/suno-ai</link>
+      <guid isPermaLink="false">https://github.com/marilyncardoso/suno-ai#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Suno Ai for Windows 10/11. Generates original songs from text prompts by writing lyrics and vocals, then exports finished tracks for videos, podcasts or personal listening.]]></description>
     </item>
     <item>
-      <title>[REPO] erkamyaman/safe-anything</title>
-      <link>https://github.com/erkamyaman/safe-anything</link>
-      <guid isPermaLink="false">https://github.com/erkamyaman/safe-anything#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL injection, leaked secrets, dependency CVEs and AI agent setups.]]></description>
+      <title>[REPO] jagdishbhatia/leonardo-ai</title>
+      <link>https://github.com/jagdishbhatia/leonardo-ai</link>
+      <guid isPermaLink="false">https://github.com/jagdishbhatia/leonardo-ai#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Leonardo Ai for Windows 10/11. Generates images and artwork from text prompts using AI models, then refines results with inpainting, upscaling and canvas editing tools for concept art and design work.]]></description>
     </item>
     <item>
-      <title>[REPO] EL4CTEO/shrink-anything</title>
-      <link>https://github.com/EL4CTEO/shrink-anything</link>
-      <guid isPermaLink="false">https://github.com/EL4CTEO/shrink-anything#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Less code, same tests passing: delete the dead code, files, dependencies and assets in any codebase, and keep each cut only if your own tests still pass.]]></description>
-    </item>
-    <item>
-      <title>[REPO] open-goat/pequalnp-proofs</title>
-      <link>https://github.com/open-goat/pequalnp-proofs</link>
-      <guid isPermaLink="false">https://github.com/open-goat/pequalnp-proofs#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Lean 4 proofs from the public AI attempt at P vs NP (pequalnp.com). Open gaps welcome pull requests.]]></description>
-    </item>
-    <item>
-      <title>[REPO] w01fb0ss/PiBot</title>
-      <link>https://github.com/w01fb0ss/PiBot</link>
-      <guid isPermaLink="false">https://github.com/w01fb0ss/PiBot#2026-11-27</guid>
-      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[🎯 Open-source, local-first AI agent team for your desktop: multi-agent group chats, computer use, browser, MCP, routines and approvals. macOS, Windows, Linux + Android. Built on pi.]]></description>
+      <title>[REPO] LudmilaApp/topaz-sharpen-ai</title>
+      <link>https://github.com/LudmilaApp/topaz-sharpen-ai</link>
+      <guid isPermaLink="false">https://github.com/LudmilaApp/topaz-sharpen-ai#2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[🎯 Topaz Sharpen Ai for Windows 10/11. Sharpens blurry photos and fixes focus, motion blur and camera shake, then previews each correction before you export the restored image to your library.]]></description>
     </item>
   </channel>
 </rss>
